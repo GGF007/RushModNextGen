@@ -52,7 +52,7 @@ ObjectTemplate.vehicleHud.vehicleType 		7
 
 ObjectTemplate.sprintStaminaDissipationFactor 0.6
 rem ---BeginComp:PostProcess ---
-ObjectTemplate.createComponent PostProcess
+rem ---ObjectTemplate.createComponent PostProcess---
 rem ---EndComp ---
 rem ---BeginComp:HelpHud ---
 ObjectTemplate.createComponent HelpHud

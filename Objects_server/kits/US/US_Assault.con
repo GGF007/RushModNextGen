@@ -43,7 +43,7 @@ ObjectTemplate.vehicleHud.vehicleType 		7
 
 ObjectTemplate.sprintStaminaDissipationFactor 0.6
 rem ---BeginComp:PostProcess ---
-rem --- ObjectTemplate.createComponent PostProcess ---
+rem --- rem ---ObjectTemplate.createComponent PostProcess--- ---
 rem ---EndComp ---
 rem ---BeginComp:Radio ---
 ObjectTemplate.createComponent Radio

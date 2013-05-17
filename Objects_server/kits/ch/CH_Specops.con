@@ -45,7 +45,7 @@ ObjectTemplate.vehicleHud.injurySound		S_Injury
 ObjectTemplate.sprintStaminaDissipationFactor 0.2
 ObjectTemplate.vehicleHud.vehicleType		7
 rem ---BeginComp:PostProcess ---
-ObjectTemplate.createComponent PostProcess
+rem ---ObjectTemplate.createComponent PostProcess---
 rem ---EndComp ---
 rem ---BeginComp:Radio ---
 ObjectTemplate.createComponent Radio
