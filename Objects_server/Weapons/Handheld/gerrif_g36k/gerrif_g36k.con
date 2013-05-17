@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh gerrif_g36k
+
+ObjectTemplate.create GenericFirearm gerrif_g36k
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry gerrif_g36k
+
+include gerrif_g36k.tweak

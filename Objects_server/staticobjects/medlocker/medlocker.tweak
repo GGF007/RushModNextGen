@@ -1,0 +1,20 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/1/4 7:47]
+GeometryTemplate.setSubGeometryLodDistance 0 0 26
+GeometryTemplate.setSubGeometryLodDistance 0 1 80
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Bundle medlocker
+ObjectTemplate.creator WIZARDS:Guedoe
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry medlocker
+ObjectTemplate.setCollisionMesh medlocker
+ObjectTemplate.mapMaterial 0 Metal_plate_thin 20
+ObjectTemplate.mapMaterial 1 Cardboard_box 64
+rem ObjectTemplate.mass 50
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem ObjectTemplate.isSleeping 1

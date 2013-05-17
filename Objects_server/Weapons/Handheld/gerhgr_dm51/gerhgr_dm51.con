@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh gerhgr_dm51
+CollisionManager.createTemplate gerhgr_dm51
+
+ObjectTemplate.create GenericFireArm gerhgr_dm51
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHILS-B26IVBDBY:Phil
+ObjectTemplate.collisionMesh gerhgr_dm51
+ObjectTemplate.mapMaterial 0 SoldierWeapon 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry gerhgr_dm51
+
+include gerhgr_dm51.tweak

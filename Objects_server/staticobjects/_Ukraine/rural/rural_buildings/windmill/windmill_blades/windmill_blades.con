@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh windmill_blades
+CollisionManager.createTemplate windmill_blades
+
+ObjectTemplate.create RotationalBundle windmill_blades
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.collisionMesh windmill_blades
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry windmill_blades
+
+include windmill_blades.tweak

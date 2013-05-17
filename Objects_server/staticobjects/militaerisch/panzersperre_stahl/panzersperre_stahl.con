@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh panzersperre_stahl
+CollisionManager.createTemplate panzersperre_stahl
+
+ObjectTemplate.create SimpleObject panzersperre_stahl
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MAVERRICK:Administrator
+ObjectTemplate.collisionMesh panzersperre_stahl
+ObjectTemplate.mapMaterial 0 Armor_5_tank_front 0
+ObjectTemplate.mapMaterial 1 Armor_5_tank_front 0
+ObjectTemplate.mapMaterial 2 Armor_5_tank_front 0
+ObjectTemplate.mapMaterial 3 Armor_5_tank_front 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry panzersperre_stahl
+
+include panzersperre_stahl.tweak

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh frcmg_m60
+
+ObjectTemplate.create genericfirearm frcmg_m60
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry frcmg_m60
+
+include frcmg_m60.tweak

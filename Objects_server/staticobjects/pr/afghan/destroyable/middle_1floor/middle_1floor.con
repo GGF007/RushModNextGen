@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh middle_1floor
+CollisionManager.createTemplate middle_1floor
+
+ObjectTemplate.create DestroyableObject middle_1floor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh middle_1floor
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.mapMaterial 2 Ceramic_tiles 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry middle_1floor
+
+include middle_1floor.tweak

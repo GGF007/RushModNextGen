@@ -1,0 +1,69 @@
+ObjectTemplate.create Kit EU_Assault
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.kitType Assault
+ObjectTemplate.aiTemplate Assault
+ObjectTemplate.geometry eu_kits
+ObjectTemplate.geometry.kit 5	
+ObjectTemplate.geometry.dropGeom 15
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setCollisionMesh kitcol
+ObjectTemplate.unlockIndex 1
+ObjectTemplate.cullRadiusScale 2.4	
+
+rem -------------------------------------
+ObjectTemplate.addTemplate Knife
+ObjectTemplate.addTemplate gerpis_p8
+ObjectTemplate.addTemplate GBRIF_L85A2AG36
+ObjectTemplate.addTemplate gbrgl_L85A2AG36
+ObjectTemplate.addTemplate nshgr_flashbang
+ObjectTemplate.addTemplate hgr_smoke_orange
+ObjectTemplate.addTemplate nsrif_grapplinghook
+
+ObjectTemplate.addTemplate ParachuteLauncher
+
+ObjectTemplate.addTemplate UnlockEUAssault
+ObjectTemplate.addTemplate UnlockEUAssault2
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_ASSAULT"
+ObjectTemplate.vehicleHud.guiIndex 0
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Light_Assault_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Light_Assault.tga"
+ObjectTemplate.vehicleHud.spottedIcon 		"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 0.6
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---
+
+
+ObjectTemplate.create ItemContainer UnlockEUAssault
+ObjectTemplate.addTemplate gerrif_g36scopeugl
+ObjectTemplate.replaceItem GBRIF_L85A2AG36
+Objecttemplate.addTemplate gergl_g36ugl
+ObjectTemplate.replaceItem gbrgl_L85A2AG36
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockEUAssault2
+ObjectTemplate.addTemplate idfrif_tar21s
+ObjectTemplate.replaceItem GBRIF_L85A2AG36
+ObjectTemplate.replaceItem gerrif_g36scopeugl
+Objecttemplate.addTemplate gerhgr_dm51
+ObjectTemplate.replaceItem gbrgl_L85A2AG36
+ObjectTemplate.replaceItem gergl_g36ugl
+ObjectTemplate.unlockLevel 2

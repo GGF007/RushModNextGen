@@ -1,0 +1,19 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/1/4 7:47]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject cem_fence
+ObjectTemplate.creator JILTED:Josh
+ObjectTemplate.modifiedByUser "Main"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry cem_fence
+ObjectTemplate.setCollisionMesh cem_fence
+ObjectTemplate.mapMaterial 0 concrete 78
+ObjectTemplate.mapMaterial 1 Pentrable_Metal_plating 1013
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

@@ -1,0 +1,17 @@
+GeometryTemplate.create StaticMesh ukr_wdgt
+CollisionManager.createTemplate ukr_wdgt
+
+ObjectTemplate.create SimpleObject ukr_wdgt
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh ukr_wdgt
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.mapMaterial 1 Metal_plate_thin 0
+ObjectTemplate.mapMaterial 2 Wood_thin 0
+ObjectTemplate.mapMaterial 3 Concrete_slippery 0
+ObjectTemplate.mapMaterial 4 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukr_wdgt
+
+include ukr_wdgt.tweak

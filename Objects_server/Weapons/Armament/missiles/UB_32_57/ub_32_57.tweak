@@ -1,0 +1,16 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/1/4 7:47]
+GeometryTemplate.setSubGeometryLodDistance 1 0 60
+GeometryTemplate.setSubGeometryLodDistance 1 1 100
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject ub_32_57
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry ub_32_57
+ObjectTemplate.setCollisionMesh ub_32_57
+ObjectTemplate.mapMaterial 0 Metal 32
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

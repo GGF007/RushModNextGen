@@ -1,0 +1,219 @@
+GeometryTemplate.create BundledMesh ukraav_shilka
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate ukraav_shilka
+
+ObjectTemplate.create PlayerControlObject ukraav_shilka
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.collisionMesh ukraav_shilka
+ObjectTemplate.mapMaterial 0 Armor_2_light_armored_vehicles 0
+ObjectTemplate.mapMaterial 1 Armor_3_tank_rear_top 0
+ObjectTemplate.mapMaterial 2 TankTracks 0
+ObjectTemplate.mapMaterial 3 Wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry ukraav_shilka
+ObjectTemplate.addTemplate ukraav_shilka_Turret
+ObjectTemplate.setPosition 0/1.0666/0.2743
+ObjectTemplate.addTemplate ukraav_shilka_zMotor
+
+ObjectTemplate.create RotationalBundle ukraav_shilka_Turret
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate ukraav_shilka_Barrel_Base
+ObjectTemplate.setPosition 0/0.0916/0.7998
+
+ObjectTemplate.create RotationalBundle ukraav_shilka_Barrel_Base
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate ukraav_shilka_bcHud
+ObjectTemplate.addTemplate ukraav_shilka_Guns
+
+ObjectTemplate.create RotationalBundle ukraav_shilka_bcHud
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create GenericFireArm ukraav_shilka_Guns
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+ObjectTemplate.addTemplate ukraav_shilka_L_Barrel_01
+ObjectTemplate.setPosition -0.1612/0.0366/0.9518
+ObjectTemplate.addTemplate ukraav_shilka_L_Barrel_02
+ObjectTemplate.setPosition -0.2150/-0.2700/1.1252
+ObjectTemplate.addTemplate ukraav_shilka_R_Barrel_01
+ObjectTemplate.setPosition 0.1612/0.0366/0.9518
+ObjectTemplate.addTemplate ukraav_shilka_R_Barrel_02
+ObjectTemplate.setPosition 0.2150/-0.2700/1.1252
+
+ObjectTemplate.create Bundle ukraav_shilka_L_Barrel_01
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create Bundle ukraav_shilka_L_Barrel_02
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create Bundle ukraav_shilka_R_Barrel_01
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Bundle ukraav_shilka_R_Barrel_02
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Engine ukraav_shilka_zMotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+ObjectTemplate.addTemplate ukraav_shilka_L_DriveWheel
+ObjectTemplate.setPosition -1.1705/-0.2693/-2.8420
+ObjectTemplate.addTemplate ukraav_shilka_L_Wheel_01
+ObjectTemplate.setPosition -1.2300/-0.8775/-1.9986
+ObjectTemplate.addTemplate ukraav_shilka_L_Wheel_02
+ObjectTemplate.setPosition -1.2140/-0.8775/-1.2058
+ObjectTemplate.addTemplate ukraav_shilka_L_Wheel_03
+ObjectTemplate.setPosition -1.2140/-0.8775/-0.4244
+ObjectTemplate.addTemplate ukraav_shilka_L_Wheel_04
+ObjectTemplate.setPosition -1.2140/-0.8775/0.3549
+ObjectTemplate.addTemplate ukraav_shilka_L_Wheel_05
+ObjectTemplate.setPosition -1.2140/-0.8775/1.1074
+ObjectTemplate.addTemplate ukraav_shilka_L_Wheel_06
+ObjectTemplate.setPosition -1.2140/-0.8775/2.0614
+ObjectTemplate.addTemplate ukraav_shilka_LF_DriveWheel
+ObjectTemplate.setPosition -1.2026/-0.2746/2.8315
+ObjectTemplate.addTemplate ukraav_shilka_R_Wheel_01
+ObjectTemplate.setPosition 1.2300/-0.8775/-1.9986
+ObjectTemplate.addTemplate ukraav_shilka_R_Wheel_02
+ObjectTemplate.setPosition 1.2159/-0.8775/-1.2058
+ObjectTemplate.addTemplate ukraav_shilka_R_Wheel_03
+ObjectTemplate.setPosition 1.2159/-0.8775/-0.4244
+ObjectTemplate.addTemplate ukraav_shilka_R_Wheel_04
+ObjectTemplate.setPosition 1.2159/-0.8775/0.3549
+ObjectTemplate.addTemplate ukraav_shilka_R_Wheel_05
+ObjectTemplate.setPosition 1.2159/-0.8775/1.1074
+ObjectTemplate.addTemplate ukraav_shilka_R_Wheel_06
+ObjectTemplate.setPosition 1.2159/-0.8775/2.0614
+ObjectTemplate.addTemplate ukraav_shilka_RF_DriveWheel
+ObjectTemplate.setPosition 1.2026/-0.2746/2.8315
+ObjectTemplate.addTemplate ukraav_shilka_RR_DriveWheel
+ObjectTemplate.setPosition 1.1705/-0.2693/-2.8420
+
+ObjectTemplate.create RotationalBundle ukraav_shilka_L_DriveWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring ukraav_shilka_L_Wheel_01
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create Spring ukraav_shilka_L_Wheel_02
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring ukraav_shilka_L_Wheel_03
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Spring ukraav_shilka_L_Wheel_04
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create Spring ukraav_shilka_L_Wheel_05
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create Spring ukraav_shilka_L_Wheel_06
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create RotationalBundle ukraav_shilka_LF_DriveWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring ukraav_shilka_R_Wheel_01
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring ukraav_shilka_R_Wheel_02
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring ukraav_shilka_R_Wheel_03
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring ukraav_shilka_R_Wheel_04
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create Spring ukraav_shilka_R_Wheel_05
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+ObjectTemplate.create Spring ukraav_shilka_R_Wheel_06
+ObjectTemplate.collisionPart 23
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 23
+
+ObjectTemplate.create RotationalBundle ukraav_shilka_RF_DriveWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 24
+
+ObjectTemplate.create RotationalBundle ukraav_shilka_RR_DriveWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 25
+
+include ukraav_shilka.tweak

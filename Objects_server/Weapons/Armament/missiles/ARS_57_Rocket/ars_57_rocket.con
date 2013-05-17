@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh ars_57_rocket
+CollisionManager.createTemplate ars_57_rocket
+
+ObjectTemplate.create GenericProjectile ars_57_rocket
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh ars_57_rocket
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ars_57_rocket
+
+include ars_57_rocket.tweak

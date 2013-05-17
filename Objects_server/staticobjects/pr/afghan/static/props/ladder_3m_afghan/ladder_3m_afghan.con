@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh ladder_3m_afghan
+CollisionManager.createTemplate ladder_3m_afghan
+
+ObjectTemplate.create Ladder ladder_3m_afghan
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh ladder_3m_afghan
+ObjectTemplate.mapMaterial 0 Wood_solid 0
+ObjectTemplate.mapMaterial 1 metal_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ladder_3m_afghan
+
+include ladder_3m_afghan.tweak

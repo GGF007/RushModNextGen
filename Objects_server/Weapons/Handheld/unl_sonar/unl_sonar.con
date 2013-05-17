@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh unl_sonar
+CollisionManager.createTemplate unl_sonar
+
+ObjectTemplate.create GenericFireArm unl_sonar
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator SJU-1:sju
+ObjectTemplate.collisionMesh unl_sonar
+ObjectTemplate.mapMaterial 0 collisionmaterial 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry unl_sonar
+
+include unl_sonar.tweak

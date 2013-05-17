@@ -1,0 +1,21 @@
+GeometryTemplate.create BundledMesh us_tnk_m1a2_m2cupola
+CollisionManager.createTemplate us_tnk_m1a2_m2cupola
+
+ObjectTemplate.create RotationalBundle us_tnk_m1a2_m2cupola
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHILSCH-Z4KV58U:Phil
+ObjectTemplate.collisionMesh us_tnk_m1a2_m2cupola
+ObjectTemplate.mapMaterial 0 Armor_3_tank_rear_top 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry us_tnk_m1a2_m2cupola
+ObjectTemplate.addTemplate us_tnk_m1a2_M2Cupola_Gunmount
+ObjectTemplate.setPosition -0.1019/0.4253/0.6064
+
+ObjectTemplate.create RotationalBundle us_tnk_m1a2_M2Cupola_Gunmount
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 1
+
+include us_tnk_m1a2_m2cupola.tweak

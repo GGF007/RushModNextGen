@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh oildrum_v2
+CollisionManager.createTemplate oildrum_v2
+
+ObjectTemplate.create DestroyableObject oildrum_v2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh oildrum_v2
+ObjectTemplate.mapMaterial 0 Pentrable_Metal_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry oildrum_v2
+
+include oildrum_v2.tweak

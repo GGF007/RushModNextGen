@@ -1,0 +1,81 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 10:59]
+ObjectTemplate.activeSafe EffectBundle e_vexp_j10
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_vexp_j10_Start
+ObjectTemplate.addTemplate em_vexp_j10_frontwing
+ObjectTemplate.setPosition 1.03625/-0.380111/3.2945
+ObjectTemplate.addTemplate em_vexp_j10_tail
+ObjectTemplate.setPosition 0.376368/-0.77848/-5.5715
+ObjectTemplate.addTemplate em_vexp_j10_wing
+ObjectTemplate.setPosition 2.40207/-1.03741/-1.50552
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/45/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_vexp_j10_Start
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Emitter em_vexp_j10_frontwing
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.relativePositionOffset 50/0/0
+ObjectTemplate.template p_wreck_j10_frontwing
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/2/1/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/4/8/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/2/4/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/2/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-3/3/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_j10_tail
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_j10_tail
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.relativePositionInDof CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/4/6/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/-3/3/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-5/5/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_j10_wing
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_j10_wing
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NORMAL/2/1/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-6/-4/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+

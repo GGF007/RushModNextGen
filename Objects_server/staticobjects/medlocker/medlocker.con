@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh medlocker
+CollisionManager.createTemplate medlocker
+
+ObjectTemplate.create Bundle medlocker
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator WIZARDS:Guedoe
+ObjectTemplate.collisionMesh medlocker
+ObjectTemplate.mapMaterial 0 Metal_plate_thin 0
+ObjectTemplate.mapMaterial 1 Cardboard_box 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry medlocker
+
+include medlocker.tweak 

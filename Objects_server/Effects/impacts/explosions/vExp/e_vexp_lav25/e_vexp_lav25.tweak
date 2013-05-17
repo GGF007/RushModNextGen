@@ -1,0 +1,97 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 10:59]
+ObjectTemplate.activeSafe EffectBundle e_vexp_lav25
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_vexp_lav25_Start
+ObjectTemplate.addTemplate e_vexp_lav25_wheel
+ObjectTemplate.setPosition -1.41284/-0.64161/2.63248
+ObjectTemplate.addTemplate e_vexp_lav25_backdoor
+ObjectTemplate.setPosition -0.456/0.336/-3.098
+ObjectTemplate.addTemplate e_vexp_lav25_backwindow
+ObjectTemplate.setPosition 1.16682/0.830006/2.65393
+ObjectTemplate.addTemplate e_vexp_lav25_exaustPipe
+ObjectTemplate.setPosition 1.05996/0.837371/0
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/30/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_vexp_lav25_Start
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+
+ObjectTemplate.create Emitter e_vexp_lav25_wheel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_btr90_wheel
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/3/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/1/3/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/2/6/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-1/-3/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/-5/5/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/-5/5/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-20/15/0
+ObjectTemplate.startRotation CRD_UNIFORM/-8/8/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter e_vexp_lav25_backdoor
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_lav25_backdoor
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-4/-8/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/-10/-5/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/-5/10/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter e_vexp_lav25_backwindow
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_lav25_backwindow
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/1/3/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/-10/-5/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/-5/10/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter e_vexp_lav25_exaustPipe
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_lav25_exaustPipe
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/5/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/3/1/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/0/5/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/3/1/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/5/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+

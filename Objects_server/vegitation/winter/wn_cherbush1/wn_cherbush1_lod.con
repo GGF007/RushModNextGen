@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh wn_cherbush1_lod
+
+ObjectTemplate.create SimpleObject wn_cherbush1_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MONDWIND:Miki
+ObjectTemplate.geometry wn_cherbush1_lod
+
+include wn_cherbush1_lod.tweak

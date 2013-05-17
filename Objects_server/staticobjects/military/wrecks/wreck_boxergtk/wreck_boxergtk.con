@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh wreck_boxergtk
+CollisionManager.createTemplate wreck_boxergtk
+
+ObjectTemplate.create SimpleObject wreck_boxergtk
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator NONE-CRGH5JPLN7:Trystan
+ObjectTemplate.collisionMesh wreck_boxergtk
+ObjectTemplate.mapMaterial 0 Metal_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry wreck_boxergtk
+
+include wreck_boxergtk.tweak

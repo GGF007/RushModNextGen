@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh p_a10_leftwing
+CollisionManager.createTemplate p_a10_leftwing
+
+ObjectTemplate.create Particle p_a10_leftwing
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEREMY:jeremypr
+ObjectTemplate.collisionMesh p_a10_leftwing
+ObjectTemplate.mapMaterial 0 Metal_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_a10_leftwing
+
+include p_a10_leftwing.tweak

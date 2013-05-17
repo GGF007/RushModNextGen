@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh barrel_big_dest_c
+CollisionManager.createTemplate barrel_big_dest_c
+
+ObjectTemplate.create DestroyableObject barrel_big_dest_c
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MFR-1:mfr
+ObjectTemplate.collisionMesh barrel_big_dest_c
+ObjectTemplate.mapMaterial 0 metal_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry barrel_big_dest_c
+ObjectTemplate.anchor 0/-0.5403/0
+
+include barrel_big_dest_c.tweak

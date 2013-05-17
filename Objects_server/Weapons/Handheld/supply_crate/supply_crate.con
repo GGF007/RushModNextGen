@@ -1,0 +1,17 @@
+GeometryTemplate.create BundledMesh supply_crate
+CollisionManager.createTemplate supply_crate
+
+ObjectTemplate.create SupplyObject supply_crate
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator FUL-1:ful
+ObjectTemplate.collisionMesh supply_crate
+ObjectTemplate.mapMaterial 0 cloth_carpet 0
+ObjectTemplate.mapMaterial 1 penetrablemetal_thin 0
+ObjectTemplate.mapMaterial 2 cardboard 0
+ObjectTemplate.mapMaterial 3 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry supply_crate
+
+include supply_crate.tweak

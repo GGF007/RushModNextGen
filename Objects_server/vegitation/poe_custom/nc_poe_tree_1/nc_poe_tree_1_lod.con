@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh nc_poe_tree_1_lod
+
+ObjectTemplate.create SimpleObject nc_poe_tree_1_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main-Josh
+ObjectTemplate.geometry nc_poe_tree_1_lod
+
+include nc_poe_tree_1_lod.tweak

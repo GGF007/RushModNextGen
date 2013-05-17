@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh ushgr_m67_projectile
+
+ObjectTemplate.create GenericFireArm ushgr_m67_projectile
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry ushgr_m67_projectile
+
+include ushgr_m67_projectile.tweak

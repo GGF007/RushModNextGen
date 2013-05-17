@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh football_goal
+CollisionManager.createTemplate football_goal
+
+ObjectTemplate.create SimpleObject football_goal
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator NONE-CRGH5JPLN7:Trystan
+ObjectTemplate.collisionMesh football_goal
+ObjectTemplate.mapMaterial 0 Metal_plate_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry football_goal
+
+include football_goal.tweak

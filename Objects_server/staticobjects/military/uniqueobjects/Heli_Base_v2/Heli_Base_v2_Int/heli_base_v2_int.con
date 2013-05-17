@@ -1,0 +1,18 @@
+GeometryTemplate.create StaticMesh heli_base_v2_int
+CollisionManager.createTemplate heli_base_v2_int
+
+ObjectTemplate.create SimpleObject heli_base_v2_int
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh heli_base_v2_int
+ObjectTemplate.mapMaterial 0 Concrete 0
+ObjectTemplate.mapMaterial 1 metal_solid 0
+ObjectTemplate.mapMaterial 2 wood 0
+ObjectTemplate.mapMaterial 3 Metal_thin 0
+ObjectTemplate.mapMaterial 4 CardbardBox 0
+ObjectTemplate.mapMaterial 5 Plastic 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry heli_base_v2_int
+
+include heli_base_v2_int.tweak

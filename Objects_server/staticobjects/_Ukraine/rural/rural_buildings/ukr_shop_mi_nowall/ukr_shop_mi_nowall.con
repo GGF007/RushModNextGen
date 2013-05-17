@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh ukr_shop_mi_nowall
+CollisionManager.createTemplate ukr_shop_mi_nowall
+
+ObjectTemplate.create SimpleObject ukr_shop_mi_nowall
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ERDE:Micha
+ObjectTemplate.collisionMesh ukr_shop_mi_nowall
+ObjectTemplate.mapMaterial 0 Metal_solid 0
+ObjectTemplate.mapMaterial 1 concrete 0
+ObjectTemplate.mapMaterial 2 Wood_solid 0
+ObjectTemplate.mapMaterial 3 Glass_common 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukr_shop_mi_nowall
+
+include ukr_shop_mi_nowall.tweak

@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh soda_machine
+CollisionManager.createTemplate soda_machine
+
+ObjectTemplate.create SimpleObject soda_machine
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh soda_machine
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.mapMaterial 1 plastic 0
+ObjectTemplate.mapMaterial 2 plastic 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry soda_machine
+
+include soda_machine.tweak

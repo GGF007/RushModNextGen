@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh est_fnc4
+CollisionManager.createTemplate est_fnc4
+
+ObjectTemplate.create SimpleObject est_fnc4
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh est_fnc4
+ObjectTemplate.mapMaterial 0 wood 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry est_fnc4
+
+include est_fnc4.tweak

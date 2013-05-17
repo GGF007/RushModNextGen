@@ -1,0 +1,19 @@
+GeometryTemplate.create StaticMesh residence
+CollisionManager.createTemplate residence
+
+ObjectTemplate.create SimpleObject residence
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh residence
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 wood 0
+ObjectTemplate.mapMaterial 2 metal 0
+ObjectTemplate.mapMaterial 3 stairs_concrete 0
+ObjectTemplate.mapMaterial 4 concrete 0
+ObjectTemplate.mapMaterial 5 concrete 0
+ObjectTemplate.mapMaterial 6 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry residence
+
+include residence.tweak

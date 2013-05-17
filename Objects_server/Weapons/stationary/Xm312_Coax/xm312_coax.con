@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh xm312_coax
+
+ObjectTemplate.create GenericFireArm xm312_coax
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.geometry xm312_coax
+
+include xm312_coax.tweak

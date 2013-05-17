@@ -1,0 +1,14 @@
+GeometryTemplate.create BundledMesh cfrif_c8a3eotechugl
+CollisionManager.createTemplate cfrif_c8a3eotechugl
+
+ObjectTemplate.create GenericFireArm cfrif_c8a3eotechugl
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator FLI-1:fli
+ObjectTemplate.collisionMesh usrgl_m16a4ugl
+ObjectTemplate.mapMaterial 0 Collision_Material 0 
+ObjectTemplate.mapMaterial 1 lambert1 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry cfrgl_c8a3eotechugl
+
+include cfrif_c8a3eotechugl.tweak

@@ -1,0 +1,2015 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/26 9:32]
+GeometryTemplate.setSubGeometryLodDistance 1 0 60
+GeometryTemplate.setSubGeometryLodDistance 1 1 120
+GeometryTemplate.setSpecularStaticGloss 0 0 4 3
+GeometryTemplate.setSpecularStaticGloss 1 0 5 3
+GeometryTemplate.setSpecularStaticGloss 1 1 4 3
+GeometryTemplate.setSpecularStaticGloss 1 2 3 3
+GeometryTemplate.setSpecularStaticGloss 2 0 1 3
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe PlayerControlObject AIX_Mi24
+ObjectTemplate.creator CLIVEWIL-DUO:clivewil
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 1000
+ObjectTemplate.armor.hitPoints 1000
+ObjectTemplate.armor.defaultMaterial 31
+ObjectTemplate.armor.hpLostWhileUpSideDown 350
+ObjectTemplate.armor.hpLostWhileInWater 400
+ObjectTemplate.armor.hpLostWhileInDeepWater 400
+ObjectTemplate.armor.hpLostWhileCriticalDamage 18
+ObjectTemplate.armor.waterDamageDelay 0.01
+ObjectTemplate.armor.waterLevel -0.5
+ObjectTemplate.armor.deepWaterLevel -0.5
+ObjectTemplate.armor.explosionForce 15
+ObjectTemplate.armor.explosionForceMod 8
+ObjectTemplate.armor.explosionForceMax 5000
+ObjectTemplate.armor.explosionDamage 400
+ObjectTemplate.armor.explosionRadius 15
+ObjectTemplate.armor.explosionMaterial 100
+ObjectTemplate.armor.wreckExplosionForce 7
+ObjectTemplate.armor.wreckExplosionDamage 200
+ObjectTemplate.armor.wreckExplosionRadius 5
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 1000
+ObjectTemplate.armor.timeToStayAsWreck 50
+ObjectTemplate.armor.criticalDamage 101
+ObjectTemplate.armor.wreckDelay 2
+ObjectTemplate.armor.addArmorEffect 70 e_vexp_tank_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_vexp_btr_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_heli_lightsmoke -1.04598/0.820424/0.667755 25/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_dstate_heli_heavysmoke -1.04598/0.820424/0.667755 25/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_vexp_AirGeneric_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_heli_tailspinf4 0.3/-0.2/-20 90/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_vexp_tank_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_heli_firesmoke -1.04598/0.820424/0.667755 25/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_vexp_heli_generic_wreckFire_small -0.77544/-1.17524/4.98885 50/0/30
+ObjectTemplate.armor.addArmorEffect 10 e_vexp_heli_generic_wreckFire_small -0.02064/2.15979/-11.84379 45/20/-30
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_heli_heavysmoke 1.10171/-0.90652/3.40365 46.4/64.6/-4.5
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_heli_firesmoke 3.87389/-1.38617/-1.05560 0/75/0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_heli_heavysmoke -3.66556/-1.53199/-0.99813 0/75/0
+ObjectTemplate.armor.addArmorEffect -1 e_vexp_havoc 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_vexp_heli_generic 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_vexp_heli_generic_spec 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -5 e_vexp_heli_generic_wreckFire 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -5 e_vexp_heli_generic_wreckFire_small -0.28898/-0.26995/-5.04956 60/90/0
+ObjectTemplate.armor.addArmorEffect -5 e_vexp_heli_generic_wreckFire_small -0.02063/1.70308/-11.02 45/70/0
+ObjectTemplate.armor.addArmorEffect -5 e_vexp_heli_generic_wreckFire_small -3.66556/-1.53199/-0.99813 0/75/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_AirGeneric_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_AirGeneric_wreck_end 0/1/-5 0/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_heli_generic_2nd 0/0/0 0/0/0
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage heli_spotted
+rem ---EndComp ---
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "Mi-24 Hind"
+ObjectTemplate.vehicleHud.guiIndex 0
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_chopper.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_attack_Heli.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 46/14
+ObjectTemplate.vehicleHud.vehicleType 2
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\VI_xpak_Hind.tga
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning_RU
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning_RU
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_HELO_PILOT_CONTROLS_deployFlares"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_HELO_PILOT_CONTROLS_deployFlares"
+ObjectTemplate.HelpHud.lowArmorHelpSoundKey "HUD_HELP_VEHICLE_HELO_LOWHEALTH_useFriendlyRepairStation"
+ObjectTemplate.HelpHud.lowArmorHelpStringKey "HUD_HELP_VEHICLE_HELO_LOWHEALTH_useFriendlyRepairStation"
+rem ---EndComp ---
+ObjectTemplate.geometry AIX_Mi24
+ObjectTemplate.setCollisionMesh AIX_Mi24
+ObjectTemplate.mapMaterial 0 helicopter_armour 31
+ObjectTemplate.mapMaterial 1 Bulletproof_glass 1006
+ObjectTemplate.mapMaterial 2 metalplale 1014
+ObjectTemplate.mapMaterial 3 Rubber 102
+ObjectTemplate.mapMaterial 4 active_wreck 606
+ObjectTemplate.drag 2
+ObjectTemplate.mass 11000
+ObjectTemplate.floaterMod 0.8
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate Ahe_Havoc
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_Ambient
+ObjectTemplate.addTemplate S_AIX_Mi24_AmbientDamaged
+ObjectTemplate.addTemplate AIX_Mi24_Camera
+ObjectTemplate.setPosition 0/0.158501/6.7
+ObjectTemplate.addTemplate HeatObject
+ObjectTemplate.setPosition 0/0/0.733757
+ObjectTemplate.addTemplate AIX_Mi24_TailRotor
+ObjectTemplate.setPosition -0.65469/2.12/-11.6835
+ObjectTemplate.setRotation 0/0/180
+ObjectTemplate.addTemplate AIX_Mi24_MainRotor
+ObjectTemplate.setPosition 0/2.14/0
+ObjectTemplate.setRotation -90/0/-180
+ObjectTemplate.addTemplate AIX_Mi24_TailEngine
+ObjectTemplate.setPosition 0/0/-10
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate AIX_Mi24_flarelauncher
+ObjectTemplate.addTemplate AIX_Mi24_RotorHead1
+ObjectTemplate.setPosition 0/-20/0
+ObjectTemplate.addTemplate AIX_Mi24_WingL
+ObjectTemplate.setPosition -1/1/1.5
+ObjectTemplate.setRotation 0/0/-10
+ObjectTemplate.addTemplate AIX_Mi24_WingR
+ObjectTemplate.setPosition 1/1/1.5
+ObjectTemplate.setRotation 0/0/10
+ObjectTemplate.addTemplate AIX_Mi24_Rudder
+ObjectTemplate.setPosition 0/0/-9.9943
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate AIX_Mi24_BodyWing
+ObjectTemplate.setPosition 0/1/0
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate AIX_Mi24_Rockets
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/-0.5/0
+ObjectTemplate.addTemplate AIX_Mi24_EntryPoint
+ObjectTemplate.setPosition 0/-1.5/2.99593
+ObjectTemplate.addTemplate AIX_Mi24_EntryPoint_mid
+ObjectTemplate.setPosition 0/-1.5/-2
+ObjectTemplate.addTemplate cbu_87_dummy
+ObjectTemplate.setPosition 4.26249/-1.41228/-0.97144
+ObjectTemplate.addTemplate cbu_87_dummy
+ObjectTemplate.setPosition -4.26249/-1.41228/-0.97144
+ObjectTemplate.addTemplate cbu_87_dummy
+ObjectTemplate.setPosition 3.62390/-1.41228/-0.97144
+ObjectTemplate.addTemplate cbu_87_dummy
+ObjectTemplate.setPosition -3.62390/-1.41228/-0.97144
+ObjectTemplate.addTemplate e_light_green
+ObjectTemplate.setPosition 4.01810/-0.82913/-1.09015
+ObjectTemplate.addTemplate e_light_red
+ObjectTemplate.setPosition -4.01810/-0.82913/-1.09015
+ObjectTemplate.addTemplate e_light_red
+ObjectTemplate.setPosition 0/2.65481/-12.45702 
+ObjectTemplate.addTemplate e_light_white
+ObjectTemplate.setPosition 0/-2.18185/4.93772
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.12468/-1/-4.40325 0/0/0
+ObjectTemplate.regulateYawInput PIYaw
+ObjectTemplate.regulateYaw -0.2/0.2
+ObjectTemplate.regulateVerticalPosInput PIThrottle
+ObjectTemplate.regulateVerticalPos -0.5/2
+ObjectTemplate.maxVertRegAngle 35
+ObjectTemplate.noVertRegAngle 55
+ObjectTemplate.seatInformation AIX_Mi24 0/-0.1/4.25 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_aircraftPilot_A_animSys.inc
+ObjectTemplate.soundFilter heli
+ObjectTemplate.sprintFactor 0
+ObjectTemplate.vehicleCategory VCHelicopter
+ObjectTemplate.listenerObstruction 0.5
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+rem ObjectTemplate.crewKitIndex 9
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Ambient
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/helicopter_ambloop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.72
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_AmbientDamaged
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_havoc/sounds/master_caution_ru.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe LandingGear AIX_Mi24_GearDoorL
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_GearDoorL_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/85
+ObjectTemplate.setMaxSpeed 0/0/50
+ObjectTemplate.setAcceleration 0/0/25
+ObjectTemplate.setGearUpDelay 1
+ObjectTemplate.setGearUpHeight 25
+ObjectTemplate.setGearDownSpeed 20
+ObjectTemplate.setGearUpSpeed 15
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_GearDoorL_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear AIX_Mi24_GearDoorR
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_GearDoorR_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/85
+ObjectTemplate.setMaxSpeed 0/0/50
+ObjectTemplate.setAcceleration 0/0/25
+ObjectTemplate.setGearUpDelay 1
+ObjectTemplate.setGearUpHeight 25
+ObjectTemplate.setGearDownSpeed 20
+ObjectTemplate.setGearUpSpeed 15
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_GearDoorR_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear AIX_Mi24_GearF
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_GearF_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setMaxSpeed 0/50/0
+ObjectTemplate.setAcceleration 0/25/0
+ObjectTemplate.setGearUpHeight 25
+ObjectTemplate.setGearDownSpeed 20
+ObjectTemplate.setGearUpSpeed 15
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_GearF_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring AIX_Mi24_WheelF
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 16
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_WheelF_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 80
+ObjectTemplate.setDamping 10
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_WheelF_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear AIX_Mi24_GearIndicator
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_GearIndicator_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/180/0
+ObjectTemplate.setMaxSpeed 0/5000/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setGearDownDelay 3.8
+ObjectTemplate.setGearUpHeight 25
+ObjectTemplate.setGearDownSpeed 20
+ObjectTemplate.setGearUpSpeed 15
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_GearIndicator_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear AIX_Mi24_GearRearPivot
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_GearRearPivot_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/50/0
+ObjectTemplate.setAcceleration 0/25/0
+ObjectTemplate.setGearUpDelay 1
+ObjectTemplate.setGearDownDelay 1
+ObjectTemplate.setGearUpHeight 25
+ObjectTemplate.setGearDownSpeed 20
+ObjectTemplate.setGearUpSpeed 15
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_GearRearPivot_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear AIX_Mi24_GearL
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_GearL_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/40
+ObjectTemplate.setMaxSpeed 0/0/50
+ObjectTemplate.setAcceleration 0/0/25
+ObjectTemplate.setGearDownDelay 1
+ObjectTemplate.setGearUpHeight 25
+ObjectTemplate.setGearDownSpeed 20
+ObjectTemplate.setGearUpSpeed 15
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_GearL_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring AIX_Mi24_WheelL
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_WheelL_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 80
+ObjectTemplate.setDamping 10
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_WheelL_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear AIX_Mi24_GearR
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_GearR_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/40
+ObjectTemplate.setMaxSpeed 0/0/50
+ObjectTemplate.setAcceleration 0/0/25
+ObjectTemplate.setGearDownDelay 1
+ObjectTemplate.setGearUpHeight 25
+ObjectTemplate.setGearDownSpeed 20
+ObjectTemplate.setGearUpSpeed 15
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_GearR_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring AIX_Mi24_WheelR
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_WheelR_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 80
+ObjectTemplate.setDamping 10
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_WheelR_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_WheelR_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe GenericFireArm AIX_Mi24_Cannons
+ObjectTemplate.modifiedByUser "999"
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.hudName "30MM Cannon"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.overheatSound S_Weapon_Vehicle_Overheat
+rem ---EndComp ---
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.roundsPerMinute 300
+ObjectTemplate.fire.fireInput PIAltFire
+ObjectTemplate.fire.addBarrelName AIX_Mi24_Cannons_Barrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 1
+ObjectTemplate.ammo.magSize 450
+ObjectTemplate.ammo.reloadTime 6
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.recoilSize 2
+ObjectTemplate.recoil.recoilSpeed 20
+ObjectTemplate.recoil.recoilForce 2
+ObjectTemplate.recoil.cameraRecoilSpeed 8
+ObjectTemplate.recoil.cameraRecoilSize 0.2
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 0.6
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.aiTemplate Btr90AutoCannon
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_Cannons_Fire1P
+ObjectTemplate.addTemplate S_AIX_Mi24_Cannons_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_AIX_Mi24_Cannons_Fire3P
+ObjectTemplate.addTemplate S_AIX_Mi24_Cannons_BoltClick
+ObjectTemplate.addTemplate S_AIX_Mi24_Cannons_TriggerClick
+ObjectTemplate.addTemplate S_AIX_Mi24_Cannons_SwitchFireRate
+ObjectTemplate.addTemplate S_AIX_Mi24_Cannons_Reload1P
+ObjectTemplate.addTemplate S_AIX_Mi24_Cannons_Reload3P
+ObjectTemplate.addTemplate S_AIX_Mi24_Cannons_Deploy1P
+ObjectTemplate.addTemplate S_AIX_Mi24_Cannons_Deploy3P
+ObjectTemplate.addTemplate S_AIX_Mi24_Cannons_Zoom
+ObjectTemplate.addTemplate AIX_Mi24_Cannons_Barrel
+ObjectTemplate.setPosition 0.954678/-1.69154/6.49361
+ObjectTemplate.addTemplate AIX_Mi24_Cannons_Barrel
+ObjectTemplate.setPosition 0.954678/-1.53946/6.49361
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AIX_Mi24_Cannons_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 350
+ObjectTemplate.heatAddWhenFire 0.04
+ObjectTemplate.coolDownPerSec 0.2
+ObjectTemplate.overheatPenalty 1.25
+
+ObjectTemplate.create GenericProjectile AIX_Mi24_Cannons_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 42
+ObjectTemplate.detonation.explosionRadius 3
+ObjectTemplate.detonation.explosionForce 2.5
+ObjectTemplate.detonation.explosionDamage 50
+ObjectTemplate.detonation.explosionInnerConeRadius 15
+ObjectTemplate.detonation.endEffectTemplate e_exp_btr
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.gravityModifier 0.2
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 42
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_Cannons_Projectile_Looping
+ObjectTemplate.addTemplate e_rifleRocket_trail
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.material 42
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 1
+ObjectTemplate.maxTracerScaler 5
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 0.8
+ObjectTemplate.tracerTemplate p_tracer2_eu
+ObjectTemplate.tracerConvergeDistance -1
+ObjectTemplate.minDamage 10
+ObjectTemplate.damage 25
+ObjectTemplate.distToStartLoseDamage 400
+ObjectTemplate.distToMinDamage 1000
+ObjectTemplate.damageMandownSoldiers 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Cannons_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/air/aix_mi24/sounds/cannon_1p_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.988/1.025/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Cannons_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Cannons_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/air/aix_mi24/sounds/cannon_1p_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.983/1.025/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.85/1/
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 30
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Cannons_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Cannons_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/geraav_gepard/sounds/vehicle_weapon_trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1.3
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Cannons_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Cannons_Reload1P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Cannons_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Cannons_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Cannons_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Cannons_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create RotationalBundle AIX_Mi24_Cannons_Barrel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_Cannons_Barrel_RotationRpm
+ObjectTemplate.addTemplate e_muzz_tunguska
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate e_shellejection_tunguska
+ObjectTemplate.setPosition 0/-0.04206/-3.06436
+ObjectTemplate.setRotation 0/0/-90
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Cannons_Barrel_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Cannons_Projectile_Looping
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+
+ObjectTemplate.activeSafe RotationalBundle AIX_Mi24_TailFlap
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_TailFlap_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_TailFlap_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Engine AIX_Mi24_MainEngine
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+rem ---BeginComp:WindAffector ---
+ObjectTemplate.createComponent WindAffector
+ObjectTemplate.windType RadialDir
+ObjectTemplate.windIsDynamic 1
+ObjectTemplate.windDirection 0/0/-1
+ObjectTemplate.windSpeed 20
+ObjectTemplate.windBlowTime -1
+ObjectTemplate.windFalloff 20
+ObjectTemplate.windRadialFalloff 10
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_MainEngine_RotationRpm
+ObjectTemplate.addTemplate S_AIX_Mi24_MainEngine_Idle
+ObjectTemplate.addTemplate S_AIX_Mi24_MainEngine_Rpm1
+ObjectTemplate.addTemplate S_AIX_Mi24_MainEngine_Rpm2
+ObjectTemplate.addTemplate S_AIX_Mi24_MainEngine_Load
+rem -------------------------------------
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 0.1
+ObjectTemplate.setDifferential 0
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.horizontalDampAngle 0.001
+ObjectTemplate.horizontalDampAngleFactor 0.01
+ObjectTemplate.defaultAngleOfAttack 6.6
+ObjectTemplate.maxAngleOfAttack 16
+ObjectTemplate.attackSpeed 12
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_MainEngine_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_MainEngine_Idle
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_MainEngine_Rpm1
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_MainEngine_Rpm2
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_MainEngine_Load
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Engine AIX_Mi24_TailEngine
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_TailEngine_RotationRpm
+ObjectTemplate.addTemplate S_AIX_Mi24_TailEngine_Idle
+ObjectTemplate.setPosition -8.44106e-009/2.12742/-0.193109
+ObjectTemplate.addTemplate S_AIX_Mi24_TailEngine_Rpm1
+ObjectTemplate.setPosition -1.00659e-008/2.11299/-0.230282
+ObjectTemplate.addTemplate S_AIX_Mi24_TailEngine_Rpm2
+ObjectTemplate.addTemplate S_AIX_Mi24_TailEngine_Load
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-100
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 0/0/2000
+ObjectTemplate.setInputToRoll PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 100
+ObjectTemplate.setDifferential 70
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.noPropellerEffectAtSpeed 2.5
+ObjectTemplate.noPropellerEffectAtSpeed 2.5
+ObjectTemplate.decreaseAngleToZero 1
+ObjectTemplate.pureRotational 1
+ObjectTemplate.spinWhenNoEngineInAir 0.4
+ObjectTemplate.noEffectAtPerpSpeed 500
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_TailEngine_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_TailEngine_Idle
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_tail_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/2/0.00772201/0.781853/0/0.996139/0.793436/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0.003861/0.895753/0/0.996139/0.895753/0/
+ObjectTemplate.position -8.44106e-009/2.12742/-0.193109
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 10
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_TailEngine_Rpm1
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_TailEngine_Rpm2
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_TailEngine_Load
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Camera AIX_Mi24_Camera
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_Camera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -100/-20/0
+ObjectTemplate.setMaxRotation 100/20/0
+ObjectTemplate.setPivotPosition 0/0/-0.2
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.cameraShakeSensitivity 1
+ObjectTemplate.cameraShakeStartSpeed 1
+ObjectTemplate.cameraShakeMaxSpeed 350
+ObjectTemplate.nosePos 0/0/2.75
+ObjectTemplate.followStiffness 2
+ObjectTemplate.chaseDistance 30
+ObjectTemplate.chaseAngle 0.25
+ObjectTemplate.chaseOffset 0/2.5/6
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection 1/-1/0.2
+ObjectTemplate.insideStaticSunColor 0.45098/0.4/0.384314
+ObjectTemplate.insideStaticSunDamageColor 0.960784/0.121569/0.027451
+ObjectTemplate.insideDamageFrequency 8
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.572549/0.521569/0.403922
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Camera_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe PlayerControlObject AIX_Mi24_CoGunner
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "Mi-24 Hind Gunner"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.guiIndex 0
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.vehicleIconPos 56/14
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning_RU
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning_RU
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_HELO_PASSENGER_CONTROLS_switchToGuidedMissiles"
+ObjectTemplate.HelpHud.helpSoundKey "switchToGuidedMissiles"
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate Ahe_Havoc_Gunner
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_CoGunner_Ambient
+ObjectTemplate.addTemplate S_AIX_Mi24_CoGunner_AmbientDamaged
+ObjectTemplate.addTemplate AIX_Mi24_CoGunner_Camera
+ObjectTemplate.setPosition 0/-0.44830/7.95492
+ObjectTemplate.addTemplate AIX_Mi24_HJ8_Camera
+ObjectTemplate.setPosition 3.65722/-1.31063/0.69
+ObjectTemplate.setRotation 0/10/0
+ObjectTemplate.addTemplate AIX_Mi24_HJ8
+ObjectTemplate.setPosition 3.71004/-1.31063/0.03494
+ObjectTemplate.setRotation 0/10/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2.12468/-1/-4.40325 0/0/0
+ObjectTemplate.seatInformation AIX_Mi24_CoGunner 0/-0.7/5.8 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_aircraftCoPilot_A_animSys.inc
+ObjectTemplate.soundFilter heli
+ObjectTemplate.specialToggleWeaponInput PIAltFire
+ObjectTemplate.vehicleCategory VCHelicopter
+ObjectTemplate.controlsCategory VCLand
+ObjectTemplate.listenerObstruction 0.5
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+rem ObjectTemplate.crewKitIndex 9
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_CoGunner_Ambient
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/helicopter_ambloop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_CoGunner_AmbientDamaged
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_havoc/sounds/master_caution_ru.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe RotationalBundle AIX_Mi24_GunMount
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_GunMount_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -75/0/0
+ObjectTemplate.setMaxRotation 75/0/0
+ObjectTemplate.setMaxSpeed 70/0/0
+ObjectTemplate.setAcceleration 300/0/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.restoreRotationOnExit 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_GunMount_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle AIX_Mi24_GunAzimuth
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_GunAzimuth_RotationRpm
+ObjectTemplate.addTemplate AIX_Mi24_Guns
+ObjectTemplate.setPosition 0/-0.0555765/1.47969
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/60/0
+ObjectTemplate.setMaxSpeed 0/70/0
+ObjectTemplate.setAcceleration 0/300/0
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.restoreRotationOnExit 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_GunAzimuth_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle AIX_Mi24_GunBarrels
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_GunBarrels_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/1000
+ObjectTemplate.setInputToRoll PIFire
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_GunBarrels_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create GenericFireArm AIX_Mi24_Guns
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bomb.tga
+ObjectTemplate.weaponHud.hudName "2A42-30MM"
+ObjectTemplate.weaponHud.guiIndex 36
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.displaySelectOnActivation 0
+ObjectTemplate.weaponHud.overheatSound S_Weapon_Vehicle_Overheat
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 36
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+ObjectTemplate.postProcess.tvInterference 0.06
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.fireStartDelay CRD_NONE/0.227/0/0
+ObjectTemplate.fire.projectileStartPosition 0.5/-0.5/1.5
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 900
+ObjectTemplate.ammo.reloadTime 8
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.recoilSize 2
+ObjectTemplate.recoil.recoilSpeed 20
+ObjectTemplate.recoil.recoilForce 2
+ObjectTemplate.recoil.cameraRecoilSpeed 8
+ObjectTemplate.recoil.cameraRecoilSize 0.3
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 0.5
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:ToggleCameraComp ---
+ObjectTemplate.createComponent ToggleCameraComp
+ObjectTemplate.zoom.startCameraId 0
+ObjectTemplate.zoom.startCameraViewMode 1
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.aiTemplate Ahe_Havoc_Gun
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_Guns_Fire1P
+ObjectTemplate.addTemplate S_AIX_Mi24_Guns_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_AIX_Mi24_Guns_Fire3P
+ObjectTemplate.addTemplate S_AIX_Mi24_Guns_BoltClick
+ObjectTemplate.addTemplate S_AIX_Mi24_Guns_TriggerClick
+ObjectTemplate.addTemplate S_AIX_Mi24_Guns_SwitchFireRate
+ObjectTemplate.addTemplate S_AIX_Mi24_Guns_Reload1P
+ObjectTemplate.addTemplate S_AIX_Mi24_Guns_Reload3P
+ObjectTemplate.addTemplate S_AIX_Mi24_Guns_Deploy1P
+ObjectTemplate.addTemplate S_AIX_Mi24_Guns_Deploy3P
+ObjectTemplate.addTemplate S_AIX_Mi24_Guns_Zoom
+ObjectTemplate.addTemplate e_muzz_tunguska
+ObjectTemplate.setPosition 0/0/0.02084
+ObjectTemplate.addTemplate e_shellejection_25mm
+ObjectTemplate.setPosition 0/-0.17615/-1.14394
+ObjectTemplate.setRotation 0/80/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AIX_Mi24_Guns_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 400
+ObjectTemplate.itemIndex 1
+ ObjectTemplate.isSelectable 0
+ObjectTemplate.heatAddWhenFire 0.015
+ObjectTemplate.coolDownPerSec 0.2
+ObjectTemplate.overheatPenalty 1.25
+
+ObjectTemplate.create GenericProjectile AIX_Mi24_Guns_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 42
+ObjectTemplate.detonation.explosionRadius 2.5
+ObjectTemplate.detonation.explosionForce 2.5
+ObjectTemplate.detonation.explosionDamage 50
+ObjectTemplate.detonation.endEffectTemplate e_exp_small
+ObjectTemplate.detonation.explosionInnerConeRadius 10
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.gravityModifier 0.4
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 42
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_Guns_Projectile_Looping
+ObjectTemplate.addTemplate e_rifleRocket_trail
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.material 42
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 1
+ObjectTemplate.maxTracerScaler 3
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 0.7
+ObjectTemplate.tracerTemplate p_tracer2_eu
+ObjectTemplate.tracerConvergeDistance -1
+ObjectTemplate.minDamage 10
+ObjectTemplate.damage 30
+ObjectTemplate.distToStartLoseDamage 400
+ObjectTemplate.distToMinDamage 1000
+ObjectTemplate.damageMandownSoldiers 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Guns_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/aix_mi24/sounds/auto_cannon_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Guns_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Guns_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/aix_mi24/sounds/auto_cannon_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.02/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 6
+ObjectTemplate.halfVolumeDistance 20
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Guns_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Guns_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Guns_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Guns_Reload1P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Guns_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Guns_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "common/sound/weapon_toggle_vehicle.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.3
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Guns_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Guns_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Guns_Projectile_Looping
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+
+ObjectTemplate.create Camera AIX_Mi24_CoGunner_Camera
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_CoGunner_Camera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -75/-15/0
+ObjectTemplate.setMaxRotation 75/60/0
+ObjectTemplate.setMaxSpeed 70/70/0
+ObjectTemplate.setAcceleration 300/300/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.regulateYaw 0.1/0.1
+ObjectTemplate.regulatePitch 0.15/-0.1
+ObjectTemplate.restoreRotationOnExit 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.nosePos 0/-0.5/2.5
+ObjectTemplate.followStiffness 2
+ObjectTemplate.chaseDistance 30
+ObjectTemplate.chaseAngle 0.25
+ObjectTemplate.chaseOffset 0/2.5/6
+ObjectTemplate.worldFOV 0.8
+ObjectTemplate.insideFOV 0.8
+ObjectTemplate.worldFOV 0.8
+ObjectTemplate.insideFOV 0.8
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection 2/2/1
+ObjectTemplate.insideStaticSunColor 0.247059/0.247059/0.247059
+ObjectTemplate.insideStaticSunDamageColor 0.839216/0.109804/0.070588
+ObjectTemplate.insideDamageFrequency 8
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.596078/0.556863/0.439216
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_CoGunner_Camera_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Camera AIX_Mi24_HJ8_Camera
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_HJ8_Camera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -100/-10/0
+ObjectTemplate.setMaxRotation 100/60/0
+ObjectTemplate.setPivotPosition 0/0/-0.3
+ObjectTemplate.setAcceleration 300/300/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.CameraId 11
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 0.6
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 0.6
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection 0/-1/0
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/1/1
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+ObjectTemplate.cockpitSubGeom 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_HJ8_Camera_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create GenericFireArm AIX_Mi24_HJ8
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bomb.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\Ataka_missile.tga
+ObjectTemplate.weaponHud.crosshairIcon Ingame/Vehicles/Icons/Hud/Air/havoc/cross_box.tga
+ObjectTemplate.weaponHud.crosshairIconSize 128
+ObjectTemplate.weaponHud.altCrosshairIcon Ingame/Vehicles/Icons/Hud/Air/havoc/cross_box.tga
+ObjectTemplate.weaponHud.hudName "ATAKA TV"
+ObjectTemplate.weaponHud.guiIndex 29
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.enableMouse 1
+ObjectTemplate.weaponHud.displaySelectOnActivation 0
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 29
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+ObjectTemplate.postProcess.tvInterference 0.06
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 60
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 15
+ObjectTemplate.ammo.nrOfMags 8
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.reloadTime 8
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.recoilSize 1.01
+ObjectTemplate.recoil.cameraRecoilSpeed 13
+ObjectTemplate.recoil.cameraRecoilSize 1
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_HELO_PASSENGER_CONTROLS_TVGUIDED_clickToGuide"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_HELO_PASSENGER_CONTROLS_TVGUIDED_clickToGuide"
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:ToggleCameraComp ---
+ObjectTemplate.createComponent ToggleCameraComp
+ObjectTemplate.zoom.startCameraId 11
+ObjectTemplate.zoom.startCameraViewMode 1
+ObjectTemplate.zoom.useProjectileCamera 1
+ObjectTemplate.zoom.allowUntoggledFire 0
+rem ---EndComp ---
+rem ---BeginComp:LPTargetComp ---
+ObjectTemplate.createComponent LPTargetComp
+ObjectTemplate.target.maxDistance 9999
+ObjectTemplate.target.setTargetAtMaxDistance 1
+ObjectTemplate.target.targetSystem TSTVGuided
+ObjectTemplate.target.targetObjectTemplate UniqueTarget
+ObjectTemplate.target.disableFireWhenActiveMissile 1
+ObjectTemplate.target.disableGuidanceOnReload 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.material 56
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_HJ8_Fire1P
+ObjectTemplate.addTemplate S_AIX_Mi24_HJ8_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_AIX_Mi24_HJ8_Fire3P
+ObjectTemplate.addTemplate S_AIX_Mi24_HJ8_BoltClick
+ObjectTemplate.addTemplate S_AIX_Mi24_HJ8_TriggerClick
+ObjectTemplate.addTemplate S_AIX_Mi24_HJ8_SwitchFireRate
+ObjectTemplate.addTemplate S_AIX_Mi24_HJ8_Reload1P
+ObjectTemplate.addTemplate S_AIX_Mi24_HJ8_Reload3P
+ObjectTemplate.addTemplate S_AIX_Mi24_HJ8_Deploy1P
+ObjectTemplate.addTemplate S_AIX_Mi24_HJ8_Deploy3P
+ObjectTemplate.addTemplate S_AIX_Mi24_HJ8_Zoom
+ObjectTemplate.addTemplate e_muzz_rocketpod
+ObjectTemplate.setPosition -0.08812/-0.58429/-2.82667
+ObjectTemplate.setRotation 0/-10.9/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate cbu_87_tv
+ObjectTemplate.velocity 45
+ObjectTemplate.itemIndex 2
+ ObjectTemplate.isSelectable 0
+ObjectTemplate.blockInputOnRotBundle AIX_Mi24_GunMount
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_HJ8_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/agm114_hellfire_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_HJ8_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_HJ8_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/agm114_hellfire_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 15
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_HJ8_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_HJ8_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_HJ8_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_HJ8_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/bomb_reload.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_HJ8_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_HJ8_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "common/sound/weapon_toggle_vehicle.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.3
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_HJ8_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_HJ8_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create GenericFireArm AIX_Mi24_flarelauncher
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.roundsPerMinute 300
+ObjectTemplate.fire.fireInput PIFlareFire
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.burstSize 12
+ObjectTemplate.fire.addBarrelName AIX_Mi24_flarelauncher_barrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 12
+ObjectTemplate.ammo.minimumTimeUntilReload 5
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 6
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_flarelauncher_Fire1P
+ObjectTemplate.addTemplate S_AIX_Mi24_flarelauncher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_AIX_Mi24_flarelauncher_Fire3P
+ObjectTemplate.addTemplate S_AIX_Mi24_flarelauncher_BoltClick
+ObjectTemplate.addTemplate S_AIX_Mi24_flarelauncher_TriggerClick
+ObjectTemplate.addTemplate S_AIX_Mi24_flarelauncher_SwitchFireRate
+ObjectTemplate.addTemplate S_AIX_Mi24_flarelauncher_Reload1P
+ObjectTemplate.addTemplate S_AIX_Mi24_flarelauncher_Reload3P
+ObjectTemplate.addTemplate S_AIX_Mi24_flarelauncher_Deploy1P
+ObjectTemplate.addTemplate S_AIX_Mi24_flarelauncher_Deploy3P
+ObjectTemplate.addTemplate S_AIX_Mi24_flarelauncher_Zoom
+ObjectTemplate.addTemplate AIX_Mi24_flarelauncher_barrel
+ObjectTemplate.setPosition 0.99981/0.80712/-0.64494
+ObjectTemplate.setRotation 30/0/0
+ObjectTemplate.addTemplate AIX_Mi24_flarelauncher_barrel
+ObjectTemplate.setPosition 0.99981/0.80712/-0.64494
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate AIX_Mi24_flarelauncher_barrel
+ObjectTemplate.setPosition 0.99981/0.80712/-0.64494
+ObjectTemplate.setRotation 150/0/0
+ObjectTemplate.addTemplate AIX_Mi24_flarelauncher_barrel
+ObjectTemplate.setPosition -0.99981/0.80712/-0.64494
+ObjectTemplate.setRotation -30/0/0
+ObjectTemplate.addTemplate AIX_Mi24_flarelauncher_barrel
+ObjectTemplate.setPosition -0.99981/0.80712/-0.64494
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate AIX_Mi24_flarelauncher_barrel
+ObjectTemplate.setPosition -0.99981/0.80712/-0.64494
+ObjectTemplate.setRotation -150/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AIX_Mi24_flarelauncher_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 10
+
+ObjectTemplate.create GenericProjectile AIX_Mi24_flarelauncher_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 38
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_flarelauncher_Projectile_Looping
+ObjectTemplate.addTemplate e_flare_decoy
+ObjectTemplate.addTemplate HeatObject_flare
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/3/0/0
+ObjectTemplate.material 38
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 10
+ObjectTemplate.maxTracerScaler 50
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 5
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 0
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_flarelauncher_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/flare_launcher_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_flarelauncher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_flarelauncher_Fire3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_flarelauncher_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_flarelauncher_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/out_of_flares.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_flarelauncher_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_flarelauncher_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/flare_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_flarelauncher_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_flarelauncher_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_flarelauncher_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_flarelauncher_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Bundle AIX_Mi24_flarelauncher_barrel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_flarelauncher_barrel_RotationRpm
+ObjectTemplate.addTemplate e_muzz_flaredispenser
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_flarelauncher_barrel_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_flarelauncher_Projectile_Looping
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+
+ObjectTemplate.create RotationalBundle AIX_Mi24_RotorHead1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_RotorHead1_RotationRpm
+ObjectTemplate.addTemplate AIX_Mi24_RotorHead2
+ObjectTemplate.setPosition 0/20/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-10/-9
+ObjectTemplate.setMaxRotation 0/10/9
+ObjectTemplate.setMaxSpeed 0/50/50
+ObjectTemplate.setAcceleration 0/-1000/1000
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_RotorHead1_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create RotationalBundle AIX_Mi24_RotorHead2
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_RotorHead2_RotationRpm
+ObjectTemplate.addTemplate AIX_Mi24_Rotor
+ObjectTemplate.setRotation 0/-86/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-10/-9
+ObjectTemplate.setMaxRotation 0/10/9
+ObjectTemplate.setMaxSpeed 0/50/50
+ObjectTemplate.setAcceleration 0/1000/-1000
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_RotorHead2_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Engine AIX_Mi24_Rotor
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WindAffector ---
+ObjectTemplate.createComponent WindAffector
+ObjectTemplate.windType RadialDir
+ObjectTemplate.windIsDynamic 1
+ObjectTemplate.windDirection 0/0/-1
+ObjectTemplate.windSpeed 20
+ObjectTemplate.windBlowTime -1
+ObjectTemplate.windFalloff 30
+ObjectTemplate.windRadialFalloff 20
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_Rotor_RotationRpm
+ObjectTemplate.addTemplate S_AIX_Mi24_Rotor_Idle
+ObjectTemplate.setPosition 0/-7.68678e-008/1.75853
+ObjectTemplate.addTemplate S_AIX_Mi24_Rotor_Rpm1
+ObjectTemplate.setPosition 0/1.78602/1.24192
+ObjectTemplate.addTemplate S_AIX_Mi24_Rotor_Rpm2
+ObjectTemplate.addTemplate S_AIX_Mi24_Rotor_Load
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/150
+ObjectTemplate.setMaxSpeed 0/0/1
+ObjectTemplate.setAcceleration 0/0/10
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 300
+ObjectTemplate.setDifferential 500
+ObjectTemplate.setGearUp 0.99
+ObjectTemplate.setGearDown 0.01
+ObjectTemplate.setGearChangeTime 0.1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.horizontalSpeedMagnifier 2.25
+ObjectTemplate.horizontalDampAngle 0.1
+ObjectTemplate.horizontalDampAngleFactor 0.001
+ObjectTemplate.defaultAngleOfAttack 2
+ObjectTemplate.maxAngleOfAttack 12
+ObjectTemplate.attackSpeed 10
+ObjectTemplate.decreaseAngleToZeroVerticalVel 0.5
+ObjectTemplate.dampHorizontalVel 5
+ObjectTemplate.dampHorizontalVelFactor -0.7
+ObjectTemplate.canReverse 0
+ObjectTemplate.audio.transformationRelativeRoot 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rotor_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rotor_Idle
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/aix_mi24/sounds/mi24_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 0
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/3/0.513514/1.29151/0/0.590734/1.17568/0/0.795367/1.0888/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/3/0.509652/0.816602/0/0.598456/0.84556/0/0.745174/0.996139/0/
+ObjectTemplate.position 0/-7.68678e-008/1.75853
+ObjectTemplate.minDistance 15
+ObjectTemplate.halfVolumeDistance 40
+ObjectTemplate.soundRadius 5
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rotor_Rpm1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/aix_mi24/sounds/jet_whine.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 0
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/3/0.498069/1.15251/0/0.617761/1.10039/0/0.745174/0.857143/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/3/0.498069/0.853282/0/0.602317/0.698842/0/0.752896/0.992278/0/
+ObjectTemplate.position 0/1.78602/1.24192
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 10
+ObjectTemplate.soundRadius 3
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rotor_Rpm2
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "sound/effects/helicopter/far/mi17_far.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/4/0.003/0.503/0/0.203/0.799/0/0.503/0.916/0/0.995/1/0/
+ObjectTemplate.minDistance 45
+ObjectTemplate.halfVolumeDistance 110
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rotor_Load
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Wing AIX_Mi24_WingL
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_WingL_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_WingL_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Wing AIX_Mi24_WingR
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_WingR_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_WingR_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Wing AIX_Mi24_Rudder
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_Rudder_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 5
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rudder_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Wing AIX_Mi24_BodyWing
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_BodyWing_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 5
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_BodyWing_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create GenericFireArm AIX_Mi24_Rockets
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bomb.tga
+ObjectTemplate.weaponHud.hudName "ARS 57"
+ObjectTemplate.weaponHud.guiIndex 280
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.addShowOnCamMode 2
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 280
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.addBarrelName AIX_Mi24_Rockets_Barrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 5
+ObjectTemplate.ammo.magSize 12
+ObjectTemplate.ammo.reloadTime 8
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.cameraRecoilSpeed 13
+ObjectTemplate.recoil.cameraRecoilSize 1
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 0.6
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+rem ---BeginComp:MultiFireArmTargetComp ---
+ObjectTemplate.createComponent MultiFireArmTargetComp
+ObjectTemplate.target.lockAngle 45
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate AHE_AH1Z_Rockets
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_Rockets_Fire1P
+ObjectTemplate.addTemplate S_AIX_Mi24_Rockets_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_AIX_Mi24_Rockets_Fire3P
+ObjectTemplate.addTemplate S_AIX_Mi24_Rockets_BoltClick
+ObjectTemplate.addTemplate S_AIX_Mi24_Rockets_TriggerClick
+ObjectTemplate.addTemplate S_AIX_Mi24_Rockets_SwitchFireRate
+ObjectTemplate.addTemplate S_AIX_Mi24_Rockets_Reload1P
+ObjectTemplate.addTemplate S_AIX_Mi24_Rockets_Reload3P
+ObjectTemplate.addTemplate S_AIX_Mi24_Rockets_Deploy1P
+ObjectTemplate.addTemplate S_AIX_Mi24_Rockets_Deploy3P
+ObjectTemplate.addTemplate S_AIX_Mi24_Rockets_Zoom
+ObjectTemplate.addTemplate AIX_Mi24_Rockets_Barrel
+ObjectTemplate.setPosition -2.77475/-1.1431/-0.12653
+ObjectTemplate.setRotation 1.2/0/0
+ObjectTemplate.addTemplate AIX_Mi24_Rockets_Barrel
+ObjectTemplate.setPosition 2.7019/-1.20471/-0.12653
+ObjectTemplate.setRotation -1.2/0/0
+ObjectTemplate.addTemplate AIX_Mi24_Rockets_Barrel
+ObjectTemplate.setPosition -2.82253/-1.29402/-0.12653
+ObjectTemplate.setRotation 1.2/0/0
+ObjectTemplate.addTemplate AIX_Mi24_Rockets_Barrel
+ObjectTemplate.setPosition 2.72743/-1.29949/-0.12653
+ObjectTemplate.setRotation -1.2/0/0
+ObjectTemplate.addTemplate AIX_Mi24_Rockets_Barrel
+ObjectTemplate.setPosition -2.70094/-1.20418/-0.12653
+ObjectTemplate.setRotation 1.2/0/0
+ObjectTemplate.addTemplate AIX_Mi24_Rockets_Barrel
+ObjectTemplate.setPosition 2.86392/-1.19595/-0.126356
+ObjectTemplate.setRotation -1.2/0/0
+ObjectTemplate.addTemplate AIX_Mi24_Rockets_Barrel
+ObjectTemplate.setPosition -2.84931/-1.20491/-0.12653
+ObjectTemplate.setRotation 1.2/0/0
+ObjectTemplate.addTemplate AIX_Mi24_Rockets_Barrel
+ObjectTemplate.setPosition 2.6883/-1.19908/-0.126727
+ObjectTemplate.setRotation -1.2/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AIX_Mi24_Rockets_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 100
+ObjectTemplate.itemIndex 1
+
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.create GenericProjectile AIX_Mi24_Rockets_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 55
+ObjectTemplate.detonation.explosionRadius 3
+ObjectTemplate.detonation.explosionForce 10
+ObjectTemplate.detonation.explosionDamage 200
+ObjectTemplate.detonation.explosionInnerConeRadius 25
+ObjectTemplate.detonation.endEffectTemplate e_exp_btr
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.geometry ars_57_rocket
+ObjectTemplate.gravityModifier 0.05
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 55
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_Rockets_Projectile_Looping
+ObjectTemplate.addTemplate e_dumbrocket_trail
+ObjectTemplate.setPosition 0/0/-0.8
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.material 55
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerSizeModifier 0
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 350
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rockets_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_havoc/sounds/missile_shoot.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.1/3/0/2/0.003/1.329/0.1/0.992/1.329/0.1/
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rockets_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rockets_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_havoc/sounds/missile_shoot.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0.0297319/0/0
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 20
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rockets_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rockets_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/land/geraav_gepard/sounds/vehicle_weapon_trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1.3
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rockets_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rockets_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/bomb_reload.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rockets_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rockets_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "common/sound/weapon_toggle_vehicle.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.3
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rockets_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rockets_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rockets_Projectile_Looping
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/rocket_engine_start_idle.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 4
+ObjectTemplate.halfVolumeDistance 10
+
+ObjectTemplate.create RotationalBundle AIX_Mi24_Rockets_Barrel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AIX_Mi24_Rockets_Barrel_RotationRpm
+ObjectTemplate.addTemplate e_muzz_rocketpod
+ObjectTemplate.setPosition 0/0/-2.06017
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_AIX_Mi24_Rockets_Barrel_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create EntryPoint AIX_Mi24_EntryPoint
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 4
+
+ObjectTemplate.create EntryPoint AIX_Mi24_EntryPoint_mid
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 4

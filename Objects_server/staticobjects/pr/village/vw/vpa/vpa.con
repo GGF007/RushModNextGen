@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh vpa
+CollisionManager.createTemplate vpa
+
+ObjectTemplate.create SimpleObject vpa
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh vpa
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry vpa
+
+include vpa.tweak

@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh stairs_v2
+CollisionManager.createTemplate stairs_v2
+
+ObjectTemplate.create DestroyableObject stairs_v2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh stairs_v2
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry stairs_v2
+
+include stairs_v2.tweak

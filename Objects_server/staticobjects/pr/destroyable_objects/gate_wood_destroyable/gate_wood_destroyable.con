@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh gate_wood_destroyable
+CollisionManager.createTemplate gate_wood_destroyable
+
+ObjectTemplate.create DestroyableObject gate_wood_destroyable
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh gate_wood_destroyable
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry gate_wood_destroyable
+
+include gate_wood_destroyable.tweak

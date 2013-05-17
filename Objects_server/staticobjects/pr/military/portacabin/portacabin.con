@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh portacabin
+CollisionManager.createTemplate portacabin
+
+ObjectTemplate.create destroyableObject portacabin
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh portacabin 
+ObjectTemplate.mapMaterial 0 Pentrable_Metal_thin 0
+ObjectTemplate.mapMaterial 1 Pentrable_Metal_thin 0
+ObjectTemplate.mapMaterial 2 concrete 0
+ObjectTemplate.mapMaterial 3 Stairs_concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry portacabin
+
+include portacabin.tweak

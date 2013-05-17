@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh aix_ka50_bottomrotor
+
+ObjectTemplate.create Rotor aix_ka50_bottomrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator KYSTERAMA:kyster
+ObjectTemplate.geometry aix_ka50_bottomrotor
+
+include aix_ka50_bottomrotor.tweak

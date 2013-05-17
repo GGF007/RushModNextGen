@@ -1,0 +1,19 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 12:52]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject afghan_box01
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.modifiedByUser "Edmund Fovargue"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry afghan_box01
+ObjectTemplate.setCollisionMesh afghan_box01
+ObjectTemplate.mapMaterial 0 wood 14
+ObjectTemplate.mapMaterial 1 Mud 1001
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

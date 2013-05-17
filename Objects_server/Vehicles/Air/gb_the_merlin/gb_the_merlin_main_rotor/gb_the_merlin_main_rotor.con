@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh gb_the_merlin_main_rotor
+CollisionManager.createTemplate gb_the_merlin_main_rotor
+
+ObjectTemplate.create Rotor gb_the_merlin_main_rotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ANB35:andrew
+ObjectTemplate.geometry gb_the_merlin_main_rotor
+ObjectTemplate.mapMaterial 0 rotor 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.collisionmesh gb_the_merlin_main_rotor
+
+include gb_the_merlin_main_rotor.tweak

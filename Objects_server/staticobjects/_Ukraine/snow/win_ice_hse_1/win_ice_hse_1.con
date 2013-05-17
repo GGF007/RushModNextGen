@@ -1,0 +1,17 @@
+GeometryTemplate.create StaticMesh win_ice_hse_1
+CollisionManager.createTemplate win_ice_hse_1
+
+ObjectTemplate.create SimpleObject win_ice_hse_1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh win_ice_hse_1
+ObjectTemplate.mapMaterial 0 Metal_solid 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.mapMaterial 2 concrete 0
+ObjectTemplate.mapMaterial 3 Metal_plate_thin 0
+ObjectTemplate.mapMaterial 4 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry win_ice_hse_1
+
+include win_ice_hse_1.tweak

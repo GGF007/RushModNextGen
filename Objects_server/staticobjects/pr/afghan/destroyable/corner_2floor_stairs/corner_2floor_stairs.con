@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh corner_2floor_stairs
+CollisionManager.createTemplate corner_2floor_stairs
+
+ObjectTemplate.create DestroyableObject corner_2floor_stairs
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh corner_2floor_stairs
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.mapMaterial 2 Wood_solid 0
+ObjectTemplate.mapMaterial 3 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry corner_2floor_stairs
+
+include corner_2floor_stairs.tweak

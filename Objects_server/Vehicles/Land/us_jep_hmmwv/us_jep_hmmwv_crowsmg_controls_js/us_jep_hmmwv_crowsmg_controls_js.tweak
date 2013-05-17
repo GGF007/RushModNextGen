@@ -1,0 +1,38 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe RotationalBundle us_jep_hmmwv_crowsmg_controls_js
+ObjectTemplate.creator STUDIO:J-MAR
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:Ik ---
+ObjectTemplate.createComponent Ik
+ObjectTemplate.ik.positionLeft -0.361835/-0.249789/-0.189969
+ObjectTemplate.ik.rotationLeft -91.7819/-82.4384/-86.6862
+ObjectTemplate.ik.positionRight 0.0174122/0.0544465/-0.0937635
+ObjectTemplate.ik.rotationRight -94.8511/17.1308/106.905
+ObjectTemplate.ik.poleVectorRight 0.193044/-0.0457326/0.074864
+rem ---EndComp ---
+ObjectTemplate.geometry us_jep_hmmwv_crowsmg_controls_js
+ObjectTemplate.setCollisionMesh us_jep_hmmwv_crowsmg_controls_js
+ObjectTemplate.mapMaterial 0 Armor_1_metal_plating1 26
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_us_jep_hmmwv_crowsmg_controls_js_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-10/-10
+ObjectTemplate.setMaxRotation 0/10/10
+ObjectTemplate.setMaxSpeed 0/90/90
+ObjectTemplate.setAcceleration 0/-150/-150
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.restoreRotationOnExit 1
+
+ObjectTemplate.activeSafe Sound S_us_jep_hmmwv_crowsmg_controls_js_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+

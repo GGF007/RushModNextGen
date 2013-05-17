@@ -1,0 +1,17 @@
+GeometryTemplate.create StaticMesh win_checkpoint
+CollisionManager.createTemplate win_checkpoint
+
+ObjectTemplate.create SimpleObject win_checkpoint
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh win_checkpoint
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 2 Penetrable_Wood 0
+ObjectTemplate.mapMaterial 3 Stairs_concrete 0
+ObjectTemplate.mapMaterial 4 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry win_checkpoint
+
+include win_checkpoint.tweak

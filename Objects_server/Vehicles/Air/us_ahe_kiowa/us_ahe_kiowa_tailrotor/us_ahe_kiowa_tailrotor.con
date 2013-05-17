@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh us_ahe_kiowa_tailrotor
+
+ObjectTemplate.create Rotor us_ahe_kiowa_tailrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHILSCH-Z4KV58U:Phil
+ObjectTemplate.geometry us_ahe_kiowa_tailrotor
+
+include us_ahe_kiowa_tailrotor.tweak

@@ -1,0 +1,81 @@
+GeometryTemplate.create BundledMesh sa341h_gazelle
+CollisionManager.createTemplate sa341h_gazelle
+
+ObjectTemplate.create PlayerControlObject sa341h_gazelle
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator FABIAN-PC:Fabian
+ObjectTemplate.collisionMesh sa341h_gazelle
+ObjectTemplate.mapMaterial 0 helicopter_armour 0
+ObjectTemplate.mapMaterial 1 Bulletproof_glass 0
+ObjectTemplate.mapMaterial 2 landingrail 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry sa341h_gazelle
+ObjectTemplate.addTemplate sa341h_gazelle_anlgsel
+ObjectTemplate.setPosition 0/0.1336/1.8609
+ObjectTemplate.addTemplate sa341h_gazelle_dampfer_l_01
+ObjectTemplate.setPosition -1.2895/-1.1714/2.4312
+ObjectTemplate.addTemplate sa341h_gazelle_dampfer_l_02
+ObjectTemplate.setPosition -1.2895/-1.1694/-1.6234
+ObjectTemplate.addTemplate sa341h_gazelle_dampfer_r_01
+ObjectTemplate.setPosition 1.2604/-1.1714/2.4312
+ObjectTemplate.addTemplate sa341h_gazelle_dampfer_r_02
+ObjectTemplate.setPosition 1.2604/-1.1694/-1.6234
+ObjectTemplate.addTemplate sa341h_gazelle_windows
+
+ObjectTemplate.create Bundle sa341h_gazelle_anlgsel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate sa341h_gazelle_back_doors
+ObjectTemplate.setPosition 0/-0.0041/-0.9565
+ObjectTemplate.addTemplate sa341h_gazelle_Box01
+ObjectTemplate.setPosition 0/-0.7407/-1.5662
+ObjectTemplate.addTemplate sa341h_gazelle_Box34
+ObjectTemplate.setPosition 0/-0.7407/-1.5662
+
+ObjectTemplate.create SimpleObject sa341h_gazelle_back_doors
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create SimpleObject sa341h_gazelle_Box01
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create SimpleObject sa341h_gazelle_Box34
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Spring sa341h_gazelle_dampfer_l_01
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create Spring sa341h_gazelle_dampfer_l_02
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create Spring sa341h_gazelle_dampfer_r_01
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Spring sa341h_gazelle_dampfer_r_02
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create SimpleObject sa341h_gazelle_windows
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+include sa341h_gazelle.tweak

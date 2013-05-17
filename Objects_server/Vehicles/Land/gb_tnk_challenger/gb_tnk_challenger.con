@@ -1,0 +1,210 @@
+GeometryTemplate.create BundledMesh gb_tnk_challenger
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate gb_tnk_challenger
+
+ObjectTemplate.create PlayerControlObject gb_tnk_challenger
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAREDSPC:Jared
+ObjectTemplate.collisionMesh gb_tnk_challenger
+ObjectTemplate.mapMaterial 0 Armor_5_tank_front 0
+ObjectTemplate.mapMaterial 1 Armor_3_tank_rear_top 0
+ObjectTemplate.mapMaterial 2 USTNK_M1A2_Armor_4_tank_sides 0
+ObjectTemplate.mapMaterial 3 penetrable_glass 0
+ObjectTemplate.mapMaterial 4 Tracks 0
+ObjectTemplate.mapMaterial 5 Challenger_Penetrable_Cloth 0
+ObjectTemplate.mapMaterial 6 wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry gb_tnk_challenger
+ObjectTemplate.addTemplate gb_tnk_challenger_hudPass
+ObjectTemplate.setPosition 0/0.1/0
+ObjectTemplate.addTemplate gb_tnk_challenger_turret
+ObjectTemplate.setPosition 0.0074/1.5441/0.8816
+ObjectTemplate.addTemplate gb_tnk_challenger_zmotor
+ObjectTemplate.setPosition 0/0.3636/-2.7900
+
+ObjectTemplate.create SimpleObject gb_tnk_challenger_hudPass
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create RotationalBundle gb_tnk_challenger_turret
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate gb_tnk_challenger_Barrel_Base
+ObjectTemplate.setPosition -0.0042/0.5100/1.4038
+ObjectTemplate.addTemplate gb_tnk_challenger_MGCupolaBase
+ObjectTemplate.setPosition -0.0074/0.6757/-0.7787
+
+ObjectTemplate.create RotationalBundle gb_tnk_challenger_Barrel_Base
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate gb_tnk_challenger_barrel
+ObjectTemplate.setPosition 0.0047/-0.3457/2.8939
+
+ObjectTemplate.create GenericFireArm gb_tnk_challenger_barrel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create PlayerControlObject gb_tnk_challenger_MGCupolaBase
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create Engine gb_tnk_challenger_zmotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate gb_tnk_challenger_LDriveWheel
+ObjectTemplate.setPosition -1.6416/0.3/0
+ObjectTemplate.addTemplate gb_tnk_challenger_Lwheel_01
+ObjectTemplate.setPosition -1.5899/0.3/6.5212
+ObjectTemplate.addTemplate gb_tnk_challenger_Lwheel_02
+ObjectTemplate.setPosition -1.4124/-0.3240/5.6464
+ObjectTemplate.addTemplate gb_tnk_challenger_Lwheel_03
+ObjectTemplate.setPosition -1.4123/-0.3240/4.7180
+ObjectTemplate.addTemplate gb_tnk_challenger_Lwheel_04
+ObjectTemplate.setPosition -1.4123/-0.3240/3.8564
+ObjectTemplate.addTemplate gb_tnk_challenger_Lwheel_05
+ObjectTemplate.setPosition -1.4123/-0.3240/2.8160
+ObjectTemplate.addTemplate gb_tnk_challenger_Lwheel_06
+ObjectTemplate.setPosition -1.4123/-0.3240/1.8955
+ObjectTemplate.addTemplate gb_tnk_challenger_Lwheel_07
+ObjectTemplate.setPosition -1.4123/-0.3240/0.8943
+ObjectTemplate.addTemplate gb_tnk_challenger_RDriveWheel
+ObjectTemplate.setPosition 1.6417/0.3/0
+ObjectTemplate.addTemplate gb_tnk_challenger_Rwheel_01
+ObjectTemplate.setPosition 1.5898/0.3/6.5212
+ObjectTemplate.addTemplate gb_tnk_challenger_Rwheel_02
+ObjectTemplate.setPosition 1.4124/-0.3240/5.6464
+ObjectTemplate.addTemplate gb_tnk_challenger_Rwheel_03
+ObjectTemplate.setPosition 1.4124/-0.3240/4.7180
+ObjectTemplate.addTemplate gb_tnk_challenger_Rwheel_04
+ObjectTemplate.setPosition 1.4124/-0.3240/3.8564
+ObjectTemplate.addTemplate gb_tnk_challenger_Rwheel_05
+ObjectTemplate.setPosition 1.4124/-0.3240/2.8160
+ObjectTemplate.addTemplate gb_tnk_challenger_Rwheel_06
+ObjectTemplate.setPosition 1.4124/-0.3240/1.8955
+ObjectTemplate.addTemplate gb_tnk_challenger_Rwheel_07
+ObjectTemplate.setPosition 1.4124/-0.3240/0.8943
+
+ObjectTemplate.create RotationalBundle gb_tnk_challenger_LDriveWheel
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle gb_tnk_challenger_Lwheel_01
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Spring gb_tnk_challenger_Lwheel_02
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring gb_tnk_challenger_Lwheel_03
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring gb_tnk_challenger_Lwheel_04
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create Spring gb_tnk_challenger_Lwheel_05
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring gb_tnk_challenger_Lwheel_06
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Spring gb_tnk_challenger_Lwheel_07
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create RotationalBundle gb_tnk_challenger_RDriveWheel
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create RotationalBundle gb_tnk_challenger_Rwheel_01
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring gb_tnk_challenger_Rwheel_02
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring gb_tnk_challenger_Rwheel_03
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring gb_tnk_challenger_Rwheel_04
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring gb_tnk_challenger_Rwheel_05
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring gb_tnk_challenger_Rwheel_06
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create Spring gb_tnk_challenger_Rwheel_07
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+include gb_tnk_challenger.tweak

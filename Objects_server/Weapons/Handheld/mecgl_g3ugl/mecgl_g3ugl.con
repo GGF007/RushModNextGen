@@ -1,0 +1,6 @@
+ObjectTemplate.create GenericFirearm mecgl_g3ugl
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator INTEL:Alastair
+ObjectTemplate.geometry mecrif_g3ugl
+
+include mecgl_g3ugl.tweak

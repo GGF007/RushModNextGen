@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh afghan_roof4m01f
+CollisionManager.createTemplate afghan_roof4m01f
+
+ObjectTemplate.create SimpleObject afghan_roof4m01f
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh afghan_roof4m01f
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry afghan_roof4m01f
+
+include afghan_roof4m01f.tweak

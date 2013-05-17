@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh gb_comms_prop_bowman
+CollisionManager.createTemplate gb_comms_prop_bowman
+
+ObjectTemplate.create DestroyableObject gb_comms_prop_bowman
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh gb_comms_prop_bowman
+ObjectTemplate.mapMaterial 0 metal_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry gb_comms_prop_bowman
+
+include gb_comms_prop_bowman.tweak

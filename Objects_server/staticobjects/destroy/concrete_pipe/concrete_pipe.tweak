@@ -1,0 +1,22 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.setSubGeometryLodDistance 0 0 20
+GeometryTemplate.setSubGeometryLodDistance 0 1 55
+GeometryTemplate.setSubGeometryLodDistance 0 2 140
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject concrete_pipe
+ObjectTemplate.creator destructo
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry concrete_pipe
+ObjectTemplate.setCollisionMesh concrete_pipe
+ObjectTemplate.mapMaterial 0 rock 12
+ObjectTemplate.mapMaterial 1 rock 12
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

@@ -1,0 +1,11 @@
+GeometryTemplate.create BundledMesh p_rock_s
+
+ObjectTemplate.create Particle p_rock_s
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-3:dsu
+ObjectTemplate.mapMaterial 0 spline_blood 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_rock_s
+
+include p_rock_s.tweak

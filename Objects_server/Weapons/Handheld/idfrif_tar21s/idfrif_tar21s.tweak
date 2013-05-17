@@ -1,0 +1,298 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/12/1 6:11]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm idfrif_tar21s
+ObjectTemplate.creator JULIO:julioce
+ObjectTemplate.modifiedByUser "Boserup"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 10
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\Select\idfrif_tar21s.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Select\idfrif_tar21s.tga
+ObjectTemplate.weaponHud.hudName "TAR-21S"
+ObjectTemplate.weaponHud.guiIndex 4
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 25
+ObjectTemplate.weaponHud.minVisualDeviation 5
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 4
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+rem ---ObjectTemplate.createComponent PostProcess---
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 900
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.reloadTime 3.5
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+ObjectTemplate.createComponent SoldierBasedRecoilComp
+ObjectTemplate.recoil.hasRecoilForce 1
+ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/0.9/1/0
+ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.6/0.8/0
+ObjectTemplate.recoil.zoomModifier 0.7
+ObjectTemplate.recoil.goBackOnRecoil 1
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.setFireDev 1 0.1 0.05
+ObjectTemplate.deviation.minDev 0.4
+ObjectTemplate.deviation.setTurnDev 1.2 0.2 0.2 0.1
+ObjectTemplate.deviation.setSpeedDev 1 0.2 0.2 0.1
+ObjectTemplate.deviation.setMiscDev 2.3 1.5 0.05
+ObjectTemplate.deviation.devModStand 2.0
+ObjectTemplate.deviation.devModCrouch 1.5
+ObjectTemplate.deviation.devModLie 1.0
+ObjectTemplate.deviation.devModZoom 0.6
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.useShiftAnimation 1
+ObjectTemplate.animation.shiftDelay .05
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.zoomDelay 0.3
+ObjectTemplate.zoom.zoomLod 1
+ObjectTemplate.zoom.addZoomFactor 0
+ObjectTemplate.zoom.addZoomFactor 0.7
+ObjectTemplate.zoom.mouseSpeedMod 0.6
+ObjectTemplate.zoom.disableMuzzleWhenZoomed 1
+rem ---EndComp ---
+ObjectTemplate.geometry idfrif_tar21s
+ObjectTemplate.setCollisionMesh idfrif_tar21s
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.mapMaterial 1 alphascope_envmap 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate usrif_m16a2
+rem -------------------------------------
+ObjectTemplate.addTemplate S_idfrif_tar21s_Fire1P
+ObjectTemplate.addTemplate S_idfrif_tar21s_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_idfrif_tar21s_Fire3P
+ObjectTemplate.setPosition 0/0.00983/0.42529
+ObjectTemplate.addTemplate S_idfrif_tar21s_BoltClick
+ObjectTemplate.addTemplate S_idfrif_tar21s_TriggerClick
+ObjectTemplate.addTemplate S_idfrif_tar21s_SwitchFireRate
+ObjectTemplate.addTemplate S_idfrif_tar21s_Reload1P
+ObjectTemplate.addTemplate S_idfrif_tar21s_Reload3P
+ObjectTemplate.setPosition 0/-0.0576745/-0.101432
+ObjectTemplate.addTemplate S_idfrif_tar21s_Deploy1P
+ObjectTemplate.addTemplate S_idfrif_tar21s_Deploy3P
+ObjectTemplate.addTemplate S_idfrif_tar21s_Zoom
+ObjectTemplate.addTemplate e_dist_tar21
+ObjectTemplate.setPosition 0/0.00983/0.32529
+ObjectTemplate.addTemplate e_muzz_type95
+ObjectTemplate.setPosition 0/0.00983/0.32529
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0/0.01029/-0.109191
+rem -------------------------------------
+ObjectTemplate.animationSystem1P objects/weapons/handheld/idfrif_tar21s/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P objects/weapons/handheld/idfrif_tar21s/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate idfrif_tar21s_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 450
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 1.2
+
+ObjectTemplate.create GenericProjectile idfrif_tar21s_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+rem ---EndComp ---
+ObjectTemplate.drag 8
+ObjectTemplate.mass 1000
+ObjectTemplate.gravityModifier 0.4
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 38
+rem -------------------------------------
+ObjectTemplate.addTemplate S_idfrif_tar21s_Projectile_Looping
+ObjectTemplate.addTemplate e_bullet_trail
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.material 38
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 20
+ObjectTemplate.maxTracerScaler 30
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 0.25
+ObjectTemplate.tracerTemplate p_tracer2_eu
+ObjectTemplate.tracerInterval 3
+ObjectTemplate.tracerConvergeDistance -1
+ObjectTemplate.damageMandownSoldiers 1
+ObjectTemplate.minDamage 5
+ObjectTemplate.damage 25
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 800
+
+ObjectTemplate.activeSafe Sound S_idfrif_tar21s_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/idfrif_tar21s/sounds/tar21_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.982/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_idfrif_tar21s_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/idfrif_tar21s/sounds/tar21_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0.00538/0.03275/0.62134
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 12
+
+ObjectTemplate.activeSafe Sound S_idfrif_tar21s_BoltClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m16a4/sounds/m16_boltclick.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_idfrif_tar21s_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_idfrif_tar21s_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_g36c/sounds/g36c_fire_rate_switch.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_idfrif_tar21s_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/idfrif_tar21s/sounds/tar21_reload1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_idfrif_tar21s_Reload3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/idfrif_tar21s/sounds/tar21_reload3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.66
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0576745/-0.101432
+ObjectTemplate.minDistance 0.8
+ObjectTemplate.halfVolumeDistance 1.6
+
+ObjectTemplate.activeSafe Sound S_idfrif_tar21s_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/idfrif_tar21s/sounds/tar21_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_idfrif_tar21s_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_idfrif_tar21s_Zoom
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/weapons/Zoom.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

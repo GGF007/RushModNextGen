@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh afghan_shelves02
+CollisionManager.createTemplate afghan_shelves02
+
+ObjectTemplate.create DestroyableObject afghan_shelves02
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh afghan_shelves02
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry afghan_shelves02
+
+include afghan_shelves02.tweak

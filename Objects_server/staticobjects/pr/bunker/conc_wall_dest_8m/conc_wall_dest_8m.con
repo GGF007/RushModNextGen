@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh conc_wall_dest_8m
+CollisionManager.createTemplate conc_wall_dest_8m
+
+ObjectTemplate.create DestroyableObject conc_wall_dest_8m
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh conc_wall_dest_8m
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry conc_wall_dest_8m
+ObjectTemplate.anchor 0/-0.001/0
+
+include conc_wall_dest_8m.tweak

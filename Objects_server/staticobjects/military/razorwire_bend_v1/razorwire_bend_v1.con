@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh razorwire_bend_v1
+CollisionManager.createTemplate razorwire_bend_v1
+
+ObjectTemplate.create SimpleObject razorwire_bend_v1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh razorwire_bend_v1
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.mapMaterial 1 Death_material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry razorwire_bend_v1
+
+include razorwire_bend_v1.tweak

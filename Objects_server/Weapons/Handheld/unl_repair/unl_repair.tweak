@@ -1,0 +1,185 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/3/24 6:13]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.hasAdditiveAlpha 1
+ObjectTemplate.activeSafe GenericFireArm unl_repair
+ObjectTemplate.creator TLO-1:tlo
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo HandFireArmsInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\Select\unl_repair.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Select\unl_repair.tga
+ObjectTemplate.weaponHud.specialAbilityIcon Ingame\Weapons\Icons\Hud\SpecialKitIcons\Unl_Repair.tga
+ObjectTemplate.weaponHud.hudName "WEAPON_NAME_wrench"
+ObjectTemplate.weaponHud.guiIndex 56
+ObjectTemplate.weaponHud.altGuiIndex 56
+ObjectTemplate.weaponHud.hasMag 0
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 56
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+rem ---ObjectTemplate.createComponent PostProcess---
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 600
+ObjectTemplate.fire.addFireRate 2
+rem ---EndComp ---
+rem ---BeginComp:ReplenishingAmmoComp ---
+ObjectTemplate.createComponent ReplenishingAmmoComp
+ObjectTemplate.ammo.magSize -1
+ObjectTemplate.ammo.changeMagAt 1
+ObjectTemplate.ammo.minimumTimeUntilReload 0.5
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+ObjectTemplate.ammo.abilityDrain 0.05
+ObjectTemplate.ammo.abilityRadius 2.5
+ObjectTemplate.ammo.abilityStrength 2.5
+ObjectTemplate.ammo.abilityCost 0.3
+ObjectTemplate.ammo.abilityMaterial 84
+ObjectTemplate.ammo.replenishingType RTHeal
+ObjectTemplate.ammo.onlyActiveWhileFiring 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.noisy 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.loopingFire 1
+rem ---EndComp ---
+ObjectTemplate.geometry UNL_Repair
+ObjectTemplate.setCollisionMesh UNL_Repair
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate Unl_Repair
+rem -------------------------------------
+ObjectTemplate.addTemplate S_unl_repair_Fire1P
+ObjectTemplate.addTemplate S_unl_repair_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_unl_repair_Fire3P
+ObjectTemplate.addTemplate S_unl_repair_BoltClick
+ObjectTemplate.addTemplate S_unl_repair_TriggerClick
+ObjectTemplate.addTemplate S_unl_repair_SwitchFireRate
+ObjectTemplate.addTemplate S_unl_repair_Reload1P
+ObjectTemplate.addTemplate S_unl_repair_Reload3P
+ObjectTemplate.addTemplate S_unl_repair_Deploy1P
+ObjectTemplate.addTemplate S_unl_repair_Deploy3P
+ObjectTemplate.addTemplate S_unl_repair_Zoom
+ObjectTemplate.addTemplate e_RepairTool
+ObjectTemplate.setPosition 0/0.0506988/0.0746145
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/UNL_Repair/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/UNL_Repair/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate unl_repair_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 20
+ObjectTemplate.itemIndex 6
+ObjectTemplate.delayToUse 0.958
+
+ObjectTemplate.create GenericProjectile unl_repair_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 124
+rem -------------------------------------
+ObjectTemplate.addTemplate S_unl_repair_Projectile_Looping
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/0.067/0/0
+ObjectTemplate.material 124
+ObjectTemplate.damage 0
+
+ObjectTemplate.activeSafe Sound S_unl_repair_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "sound/weapons/reload_deploy/repairgun_fire_1d.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_unl_repair_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_unl_repair_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "sound/weapons/reload_deploy/repairgun_fire_3d.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 3
+ObjectTemplate.soundRadius 1
+
+ObjectTemplate.activeSafe Sound S_unl_repair_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_unl_repair_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_unl_repair_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_unl_repair_Reload1P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_unl_repair_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_unl_repair_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "sound/weapons/reload_deploy/repairgun_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_unl_repair_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "sound/weapons/reload_deploy/repairgun_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.8
+ObjectTemplate.halfVolumeDistance 1.5
+
+ObjectTemplate.activeSafe Sound S_unl_repair_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+

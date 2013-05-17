@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh russp_soldier5
+
+ObjectTemplate.create Soldier russp_soldier5
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MISHKIN:Steve
+ObjectTemplate.geometry russp_soldier5
+
+include russp_soldier5.tweak

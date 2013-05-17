@@ -1,0 +1,144 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 10:59]
+ObjectTemplate.activeSafe EffectBundle e_vexp_mi17
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_vexp_mi17_Start
+ObjectTemplate.addTemplate em_vexp_mi17_tube
+ObjectTemplate.setPosition 0/1.897/-1.12
+ObjectTemplate.addTemplate em_vexp_mi17_weapon
+ObjectTemplate.setPosition 3.247/-0.178/2.004
+ObjectTemplate.addTemplate em_vexp_mi17_rotor1
+ObjectTemplate.setPosition 2.36369/2.499/-0.95
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate em_vexp_mi17_rotor2
+ObjectTemplate.setPosition 3.90373/3.769/-0.317269
+ObjectTemplate.setRotation -45/0/0
+ObjectTemplate.addTemplate em_vexp_mi17_rotor3
+ObjectTemplate.setPosition 2.76357/2.532/-0.22089
+ObjectTemplate.addTemplate em_vexp_mi17_rotor4
+ObjectTemplate.setPosition 0.924/2.573/-2.772
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/15/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_vexp_mi17_Start
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Emitter em_vexp_mi17_tube
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_mi17_tube
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/2/-4/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/8/12/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-2/-5/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/0.5/1.5/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-2/2/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_mi17_weapon
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_mi17_weapon
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/2/-4/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/8/12/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-2/-5/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/0.5/1.5/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-2/2/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_mi17_rotor1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_havoc_rotor2
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-4/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/8/14/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-3/0/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/-2/-6/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/-10/20/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/2/8/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_mi17_rotor2
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_havoc_rotor2
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/4/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/8/12/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/3/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/4/8/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/10/-20/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-2/2/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_mi17_rotor3
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_havoc_rotor2
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/3/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/10/14/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-3/0/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/4/8/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/-15/15/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/0/4/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_mi17_rotor4
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_havoc_rotor2
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-4/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/8/14/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/3/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/-2/-6/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/10/-10/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-2/2/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+

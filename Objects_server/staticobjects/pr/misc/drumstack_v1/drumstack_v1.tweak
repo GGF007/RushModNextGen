@@ -1,0 +1,45 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+GeometryTemplate.setSubGeometryLodDistance 0 0 20
+GeometryTemplate.setSubGeometryLodDistance 0 1 45
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe DestroyableObject drumstack_v1
+ObjectTemplate.creator MB:mbortolino
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 300
+ObjectTemplate.armor.hitPoints 300
+ObjectTemplate.armor.defaultMaterial 71
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.explosionForce 10
+ObjectTemplate.armor.explosionDamage 300
+ObjectTemplate.armor.explosionRadius 10
+ObjectTemplate.armor.explosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints -1
+ObjectTemplate.armor.timeToStayAsWreck -1
+ObjectTemplate.armor.timeToStayAfterDestroyed -1
+rem ObjectTemplate.armor.wreckDelay 99999
+ObjectTemplate.armor.canBeDestroyed 0
+ObjectTemplate.armor.showDamageAsDirt 500
+ObjectTemplate.armor.addArmorEffect 1 e_dstate_bridge_d2 -0.57847/3.20194/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_dAmb_fireFlys -0.57847/1.18698/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_vexp_armoredcar -0.57847/1.18698/0 0/0/0 
+ObjectTemplate.armor.addArmorEffect 1 e_exp_fueltank -0.57847/1.18698/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_exp_fueltank_wreckfire -0.57847/1.18698/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_exp_dist_barrelyello 0/0/0 0/0/0
+rem ---EndComp ---
+ObjectTemplate.geometry drumstack_v1
+ObjectTemplate.setCollisionMesh drumstack_v1
+ObjectTemplate.mapMaterial 0 metal_thin 111
+ObjectTemplate.mapMaterial 1 Wood_solid 15
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

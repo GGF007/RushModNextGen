@@ -1,0 +1,11 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+ObjectTemplate.activeSafe SimpleObject wn_chertree1_col
+ObjectTemplate.creator MONDWIND:Miki
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setCollisionMesh wn_chertree1
+ObjectTemplate.mapMaterial 0 wood_col 93
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

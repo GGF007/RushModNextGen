@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh hmg_nsvt
+
+ObjectTemplate.create GenericFireArm hmg_nsvt
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JML:jmlasante
+ObjectTemplate.geometry hmg_nsvt
+
+include hmg_nsvt.tweak

@@ -1,0 +1,26 @@
+GeometryTemplate.create BundledMesh cf_tnk_leo2a6_MGCupola
+
+ObjectTemplate.create PlayerControlObject cf_tnk_leo2a6_MGCupola
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MEDION3GHZ:Fabian
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry cf_tnk_leo2a6_MGCupola
+ObjectTemplate.addTemplate cf_tnk_leo2a6_MGCupola_rolle
+
+ObjectTemplate.create RotationalBundle cf_tnk_leo2a6_MGCupola_rolle
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate cf_tnk_leo2a6_MGCupola_xdreh
+ObjectTemplate.setPosition 0.0079/0.0427/0.3312
+
+ObjectTemplate.create RotationalBundle cf_tnk_leo2a6_MGCupola_xdreh
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate cf_tnk_leo2a6_MGCupola_ydreh
+ObjectTemplate.setPosition -0.0022/0.0531/0.1665
+
+ObjectTemplate.create RotationalBundle cf_tnk_leo2a6_MGCupola_ydreh
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+include cf_tnk_leo2a6_MGCupola.tweak

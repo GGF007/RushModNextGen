@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh walkway
+CollisionManager.createTemplate walkway
+
+ObjectTemplate.create SimpleObject walkway
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main-Josh
+ObjectTemplate.collisionMesh walkway
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry walkway
+
+include walkway.tweak

@@ -1,0 +1,33 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/8 14:3]
+GeometryTemplate.maxSkip3pLods 0
+GeometryTemplate.setSubGeometryLodDistance 0 0 40
+GeometryTemplate.setSubGeometryLodDistance 0 1 65
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe DestroyableObject woodencrate_3m
+ObjectTemplate.creator OCA-1:oca
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 350
+ObjectTemplate.armor.hitPoints 350
+ObjectTemplate.armor.defaultMaterial 72
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.wreckDelay 0.05
+ObjectTemplate.armor.wreckHitPoints 0
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_woodencrate_small 0/0.84804/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_woodencrate_small 0.78840/-0.68246/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_woodencrate_small -0.83269/-0.68246/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_fence_sound 0/1/0 0/0/0
+rem ---EndComp ---
+ObjectTemplate.geometry woodencrate_3m
+ObjectTemplate.setCollisionMesh woodenCrate_3m
+ObjectTemplate.mapMaterial 0 Wood_thin 14
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh

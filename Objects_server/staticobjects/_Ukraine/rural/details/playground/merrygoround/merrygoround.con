@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh merrygoround
+CollisionManager.createTemplate merrygoround
+
+ObjectTemplate.create SimpleObject merrygoround
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ILLICITFILMS-PC:IllicitFilms
+ObjectTemplate.collisionMesh merrygoround
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry merrygoround
+
+include merrygoround.tweak

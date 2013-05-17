@@ -1,0 +1,3 @@
+ObjectTemplate.active javelin_missile_dummy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry javelin_missile

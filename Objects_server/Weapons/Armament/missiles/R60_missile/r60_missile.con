@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh r60_missile
+CollisionManager.createTemplate r60_missile
+
+ObjectTemplate.create GenericProjectile r60_missile
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh r60_missile
+ObjectTemplate.mapMaterial 0 Metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry r60_missile
+
+include r60_missile.tweak

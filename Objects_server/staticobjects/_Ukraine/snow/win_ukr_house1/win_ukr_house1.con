@@ -1,0 +1,18 @@
+GeometryTemplate.create StaticMesh win_ukr_house1
+CollisionManager.createTemplate win_ukr_house1
+
+ObjectTemplate.create SimpleObject win_ukr_house1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh win_ukr_house1
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.mapMaterial 1 rock 0
+ObjectTemplate.mapMaterial 2 Wood_solid 0
+ObjectTemplate.mapMaterial 3 rock 0
+ObjectTemplate.mapMaterial 4 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 5 Glass_common 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry win_ukr_house1
+
+include win_ukr_house1.tweak

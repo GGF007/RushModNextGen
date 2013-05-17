@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh maindoors
+CollisionManager.createTemplate maindoors
+
+ObjectTemplate.create DestroyableObject maindoors
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BIGWOOD:Kuri
+ObjectTemplate.collisionMesh maindoors
+ObjectTemplate.mapMaterial 0 Pentrable_Metal_thin 0
+ObjectTemplate.mapMaterial 1 Pentrable_Metal_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry maindoors
+
+include maindoors.tweak

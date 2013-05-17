@@ -1,0 +1,5 @@
+ObjectTemplate.create EffectBundle e_mexp_claymore_snow
+ObjectTemplate.createdInEditor 1
+
+include e_mexp_claymore_snow.tweak
+ 

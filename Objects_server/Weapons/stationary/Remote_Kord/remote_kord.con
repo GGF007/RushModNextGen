@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh remote_kord
+
+ObjectTemplate.create GenericFireArm remote_kord
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.geometry remote_kord
+
+include remote_kord.tweak

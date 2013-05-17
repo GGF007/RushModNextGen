@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh cliffs
+CollisionManager.createTemplate cliffs
+
+ObjectTemplate.create SimpleObject cliffs
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator GUEST:Owner
+ObjectTemplate.collisionMesh cliffs
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry cliffs
+
+include cliffs.tweak

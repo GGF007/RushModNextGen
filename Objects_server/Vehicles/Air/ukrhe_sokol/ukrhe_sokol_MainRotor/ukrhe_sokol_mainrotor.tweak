@@ -1,0 +1,26 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.setSpecularStaticGloss 0 0 0 10
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+ObjectTemplate.activeSafe Rotor ukrhe_sokol_mainrotor
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.modifiedByUser "Dan"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry ukrhe_sokol_mainrotor
+ObjectTemplate.setCollisionMesh ukrhe_sokol_mainrotor
+ObjectTemplate.mapMaterial 0 rotor 31
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate ade_heliDraft
+rem -------------------------------------
+ObjectTemplate.changeLodAt 0.07
+ObjectTemplate.tolerance 0.00625
+ObjectTemplate.rotationSpeedMod 0.23
+ObjectTemplate.rotationSpeedModBlur 0.1
+ObjectTemplate.rotationAxle 0
+ObjectTemplate.engineName ukrhe_sokol_Rotor
+

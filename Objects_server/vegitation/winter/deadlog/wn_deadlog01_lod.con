@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh wn_deadlog01_lod
+
+ObjectTemplate.create SimpleObject wn_deadlog01_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.geometry wn_deadlog01_lod
+
+include wn_deadlog01_lod.tweak

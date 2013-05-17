@@ -1,0 +1,208 @@
+GeometryTemplate.create BundledMesh ukrtnk_oplot
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate ukrtnk_oplot
+
+ObjectTemplate.create PlayerControlObject ukrtnk_oplot
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh ukrtnk_oplot
+ObjectTemplate.mapMaterial 0 Armor_5_tank_front 0
+ObjectTemplate.mapMaterial 1 Armor_3_tank_rear_top 0
+ObjectTemplate.mapMaterial 2 Armor_4_tank_sides 0
+ObjectTemplate.mapMaterial 3 Tank_tracks 0
+ObjectTemplate.mapMaterial 4 Wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry ukrtnk_oplot
+ObjectTemplate.addTemplate ukrtnk_oplot_Turret
+ObjectTemplate.setPosition 0/0.3939/-0.1244
+ObjectTemplate.addTemplate ukrtnk_oplot_zMotor
+
+ObjectTemplate.create RotationalBundle ukrtnk_oplot_Turret
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate ukrtnk_oplot_Barrel_Base
+ObjectTemplate.setPosition -0.0038/0.3688/1.2351
+ObjectTemplate.addTemplate ukrtnk_oplot_Cupola
+ObjectTemplate.setPosition 0.6314/0.7644/-0.3614
+ObjectTemplate.addTemplate ukrtnk_oplot_hud
+ObjectTemplate.setPosition -0.0038/0.3688/1.2351
+ObjectTemplate.setRotation 0/5.0000/0
+
+ObjectTemplate.create RotationalBundle ukrtnk_oplot_Barrel_Base
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate ukrtnk_oplot_Barrel
+ObjectTemplate.setPosition 0.0038/-0.0580/2.5563
+
+ObjectTemplate.create GenericFireArm ukrtnk_oplot_Barrel
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create PlayerControlObject ukrtnk_oplot_Cupola
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+ObjectTemplate.addTemplate ukrtnk_oplot_Cupola_Base
+ObjectTemplate.setPosition 0/0/0.0493
+
+ObjectTemplate.create RotationalBundle ukrtnk_oplot_Cupola_Base
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate ukrtnk_oplot_Cupola_Pitch
+ObjectTemplate.setPosition 0/0.3236/0.1955
+
+ObjectTemplate.create RotationalBundle ukrtnk_oplot_Cupola_Pitch
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create RotationalBundle ukrtnk_oplot_hud
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Engine ukrtnk_oplot_zMotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+ObjectTemplate.addTemplate ukrtnk_oplot_L_DriveWheel
+ObjectTemplate.setPosition -1.4292/-0.2512/-2.7748
+ObjectTemplate.addTemplate ukrtnk_oplot_L_Wheel_01
+ObjectTemplate.setPosition -1.3900/-0.8495/1.9250
+ObjectTemplate.addTemplate ukrtnk_oplot_L_Wheel_02
+ObjectTemplate.setPosition -1.3900/-0.8495/1.1158
+ObjectTemplate.addTemplate ukrtnk_oplot_L_Wheel_03
+ObjectTemplate.setPosition -1.3900/-0.8495/0.3068
+ObjectTemplate.addTemplate ukrtnk_oplot_L_Wheel_04
+ObjectTemplate.setPosition -1.3900/-0.8495/-0.5022
+ObjectTemplate.addTemplate ukrtnk_oplot_L_Wheel_05
+ObjectTemplate.setPosition -1.3900/-0.8495/-1.3112
+ObjectTemplate.addTemplate ukrtnk_oplot_L_Wheel_06
+ObjectTemplate.setPosition -1.3900/-0.8495/-2.1202
+ObjectTemplate.addTemplate ukrtnk_oplot_R_DriveWheel
+ObjectTemplate.setPosition 1.4292/-0.2512/-2.7748
+ObjectTemplate.addTemplate ukrtnk_oplot_R_Wheel_01
+ObjectTemplate.setPosition 1.3900/-0.8495/1.9249
+ObjectTemplate.addTemplate ukrtnk_oplot_R_Wheel_02
+ObjectTemplate.setPosition 1.3900/-0.8495/1.1174
+ObjectTemplate.addTemplate ukrtnk_oplot_R_Wheel_03
+ObjectTemplate.setPosition 1.3900/-0.8495/0.3099
+ObjectTemplate.addTemplate ukrtnk_oplot_R_Wheel_04
+ObjectTemplate.setPosition 1.3900/-0.8495/-0.4976
+ObjectTemplate.addTemplate ukrtnk_oplot_R_Wheel_05
+ObjectTemplate.setPosition 1.3900/-0.8495/-1.3051
+ObjectTemplate.addTemplate ukrtnk_oplot_R_Wheel_06
+ObjectTemplate.setPosition 1.3900/-0.8495/-2.1126
+
+ObjectTemplate.create RotationalBundle ukrtnk_oplot_L_DriveWheel
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring ukrtnk_oplot_L_Wheel_01
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring ukrtnk_oplot_L_Wheel_02
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create Spring ukrtnk_oplot_L_Wheel_03
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring ukrtnk_oplot_L_Wheel_04
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Spring ukrtnk_oplot_L_Wheel_05
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create Spring ukrtnk_oplot_L_Wheel_06
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create RotationalBundle ukrtnk_oplot_R_DriveWheel
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring ukrtnk_oplot_R_Wheel_01
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring ukrtnk_oplot_R_Wheel_02
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring ukrtnk_oplot_R_Wheel_03
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring ukrtnk_oplot_R_Wheel_04
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring ukrtnk_oplot_R_Wheel_05
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create Spring ukrtnk_oplot_R_Wheel_06
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+include ukrtnk_oplot.tweak

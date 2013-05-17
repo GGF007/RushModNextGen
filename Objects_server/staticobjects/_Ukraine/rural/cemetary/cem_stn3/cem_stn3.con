@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh cem_stn3
+CollisionManager.createTemplate cem_stn3
+
+ObjectTemplate.create SimpleObject cem_stn3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JILTED:Josh
+ObjectTemplate.collisionMesh cem_stn3
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry cem_stn3
+
+include cem_stn3.tweak

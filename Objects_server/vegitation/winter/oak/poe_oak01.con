@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh poe_oak01
+CollisionManager.createTemplate poe_oak01
+
+ObjectTemplate.create SimpleObject poe_oak01
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.collisionMesh poe_oak01
+ObjectTemplate.mapMaterial 0 wood_col 0
+ObjectTemplate.mapMaterial 1 leafCol 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry poe_oak01
+ObjectTemplate.anchor 1.2409/-6.8375/-1.0090
+
+include poe_oak01.tweak

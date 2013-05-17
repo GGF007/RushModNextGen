@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh idfrif_tar21s
+CollisionManager.createTemplate idfrif_tar21s
+
+ObjectTemplate.create GenericFireArm idfrif_tar21s
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.collisionMesh idfrif_tar21s
+ObjectTemplate.mapMaterial 0 Material_#48 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry idfrif_tar21s
+
+include idfrif_tar21s.tweak

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh ushe_ah6_mainrotor
+
+ObjectTemplate.create Rotor ushe_ah6_mainrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.geometry ushe_ah6_mainrotor
+
+include ushe_ah6_mainrotor.tweak

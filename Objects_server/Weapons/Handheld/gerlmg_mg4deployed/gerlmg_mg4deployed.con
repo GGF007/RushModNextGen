@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh gerlmg_mg4deployed
+
+ObjectTemplate.create GenericFireArm gerlmg_mg4deployed
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHILS-B26IVBDBY:Phil
+ObjectTemplate.geometry gerlmg_mg4deployed
+
+include gerlmg_mg4deployed.tweak

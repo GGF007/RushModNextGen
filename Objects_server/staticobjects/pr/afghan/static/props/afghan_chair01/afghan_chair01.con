@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh afghan_chair01
+CollisionManager.createTemplate afghan_chair01
+
+ObjectTemplate.create DestroyableObject afghan_chair01
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh afghan_chair01
+ObjectTemplate.mapMaterial 0 wood 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry afghan_chair01
+
+include afghan_chair01.tweak

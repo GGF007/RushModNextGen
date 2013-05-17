@@ -1,0 +1,18 @@
+GeometryTemplate.create StaticMesh officers_house
+CollisionManager.createTemplate officers_house
+
+ObjectTemplate.create SimpleObject officers_house
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ILLICITFILMS-PC:IllicitFilms
+ObjectTemplate.collisionMesh officers_house
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.mapMaterial 2 Metal_solid 0
+ObjectTemplate.mapMaterial 3 Metal_plate_thin 0
+ObjectTemplate.mapMaterial 4 Glass_common 0
+ObjectTemplate.mapMaterial 5 Ceramic_tiles 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry officers_house
+
+include officers_house.tweak

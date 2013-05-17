@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh guardtower_steel_v1
+CollisionManager.createTemplate guardtower_steel_v1
+
+ObjectTemplate.create DestroyableObject guardtower_steel_v1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh guardtower_steel_v1
+ObjectTemplate.mapMaterial 0 Pentrable_Metal_thin 0
+ObjectTemplate.mapMaterial 1 concrete 0
+ObjectTemplate.mapMaterial 2 Pentrable_Metal_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry guardtower_steel_v1
+
+include guardtower_steel_v1.tweak

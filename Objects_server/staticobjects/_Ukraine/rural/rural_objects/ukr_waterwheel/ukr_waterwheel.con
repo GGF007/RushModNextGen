@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh ukr_waterwheel
+CollisionManager.createTemplate ukr_waterwheel
+
+ObjectTemplate.create SimpleObject ukr_waterwheel
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh ukr_waterwheel
+ObjectTemplate.mapMaterial 0 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukr_waterwheel
+
+include ukr_waterwheel.tweak

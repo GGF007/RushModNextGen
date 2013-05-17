@@ -1,0 +1,43 @@
+GeometryTemplate.create BundledMesh veh_tow
+
+ObjectTemplate.create PlayerControlObject veh_tow
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEFFE_XP:jeffev
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry veh_tow
+ObjectTemplate.addTemplate Veh_TOW_Cupola
+ObjectTemplate.setPosition 0/0.5544/-0.5019
+
+ObjectTemplate.create RotationalBundle Veh_TOW_Cupola
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate Veh_TOW_barrelBase
+ObjectTemplate.setPosition 0.2648/0.2467/0.3894
+ObjectTemplate.anchor 0/-0.5544/0.5019
+
+ObjectTemplate.create RotationalBundle Veh_TOW_barrelBase
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate Veh_TOW_barrel
+ObjectTemplate.setPosition -0.0038/0.0747/0
+
+ObjectTemplate.create RotationalBundle Veh_TOW_barrel
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate Veh_TOW_sights
+ObjectTemplate.setPosition -0.2614/0.1735/-0.2248
+
+ObjectTemplate.create SimpleObject Veh_TOW_sights
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+include veh_tow.tweak

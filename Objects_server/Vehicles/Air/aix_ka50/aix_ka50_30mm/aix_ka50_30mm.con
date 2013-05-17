@@ -1,0 +1,28 @@
+GeometryTemplate.create BundledMesh aix_ka50_30mm
+
+ObjectTemplate.create RotationalBundle aix_ka50_30mm
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator KYRON-PC:kyron
+ObjectTemplate.geometry aix_mk19
+ObjectTemplate.addTemplate aix_ka50_30mm_turret
+ObjectTemplate.setPosition 0/0.2059/0.0357
+
+ObjectTemplate.create RotationalBundle aix_ka50_30mm_turret
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate aix_ka50_30mm_Barrel
+ObjectTemplate.setPosition 0.0291/0.0016/-0.4897
+ObjectTemplate.setRotation -179.8725/0/0
+ObjectTemplate.addTemplate aix_ka50_30mm_GunTurret
+ObjectTemplate.setPosition -0.0546/-0.0357/-0.0082
+ObjectTemplate.setRotation 0/0/-123.6451
+
+ObjectTemplate.create GenericFirearm aix_ka50_30mm_Barrel
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create RotationalBundle aix_ka50_30mm_GunTurret
+ObjectTemplate.geometryPart 3
+
+include aix_ka50_30mm.tweak

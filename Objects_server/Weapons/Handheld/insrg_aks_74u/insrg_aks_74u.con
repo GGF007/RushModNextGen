@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh insrg_aks_74u
+
+ObjectTemplate.create GenericFireArm insrg_aks_74u
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry insrg_aks_74u
+
+include insrg_aks_74u.tweak

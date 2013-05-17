@@ -1,0 +1,17 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+GeometryTemplate.setSubGeometryLodDistance 1 0 5
+GeometryTemplate.setSubGeometryLodDistance 1 1 10
+GeometryTemplate.setSubGeometryLodDistance 1 2 25
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject hmg_qjc88_dummy
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.cullRadiusScale 10
+ObjectTemplate.geometry hmg_qjc88
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.physicsType Mesh
+

@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle supply_heli
+ObjectTemplate.createdInEditor 1
+
+include supply_heli.tweak

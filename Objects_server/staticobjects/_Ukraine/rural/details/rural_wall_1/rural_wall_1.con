@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh rural_wall_1
+CollisionManager.createTemplate rural_wall_1
+
+ObjectTemplate.create SimpleObject rural_wall_1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JILTED:Josh
+ObjectTemplate.collisionMesh rural_wall_1
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry rural_wall_1
+
+include rural_wall_1.tweak

@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh poe_olivebig_test
+
+ObjectTemplate.create SimpleObject poe_olivebig_test
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.geometry poe_olivebig_test
+
+include poe_olivebig_test.tweak

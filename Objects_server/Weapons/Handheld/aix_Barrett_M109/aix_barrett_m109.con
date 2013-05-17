@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh aix_barrett_m109
+CollisionManager.createTemplate aix_barrett_m109
+
+ObjectTemplate.create GenericFireArm aix_barrett_m109
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator KYSTERAMA:kyron
+ObjectTemplate.collisionMesh aix_barrett_m109
+ObjectTemplate.mapMaterial 0 UNDEFINED 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry aix_barrett_m109
+
+include aix_barrett_m109.tweak

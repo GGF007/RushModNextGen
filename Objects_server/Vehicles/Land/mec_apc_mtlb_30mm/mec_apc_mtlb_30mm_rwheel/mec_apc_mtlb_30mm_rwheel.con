@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh mec_apc_mtlb_30mm_rwheel
+
+ObjectTemplate.create RotationalBundle mec_apc_mtlb_30mm_rwheel
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator Hauteclocque
+ObjectTemplate.geometry mec_apc_mtlb_30mm_rwheel
+
+include mec_apc_mtlb_30mm_rwheel.tweak

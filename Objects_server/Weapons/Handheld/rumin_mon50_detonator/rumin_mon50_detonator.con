@@ -1,0 +1,19 @@
+GeometryTemplate.create BundledMesh rumin_mon50_detonator
+CollisionManager.createTemplate rumin_mon50_detonator
+
+ObjectTemplate.create AnimatedBundle rumin_mon50_detonator
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.collisionMesh rumin_mon50_detonator
+ObjectTemplate.mapMaterial 0 CollisionMaterial 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry rumin_mon50_detonator
+
+ObjectTemplate.create AnimatedBundle rumin_mon50_detonator_1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create AnimatedBundle rumin_mon50_detonator_2
+ObjectTemplate.geometryPart 2
+
+include rumin_mon50_detonator.tweak

@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh ushe_ah6_tailrotor
+CollisionManager.createTemplate ushe_ah6_tailrotor
+
+ObjectTemplate.create Rotor ushe_ah6_tailrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh ushe_ah6_tailrotor
+ObjectTemplate.mapMaterial 0 rotor 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ushe_ah6_tailrotor
+
+include ushe_ah6_tailrotor.tweak

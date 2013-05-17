@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh wagon
+CollisionManager.createTemplate wagon
+
+ObjectTemplate.create SimpleObject wagon
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh wagon
+ObjectTemplate.mapMaterial 0 wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry wagon
+
+include wagon.tweak

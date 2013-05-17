@@ -1,0 +1,217 @@
+GeometryTemplate.setSubGeometryLodDistance 1 0 15
+GeometryTemplate.setSubGeometryLodDistance 1 1 30
+GeometryTemplate.setSubGeometryLodDistance 1 2 90
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm remote_mg3
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\icon_Predator.tga
+ObjectTemplate.weaponHud.hudName "MG3-STMG"
+ObjectTemplate.weaponHud.guiIndex 291
+ObjectTemplate.weaponHud.altGuiIndex 291
+ObjectTemplate.weaponHud.hasRangeFinder 1
+ObjectTemplate.weaponHud.overheatSound S_Weapon_Vehicle_Overheat
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 291
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags 1
+ObjectTemplate.ammo.magSize -1
+ObjectTemplate.ammo.autoReload 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.recoilSize 0.9
+ObjectTemplate.recoil.recoilSpeed 30
+ObjectTemplate.recoil.recoilForce 1
+ObjectTemplate.recoil.cameraRecoilSpeed 13
+ObjectTemplate.recoil.cameraRecoilSize 1
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 0.4
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+ObjectTemplate.zoom.addZoomFactor 0.6
+ObjectTemplate.zoom.mouseSpeedMod 0.15
+rem ---EndComp ---
+ObjectTemplate.geometry mg3_coax
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate Stationary_Kord_AI
+rem -------------------------------------
+ObjectTemplate.addTemplate S_remote_mg3_Fire1P
+ObjectTemplate.setPosition 0/0.0896358/1.28813
+ObjectTemplate.addTemplate S_remote_mg3_Fire1P_Outdoor
+ObjectTemplate.setPosition 0/0.102556/1.3354
+ObjectTemplate.addTemplate S_remote_mg3_Fire3P
+ObjectTemplate.setPosition 0/0.088623/1.28571
+ObjectTemplate.addTemplate S_remote_mg3_BoltClick
+ObjectTemplate.setPosition 0/0.0898987/-0.176249
+ObjectTemplate.addTemplate S_remote_mg3_TriggerClick
+ObjectTemplate.setPosition 0/0/-0.257296
+ObjectTemplate.addTemplate S_remote_mg3_Zoom
+ObjectTemplate.addTemplate e_dist_mg3
+ObjectTemplate.setPosition 0.00249214/0.00115889/0.83986
+ObjectTemplate.addTemplate e_muzz_minigun
+ObjectTemplate.setPosition 0.00249214/0.00115889/0.83986
+ObjectTemplate.addTemplate e_shellejection_kord
+ObjectTemplate.setPosition 0.034478/0.0294047/0.137728
+ObjectTemplate.setRotation 180/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate remote_mg3_Projectile
+ObjectTemplate.velocity 400
+ObjectTemplate.heatAddWhenFire 0.013
+ObjectTemplate.coolDownPerSec 0.2
+ObjectTemplate.overheatPenalty 1.2
+
+ObjectTemplate.create GenericProjectile remote_mg3_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.endEffectTemplate e_exp_50cal
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+rem ---EndComp ---
+ObjectTemplate.drag 8
+ObjectTemplate.mass 1000
+ObjectTemplate.gravityModifier 0.4
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 39
+rem -------------------------------------
+ObjectTemplate.addTemplate S_remote_mg3_Projectile_Looping
+ObjectTemplate.addTemplate e_bullet_trail
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.material 39
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 30
+ObjectTemplate.maxTracerScaler 50
+ObjectTemplate.minTracerScaler 2
+ObjectTemplate.tracerSizeModifier 0.35
+ObjectTemplate.tracerTemplate p_tracer2_eu
+ObjectTemplate.tracerInterval 3
+ObjectTemplate.tracerConvergeDistance -1
+ObjectTemplate.minDamage 2
+ObjectTemplate.damage 60
+ObjectTemplate.damageMandownSoldiers 1
+ObjectTemplate.distToStartLoseDamage 120
+ObjectTemplate.distToMinDamage 800
+
+ObjectTemplate.activeSafe Sound S_remote_mg3_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/meclmg_mg3elcandeployed/sounds/mg3_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.982/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_remote_mg3_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_remote_mg3_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/meclmg_mg3elcandeployed/sounds/mg3_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.96/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position -0.00278/0.06081/0.75437
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 20
+
+ObjectTemplate.activeSafe Sound S_remote_mg3_BoltClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_boltclick.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.9
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0898987/-0.176249
+
+ObjectTemplate.activeSafe Sound S_remote_mg3_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/-0.257296
+
+ObjectTemplate.activeSafe Sound S_remote_mg3_Zoom
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/land/ukrartil_m1974/sounds/zoom.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 0.5
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.1/3/0/2/0/0.829/0.1/0.987/0.196/0.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0.003/0.987/0/0.503/0.015/0/
+
+ObjectTemplate.activeSafe Sound S_remote_mg3_Projectile_Looping
+ObjectTemplate.modifiedByUser "999"

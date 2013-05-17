@@ -1,0 +1,100 @@
+GeometryTemplate.create BundledMesh gerjeep_dingo
+CollisionManager.createTemplate gerjeep_dingo
+
+ObjectTemplate.create PlayerControlObject gerjeep_dingo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh gerjeep_dingo
+ObjectTemplate.mapMaterial 0 Armor_2_light_armored_vehicles 0
+ObjectTemplate.mapMaterial 1 Armor_2_light_armored_Armor_2_light_armored_critical 0
+ObjectTemplate.mapMaterial 2 Cloth 0
+ObjectTemplate.mapMaterial 3 Glass 0
+ObjectTemplate.mapMaterial 4 wreck 0
+ObjectTemplate.mapMaterial 5 rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry gerjeep_dingo
+ObjectTemplate.addTemplate gerjeep_dingo_Cupola_Base
+ObjectTemplate.setPosition -0.0015/1.6805/-0.7430
+ObjectTemplate.addTemplate gerjeep_dingo_Steering
+ObjectTemplate.setPosition -0.5530/1.0190/0.8180
+ObjectTemplate.setRotation 0/-55.0000/0
+ObjectTemplate.addTemplate gerjeep_dingo_zMotor
+
+ObjectTemplate.create PlayerControlObject gerjeep_dingo_Cupola_Base
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate gerjeep_dingo_Cupola_Yaw
+
+ObjectTemplate.create RotationalBundle gerjeep_dingo_Cupola_Yaw
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate gerjeep_dingo_Cupola_Pitch
+ObjectTemplate.setPosition -0.0098/0.1504/0.3578
+
+ObjectTemplate.create RotationalBundle gerjeep_dingo_Cupola_Pitch
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create RotationalBundle gerjeep_dingo_Steering
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Engine gerjeep_dingo_zMotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate gerjeep_dingo_whl_BL
+ObjectTemplate.setPosition -0.8059/-0.3745/-1.5076
+ObjectTemplate.addTemplate gerjeep_dingo_whl_BR
+ObjectTemplate.setPosition 0.8059/-0.3745/-1.5076
+ObjectTemplate.addTemplate gerjeep_dingo_whl_Nav_FL
+ObjectTemplate.setPosition -0.8059/-0.3746/1.6532
+ObjectTemplate.addTemplate gerjeep_dingo_whl_Nav_FR
+ObjectTemplate.setPosition 0.8059/-0.3746/1.6532
+
+ObjectTemplate.create Spring gerjeep_dingo_whl_BL
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create Spring gerjeep_dingo_whl_BR
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle gerjeep_dingo_whl_Nav_FL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+ObjectTemplate.addTemplate gerjeep_dingo_whl_FL
+
+ObjectTemplate.create Spring gerjeep_dingo_whl_FL
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create RotationalBundle gerjeep_dingo_whl_Nav_FR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+ObjectTemplate.addTemplate gerjeep_dingo_whl_FR
+
+ObjectTemplate.create Spring gerjeep_dingo_whl_FR
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+include gerjeep_dingo.tweak

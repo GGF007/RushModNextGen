@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle e_m1a2
+ObjectTemplate.createdInEditor 1
+
+include e_m1a2.tweak

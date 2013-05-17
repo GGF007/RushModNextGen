@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh challengerskirt
+
+ObjectTemplate.create AnimatedBundle challengerskirt
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAREDSPC:Jared
+ObjectTemplate.geometry challengerskirt
+
+include challengerskirt.tweak

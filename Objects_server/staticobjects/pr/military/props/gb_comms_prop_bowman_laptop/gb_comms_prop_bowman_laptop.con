@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh gb_comms_prop_bowman_laptop
+CollisionManager.createTemplate gb_comms_prop_bowman_laptop
+
+ObjectTemplate.create DestroyableObject gb_comms_prop_bowman_laptop
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh gb_comms_prop_bowman_laptop
+ObjectTemplate.mapMaterial 0 Glass_bulletproof 0
+ObjectTemplate.mapMaterial 1 metal_thin 0 
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry gb_comms_prop_bowman_laptop
+
+include gb_comms_prop_bowman_laptop.tweak
+ 

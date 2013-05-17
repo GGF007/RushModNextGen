@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh castle_rug_3
+CollisionManager.createTemplate castle_rug_3
+
+ObjectTemplate.create SimpleObject castle_rug_3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator GUEST:Owner
+ObjectTemplate.collisionMesh castle_rug_3
+ObjectTemplate.mapMaterial 0 Cloth_carpet 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry castle_rug_3
+
+include castle_rug_3.tweak

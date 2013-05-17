@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh trench2
+CollisionManager.createTemplate trench2
+
+ObjectTemplate.create SimpleObject trench2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh trench2
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.mapMaterial 1 wood 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry trench2
+
+include trench2.tweak

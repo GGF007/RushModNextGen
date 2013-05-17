@@ -1,0 +1,12 @@
+CollisionManager.createTemplate wn_drybush01
+
+ObjectTemplate.create SimpleObject wn_drybush01_col
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.collisionMesh wn_drybush01
+ObjectTemplate.mapMaterial 0 leafCol 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.anchor 0.0291/-0.3893/0.1134
+
+include wn_drybush01_col.tweak

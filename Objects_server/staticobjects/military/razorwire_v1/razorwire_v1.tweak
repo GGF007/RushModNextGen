@@ -1,0 +1,18 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.setSubGeometryLodDistance 0 0 17
+GeometryTemplate.setSubGeometryLodDistance 0 1 40
+GeometryTemplate.doNotGenerateLightmaps 1
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+ObjectTemplate.activeSafe SimpleObject razorwire_v1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry razorwire_v1
+ObjectTemplate.setCollisionMesh razorwire_v1
+ObjectTemplate.mapMaterial 0 Wood_thin 14
+ObjectTemplate.mapMaterial 1 Death_material 666
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh green_birch_cluster01_lod
+
+ObjectTemplate.create SimpleObject green_birch_cluster01_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.geometry green_birch_cluster01_lod
+
+include green_birch_cluster01_lod.tweak

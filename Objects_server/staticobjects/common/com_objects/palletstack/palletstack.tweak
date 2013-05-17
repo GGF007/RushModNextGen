@@ -1,0 +1,35 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+GeometryTemplate.maxSkip3pLods 0
+GeometryTemplate.setSubGeometryLodDistance 0 0 60
+GeometryTemplate.setSubGeometryLodDistance 0 1 180
+GeometryTemplate.setMaterialParallaxHeightScale 0 0 0 15
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe DestroyableObject palletstack
+ObjectTemplate.creator DPA-1:dpa
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 250
+ObjectTemplate.armor.hitPoints 250
+ObjectTemplate.armor.defaultMaterial 72
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.wreckHitPoints 0
+ObjectTemplate.armor.wreckDelay 0.05
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_woodencrate_small 0.392826/-0.614015/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_woodencrate_small -0.877778/0.522348/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_fence_sound 0/1/0 0/0/0
+rem ---EndComp ---
+ObjectTemplate.geometry palletstack
+ObjectTemplate.setCollisionMesh palletStack
+ObjectTemplate.mapMaterial 0 Wood_thin 14
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

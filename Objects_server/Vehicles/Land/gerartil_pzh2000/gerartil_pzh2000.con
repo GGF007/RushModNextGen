@@ -1,0 +1,205 @@
+GeometryTemplate.create BundledMesh gerartil_pzh2000
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate gerartil_pzh2000
+
+ObjectTemplate.create PlayerControlObject gerartil_pzh2000
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh gerartil_pzh2000
+ObjectTemplate.mapMaterial 0 Armor_5_tank_front 0
+ObjectTemplate.mapMaterial 1 Armor_3_tank_rear_top 0
+ObjectTemplate.mapMaterial 2 Tank_tracks 0
+ObjectTemplate.mapMaterial 3 Wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry gerartil_pzh2000
+ObjectTemplate.addTemplate gerartil_pzh2000_artyhud_noSignal
+ObjectTemplate.setPosition 0/1/-1.8376
+ObjectTemplate.addTemplate gerartil_pzh2000_topbarel
+ObjectTemplate.setPosition 0/1.3296/-1.8376
+ObjectTemplate.addTemplate gerartil_pzh2000_zMotor
+
+ObjectTemplate.create SimpleObject gerartil_pzh2000_artyhud_noSignal
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create RotationalBundle gerartil_pzh2000_topbarel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate gerartil_pzh2000_Turret
+
+ObjectTemplate.create RotationalBundle gerartil_pzh2000_Turret
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate gerartil_pzh2000_Cannon_Base
+ObjectTemplate.setPosition 0/-0.1952/1.4860
+
+ObjectTemplate.create RotationalBundle gerartil_pzh2000_Cannon_Base
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+ObjectTemplate.addTemplate gerartil_pzh2000_Cannon_Barrel
+ObjectTemplate.setPosition 0/0.0228/4.6344
+
+ObjectTemplate.create GenericFireArm gerartil_pzh2000_Cannon_Barrel
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create Engine gerartil_pzh2000_zMotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate gerartil_pzh2000_L_DriveWhl
+ObjectTemplate.setPosition -1.3037/-0.4658/3.4650
+ObjectTemplate.addTemplate gerartil_pzh2000_L_whl_1
+ObjectTemplate.setPosition -1.2258/-0.8997/2.6790
+ObjectTemplate.addTemplate gerartil_pzh2000_L_whl_2
+ObjectTemplate.setPosition -1.2258/-0.8997/1.8932
+ObjectTemplate.addTemplate gerartil_pzh2000_L_whl_3
+ObjectTemplate.setPosition -1.2258/-0.8997/1.1225
+ObjectTemplate.addTemplate gerartil_pzh2000_L_whl_4
+ObjectTemplate.setPosition -1.2258/-0.8997/0.3516
+ObjectTemplate.addTemplate gerartil_pzh2000_L_whl_5
+ObjectTemplate.setPosition -1.2258/-0.8997/-0.6558
+ObjectTemplate.addTemplate gerartil_pzh2000_L_whl_6
+ObjectTemplate.setPosition -1.2258/-0.8997/-1.4643
+ObjectTemplate.addTemplate gerartil_pzh2000_L_whl_7
+ObjectTemplate.setPosition -1.2258/-0.8997/-2.2248
+ObjectTemplate.addTemplate gerartil_pzh2000_R_DriveWhl
+ObjectTemplate.setPosition 1.3301/-0.4658/3.4650
+ObjectTemplate.addTemplate gerartil_pzh2000_R_whl_1
+ObjectTemplate.setPosition 1.2522/-0.8997/2.6790
+ObjectTemplate.addTemplate gerartil_pzh2000_R_whl_2
+ObjectTemplate.setPosition 1.2522/-0.8997/1.8932
+ObjectTemplate.addTemplate gerartil_pzh2000_R_whl_3
+ObjectTemplate.setPosition 1.2522/-0.8997/1.1225
+ObjectTemplate.addTemplate gerartil_pzh2000_R_whl_4
+ObjectTemplate.setPosition 1.2522/-0.8997/0.3516
+ObjectTemplate.addTemplate gerartil_pzh2000_R_whl_5
+ObjectTemplate.setPosition 1.2522/-0.8997/-0.6558
+ObjectTemplate.addTemplate gerartil_pzh2000_R_whl_6
+ObjectTemplate.setPosition 1.2522/-0.8997/-1.4643
+ObjectTemplate.addTemplate gerartil_pzh2000_R_whl_7
+ObjectTemplate.setPosition 1.2522/-0.8997/-2.2248
+
+ObjectTemplate.create RotationalBundle gerartil_pzh2000_L_DriveWhl
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Spring gerartil_pzh2000_L_whl_1
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Spring gerartil_pzh2000_L_whl_2
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring gerartil_pzh2000_L_whl_3
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring gerartil_pzh2000_L_whl_4
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create Spring gerartil_pzh2000_L_whl_5
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring gerartil_pzh2000_L_whl_6
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Spring gerartil_pzh2000_L_whl_7
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create RotationalBundle gerartil_pzh2000_R_DriveWhl
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create Spring gerartil_pzh2000_R_whl_1
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring gerartil_pzh2000_R_whl_2
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring gerartil_pzh2000_R_whl_3
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring gerartil_pzh2000_R_whl_4
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring gerartil_pzh2000_R_whl_5
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring gerartil_pzh2000_R_whl_6
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create Spring gerartil_pzh2000_R_whl_7
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+include gerartil_pzh2000.tweak

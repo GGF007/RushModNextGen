@@ -1,0 +1,6 @@
+
+ObjectTemplate.create SimpleObject reeds01_col
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator destructo
+
+include reeds01_col.tweak

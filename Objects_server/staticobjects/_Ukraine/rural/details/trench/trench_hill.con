@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh trench_hill
+CollisionManager.createTemplate trench_hill
+
+ObjectTemplate.create SimpleObject trench_hill
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh trench_hill
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.mapMaterial 1 wood 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry trench_hill
+
+include trench_hill.tweak

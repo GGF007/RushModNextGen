@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh castle_furniture_4
+CollisionManager.createTemplate castle_furniture_4
+
+ObjectTemplate.create SimpleObject castle_furniture_4
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh castle_furniture_4
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry castle_furniture_4
+
+include castle_furniture_4.tweak

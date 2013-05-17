@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh us_tnk_m1a2_citv
+CollisionManager.createTemplate us_tnk_m1a2_citv
+
+ObjectTemplate.create SimpleObject us_tnk_m1a2_citv
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator WIZARDS:Guedoe
+ObjectTemplate.collisionMesh us_tnk_m1a2_citv
+ObjectTemplate.mapMaterial 0 armor_3_tank_rear_top 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry us_tnk_m1a2_citv
+
+include us_tnk_m1a2_citv.tweak

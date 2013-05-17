@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh ukr_pool
+CollisionManager.createTemplate ukr_pool
+
+ObjectTemplate.create SimpleObject ukr_pool
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ILLICITFILMS-PC:IllicitFilms
+ObjectTemplate.collisionMesh ukr_pool
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 2 Metal_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukr_pool
+
+include ukr_pool.tweak

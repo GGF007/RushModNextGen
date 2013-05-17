@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh rack_gen
+CollisionManager.createTemplate rack_gen
+
+ObjectTemplate.create SimpleObject rack_gen
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh hydra_70
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry rack_gen
+
+include rack_gen.tweak

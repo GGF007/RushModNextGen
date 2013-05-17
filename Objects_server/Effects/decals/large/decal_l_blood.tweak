@@ -1,0 +1,20 @@
+rem *** Generated with Bf2Editor.exe [created: 2004/8/20 0:14]
+ObjectTemplate.activeSafe Decal decal_l_blood
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.isStatic 0
+ObjectTemplate.randomSize 0.075
+ObjectTemplate.size 0.12
+ObjectTemplate.color 1/1/1
+ObjectTemplate.decalTextureName objects\effects\decals\textures\blood\d_blood
+ObjectTemplate.randomRotation 360
+ObjectTemplate.rotation 0
+ObjectTemplate.randomColorIntensity 0
+ObjectTemplate.animationEnable 1
+ObjectTemplate.animationSpeed 0
+ObjectTemplate.setAnimationFrameWidthRelative 0.25
+ObjectTemplate.setAnimationFrameHeightRelative 0.25
+ObjectTemplate.animationRandomizedStartFrame 1
+ObjectTemplate.animationFrameCount 16
+ObjectTemplate.animationFrameCountX 4
+

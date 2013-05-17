@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_smoke_finger
+ObjectTemplate.createdInEditor 1
+
+include e_smoke_finger.tweak

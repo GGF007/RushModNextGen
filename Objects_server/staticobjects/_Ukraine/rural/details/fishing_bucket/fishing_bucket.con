@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh fishing_bucket
+CollisionManager.createTemplate fishing_bucket
+
+ObjectTemplate.create SimpleObject fishing_bucket
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh fishing_bucket
+ObjectTemplate.mapMaterial 0 Metal_plate_thin 0
+ObjectTemplate.mapMaterial 1 Rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry fishing_bucket
+
+include fishing_bucket.tweak

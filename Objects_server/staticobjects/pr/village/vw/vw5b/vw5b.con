@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh vw5b
+CollisionManager.createTemplate vw5b
+
+ObjectTemplate.create DestroyableObject vw5b
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh vw5b
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.mapMaterial 2 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry vw5b
+
+include vw5b.tweak

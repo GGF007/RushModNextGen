@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh tree_new_03
+CollisionManager.createTemplate tree_new_03
+
+ObjectTemplate.create SimpleObject tree_new_03
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator destructo
+ObjectTemplate.collisionMesh tree_new_03
+ObjectTemplate.mapMaterial 0 wood_col 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry tree_new_03
+ObjectTemplate.anchor 0/-5/0
+
+include tree_new_03.tweak

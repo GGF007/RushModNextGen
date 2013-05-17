@@ -1,0 +1,10 @@
+rem *** Generated with Bf2Editor.exe [created: 2009/3/2 17:52]
+ObjectTemplate.activeSafe Bundle ambstat_Cloudlayer1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate e_sAmb_Cloudlayer1
+rem -------------------------------------
+

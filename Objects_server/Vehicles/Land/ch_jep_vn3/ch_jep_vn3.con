@@ -1,0 +1,127 @@
+GeometryTemplate.create BundledMesh ch_jep_vn3
+CollisionManager.createTemplate ch_jep_vn3
+
+ObjectTemplate.create PlayerControlObject ch_jep_vn3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHILSCH-Z4KV58U:Phil
+ObjectTemplate.collisionMesh ch_jep_vn3
+ObjectTemplate.mapMaterial 0 Armor_1_metal_plating1 0
+ObjectTemplate.mapMaterial 1 Glass_bulletproof 0
+ObjectTemplate.mapMaterial 2 Armor_Penetrable_Wood 0
+ObjectTemplate.mapMaterial 3 Plastic 0
+ObjectTemplate.mapMaterial 4 Metal_plate_thin 0
+ObjectTemplate.mapMaterial 5 Rubber 0
+ObjectTemplate.mapMaterial 6 Wreck 0
+ObjectTemplate.mapMaterial 7 PenetrableCloth_carpet 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry ch_jep_vn3
+ObjectTemplate.addTemplate ch_jep_vn3_asteeringwheel
+ObjectTemplate.setPosition -0.5171/0.3503/0.3111
+ObjectTemplate.setRotation 0/35.0000/0
+ObjectTemplate.addTemplate ch_jep_vn3_Gunner
+ObjectTemplate.setPosition 0/1.0259/-0.8388
+ObjectTemplate.addTemplate ch_jep_vn3_propellor
+ObjectTemplate.setPosition 0/-0.2872/-2.0776
+ObjectTemplate.setRotation 0/-11.1147/0
+ObjectTemplate.addTemplate ch_jep_vn3_zMotor
+ObjectTemplate.setPosition 0/-0.5060/0
+
+ObjectTemplate.create RotationalBundle ch_jep_vn3_asteeringwheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create PlayerControlObject ch_jep_vn3_Gunner
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate ch_jep_vn3_turret
+ObjectTemplate.setPosition 0/0.1856/0
+
+ObjectTemplate.create RotationalBundle ch_jep_vn3_turret
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate ch_jep_vn3_Mantle
+ObjectTemplate.setPosition 0.0236/-0.0566/0.4366
+ObjectTemplate.addTemplate ch_jep_vn3_turret_collision
+
+ObjectTemplate.create RotationalBundle ch_jep_vn3_Mantle
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+ObjectTemplate.addTemplate ch_jep_vn3_barrel
+ObjectTemplate.setPosition 0.0051/-0.0063/0.8480
+
+ObjectTemplate.create GenericFireArm ch_jep_vn3_barrel
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create SimpleObject ch_jep_vn3_turret_collision
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+
+ObjectTemplate.create RotationalBundle ch_jep_vn3_propellor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create Engine ch_jep_vn3_zMotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+ObjectTemplate.addTemplate ch_jep_vn3_whl_BL
+ObjectTemplate.setPosition -0.9194/-0.0593/-1.4569
+ObjectTemplate.addTemplate ch_jep_vn3_whl_BR
+ObjectTemplate.setPosition 0.9194/-0.0593/-1.4569
+ObjectTemplate.addTemplate ch_jep_vn3_whl_Nav_FL
+ObjectTemplate.setPosition -0.9187/-0.0604/1.4045
+ObjectTemplate.addTemplate ch_jep_vn3_whl_Nav_FR
+ObjectTemplate.setPosition 0.9187/-0.0604/1.4045
+
+ObjectTemplate.create Spring ch_jep_vn3_whl_BL
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Spring ch_jep_vn3_whl_BR
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create RotationalBundle ch_jep_vn3_whl_Nav_FL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+ObjectTemplate.addTemplate ch_jep_vn3_whl_FL
+ObjectTemplate.setPosition 0/0.0011/0.0043
+
+ObjectTemplate.create Spring ch_jep_vn3_whl_FL
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create RotationalBundle ch_jep_vn3_whl_Nav_FR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+ObjectTemplate.addTemplate ch_jep_vn3_whl_FR
+ObjectTemplate.setPosition 0.0025/0.0011/0.0043
+
+ObjectTemplate.create Spring ch_jep_vn3_whl_FR
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+include ch_jep_vn3.tweak

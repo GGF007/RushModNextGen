@@ -1,0 +1,9 @@
+GeometryTemplate.create BundledMesh cfrif_ar10t
+
+ObjectTemplate.create GenericFirearm cfrif_ar10t
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry cfrif_ar10t
+
+include cfrif_ar10t.tweak
+ 

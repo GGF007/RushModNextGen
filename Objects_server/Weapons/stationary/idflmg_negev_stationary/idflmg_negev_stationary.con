@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh idflmg_negev_stationary
+
+ObjectTemplate.create GenericFireArm idflmg_negev_stationary
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry idflmg_negev_stationary
+
+include idflmg_negev_stationary.tweak

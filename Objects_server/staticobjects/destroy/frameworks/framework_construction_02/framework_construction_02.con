@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh framework_construction_02
+CollisionManager.createTemplate framework_construction_02
+
+ObjectTemplate.create SimpleObject framework_construction_02
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator destructo
+ObjectTemplate.collisionMesh framework_construction_02
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Stairs_concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry framework_construction_02
+
+include framework_construction_02.tweak

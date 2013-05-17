@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh sa341h_gazelle_tailrotor
+
+ObjectTemplate.create Rotor sa341h_gazelle_tailrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator FABIAN-PC:Fabian
+ObjectTemplate.geometry sa341h_gazelle_tailrotor
+
+include sa341h_gazelle_tailrotor.tweak

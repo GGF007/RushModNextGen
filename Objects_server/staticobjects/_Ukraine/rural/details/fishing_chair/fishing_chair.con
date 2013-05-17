@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh fishing_chair
+CollisionManager.createTemplate fishing_chair
+
+ObjectTemplate.create SimpleObject fishing_chair
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh fishing_chair
+ObjectTemplate.mapMaterial 0 Cloth_carpet 0
+ObjectTemplate.mapMaterial 1 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry fishing_chair
+
+include fishing_chair.tweak

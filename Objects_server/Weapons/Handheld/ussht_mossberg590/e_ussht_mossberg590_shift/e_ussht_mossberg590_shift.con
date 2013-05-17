@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_ussht_mossberg590_shift
+ObjectTemplate.createdInEditor 1
+
+include e_ussht_mossberg590_shift.tweak

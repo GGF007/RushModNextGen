@@ -1,0 +1,14 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject hay_bale
+ObjectTemplate.creator JILTED:Josh
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry hay_bale
+ObjectTemplate.setCollisionMesh hay_bale
+ObjectTemplate.mapMaterial 0 grass 5
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

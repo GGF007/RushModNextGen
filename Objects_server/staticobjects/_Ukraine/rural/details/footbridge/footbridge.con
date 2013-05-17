@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh footbridge
+CollisionManager.createTemplate footbridge
+
+ObjectTemplate.create SimpleObject footbridge
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh footbridge
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 1 concrete 0
+ObjectTemplate.mapMaterial 2 Stairs_concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry footbridge
+
+include footbridge.tweak

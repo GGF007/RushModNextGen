@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh green_oak01_lod
+
+ObjectTemplate.create SimpleObject green_oak01_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.geometry green_oak01_lod
+
+include green_oak01_lod.tweak

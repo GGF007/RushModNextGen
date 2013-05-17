@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh nsrif_grapplinghook
+rem CollisionManager.createTemplate nsrif_grapplinghook
+
+ObjectTemplate.create GenericFireArm nsrif_grapplinghook
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEREMY:jeremypr
+ObjectTemplate.collisionMesh nsrif_grapplinghook
+ObjectTemplate.mapMaterial 0 cgfxShader1 0
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.physicsType 0
+ObjectTemplate.geometry nsrif_grapplinghook
+
+include nsrif_grapplinghook.tweak

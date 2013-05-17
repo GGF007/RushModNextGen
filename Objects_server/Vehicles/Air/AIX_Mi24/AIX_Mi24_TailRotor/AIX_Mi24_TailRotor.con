@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh aix_mi24_tailrotor
+
+ObjectTemplate.create Rotor aix_mi24_tailrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CLIVEWIL-DUO:clivewil
+ObjectTemplate.geometry aix_mi24_tailrotor
+
+include aix_mi24_tailrotor.tweak

@@ -1,0 +1,113 @@
+GeometryTemplate.create BundledMesh gb_the_merlin
+CollisionManager.createTemplate gb_the_merlin
+
+ObjectTemplate.create PlayerControlObject gb_the_merlin
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ANB35:andrew
+ObjectTemplate.collisionMesh gb_the_merlin
+ObjectTemplate.mapMaterial 0 Armor_6_helicopter 0
+ObjectTemplate.mapMaterial 1 Glass_vehicle 0
+ObjectTemplate.mapMaterial 2 active_wreck 0
+ObjectTemplate.mapMaterial 3 Rubber 0
+ObjectTemplate.mapMaterial 4 amobox_metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry gb_the_merlin
+ObjectTemplate.addTemplate gb_the_merlin_aJoystick_Pilot
+ObjectTemplate.setPosition 0.5980/-0.1519/5.2335
+ObjectTemplate.addTemplate gb_the_merlin_CoPilot
+ObjectTemplate.addTemplate gb_the_merlin_F_GearDummy
+ObjectTemplate.setPosition -0.0335/-0.7161/5.0691
+ObjectTemplate.addTemplate gb_the_merlin_L_GearDummy
+ObjectTemplate.setPosition -1.9224/-0.5528/-1.9996
+ObjectTemplate.addTemplate gb_the_merlin_R_GearDummy
+ObjectTemplate.setPosition 1.8227/-0.5528/-1.9996
+
+ObjectTemplate.create RotationalBundle gb_the_merlin_aJoystick_Pilot
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create PlayerControlObject gb_the_merlin_CoPilot
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate gb_the_merlin_aJoystick_CoPilot
+ObjectTemplate.setPosition -0.6978/-0.1498/5.2326
+
+ObjectTemplate.create RotationalBundle gb_the_merlin_aJoystick_CoPilot
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create LandingGear gb_the_merlin_F_GearDummy
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate gb_the_merlin_F_Gear
+ObjectTemplate.setPosition -0.0176/-0.4326/0.1803
+ObjectTemplate.addTemplate gb_the_merlin_F_Wheels
+ObjectTemplate.setPosition -0.0178/-0.8793/0.0129
+
+ObjectTemplate.create Spring gb_the_merlin_F_Gear
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create Spring gb_the_merlin_F_Wheels
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create LandingGear gb_the_merlin_L_GearDummy
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+ObjectTemplate.addTemplate gb_the_merlin_L_Gear
+ObjectTemplate.setPosition 0/-0.4846/-0.1185
+ObjectTemplate.addTemplate gb_the_merlin_L_Wheels
+ObjectTemplate.setPosition -0.0022/-0.9320/0
+
+ObjectTemplate.create Spring gb_the_merlin_L_Gear
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring gb_the_merlin_L_Wheels
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create LandingGear gb_the_merlin_R_GearDummy
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+ObjectTemplate.addTemplate gb_the_merlin_R_Gear
+ObjectTemplate.setPosition -0.0023/-0.4846/-0.1185
+ObjectTemplate.addTemplate gb_the_merlin_R_Wheels
+ObjectTemplate.setPosition -0.0025/-0.9320/0
+
+ObjectTemplate.create Spring gb_the_merlin_R_Gear
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring gb_the_merlin_R_Wheels
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+include gb_the_merlin.tweak

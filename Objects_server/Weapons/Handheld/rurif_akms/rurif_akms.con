@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh rurif_akms
+
+ObjectTemplate.create GenericFirearm rurif_akms
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry rurif_akms
+
+include rurif_akms.tweak

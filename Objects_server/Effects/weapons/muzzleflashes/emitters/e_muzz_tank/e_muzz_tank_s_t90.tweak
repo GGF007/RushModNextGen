@@ -1,0 +1,30 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+ObjectTemplate.activeSafe EffectBundle e_muzz_tank_s_t90
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_muzz_tank_s_t90_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_muzz_tank_s_t90_Start
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/land/rutnk_t90/sounds/cannon/t90_dist_fire.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.1/
+ObjectTemplate.minDistance 150
+ObjectTemplate.halfVolumeDistance 300
+

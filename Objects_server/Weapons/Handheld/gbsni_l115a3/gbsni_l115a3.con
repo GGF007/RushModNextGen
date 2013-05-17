@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh gbsni_l115a3
+
+ObjectTemplate.create GenericFireArm gbsni_l115a3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry gbsni_l115a1
+
+include gbsni_l115a3.tweak

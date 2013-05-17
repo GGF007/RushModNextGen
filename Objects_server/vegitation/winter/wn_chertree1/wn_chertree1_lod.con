@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh wn_chertree1_lod
+
+ObjectTemplate.create SimpleObject wn_chertree1_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MONDWIND:Miki
+ObjectTemplate.geometry wn_chertree1_lod
+
+include wn_chertree1_lod.tweak

@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh wn_stump01_lod
+
+ObjectTemplate.create SimpleObject wn_stump01_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.geometry wn_stump01_lod
+
+include wn_stump01_lod.tweak

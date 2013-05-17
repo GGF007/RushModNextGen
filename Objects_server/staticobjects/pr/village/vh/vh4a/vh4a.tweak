@@ -1,0 +1,55 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 12:52]
+GeometryTemplate.setSubGeometryLodDistance 0 0 30
+GeometryTemplate.setSubGeometryLodDistance 0 1 100
+GeometryTemplate.setSubGeometryLodDistance 0 2 300
+GeometryTemplate.setSubGeometryLodDistance 1 0 50
+GeometryTemplate.setSubGeometryLodDistance 1 1 100
+GeometryTemplate.setSubGeometryLodDistance 1 2 175
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe DestroyableObject vh4a
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo 
+ObjectTemplate.saveInSeparateFile 1 
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.isDestructable 1 
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 1200
+ObjectTemplate.armor.hitPoints 1200
+ObjectTemplate.armor.defaultMaterial 115
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.explosionForce 5
+ObjectTemplate.armor.explosionForceMod 8
+ObjectTemplate.armor.explosionForceMax 50
+ObjectTemplate.armor.explosionDamage 100
+ObjectTemplate.armor.explosionRadius 10
+ObjectTemplate.armor.explosionMaterial 101
+ObjectTemplate.armor.wreckHitPoints 0
+ObjectTemplate.armor.timeToStayAsWreck -1
+ObjectTemplate.armor.timeToStayAfterDestroyed -1
+ObjectTemplate.armor.wreckDelay 0.05
+ObjectTemplate.armor.canBeDestroyed 0
+ObjectTemplate.armor.addArmorEffect 1 e_destruction_prbuilding 0.137971/0.53525/0.824996 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_destruction_prbuilding2 0.137971/0.53525/0.824996 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_destruction_wall_v2 0.137971/0.53525/0.824996 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_dstate_static_heavysmoke -3.60592/-1.22778/4.43583 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_destruction_wreskfire 4.0094/-0.784929/-3.14735 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_destruction_wreskfire 2.6771/-1.21784/6.43459 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_dstate_static_lightsmoke -2.04988/-1.28894/-5.13246 0/0/0
+rem ---EndComp ---
+ObjectTemplate.geometry vh4a
+ObjectTemplate.setCollisionMesh vh4a
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 82
+ObjectTemplate.mapMaterial 1 Wood_solid 15
+ObjectTemplate.mapMaterial 2 concrete 78
+ObjectTemplate.mapMaterial 3 Stairs_concrete 34
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

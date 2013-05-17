@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm decoy_flare_launcher_2
+
+include decoy_flare_launcher_2.tweak
+

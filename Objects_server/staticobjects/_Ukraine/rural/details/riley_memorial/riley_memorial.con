@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh riley_memorial
+CollisionManager.createTemplate riley_memorial
+
+ObjectTemplate.create SimpleObject riley_memorial
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh riley_memorial
+ObjectTemplate.mapMaterial 0 Metal_plate_thin 0
+ObjectTemplate.mapMaterial 1 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry riley_memorial
+
+include riley_memorial.tweak

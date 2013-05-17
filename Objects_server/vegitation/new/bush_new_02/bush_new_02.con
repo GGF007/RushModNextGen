@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh bush_new_02
+CollisionManager.createTemplate bush_new_02
+
+ObjectTemplate.create SimpleObject bush_new_02
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator SHITBOX3000:mb
+ObjectTemplate.collisionMesh bush_new_02
+ObjectTemplate.mapMaterial 0 leafCol 0
+ObjectTemplate.mapMaterial 1 stairs 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry bush_new_02
+ObjectTemplate.anchor 0/-0.89/0
+
+include bush_new_02.tweak

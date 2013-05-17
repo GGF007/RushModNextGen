@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh olesko_fence_3
+CollisionManager.createTemplate olesko_fence_3
+
+ObjectTemplate.create SimpleObject olesko_fence_3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh olesko_fence_3
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.mapMaterial 1 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry olesko_fence_3
+
+include olesko_fence_3.tweak

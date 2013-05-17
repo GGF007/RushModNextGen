@@ -1,0 +1,19 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 12:52]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe Ladder ladder_3m_afghan
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry ladder_3m_afghan
+ObjectTemplate.setCollisionMesh ladder_3m_afghan
+ObjectTemplate.mapMaterial 0 Wood_solid 15
+ObjectTemplate.mapMaterial 1 metal_thin 6600
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

@@ -1,0 +1,18 @@
+GeometryTemplate.create StaticMesh oleska_entry
+CollisionManager.createTemplate oleska_entry
+
+ObjectTemplate.create SimpleObject oleska_entry
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main-Josh
+ObjectTemplate.collisionMesh oleska_entry
+ObjectTemplate.mapMaterial 0 Stairs_concrete 0
+ObjectTemplate.mapMaterial 1 concrete 0
+ObjectTemplate.mapMaterial 2 wood 0
+ObjectTemplate.mapMaterial 3 concrete 0
+ObjectTemplate.mapMaterial 4 concrete 0
+ObjectTemplate.mapMaterial 5 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry oleska_entry
+
+include oleska_entry.tweak

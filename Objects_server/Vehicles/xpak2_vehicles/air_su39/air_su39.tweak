@@ -1,0 +1,1428 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/4/13 7:17]
+GeometryTemplate.setSubGeometryLodDistance 1 0 15
+GeometryTemplate.setSubGeometryLodDistance 1 1 30
+GeometryTemplate.setSubGeometryLodDistance 1 2 95
+GeometryTemplate.setSpecularStaticGloss 1 0 1 1.5
+GeometryTemplate.setSpecularStaticGloss 1 1 1 1.5
+GeometryTemplate.setSpecularStaticGloss 1 2 1 1.5
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe PlayerControlObject air_su39
+ObjectTemplate.creator PHO-1:pho
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 10
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 850
+ObjectTemplate.armor.hitPoints 850
+ObjectTemplate.armor.defaultMaterial 32
+ObjectTemplate.armor.hpLostWhileUpSideDown 350
+ObjectTemplate.armor.hpLostWhileInWater 400
+ObjectTemplate.armor.hpLostWhileInDeepWater 400
+ObjectTemplate.armor.hpLostWhileCriticalDamage 18
+ObjectTemplate.armor.waterDamageDelay 1
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.explosionForce 15
+ObjectTemplate.armor.explosionForceMod 8
+ObjectTemplate.armor.explosionForceMax 5000
+ObjectTemplate.armor.explosionDamage 400
+ObjectTemplate.armor.explosionRadius 15
+ObjectTemplate.armor.explosionMaterial 99
+ObjectTemplate.armor.wreckExplosionForce 15
+ObjectTemplate.armor.wreckExplosionDamage 200
+ObjectTemplate.armor.wreckExplosionRadius 10
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 500
+ObjectTemplate.armor.timeToStayAsWreck 50
+ObjectTemplate.armor.criticalDamage 101
+ObjectTemplate.armor.wreckDelay 2
+ObjectTemplate.armor.addArmorEffect 75 e_vexp_AirGeneric_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 75 e_dstate_jets_lightsmoke 0.73236/0.10650/-0.61973 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_vexp_AirGeneric_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_jets_heavysmoke 0.73236/0.10650/-0.61973 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_vexp_btr_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_dstate_jets_heavysmoke 0.73236/0.10650/-0.61973 0/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_heli_tailspinf4 0.3/-0.2/-20 90/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_vexp_tank_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_jets_firesmoke 0.73236/0.10650/-0.61973 0/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_vexp_heli_generic_wreckFire_small 4.03615/-0.30025/-0.93921 0/-80/0
+ObjectTemplate.armor.addArmorEffect 10 e_vexp_heli_generic_wreckFire_small -0.95181/0.09708/1.29452 92.6/-85.0/-25.0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_jets_heavysmoke -2.12551/-0.01324/-0.92037 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_vexp_mig29 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_vexp_AirGeneric_2nd 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -5 e_vexp_AirGeneric_wreckFire 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -5 e_vexp_heli_generic_wreckFire_small -1.08947/-0.40092/1.71569 -180/-20/3
+ObjectTemplate.armor.addArmorEffect -5 e_vexp_heli_generic_wreckFire_small 0.63236/-0.61074/-3.52297 -62/-25/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_AirGeneric_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_AirGeneric_wreck_end 0/-0.1/-3 0/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_AirGeneric_2nd 0/0/0 0/0/0
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage air_spotted
+rem ---EndComp ---
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "SU-39 FROGFOOT"
+ObjectTemplate.vehicleHud.guiIndex 0
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_plane.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_Jet.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 58/14
+ObjectTemplate.vehicleHud.vehicleType 4
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\air_su39.tga
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning_RU
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning_RU
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_JET_PILOT_CONTROLS_toggleWeaponsShortcut"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_JET_PILOT_CONTROLS_toggleWeaponsShortcut"
+ObjectTemplate.HelpHud.lowArmorHelpSoundKey "HUD_HELP_VEHICLE_JET_LOWHEALTH_useFriendlyRepairStation"
+ObjectTemplate.HelpHud.lowArmorHelpStringKey "HUD_HELP_VEHICLE_JET_LOWHEALTH_useFriendlyRepairStation"
+rem ---EndComp ---
+ObjectTemplate.geometry air_su39
+ObjectTemplate.setCollisionMesh air_su39
+ObjectTemplate.mapMaterial 0 MainPlane 32
+ObjectTemplate.mapMaterial 1 Glass 1006
+ObjectTemplate.mapMaterial 2 wreck 60
+ObjectTemplate.mapMaterial 3 Rubberheavy 102
+ObjectTemplate.mapMaterial 4 main_colormapgloss 32
+ObjectTemplate.drag 0.4
+ObjectTemplate.mass 6000
+ObjectTemplate.inertiaModifier 0.4/0.4/0.4
+ObjectTemplate.gravityModifier 2
+ObjectTemplate.floaterMod 0.8
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate Mig29
+rem -------------------------------------
+ObjectTemplate.addTemplate S_air_su39_Ambient
+ObjectTemplate.addTemplate S_air_su39_AmbientDamaged
+ObjectTemplate.addTemplate air_su39_Camera
+ObjectTemplate.setPosition 0/-0.046622/6.2
+ObjectTemplate.addTemplate air_su39_Engine_left
+ObjectTemplate.setPosition -0.8/-0.8/-3.8
+ObjectTemplate.addTemplate air_su39_Engine_right
+ObjectTemplate.setPosition 0.8/-0.8/-3.8
+ObjectTemplate.addTemplate air_su39_BodyWing
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate air_su39_EntryPoint
+ObjectTemplate.setPosition 0.000259368/-2.15794/5.20613
+ObjectTemplate.addTemplate air_su39_EntryPointRear
+ObjectTemplate.addTemplate air_su39_Canon
+ObjectTemplate.setPosition 0.246436/-1.61506/3.99814
+ObjectTemplate.setRotation 0/-0.8/0
+ObjectTemplate.addTemplate HeatObject
+ObjectTemplate.setPosition 0/-0.356255/-0.311816
+ObjectTemplate.addTemplate air_su39_HydraLauncher
+ObjectTemplate.addTemplate air_su39_Bomblauncher
+ObjectTemplate.addTemplate decoy_Flare_Launcher
+ObjectTemplate.setPosition 1e-005/-0.37135/-6.47156
+ObjectTemplate.setRotation -180/-60/-180
+ObjectTemplate.addTemplate UB_32_57
+ObjectTemplate.setPosition 4.28572/-0.91265/-0.30379
+ObjectTemplate.addTemplate UB_32_57
+ObjectTemplate.setPosition -4.28572/-0.91265/-0.30379
+ObjectTemplate.addTemplate e_light_red
+ObjectTemplate.setPosition 7.1809/-0.30715/-1.20671
+ObjectTemplate.addTemplate e_light_red
+ObjectTemplate.setPosition -7.1809/-0.30715/-1.20671
+ObjectTemplate.addTemplate e_light_green
+ObjectTemplate.setPosition 0/3.19608/-6.17971
+ObjectTemplate.addTemplate e_light_red
+ObjectTemplate.setPosition 0/-0.16784/-7.25497
+ObjectTemplate.addTemplate e_light_white
+ObjectTemplate.setPosition 0/-1.56993/5.66234
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/-2.5/4 0/0/0
+ObjectTemplate.altSoldierExitPosition -2/-1.1/4
+ObjectTemplate.exitSpeedMod 0.5
+ObjectTemplate.seatInformation air_su39 -0.0466012/-0.13594/4.13374 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_aircraftPilot_A_animSys.inc
+ObjectTemplate.soundFilter airplane
+ObjectTemplate.vehicleCategory VCAir
+ObjectTemplate.listenerObstruction 0.8
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+rem ObjectTemplate.crewKitIndex 8
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.altSoldierExitPosition -2/-1.1/4
+
+ObjectTemplate.activeSafe Sound S_air_su39_Ambient
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak2_vehicles/air_su39/sounds/airplane_ambloop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_air_su39_AmbientDamaged
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_havoc/sounds/master_caution_ru.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe LandingGear Air_Su39_GearRotator
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_GearRotator_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-100/0
+ObjectTemplate.setMaxSpeed 0/80/0
+ObjectTemplate.setAcceleration 0/200/0
+ObjectTemplate.setGearDownDelay 1.2
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_GearRotator_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear Air_Su39_R_LGear
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_R_LGear_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-40
+ObjectTemplate.setMaxSpeed 0/0/80
+ObjectTemplate.setAcceleration 0/0/200
+ObjectTemplate.setGearUpDelay 0.4
+ObjectTemplate.setGearDownDelay 1.6
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_R_LGear_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring Air_Su39_R_wheel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 16
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_R_wheel_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 100
+ObjectTemplate.setDamping 10
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_R_wheel_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear Air_Su39_L_LGear
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_L_LGear_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-40
+ObjectTemplate.setMaxSpeed 0/0/80
+ObjectTemplate.setAcceleration 0/0/200
+ObjectTemplate.setGearUpDelay 0.4
+ObjectTemplate.setGearDownDelay 1.6
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_L_LGear_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring Air_Su39_L_wheel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 16
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_L_wheel_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 100
+ObjectTemplate.setDamping 10
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_L_wheel_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear Air_Su39_Front_Rot
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_Front_Rot_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/100/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setGearDownDelay 0.5
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_Front_Rot_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle Air_Su39_Front_Nav_wheel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_Front_Nav_wheel_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -45/0/0
+ObjectTemplate.setMaxRotation 45/0/0
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 80/0/0
+ObjectTemplate.setInputToYaw PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_Front_Nav_wheel_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring Air_Su39_Front_wheel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 16
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_Front_wheel_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 30
+ObjectTemplate.setDamping 10
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_Front_wheel_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle Air_Su39_L_BreakRoot1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_L_BreakRoot1_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/38/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/-1500/0
+ObjectTemplate.setInputToPitch PIThrottle
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_L_BreakRoot1_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle Air_Su39_L_Break1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_L_Break1_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxSpeed 0/400/0
+ObjectTemplate.setAcceleration 0/2000/0
+ObjectTemplate.setInputToPitch PIThrottle
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_L_Break1_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle Air_Su39_L_BreakRoot2
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_L_BreakRoot2_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-53/0
+ObjectTemplate.setMaxSpeed 0/225/0
+ObjectTemplate.setAcceleration 0/1500/0
+ObjectTemplate.setInputToPitch PIThrottle
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_L_BreakRoot2_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle Air_Su39_L_Break2
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_L_Break2_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setMaxSpeed 0/500/0
+ObjectTemplate.setAcceleration 0/-2000/0
+ObjectTemplate.setInputToPitch PIThrottle
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_L_Break2_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Wing Air_Su39_L_Aileron
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_L_Aileron_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/-40/0
+ObjectTemplate.setInputToPitch PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset -0.2
+ObjectTemplate.setPositionOffset 0/0.2566/1.3221
+ObjectTemplate.setWingLift 2.5
+ObjectTemplate.setFlapLift 1.5
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_L_Aileron_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Wing Air_Su39_R_Aileron
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_R_Aileron_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/40/0
+ObjectTemplate.setInputToPitch PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset -0.2
+ObjectTemplate.setPositionOffset 0/0.2566/1.3221
+ObjectTemplate.setWingLift 2.5
+ObjectTemplate.setFlapLift 1.5
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_R_Aileron_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear Air_Su39_Front_GearHatch1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_Front_GearHatch1_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/90
+ObjectTemplate.setMaxSpeed 0/0/90
+ObjectTemplate.setAcceleration 0/0/250
+ObjectTemplate.setGearUpDelay 0.5
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_Front_GearHatch1_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear Air_Su39_Front_GearHatch2
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_Front_GearHatch2_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/90
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 0/0/500
+ObjectTemplate.setGearUpDelay 0.8
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_Front_GearHatch2_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear Air_Su39_Left_Gearhatch1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_Left_Gearhatch1_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-90
+ObjectTemplate.setMaxSpeed 0/0/80
+ObjectTemplate.setAcceleration 0/0/200
+ObjectTemplate.setGearUpDelay 0.8
+ObjectTemplate.setGearDownDelay 0.6
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_Left_Gearhatch1_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear Air_Su39_Left_Gearhatch2
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_Left_Gearhatch2_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/120
+ObjectTemplate.setAcceleration 0/0/200
+ObjectTemplate.setGearUpDelay 1.2
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_Left_Gearhatch2_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear Air_Su39_Right_Gearhatch1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_Right_Gearhatch1_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/90
+ObjectTemplate.setMaxSpeed 0/0/80
+ObjectTemplate.setAcceleration 0/0/200
+ObjectTemplate.setGearUpDelay 0.8
+ObjectTemplate.setGearDownDelay 0.6
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_Right_Gearhatch1_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe LandingGear Air_Su39_Right_Gearhatch2
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_Right_Gearhatch2_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-100
+ObjectTemplate.setMaxSpeed 0/0/120
+ObjectTemplate.setAcceleration 0/0/200
+ObjectTemplate.setGearUpDelay 1.2
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_Right_Gearhatch2_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Wing Air_Su39_TailRudder
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_TailRudder_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/-100/0
+ObjectTemplate.setInputToPitch PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setPitchOffset -0.4
+ObjectTemplate.setPositionOffset -10/0/0
+ObjectTemplate.setWingLift 0.8
+ObjectTemplate.setFlapLift 1
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_TailRudder_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Wing Air_Su39_Back_Stabilizer
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Air_Su39_Back_Stabilizer_RotationRpm
+ObjectTemplate.setRotation 0/2/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/200/0
+ObjectTemplate.setAcceleration 0/-35/0
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setPositionOffset 0/-0.1516/0
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 1.8
+
+ObjectTemplate.activeSafe Sound S_Air_Su39_Back_Stabilizer_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Camera air_su39_Camera
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_air_su39_Camera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -135/-30/0
+ObjectTemplate.setMaxRotation 135/5/0
+ObjectTemplate.setPivotPosition 0/0/-0.2
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.followStiffness 2
+ObjectTemplate.chaseDistance 28
+ObjectTemplate.chaseAngle 0.18
+ObjectTemplate.chaseOffset 0/2.5/6
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection 1/-2/1
+ObjectTemplate.insideStaticSunColor 0.188235/0.188235/0.188235
+ObjectTemplate.insideStaticSunDamageColor 1/0/0
+ObjectTemplate.insideDamageFrequency 7
+ObjectTemplate.insideDamageThreshold 0.15
+ObjectTemplate.insideStaticSunAmbientColor 0.580392/0.580392/0.580392
+
+ObjectTemplate.activeSafe Sound S_air_su39_Camera_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Engine air_su39_Engine_left
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_air_su39_Engine_left_RotationRpm
+ObjectTemplate.addTemplate S_air_su39_Engine_left_Idle
+ObjectTemplate.setPosition 1.4893/1.65487/8.24387
+ObjectTemplate.addTemplate S_air_su39_Engine_left_Rpm1
+ObjectTemplate.setPosition 1.45442/0.157837/-0.141014
+ObjectTemplate.setRotation -180/0/180
+ObjectTemplate.addTemplate S_air_su39_Engine_left_Rpm2
+ObjectTemplate.setPosition 1.49926/-0.0397637/0.082613
+ObjectTemplate.setRotation -180/0/180
+ObjectTemplate.addTemplate S_air_su39_Engine_left_Load
+ObjectTemplate.addTemplate S_air_su39_Engine_RotationRpm
+ObjectTemplate.addTemplate e_jetexhaust
+ObjectTemplate.setPosition 0.0548387/0.013156/-0.17922
+ObjectTemplate.setRotation -1.04924/0/0
+ObjectTemplate.addTemplate e_jetexhaust_AB
+ObjectTemplate.setPosition 0.0548387/0.013156/-0.17922
+ObjectTemplate.setRotation -1.04924/0/0
+ObjectTemplate.addTemplate e_AB_snd
+ObjectTemplate.setPosition 0.0548387/0.013156/-0.17922
+ObjectTemplate.setRotation -1.04924/0/0
+ObjectTemplate.addTemplate e_contrail
+ObjectTemplate.setPosition -6.2948/0.498006/1.17527
+ObjectTemplate.addTemplate ade_airDraft
+ObjectTemplate.setPosition 0.0548387/0.013156/-0.17922
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-1000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/150
+ObjectTemplate.setAcceleration 0/0/400
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 100
+ObjectTemplate.setDifferential 10
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.noPropellerEffectAtSpeed 125
+ObjectTemplate.noPropellerEffectAtSpeed 125
+ObjectTemplate.noEffectAtPerpSpeed 125
+
+ObjectTemplate.activeSafe Sound S_air_su39_Engine_left_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Engine_left_Idle
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak2_vehicles/air_su39/sounds/su39_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1.3
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/3/0.003/0.739/0/0.312/1.253/0/0.995/1.492/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/4/0.003/1/0/0.31/1/0/0.495/0.812/0/0.7/0.25/0/
+ObjectTemplate.position 1.4893/1.65487/8.24387
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 40
+ObjectTemplate.coneDirection 0/0/1
+ObjectTemplate.coneInnerAngle 120
+ObjectTemplate.coneOuterAngle 150
+ObjectTemplate.coneOuterVolume 0.2
+
+ObjectTemplate.activeSafe Sound S_air_su39_Engine_left_Rpm1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak2_vehicles/air_su39/sounds/su39_distant.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.9
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/2/0.003/0.354/0/1/1.2/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/4/0.003/0/0/0.338/0.536/0/0.792/0.987/0/0.8/1/0/
+ObjectTemplate.position 1.45442/0.157837/-0.141014
+ObjectTemplate.minDistance 50
+ObjectTemplate.halfVolumeDistance 140
+ObjectTemplate.coneDirection 8.74228e-008/0/-1
+ObjectTemplate.coneInnerAngle 180
+ObjectTemplate.coneOuterVolume 0.5
+
+ObjectTemplate.activeSafe Sound S_air_su39_Engine_left_Rpm2
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ukair_su27b/sounds/Flanker_jet_low_freq.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/4/0.003/0/0/0.338/0.536/0/0.8/1/0/0.8/1/0/
+ObjectTemplate.position 1.49926/-0.0397637/0.082613
+ObjectTemplate.minDistance 50
+ObjectTemplate.halfVolumeDistance 100
+ObjectTemplate.coneDirection 8.74228e-008/0/-1
+ObjectTemplate.coneInnerAngle 190
+ObjectTemplate.coneOuterVolume 0.65
+
+ObjectTemplate.activeSafe Sound S_air_su39_Engine_left_Load
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Engine air_su39_Engine_right
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_air_su39_Engine_right_RotationRpm
+ObjectTemplate.addTemplate S_air_su39_Engine_right_Idle
+ObjectTemplate.setPosition 1.4893/1.65487/8.24387
+ObjectTemplate.addTemplate S_air_su39_Engine_right_Rpm1
+ObjectTemplate.setPosition 1.45442/0.157837/-0.141014
+ObjectTemplate.setRotation -180/0/180
+ObjectTemplate.addTemplate S_air_su39_Engine_right_Rpm2
+ObjectTemplate.setPosition 1.49926/-0.0397637/0.082613
+ObjectTemplate.setRotation -180/0/180
+ObjectTemplate.addTemplate S_air_su39_Engine_right_Load
+ObjectTemplate.addTemplate e_jetexhaust
+ObjectTemplate.setPosition -0.0548387/0.013156/-0.17922
+ObjectTemplate.setRotation -1.04924/0/0
+ObjectTemplate.addTemplate e_jetexhaust_AB
+ObjectTemplate.setPosition -0.0548387/0.013156/-0.17922
+ObjectTemplate.setRotation -1.04924/0/0
+ObjectTemplate.addTemplate e_AB_snd
+ObjectTemplate.setPosition -0.0548387/0.013156/-0.17922
+ObjectTemplate.setRotation -1.04924/0/0
+ObjectTemplate.addTemplate e_contrail
+ObjectTemplate.setPosition 6.32731/0.498006/1.17527
+ObjectTemplate.addTemplate ade_airDraft
+ObjectTemplate.setPosition -0.0548387/0.013156/-0.17922
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-1000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/150
+ObjectTemplate.setAcceleration 0/0/400
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 100
+ObjectTemplate.setDifferential 10
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.noPropellerEffectAtSpeed 125
+ObjectTemplate.noPropellerEffectAtSpeed 125
+ObjectTemplate.noEffectAtPerpSpeed 125
+
+ObjectTemplate.activeSafe Sound S_air_su39_Engine_right_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Engine_right_Idle
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Engine_right_Rpm1
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Engine_right_Rpm2
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Engine_right_Load
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Wing air_su39_BodyWing
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_air_su39_BodyWing_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 2.4
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_air_su39_BodyWing_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create EntryPoint air_su39_EntryPoint
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 4.5
+
+ObjectTemplate.create EntryPoint air_su39_EntryPointRear
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 5
+
+ObjectTemplate.create GenericFireArm air_su39_Canon
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bomb.tga
+ObjectTemplate.weaponHud.guiIndex -1
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.showClips 0
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 450
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 1
+ObjectTemplate.ammo.magSize 400
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.cameraRecoilSpeed 8
+ObjectTemplate.recoil.cameraRecoilSize 0.15
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 0.45
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.aiTemplate USAIR_F15MachineGun
+rem -------------------------------------
+ObjectTemplate.addTemplate S_air_su39_Canon_Fire1P
+ObjectTemplate.addTemplate S_air_su39_Canon_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_air_su39_Canon_Fire3P
+ObjectTemplate.addTemplate S_air_su39_Canon_BoltClick
+ObjectTemplate.addTemplate S_air_su39_Canon_TriggerClick
+ObjectTemplate.addTemplate S_air_su39_Canon_SwitchFireRate
+ObjectTemplate.addTemplate S_air_su39_Canon_Reload1P
+ObjectTemplate.addTemplate S_air_su39_Canon_Reload3P
+ObjectTemplate.addTemplate S_air_su39_Canon_Deploy1P
+ObjectTemplate.addTemplate S_air_su39_Canon_Deploy3P
+ObjectTemplate.addTemplate S_air_su39_Canon_Zoom
+ObjectTemplate.addTemplate e_muzz_tunguska
+ObjectTemplate.addTemplate e_shellejection_25mm
+ObjectTemplate.setPosition -0.03361/-0.1922/-2.0336
+rem -------------------------------------
+ObjectTemplate.projectileTemplate air_su39_Canon_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 550
+ObjectTemplate.itemIndex 1
+
+ObjectTemplate.create GenericProjectile air_su39_Canon_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 42
+ObjectTemplate.detonation.explosionRadius 3
+ObjectTemplate.detonation.explosionForce 2.5
+ObjectTemplate.detonation.explosionDamage 130
+ObjectTemplate.detonation.explosionInnerConeRadius 10
+ObjectTemplate.detonation.endEffectTemplate e_exp_btr
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.gravityModifier 0.2
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 42
+rem -------------------------------------
+ObjectTemplate.addTemplate S_air_su39_Canon_Projectile_Looping
+ObjectTemplate.addTemplate e_rifleRocket_trail
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.material 42
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 10
+ObjectTemplate.maxTracerScaler 30
+ObjectTemplate.minTracerScaler 3
+ObjectTemplate.tracerSizeModifier 0.8
+ObjectTemplate.tracerTemplate p_tracer2_eu
+ObjectTemplate.tracerConvergeDistance -1
+ObjectTemplate.minDamage 10
+ObjectTemplate.damage 70
+ObjectTemplate.distToStartLoseDamage 400
+ObjectTemplate.distToMinDamage 1000
+ObjectTemplate.damageMandownSoldiers 1
+
+ObjectTemplate.activeSafe Sound S_air_su39_Canon_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak2_vehicles/air_su39/sounds/autocannon_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0.962/0.9/1.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0.952/0.901/0.959/
+
+ObjectTemplate.activeSafe Sound S_air_su39_Canon_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Canon_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak2_vehicles/air_su39/sounds/autocannon_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0.962/0.9/1.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0.954/0.901/0.959/
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 20
+
+ObjectTemplate.activeSafe Sound S_air_su39_Canon_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Canon_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/geraav_gepard/sounds/vehicle_weapon_trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1.3
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_air_su39_Canon_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Canon_Reload1P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Canon_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Canon_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Canon_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Canon_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Canon_Projectile_Looping
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create GenericFireArm air_su39_HydraLauncher
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bomb.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\Ataka_missile.tga
+ObjectTemplate.weaponHud.guiIndex 130
+ObjectTemplate.weaponHud.addShowOnCamMode 2
+ObjectTemplate.weaponHud.displaySelectOnActivation 1
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 130
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.fireInput PIAltFire
+ObjectTemplate.fire.roundsPerMinute 600
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.addBarrelName air_su39_hydra_barrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 2
+ObjectTemplate.ammo.magSize 16
+ObjectTemplate.ammo.reloadTime 8
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.cameraRecoilSpeed 13
+ObjectTemplate.recoil.cameraRecoilSize 1
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate AHE_AH1Z_Rockets
+rem -------------------------------------
+ObjectTemplate.addTemplate S_air_su39_HydraLauncher_Fire1P
+ObjectTemplate.addTemplate S_air_su39_HydraLauncher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_air_su39_HydraLauncher_Fire3P
+ObjectTemplate.addTemplate S_air_su39_HydraLauncher_BoltClick
+ObjectTemplate.addTemplate S_air_su39_HydraLauncher_TriggerClick
+ObjectTemplate.addTemplate S_air_su39_HydraLauncher_SwitchFireRate
+ObjectTemplate.addTemplate S_air_su39_HydraLauncher_Reload1P
+ObjectTemplate.addTemplate S_air_su39_HydraLauncher_Reload3P
+ObjectTemplate.addTemplate S_air_su39_HydraLauncher_Deploy1P
+ObjectTemplate.addTemplate S_air_su39_HydraLauncher_Deploy3P
+ObjectTemplate.addTemplate S_air_su39_HydraLauncher_Zoom
+ObjectTemplate.addTemplate air_su39_hydra_barrel
+ObjectTemplate.setPosition 4.28508/-0.84729/0.56564
+ObjectTemplate.addTemplate air_su39_hydra_barrel
+ObjectTemplate.setPosition -4.28508/-0.84729/0.56564
+ObjectTemplate.addTemplate air_su39_hydra_barrel
+ObjectTemplate.setPosition 4.3372/-0.94847/0.56564
+ObjectTemplate.addTemplate air_su39_hydra_barrel
+ObjectTemplate.setPosition -4.3372/-0.94847/0.56564
+ObjectTemplate.addTemplate air_su39_hydra_barrel
+ObjectTemplate.setPosition 4.24564/-0.94847/0.56564
+ObjectTemplate.addTemplate air_su39_hydra_barrel
+ObjectTemplate.setPosition -4.24564/-0.94847/0.56564
+rem -------------------------------------
+ObjectTemplate.projectileTemplate air_su39_HydraLauncher_Projectile
+ObjectTemplate.velocity 200
+ObjectTemplate.itemIndex 1
+
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.create GenericProjectile air_su39_HydraLauncher_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 55
+ObjectTemplate.detonation.explosionRadius 5
+ObjectTemplate.detonation.explosionForce 10
+ObjectTemplate.detonation.explosionDamage 200
+ObjectTemplate.detonation.explosionInnerConeRadius 25
+ObjectTemplate.detonation.endEffectTemplate e_exp_btr
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.geometry ars_57_rocket
+ObjectTemplate.gravityModifier 0.05
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 55
+rem -------------------------------------
+ObjectTemplate.addTemplate S_air_su39_HydraLauncher_Projectile_Looping
+ObjectTemplate.addTemplate e_dumbrocket_trail
+ObjectTemplate.setPosition 0/0/-1.98397
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.material 55
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerSizeModifier 0
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 410
+
+ObjectTemplate.activeSafe Sound S_air_su39_HydraLauncher_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_havoc/sounds/missile_shoot.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.1/3/0/2/0.003/1.329/0.1/0.992/1.329/0.1/
+
+ObjectTemplate.activeSafe Sound S_air_su39_HydraLauncher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_HydraLauncher_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_havoc/sounds/missile_shoot.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 20
+
+ObjectTemplate.activeSafe Sound S_air_su39_HydraLauncher_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_HydraLauncher_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/land/geraav_gepard/sounds/vehicle_weapon_trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1.3
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_air_su39_HydraLauncher_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_HydraLauncher_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/bomb_reload.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_air_su39_HydraLauncher_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_HydraLauncher_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "common/sound/weapon_toggle_vehicle.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_air_su39_HydraLauncher_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_HydraLauncher_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create RotationalBundle air_su39_hydra_barrel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate e_muzz_rocketpod
+ObjectTemplate.setPosition 0/1.09896e-007/-1.71713
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_air_su39_HydraLauncher_Projectile_Looping
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/rocket_engine_start_idle.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 4
+ObjectTemplate.halfVolumeDistance 10
+
+ObjectTemplate.create GenericFireArm air_su39_Bomblauncher
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bomb.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\mec_250_bomb.tga
+ObjectTemplate.weaponHud.hudName "SU-39 FROGFOOT"
+ObjectTemplate.weaponHud.guiIndex 120
+ObjectTemplate.weaponHud.addShowOnCamMode 2
+ObjectTemplate.weaponHud.displaySelectOnActivation 1
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 120
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.roundsPerMinute 300
+ObjectTemplate.fire.fireInput PIAltFire
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.burstSize 2
+ObjectTemplate.fire.useDummyProjectiles 1
+ObjectTemplate.fire.addBarrelName mec_250_bombdummy
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 1
+ObjectTemplate.ammo.magSize 4
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.cameraRecoilSpeed 12
+ObjectTemplate.recoil.cameraRecoilSize 3
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+rem ---BeginComp:MultiFireArmTargetComp ---
+ObjectTemplate.createComponent MultiFireArmTargetComp
+ObjectTemplate.target.maxDistance 375
+ObjectTemplate.target.targetSystem TSLaserGuided
+ObjectTemplate.target.useCameraDirectionToTarget 1
+ObjectTemplate.target.lockAngle 45
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate USAIR_F15Bombs
+rem -------------------------------------
+ObjectTemplate.addTemplate S_air_su39_Bomblauncher_Fire1P
+ObjectTemplate.addTemplate S_air_su39_Bomblauncher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_air_su39_Bomblauncher_Fire3P
+ObjectTemplate.addTemplate S_air_su39_Bomblauncher_BoltClick
+ObjectTemplate.addTemplate S_air_su39_Bomblauncher_TriggerClick
+ObjectTemplate.addTemplate S_air_su39_Bomblauncher_SwitchFireRate
+ObjectTemplate.addTemplate S_air_su39_Bomblauncher_Reload1P
+ObjectTemplate.addTemplate S_air_su39_Bomblauncher_Reload3P
+ObjectTemplate.addTemplate S_air_su39_Bomblauncher_Deploy1P
+ObjectTemplate.addTemplate S_air_su39_Bomblauncher_Deploy3P
+ObjectTemplate.addTemplate S_air_su39_Bomblauncher_Zoom
+ObjectTemplate.addTemplate mec_250_bombdummy
+ObjectTemplate.setPosition 3.53056/-0.91046/-0.58211
+ObjectTemplate.setRotation 0/0.5277/0
+ObjectTemplate.addTemplate mec_250_bombdummy
+ObjectTemplate.setPosition -3.53056/-0.91046/-0.58211
+ObjectTemplate.setRotation 0/0.5277/0
+ObjectTemplate.addTemplate mec_250_bombdummy
+ObjectTemplate.setPosition 2.82208/-0.91046/-0.58211
+ObjectTemplate.setRotation 0/0.5277/0
+ObjectTemplate.addTemplate mec_250_bombdummy
+ObjectTemplate.setPosition -2.82208/-0.91046/-0.58211
+ObjectTemplate.setRotation 0/0.5277/0
+ObjectTemplate.addTemplate mec_250_bombdummy
+ObjectTemplate.setPosition 1.97253/-0.9034/-0.2753
+ObjectTemplate.setRotation 0/0.5277/0
+ObjectTemplate.addTemplate mec_250_bombdummy
+ObjectTemplate.setPosition -1.97253/-0.9034/-0.2753
+ObjectTemplate.setRotation 0/0.5277/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate mec_250_bomb
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 0
+ObjectTemplate.itemIndex 2
+
+ObjectTemplate.activeSafe Sound S_air_su39_Bomblauncher_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/bomb_release.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_air_su39_Bomblauncher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Bomblauncher_Fire3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Bomblauncher_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Bomblauncher_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/land/geraav_gepard/sounds/vehicle_weapon_trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1.3
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_air_su39_Bomblauncher_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Bomblauncher_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/bomb_reload.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_air_su39_Bomblauncher_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Bomblauncher_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "common/sound/weapon_toggle_vehicle.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_air_su39_Bomblauncher_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_air_su39_Bomblauncher_Zoom
+ObjectTemplate.modifiedByUser "999"
+

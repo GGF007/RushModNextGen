@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject javelin_missile_dummy
+ObjectTemplate.createdInEditor 1
+
+include javelin_missile_dummy.tweak
+ 

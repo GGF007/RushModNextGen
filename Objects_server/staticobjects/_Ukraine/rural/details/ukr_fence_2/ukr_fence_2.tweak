@@ -1,0 +1,38 @@
+GeometryTemplate.setSubGeometryLodDistance 0 0 35
+GeometryTemplate.setSubGeometryLodDistance 0 1 70
+GeometryTemplate.setSubGeometryLodDistance 0 2 90
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe DestroyableObject ukr_fence_2
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.isDestructable 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 35
+ObjectTemplate.armor.hitPoints 35
+ObjectTemplate.armor.defaultMaterial 72
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.wreckDelay 0.05
+ObjectTemplate.armor.wreckHitPoints 0
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_woodencrate_small -4.73662/0.67029/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_woodencrate_small 4.73662/0.67029/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_fence_sound -4.73662/0.67029/0 0/0/0
+
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_woodencrate_small -1.56331/0.67029/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_woodencrate_small 1.56331/0.67029/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_fence_sound 1.56331/0.67029/0 0/0/0
+rem ---EndComp ---
+ObjectTemplate.geometry ukr_fence_2
+ObjectTemplate.setCollisionMesh ukr_fence_2
+ObjectTemplate.mapMaterial 0 Wood_thin 14
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

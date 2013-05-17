@@ -1,0 +1,16 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/8 14:3]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject trash_dumpster
+ObjectTemplate.creator FUL-1:ful
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry trash_dumpster
+ObjectTemplate.setCollisionMesh trash_dumpster
+ObjectTemplate.mapMaterial 0 metal 20
+ObjectTemplate.mass 100
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.isSleeping 1

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh kord_ammobox
+
+ObjectTemplate.create SimpleObject kord_ammobox
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.geometry kord_ammobox
+
+include kord_ammobox.tweak

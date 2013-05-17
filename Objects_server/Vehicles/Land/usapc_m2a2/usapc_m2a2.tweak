@@ -1,0 +1,1844 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 12:52]
+GeometryTemplate.setMaterialReflectionScale 1 0 0 1
+GeometryTemplate.setMaterialReflectionScale 1 0 1 2
+GeometryTemplate.setMaterialReflectionScale 1 0 2 0
+GeometryTemplate.setMaterialReflectionScale 1 0 3 0
+GeometryTemplate.setMaterialReflectionScale 1 1 0 1
+GeometryTemplate.setMaterialReflectionScale 1 2 0 1
+GeometryTemplate.setSpecularStaticGloss 0 0 1 1.5
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe PlayerControlObject usapc_m2a2
+ObjectTemplate.creator jarleif
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 3
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 1000
+ObjectTemplate.armor.hitPoints 1000
+ObjectTemplate.armor.defaultMaterial 72
+ObjectTemplate.armor.hpLostWhileUpSideDown 125
+ObjectTemplate.armor.hpLostWhileCriticalDamage 18
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.explosionForce 15
+ObjectTemplate.armor.explosionForceMod 20
+ObjectTemplate.armor.explosionForceMax 5000
+ObjectTemplate.armor.explosionDamage 300
+ObjectTemplate.armor.explosionRadius 6
+ObjectTemplate.armor.explosionMaterial 100
+ObjectTemplate.armor.wreckExplosionForce 10
+ObjectTemplate.armor.wreckExplosionDamage 50
+ObjectTemplate.armor.wreckExplosionRadius 4
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 1000
+ObjectTemplate.armor.timeToStayAsWreck 50
+ObjectTemplate.armor.criticalDamage 101
+ObjectTemplate.armor.addArmorEffect 75 e_vexp_btr_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_vexp_tank_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_land_lightsmoke 1.22935/1.55921/0.58496 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_vexp_btr_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_dstate_land_Mediumsmoke 1.22967/1.41982/0.39989 0/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_land_heavysmoke 1.27431/1.42096/0.399649 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_M6 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_btr_2nd 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_vexp_btr_wreckFire 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_btr_2nd 0/0/0 0/0/0
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage apc_spotted
+rem ---EndComp ---
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "M2A2 Bradley"
+ObjectTemplate.vehicleHud.guiIndex 0
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_apc.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_APC.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.hasTurretIcon 0
+ObjectTemplate.vehicleHud.vehicleIconPos 40/15
+ObjectTemplate.vehicleHud.vehicleType 5
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\m6linebacker.tga
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.firstWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserlockicon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_APC_DRIVER_CONTROLS_fireSecondaryWeapon"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_APC_DRIVER_CONTROLS_fireSecondaryWeapon"
+rem ---EndComp ---
+ObjectTemplate.geometry usapc_m2a2
+ObjectTemplate.setCollisionMesh usapc_m2a2
+ObjectTemplate.mapMaterial 0 Armor_2_light_armored_vehicles 27
+ObjectTemplate.mapMaterial 1 Armor_3_tank_rear_top 28
+ObjectTemplate.mapMaterial 2 USTNK_M1A2_Armor_4_tank_sides 29
+ObjectTemplate.mapMaterial 3 penetrable_glass 1018
+ObjectTemplate.mapMaterial 4 Armor_2_light_armored_vehicles 27
+ObjectTemplate.mapMaterial 5 USTNK_M1A2_Penetrable_Cloth 1016
+ObjectTemplate.mapMaterial 6 penetrable_metal_thin 1019
+ObjectTemplate.mapMaterial 7 USTNK_M1A2_Penetrable_Cardboardbox 1015
+ObjectTemplate.mapMaterial 8 Tank_tracks 86
+ObjectTemplate.mapMaterial 9 wreck 60
+ObjectTemplate.drag 1
+ObjectTemplate.mass 2500
+ObjectTemplate.gravityModifier 1.5
+ObjectTemplate.floaterMod 0.5
+ObjectTemplate.centerOfCollisionOffset 0/0.5/0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate Lav25
+ObjectTemplate.material 43
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_Ambient
+ObjectTemplate.addTemplate S_usapc_m2a2_AmbientDamaged
+ObjectTemplate.addTemplate usapc_m2a2_EntryPoint
+ObjectTemplate.setPosition 0/0.456556/1.64439
+ObjectTemplate.addTemplate usapc_m2a2_EntryPoint_Rear
+ObjectTemplate.setPosition 0/0.487534/-1.53045
+ObjectTemplate.addTemplate e_amphib_wake
+ObjectTemplate.setPosition 0.000888152/-0.694199/2.84225
+ObjectTemplate.addTemplate e_amphib_wake
+ObjectTemplate.setPosition 0.000976563/-0.694191/-2.55518
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate e_amphib_wake_sound
+ObjectTemplate.setPosition 0.000888152/-0.694199/0
+ObjectTemplate.addTemplate e_sinking_vehicle
+ObjectTemplate.addTemplate LaserTarget_vehicle
+ObjectTemplate.setPosition 0/0.422882/-0.15298
+ObjectTemplate.addTemplate usapc_m2a2_Passenger1
+ObjectTemplate.setPosition 0/1/0
+ObjectTemplate.addTemplate usapc_m2a2_Passenger2
+ObjectTemplate.setPosition 0/1/0
+ObjectTemplate.addTemplate usapc_m2a2_Passenger3
+ObjectTemplate.setPosition 0/1/0
+ObjectTemplate.addTemplate usapc_m2a2_Passenger4
+ObjectTemplate.setPosition 0/1/0
+ObjectTemplate.addTemplate e_amphib_bowspray
+ObjectTemplate.setPosition -1.00408e-009/-0.177068/-0.240473
+ObjectTemplate.addTemplate usapc_m2a2_FloaterFrontLeft
+ObjectTemplate.setPosition -1/2.5/4
+ObjectTemplate.addTemplate usapc_m2a2_FloaterFrontRight
+ObjectTemplate.setPosition 1/2.5/4
+ObjectTemplate.addTemplate usapc_m2a2_FloaterRearLeft
+ObjectTemplate.setPosition -1/2.5/-4
+ObjectTemplate.addTemplate usapc_m2a2_FloaterRearRight
+ObjectTemplate.setPosition 1/2.5/-4
+ObjectTemplate.addTemplate usapc_m2a2_VerticalBodyWing
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate usapc_m2a2_Rudder
+ObjectTemplate.setPosition 0/0.4/-5.2
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate usapc_m2a2_WaterEngine
+ObjectTemplate.setPosition 0/0/-3
+ObjectTemplate.setRotation 0/5/0
+ObjectTemplate.addTemplate LaserTarget_vehicle
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.5/0/0 0/0/0
+ObjectTemplate.altSoldierExitPosition 0/0/-4.5
+ObjectTemplate.exitSpeedMod 0.5
+ObjectTemplate.regulatePitchInput PIMouseLookY
+ObjectTemplate.regulatePitch 0/0
+ObjectTemplate.soundFilter vehicle
+ObjectTemplate.sprintFactor 1
+ObjectTemplate.setVehicleType VTApc
+ObjectTemplate.listenerObstruction 0.55
+ObjectTemplate.groundContactVolume 1
+ObjectTemplate.damagedAmbientSoundLimit 0.3
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.altSoldierExitPosition 0/0/-4.5
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_Ambient
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/ustnk_m1a2/sounds/m1a2_cockpit.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_AmbientDamaged
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm_tank.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe RotationalBundle usapc_m2a2_turret
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_turret_RotationRpm
+ObjectTemplate.addTemplate antenna
+ObjectTemplate.setPosition 1.08951/0.706744/-0.0058319
+ObjectTemplate.addTemplate antenna
+ObjectTemplate.setPosition 3.43625e-005/0.580422/-0.934154
+ObjectTemplate.addTemplate usapc_m2a2_SmokeLauncher
+ObjectTemplate.setPosition 0.000202128/0.27852/0.102442
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 45/0/0
+ObjectTemplate.setAcceleration 850/0/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.capMaxSpeed 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_turret_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/vehicles/turret_turning2.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 0.55
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.1/3/0/3/0.003/0.505/0.1/0.127/1.101/0.1/0.622/1.101/0.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/3/0.048/0/0/0.16/1/0/0.759/1/0/
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 5
+
+ObjectTemplate.activeSafe RotationalBundle usapc_m2a2_barrelbase
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_barrelbase_RotationRpm
+ObjectTemplate.addTemplate usapc_m2a2_Camera
+ObjectTemplate.setPosition -0.39189/0.11780/0.43446
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/7/0
+ObjectTemplate.setMaxSpeed 0/45/0
+ObjectTemplate.setAcceleration 0/850/0
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.regulatePitch -0.05/0.5
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_barrelbase_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/vehicles/turret_turning2.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 0.9
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.1/3/0/3/0.003/0.505/0.1/0.127/1.101/0.1/0.622/1.101/0.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/3/0.117/0/0/0.376/1/0/0.759/1/0/
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 3.5
+
+ObjectTemplate.activeSafe GenericFireArm usapc_m2a2_barrel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.hudName "25mm M242"
+ObjectTemplate.weaponHud.guiIndex 15
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\MODE_CAM1.tga
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.hasRangeFinder 1
+ObjectTemplate.weaponHud.displaySelectOnActivation 1
+ObjectTemplate.weaponHud.overheatSound S_Weapon_Vehicle_Overheat
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 15
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 225
+ObjectTemplate.fire.projectileStartPosition 0.5/0/1.5
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 1
+ObjectTemplate.ammo.magSize 450
+ObjectTemplate.ammo.reloadTime 6
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.recoilSize 2
+ObjectTemplate.recoil.recoilSpeed 20
+ObjectTemplate.recoil.recoilSpeedGB 10
+ObjectTemplate.recoil.recoilForce 10
+ObjectTemplate.recoil.cameraRecoilSpeed 5
+ObjectTemplate.recoil.cameraRecoilSize 0.5
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 0.55
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate Lav25AutoCannon
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_barrel_Fire1P
+ObjectTemplate.addTemplate S_usapc_m2a2_barrel_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_usapc_m2a2_barrel_Fire3P
+ObjectTemplate.addTemplate S_usapc_m2a2_barrel_BoltClick
+ObjectTemplate.addTemplate S_usapc_m2a2_barrel_TriggerClick
+ObjectTemplate.addTemplate S_usapc_m2a2_barrel_SwitchFireRate
+ObjectTemplate.addTemplate S_usapc_m2a2_barrel_Reload1P
+ObjectTemplate.addTemplate S_usapc_m2a2_barrel_Reload3P
+ObjectTemplate.addTemplate S_usapc_m2a2_barrel_Deploy1P
+ObjectTemplate.addTemplate S_usapc_m2a2_barrel_Deploy3P
+ObjectTemplate.addTemplate S_usapc_m2a2_barrel_Zoom
+ObjectTemplate.addTemplate e_muzz_25mm
+ObjectTemplate.setPosition 0/0.07643/2.08908
+ObjectTemplate.addTemplate e_muzz_s_LAV25
+ObjectTemplate.setPosition 0/0.07643/2.08908
+ObjectTemplate.addTemplate e_shellejection_25mm
+ObjectTemplate.setPosition -0.09903/-0.188066/0.422575
+rem -------------------------------------
+ObjectTemplate.projectileTemplate usapc_m2a2_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 375
+ObjectTemplate.heatAddWhenFire 0.04
+ObjectTemplate.coolDownPerSec 0.1
+ObjectTemplate.overheatPenalty 1.25
+
+ObjectTemplate.create GenericProjectile usapc_m2a2_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 42
+ObjectTemplate.detonation.explosionRadius 4
+ObjectTemplate.detonation.explosionForce 2.5
+ObjectTemplate.detonation.explosionDamage 65
+ObjectTemplate.detonation.explosionInnerConeRadius 15
+ObjectTemplate.detonation.endEffectTemplate e_exp_btr
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+rem ---EndComp ---
+ObjectTemplate.gravityModifier 0.6
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 42
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_Projectile_Looping
+ObjectTemplate.addTemplate e_rifleRocket_trail 
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/3/0/0
+ObjectTemplate.material 42
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 1
+ObjectTemplate.maxTracerScaler 5
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 1
+ObjectTemplate.tracerTemplate p_tracer2_eu
+ObjectTemplate.tracerConvergeDistance -1
+ObjectTemplate.minDamage 8
+ObjectTemplate.damage 40
+ObjectTemplate.distToStartLoseDamage 400
+ObjectTemplate.distToMinDamage 1000
+ObjectTemplate.damageMandownSoldiers 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_barrel_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/usapc_lav25/sounds/lav25_cannon_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.025/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position -0.114221/7.86781e-006/0.534047
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_barrel_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_barrel_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/vehicles/land/usapc_lav25/sounds/lav25_cannon_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.96/1.08/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position -0.105053/-0.036345/1.82296
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 25
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_barrel_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_barrel_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/ustnk_m1a2/sounds/vehicle_weapon_trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.41
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_barrel_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_barrel_Reload1P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_barrel_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_barrel_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_barrel_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_barrel_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound usapc_m2a2_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/btr_engine_start_idle.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe RotationalBundle usapc_m2a2_tow
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_tow_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/7/0
+ObjectTemplate.setMaxSpeed 0/45/0
+ObjectTemplate.setAcceleration 0/850/0
+ObjectTemplate.setInputToPitch PIMouseLookY
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_tow_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle usapc_m2a2_towbase
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_towbase_RotationRpm
+ObjectTemplate.setPosition -5.79239e-007/-0.1039/0.244126
+ObjectTemplate.addTemplate usapc_m2a2_TowLauncher
+ObjectTemplate.setRotation -180/0/90
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/90
+ObjectTemplate.setMaxSpeed 0/0/90
+ObjectTemplate.setAcceleration 0/0/90
+ObjectTemplate.startAutoRotateOnEnter 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_towbase_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create GenericFireArm usapc_m2a2_TowLauncher
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bomb.tga
+ObjectTemplate.weaponHud.hudName "M220 TOW"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.hasFireRate 0
+rem ---EndComp ---
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.fireInput PIAltFire
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.useDummyProjectiles 1
+ObjectTemplate.fire.addBarrelName usapc_m2a2_towbarrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 6
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.minimumTimeUntilReload 12
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.cameraRecoilSpeed 13
+ObjectTemplate.recoil.cameraRecoilSize 1.5
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+rem ---BeginComp:LPTargetComp ---
+ObjectTemplate.createComponent LPTargetComp
+ObjectTemplate.target.maxDistance 9999
+ObjectTemplate.target.setTargetAtMaxDistance 1
+ObjectTemplate.target.targetSystem TSWireGuided
+ObjectTemplate.target.targetObjectTemplate UniqueTarget
+ObjectTemplate.target.disableGuidanceOnReload 0
+ObjectTemplate.target.disableGuidanceOnReload 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate Lav25TOW
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_TowLauncher_Fire1P
+ObjectTemplate.addTemplate S_usapc_m2a2_TowLauncher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_usapc_m2a2_TowLauncher_Fire3P
+ObjectTemplate.addTemplate S_usapc_m2a2_TowLauncher_BoltClick
+ObjectTemplate.addTemplate S_usapc_m2a2_TowLauncher_TriggerClick
+ObjectTemplate.addTemplate S_usapc_m2a2_TowLauncher_SwitchFireRate
+ObjectTemplate.addTemplate S_usapc_m2a2_TowLauncher_Reload1P
+ObjectTemplate.addTemplate S_usapc_m2a2_TowLauncher_Reload3P
+ObjectTemplate.addTemplate S_usapc_m2a2_TowLauncher_Deploy1P
+ObjectTemplate.addTemplate S_usapc_m2a2_TowLauncher_Deploy3P
+ObjectTemplate.addTemplate S_usapc_m2a2_TowLauncher_Zoom
+ObjectTemplate.addTemplate usapc_m2a2_towbarrel
+ObjectTemplate.setPosition -0.119103/0.160895/-0.27999
+ObjectTemplate.setRotation 0/0/-45
+ObjectTemplate.addTemplate usapc_m2a2_towbarrel
+ObjectTemplate.setPosition -0.395835/0.166381/-0.279882
+ObjectTemplate.setRotation 0.139739/0.500282/-36.9458
+rem -------------------------------------
+ObjectTemplate.projectileTemplate tow_missile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 40
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_TowLauncher_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/weapons/btr_tow/btr_tow_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.9
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position -0.0041598/0.165322/0.646151
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_TowLauncher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_TowLauncher_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/weapons/btr_tow/btr_tow_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.9
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0.000721671/0.170038/0.602769
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 9
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_TowLauncher_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_TowLauncher_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_TowLauncher_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_TowLauncher_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/Vehicles/Land/USAPC_LAV25/sounds/Missile_Reload_Vehicle.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_TowLauncher_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_TowLauncher_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_TowLauncher_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_TowLauncher_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Bundle usapc_m2a2_towbarrel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.geometry tow2_dummy
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate e_muzz_Tow
+ObjectTemplate.setPosition 0.0199635/0.0393398/0.64874
+ObjectTemplate.addTemplate e_missile_ignition
+ObjectTemplate.setPosition 0.0199635/0.0393398/-0.79203
+rem -------------------------------------
+
+ObjectTemplate.create GenericFireArm usapc_m2a2_SmokeLauncher
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.roundsPerMinute 300
+ObjectTemplate.fire.fireInput PIFlareFire
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.burstSize 2
+ObjectTemplate.fire.addBarrelName usapc_m2a2_SmokeLauncher_Barrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 2
+ObjectTemplate.ammo.minimumTimeUntilReload 13
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 16
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_SmokeLauncher_Fire1P
+ObjectTemplate.addTemplate S_usapc_m2a2_SmokeLauncher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_usapc_m2a2_SmokeLauncher_Fire3P
+ObjectTemplate.addTemplate S_usapc_m2a2_SmokeLauncher_BoltClick
+ObjectTemplate.addTemplate S_usapc_m2a2_SmokeLauncher_TriggerClick
+ObjectTemplate.addTemplate S_usapc_m2a2_SmokeLauncher_SwitchFireRate
+ObjectTemplate.addTemplate S_usapc_m2a2_SmokeLauncher_Reload1P
+ObjectTemplate.addTemplate S_usapc_m2a2_SmokeLauncher_Reload3P
+ObjectTemplate.addTemplate S_usapc_m2a2_SmokeLauncher_Deploy1P
+ObjectTemplate.addTemplate S_usapc_m2a2_SmokeLauncher_Deploy3P
+ObjectTemplate.addTemplate S_usapc_m2a2_SmokeLauncher_Zoom
+ObjectTemplate.addTemplate usapc_m2a2_SmokeLauncher_Barrel
+ObjectTemplate.setPosition -0.83253/-0.05234/1.03335
+ObjectTemplate.setRotation -30/-20/0
+ObjectTemplate.addTemplate usapc_m2a2_SmokeLauncher_Barrel
+ObjectTemplate.setPosition 0.83253/-0.05234/1.03335
+ObjectTemplate.setRotation 30/-20/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate apc_btr90_flare_Launcher_Projectile
+ObjectTemplate.velocity 20
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_SmokeLauncher_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/smokeflare/sounds/smoke_fire.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_SmokeLauncher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_SmokeLauncher_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/smokeflare/sounds/smoke_fire.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0.003/0.972/1.032/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.903/1/
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 10
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_SmokeLauncher_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_SmokeLauncher_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/out_of_flares.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_SmokeLauncher_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_SmokeLauncher_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/smokeflare/sounds/smoke_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_SmokeLauncher_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_SmokeLauncher_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_SmokeLauncher_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_SmokeLauncher_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Bundle usapc_m2a2_SmokeLauncher_Barrel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+
+ObjectTemplate.create Camera usapc_m2a2_Camera
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_Camera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/-0.3/-0.4
+ObjectTemplate.setMaxRotation 1/0.3/0.4
+ObjectTemplate.setPivotPosition -0.2/-0.2/0.3
+ObjectTemplate.setMaxSpeed 1/1/1
+ObjectTemplate.setMaxResetSpeed 1/1/1
+ObjectTemplate.setAcceleration 1/1/1
+ObjectTemplate.setDeAcceleration 20/20/20
+ObjectTemplate.cameraShakeSensitivity 1
+ObjectTemplate.cameraShakeStartSpeed 1
+ObjectTemplate.cameraShakeMaxSpeed 80
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setLesserYawAtSpeed 50
+ObjectTemplate.regulateYaw 0.2/0.2
+ObjectTemplate.regulatePitch 0.1/0.1
+ObjectTemplate.regulateRoll 0.3/0.3
+ObjectTemplate.restoreRotationOnExit 1
+ObjectTemplate.followStiffness 4
+ObjectTemplate.chaseDistance 17
+ObjectTemplate.chaseAngle 0.15
+ObjectTemplate.chaseOffset 0/1/9
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection -0.25/-0.5/2
+ObjectTemplate.insideStaticSunColor 0/0/0
+ObjectTemplate.insideStaticSunDamageColor 1/0/0
+ObjectTemplate.insideDamageFrequency 7
+ObjectTemplate.insideDamageThreshold 0.15
+ObjectTemplate.insideStaticSunAmbientColor 0/0/0
+ObjectTemplate.cockpitSubGeom 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_Camera_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Engine usapc_m2a2_zmotor
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_zmotor_RotationRpm
+ObjectTemplate.setPosition 0.44663/-0.573434/1.047
+ObjectTemplate.addTemplate S_usapc_m2a2_zmotor_Idle
+ObjectTemplate.setPosition 0.72608/-0.536787/4.58148
+ObjectTemplate.addTemplate S_usapc_m2a2_zmotor_Rpm1
+ObjectTemplate.setPosition 0.547787/-0.355519/4.05631
+ObjectTemplate.addTemplate S_usapc_m2a2_zmotor_Rpm2
+ObjectTemplate.addTemplate S_usapc_m2a2_zmotor_Load
+ObjectTemplate.addTemplate e_exhaust
+ObjectTemplate.setPosition 1.92635/0.27501/3.30971
+ObjectTemplate.setRotation -55.8376/-0.124025/-0.35892
+ObjectTemplate.addTemplate e_exhaust_startup
+ObjectTemplate.setPosition 1.91511/0.264767/3.31876
+ObjectTemplate.setRotation -54.4235/-0.1124/-0.352644
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 40/0/10
+ObjectTemplate.setAcceleration 40/0/10
+ObjectTemplate.setDeAcceleration 40/0/3
+ObjectTemplate.setInputToYaw PIYaw
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setUseDeAcceleration 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 10
+ObjectTemplate.setDifferential 14
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.1
+ObjectTemplate.trackTurnAcceleration 30
+ObjectTemplate.trackTurnSpeed 0.75
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_zmotor_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/usapc_m2a2/sounds/mono/tracks.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.1/3/0/3/0.003/0.637/0.1/0.756/1.108/0.1/0.995/0.961/0.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/3/0.008/0/0/0.503/0.926/0/0.995/0.85/0/
+ObjectTemplate.position 0.44663/-0.573434/1.047
+ObjectTemplate.minDistance 4
+ObjectTemplate.halfVolumeDistance 15
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_zmotor_Idle
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/usapc_m2a2/sounds/mono/start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.96
+ObjectTemplate.pitch 1.2
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/3/0/2/0.003/0.754/0/0.997/1.18/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/3/0.003/0.751/0/0.061/0.997/0/0.99/0.888/0/
+ObjectTemplate.position 0.72608/-0.536787/4.58148
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 15
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_zmotor_Rpm1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/usapc_m2a2/sounds/mono/m2a2_add_01.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/3/0/3/0/0.662/0/0.602/1.279/0/0.99/1.53/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/3/0.003/0.005/0/0.398/0.84/0/0.985/0.992/0/
+ObjectTemplate.position 0.547787/-0.355519/4.05631
+ObjectTemplate.minDistance 4
+ObjectTemplate.halfVolumeDistance 10
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_zmotor_Rpm2
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_zmotor_Load
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle usapc_m2a2_LDriveWheel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+ObjectTemplate.rotateAsAnimatedUV 1
+ObjectTemplate.rotateAsAnimatedUVReverse 0
+ObjectTemplate.rotateAsAnimatedUVObject usapc_m2a2_RWheel_4
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_LDriveWheel_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_LDriveWheel_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle usapc_m2a2_LWheel_1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 32
+ObjectTemplate.rotateAsAnimatedUV 1
+ObjectTemplate.rotateAsAnimatedUVReverse 0
+ObjectTemplate.rotateAsAnimatedUVObject usapc_m2a2_RWheel_4
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_LWheel_1_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_LWheel_1_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring usapc_m2a2_LWheel_2
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 8
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_LWheel_2_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition -0.23/0/0
+ObjectTemplate.addTemplate web_trackedSmoke
+ObjectTemplate.setPosition -0.53/0.25815/0.93178
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_LWheel_2_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring usapc_m2a2_LWheel_3
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_LWheel_3_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition -0.23/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_LWheel_3_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring usapc_m2a2_LWheel_4
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+ObjectTemplate.animatedUVRotation 1
+ObjectTemplate.animatedUVRotationRadius 0.3
+ObjectTemplate.animatedUVRotationScale 1/1
+ObjectTemplate.animatedUVRotationIndex 1
+ObjectTemplate.animatedUVRotationReverse 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_LWheel_4_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition -0.23/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_LWheel_4_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring usapc_m2a2_LWheel_5
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+ObjectTemplate.animatedUVTranslation 1
+ObjectTemplate.animatedUVTranslationSpeed 0/0
+ObjectTemplate.animatedUVTranslationMax 0/0.0339
+ObjectTemplate.animatedUVTranslationSize 0/14
+ObjectTemplate.animatedUVTranslationReverse 0
+ObjectTemplate.animatedUVTranslationIndex 5
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_LWheel_5_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition -0.23/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_LWheel_5_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring usapc_m2a2_LWheel_6
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_LWheel_6_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition -0.23/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_LWheel_6_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring usapc_m2a2_LWheel_7
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 8
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_LWheel_7_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition -0.23/0/0
+ObjectTemplate.addTemplate web_trackedSmoke
+ObjectTemplate.setPosition -0.53/0.25815/-0.93178
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_LWheel_7_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle usapc_m2a2_RDriveWheel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+ObjectTemplate.rotateAsAnimatedUV 1
+ObjectTemplate.rotateAsAnimatedUVReverse 0
+ObjectTemplate.rotateAsAnimatedUVObject usapc_m2a2_LWheel_4
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_RDriveWheel_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_RDriveWheel_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle usapc_m2a2_RWheel_1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 32
+ObjectTemplate.rotateAsAnimatedUV 1
+ObjectTemplate.rotateAsAnimatedUVReverse 0
+ObjectTemplate.rotateAsAnimatedUVObject usapc_m2a2_LWheel_4
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_RWheel_1_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_RWheel_1_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring usapc_m2a2_RWheel_2
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 8
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_RWheel_2_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition 0.23/0/0
+ObjectTemplate.addTemplate web_trackedSmoke
+ObjectTemplate.setPosition 0.53/0.25815/0.93178
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_RWheel_2_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring usapc_m2a2_RWheel_3
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_RWheel_3_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition 0.23/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_RWheel_3_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring usapc_m2a2_RWheel_4
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+ObjectTemplate.animatedUVRotation 1
+ObjectTemplate.animatedUVRotationRadius 0.3
+ObjectTemplate.animatedUVRotationScale 1/1
+ObjectTemplate.animatedUVRotationIndex 3
+ObjectTemplate.animatedUVRotationReverse 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_RWheel_4_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition 0.23/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_RWheel_4_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring usapc_m2a2_RWheel_5
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+ObjectTemplate.animatedUVTranslation 1
+ObjectTemplate.animatedUVTranslationSpeed 0/0
+ObjectTemplate.animatedUVTranslationMax 0/0.0339
+ObjectTemplate.animatedUVTranslationSize 0/14
+ObjectTemplate.animatedUVTranslationReverse 0
+ObjectTemplate.animatedUVTranslationIndex 6
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_RWheel_5_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition 0.23/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_RWheel_5_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring usapc_m2a2_RWheel_6
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_RWheel_6_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition 0.23/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_RWheel_6_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Spring usapc_m2a2_RWheel_7
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 8
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_RWheel_7_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition 0.23/0/0
+ObjectTemplate.addTemplate web_trackedSmoke
+ObjectTemplate.setPosition 0.53/0.25815/-0.93178
+ObjectTemplate.addTemplate web_trackedSmoke
+ObjectTemplate.setPosition -1.25279/-0.06889/-0.30880
+rem -------------------------------------
+ObjectTemplate.setStrength 30
+ObjectTemplate.setDamping 3
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_RWheel_7_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create EntryPoint usapc_m2a2_EntryPoint
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3
+
+ObjectTemplate.create EntryPoint usapc_m2a2_EntryPoint_Rear
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3
+
+ObjectTemplate.create PlayerControlObject usapc_m2a2_Passenger1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "M2A2 Bradley"
+ObjectTemplate.vehicleHud.guiIndex 0
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 20/6
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.firstWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserlockicon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_APC_PASSENGER_CONTROLS_firePassengerWeapon"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_APC_PASSENGER_CONTROLS_firePassengerWeapon"
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate Lav25Passenger1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_Passenger1_Ambient
+ObjectTemplate.addTemplate S_usapc_m2a2_Passenger1_AmbientDamaged
+ObjectTemplate.addTemplate usapc_m2a2_pass1_cam
+ObjectTemplate.setPosition 0.2/0.984049/1.59028
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0/-1.5 -90/0/0
+ObjectTemplate.exitSpeedMod 0.5
+ObjectTemplate.soundFilter vehicle
+ObjectTemplate.listenerObstruction 0.55
+ObjectTemplate.damagedAmbientSoundLimit 0.3
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_Passenger1_Ambient
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/usapc_lav25/sounds/lav25_cockpit.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 0.7
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_Passenger1_AmbientDamaged
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm_tank.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.create Camera usapc_m2a2_pass1_cam
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_pass1_cam_RotationRpm
+rem -------------------------------------
+ObjectTemplate.chaseDistance 14
+ObjectTemplate.chaseAngle 0.15
+ObjectTemplate.chaseOffset 0/1/7
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 0
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection 2/2/1
+ObjectTemplate.insideStaticSunColor 0/0/0
+ObjectTemplate.insideStaticSunDamageColor 0.784314/0/0
+ObjectTemplate.insideDamageFrequency 4
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.333333/0.333333/0.333333
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_pass1_cam_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create PlayerControlObject usapc_m2a2_Passenger2
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "M2A2 Bradley"
+ObjectTemplate.vehicleHud.guiIndex 0
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 20/22
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.firstWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserlockicon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_APC_PASSENGER_CONTROLS_firePassengerWeapon"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_APC_PASSENGER_CONTROLS_firePassengerWeapon"
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate Lav25Passenger2
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_Passenger2_Ambient
+ObjectTemplate.addTemplate S_usapc_m2a2_Passenger2_AmbientDamaged
+ObjectTemplate.addTemplate usapc_m2a2_pass2_cam
+ObjectTemplate.setPosition -0.2/0.984049/1.59028
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2/0/-1.5 90/0/0
+ObjectTemplate.exitSpeedMod 0.5
+ObjectTemplate.soundFilter vehicle
+ObjectTemplate.listenerObstruction 0.55
+ObjectTemplate.damagedAmbientSoundLimit 0.3
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_Passenger2_Ambient
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/usapc_lav25/sounds/lav25_cockpit.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 0.7
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_Passenger2_AmbientDamaged
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm_tank.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.create Camera usapc_m2a2_pass2_cam
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_pass2_cam_RotationRpm
+rem -------------------------------------
+ObjectTemplate.chaseDistance 14
+ObjectTemplate.chaseAngle 0.15
+ObjectTemplate.chaseOffset 0/1/7
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 0
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection 2/2/1
+ObjectTemplate.insideStaticSunColor 0.05098/0.062745/0.047059
+ObjectTemplate.insideStaticSunDamageColor 0.784314/0/0
+ObjectTemplate.insideDamageFrequency 4
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.333333/0.333333/0.333333
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_pass2_cam_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create PlayerControlObject usapc_m2a2_Passenger3
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "M2A2 Bradley"
+ObjectTemplate.vehicleHud.guiIndex 0
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 12/6
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.firstWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserlockicon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_APC_PASSENGER_CONTROLS_firePassengerWeapon"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_APC_PASSENGER_CONTROLS_firePassengerWeapon"
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate Lav25Passenger3
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_Passenger3_Ambient
+ObjectTemplate.addTemplate S_usapc_m2a2_Passenger3_AmbientDamaged
+ObjectTemplate.addTemplate usapc_m2a2_pass3_cam
+ObjectTemplate.setPosition -0.5/1.13626/-2.77271
+ObjectTemplate.setRotation -180/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2/0/1.2 -180/0/0
+ObjectTemplate.exitSpeedMod 0.5
+ObjectTemplate.soundFilter vehicle
+ObjectTemplate.listenerObstruction 0.55
+ObjectTemplate.damagedAmbientSoundLimit 0.3
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_Passenger3_Ambient
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/usapc_lav25/sounds/lav25_cockpit.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 0.7
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_Passenger3_AmbientDamaged
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm_tank.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.create Camera usapc_m2a2_pass3_cam
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_pass3_cam_RotationRpm
+rem -------------------------------------
+ObjectTemplate.chaseDistance 14
+ObjectTemplate.chaseAngle 0.15
+ObjectTemplate.chaseOffset 0/1/7
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 0
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection 2/2/1
+ObjectTemplate.insideStaticSunColor 0.015686/0.015686/0.015686
+ObjectTemplate.insideStaticSunDamageColor 0.784314/0/0
+ObjectTemplate.insideDamageFrequency 4
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.235294/0.466667/0.2
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_pass3_cam_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create PlayerControlObject usapc_m2a2_Passenger4
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "M2A2 Bradley"
+ObjectTemplate.vehicleHud.guiIndex 0
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 12/22
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.firstWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserlockicon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_APC_PASSENGER_CONTROLS_firePassengerWeapon"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_APC_PASSENGER_CONTROLS_firePassengerWeapon"
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate Lav25Passenger4
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_Passenger4_Ambient
+ObjectTemplate.addTemplate S_usapc_m2a2_Passenger4_AmbientDamaged
+ObjectTemplate.addTemplate usapc_m2a2_pass4_cam
+ObjectTemplate.setPosition 0.5/1.13626/-2.77271
+ObjectTemplate.setRotation -180/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0/1.2 -180/0/0
+ObjectTemplate.exitSpeedMod 0.5
+ObjectTemplate.soundFilter vehicle
+ObjectTemplate.listenerObstruction 0.55
+ObjectTemplate.damagedAmbientSoundLimit 0.3
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_Passenger4_Ambient
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/usapc_lav25/sounds/lav25_cockpit.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 0.7
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_Passenger4_AmbientDamaged
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm_tank.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.create Camera usapc_m2a2_pass4_cam
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_pass4_cam_RotationRpm
+rem -------------------------------------
+ObjectTemplate.chaseDistance 14
+ObjectTemplate.chaseAngle 0.15
+ObjectTemplate.chaseOffset 0/1/7
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 0
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection 2/2/1
+ObjectTemplate.insideStaticSunColor 0.090196/0.113725/0.086275
+ObjectTemplate.insideStaticSunDamageColor 0.784314/0/0
+ObjectTemplate.insideDamageFrequency 4
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.333333/0.333333/0.333333
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_pass4_cam_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create FloatingBundle usapc_m2a2_FloaterFrontLeft
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.dragModifier 4000/4000/4000
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_FloaterFrontLeft_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setHullHeight 2.6
+ObjectTemplate.setFloatMaxLift 8
+ObjectTemplate.setFloatMinLift 0
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_FloaterFrontLeft_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create FloatingBundle usapc_m2a2_FloaterFrontRight
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.dragModifier 4000/4000/4000
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_FloaterFrontRight_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setHullHeight 2.6
+ObjectTemplate.setFloatMaxLift 8
+ObjectTemplate.setFloatMinLift 0
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_FloaterFrontRight_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create FloatingBundle usapc_m2a2_FloaterRearLeft
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.dragModifier 4000/4000/4000
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_FloaterRearLeft_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setHullHeight 2.6
+ObjectTemplate.setFloatMaxLift 8
+ObjectTemplate.setFloatMinLift 0
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_FloaterRearLeft_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create FloatingBundle usapc_m2a2_FloaterRearRight
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.dragModifier 4000/4000/4000
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_FloaterRearRight_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setHullHeight 2.6
+ObjectTemplate.setFloatMaxLift 8
+ObjectTemplate.setFloatMinLift 0
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_FloaterRearRight_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Wing usapc_m2a2_VerticalBodyWing
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_VerticalBodyWing_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0.1
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_VerticalBodyWing_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Wing usapc_m2a2_Rudder
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_Rudder_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-17/0
+ObjectTemplate.setMaxRotation 0/17/0
+ObjectTemplate.setMaxSpeed 0/1/0
+ObjectTemplate.setAcceleration 0/40/0
+ObjectTemplate.setInputToPitch PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2.5
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_Rudder_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Engine usapc_m2a2_WaterEngine
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usapc_m2a2_WaterEngine_RotationRpm
+ObjectTemplate.addTemplate S_usapc_m2a2_WaterEngine_Idle
+ObjectTemplate.setPosition 0/0.21812/0
+ObjectTemplate.addTemplate S_usapc_m2a2_WaterEngine_Rpm1
+ObjectTemplate.addTemplate S_usapc_m2a2_WaterEngine_Rpm2
+ObjectTemplate.addTemplate S_usapc_m2a2_WaterEngine_Load
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 300/1/10
+ObjectTemplate.setAcceleration 300/0.1/10
+ObjectTemplate.setInputToYaw PIYaw
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 15
+ObjectTemplate.setDifferential 40
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.1
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_WaterEngine_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_WaterEngine_Idle
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_WaterEngine_Rpm1
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_WaterEngine_Rpm2
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_usapc_m2a2_WaterEngine_Load
+ObjectTemplate.modifiedByUser "999"

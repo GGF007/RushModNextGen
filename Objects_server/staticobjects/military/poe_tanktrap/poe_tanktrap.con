@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh poe_tanktrap
+CollisionManager.createTemplate poe_tanktrap
+
+ObjectTemplate.create SimpleObject poe_tanktrap
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh poe_tanktrap
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry poe_tanktrap
+
+include poe_tanktrap.tweak

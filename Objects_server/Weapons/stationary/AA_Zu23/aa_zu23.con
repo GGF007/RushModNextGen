@@ -1,0 +1,76 @@
+GeometryTemplate.create BundledMesh aa_zu23
+CollisionManager.createTemplate aa_zu23
+
+ObjectTemplate.create PlayerControlObject aa_zu23
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.collisionMesh aa_zu23
+ObjectTemplate.mapMaterial 0 Armor_1_metal_plating 0
+ObjectTemplate.mapMaterial 1 rubber 0
+ObjectTemplate.mapMaterial 2 wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry aa_zu23
+ObjectTemplate.addTemplate aa_zu23_Carrage
+ObjectTemplate.setPosition 0/0.4050/0.3617
+
+ObjectTemplate.create RotationalBundle aa_zu23_Carrage
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate aa_zu23_Carrage_Pitch
+ObjectTemplate.setPosition -0.0055/0.0618/0.4242
+ObjectTemplate.addTemplate aa_zu23_Lower_Hand
+ObjectTemplate.setPosition 0.0149/-0.1335/-0.3893
+ObjectTemplate.addTemplate aa_zu23_Upper_hand
+ObjectTemplate.setPosition -0.3844/0.2236/-0.0390
+
+ObjectTemplate.create RotationalBundle aa_zu23_Carrage_Pitch
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate aa_zu23_Guns
+ObjectTemplate.setPosition 0.0062/-0.1118/0.4706
+
+ObjectTemplate.create GenericFireArm aa_zu23_Guns
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate aa_zu23_L_Barrel
+ObjectTemplate.setPosition -0.1140/0.1344/1.0303
+ObjectTemplate.addTemplate aa_zu23_R_Barrel
+ObjectTemplate.setPosition 0.1020/0.1344/1.0303
+
+ObjectTemplate.create Bundle aa_zu23_L_Barrel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Bundle aa_zu23_R_Barrel
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create RotationalBundle aa_zu23_Lower_Hand
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create RotationalBundle aa_zu23_Upper_hand
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+include aa_zu23.tweak

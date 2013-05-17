@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh sandbagwall_4m
+CollisionManager.createTemplate sandbagwall_4m
+
+ObjectTemplate.create DestroyableObject sandbagwall_4m
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh sandbagwall_4m
+ObjectTemplate.mapMaterial 0 Sandbags 0
+ObjectTemplate.mapMaterial 1 Stairs_concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry sandbagwall_4m
+
+include sandbagwall_4m.tweak

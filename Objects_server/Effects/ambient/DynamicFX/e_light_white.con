@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_light_white
+ObjectTemplate.createdInEditor 1
+
+include e_light_white.tweak

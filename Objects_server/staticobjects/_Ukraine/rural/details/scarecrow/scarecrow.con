@@ -1,0 +1,15 @@
+GeometryTemplate.create BundledMesh scarecrow
+CollisionManager.createTemplate scarecrow
+
+ObjectTemplate.create DestroyableObject scarecrow
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.collisionMesh scarecrow
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.mapMaterial 1 Grass 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry scarecrow
+ObjectTemplate.anchor 0/-1.3120/0
+
+include scarecrow.tweak

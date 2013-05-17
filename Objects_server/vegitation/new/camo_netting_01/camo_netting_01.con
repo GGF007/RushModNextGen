@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh camo_netting_01
+CollisionManager.createTemplate camo_netting_01
+
+ObjectTemplate.create SimpleObject camo_netting_01
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator destructo
+ObjectTemplate.collisionMesh camo_netting_01
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry camo_netting_01
+
+include camo_netting_01.tweak

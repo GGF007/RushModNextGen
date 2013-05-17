@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_EMP_Mech
+ObjectTemplate.createdInEditor 1
+
+include e_EMP_Mech.tweak

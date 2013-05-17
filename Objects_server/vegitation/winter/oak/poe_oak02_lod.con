@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh poe_oak02_lod
+
+ObjectTemplate.create SimpleObject poe_oak02_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.geometry poe_oak02_lod
+
+include poe_oak02_lod.tweak

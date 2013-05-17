@@ -1,0 +1,24 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 12:52]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Rotor us_ahe_kiowa_mainrotor
+ObjectTemplate.creator PHILSCH-Z4KV58U:Phil
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry us_ahe_kiowa_mainrotor
+ObjectTemplate.setCollisionMesh us_ahe_kiowa_mainrotor
+ObjectTemplate.mapMaterial 0 rotor 31
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate ade_heliDraft
+rem -------------------------------------
+ObjectTemplate.changeLodAt 0.15
+ObjectTemplate.tolerance 1.49011e-009
+ObjectTemplate.rotationSpeedMod -0.3
+ObjectTemplate.rotationSpeedModBlur -5.05
+ObjectTemplate.rotationAxle 0
+ObjectTemplate.engineName us_ahe_kiowa_Rotor

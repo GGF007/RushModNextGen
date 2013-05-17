@@ -1,0 +1,27 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+GeometryTemplate.setSubGeometryLodDistance 1 0 15
+GeometryTemplate.setSubGeometryLodDistance 1 1 30
+GeometryTemplate.setSubGeometryLodDistance 1 2 95
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+ObjectTemplate.activeSafe RotationalBundle ukraav_shilka_radar
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry ukraav_shilka_radar
+ObjectTemplate.setCollisionMesh ukraav_shilka_radar
+ObjectTemplate.mapMaterial 0 Armor_2_light_armored_vehicles 27
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ukraav_shilka_radar_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 235/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.automaticYawStabilization 1
+ObjectTemplate.startAutoRotateOnEnter 1
+
+ObjectTemplate.activeSafe Sound S_ukraav_shilka_radar_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+

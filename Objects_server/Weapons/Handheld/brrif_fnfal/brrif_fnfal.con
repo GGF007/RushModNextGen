@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh brrif_fnfal
+
+ObjectTemplate.create genericfirearm brrif_fnfal
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry brrif_fnfal
+
+include brrif_fnfal.tweak

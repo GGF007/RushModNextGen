@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh gblmg_minimi_stationary
+
+ObjectTemplate.create GenericFireArm gblmg_minimi_stationary
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry gblmg_minimi_stationary
+
+include gblmg_minimi_stationary.tweak 

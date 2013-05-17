@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh ub_32_57
+
+ObjectTemplate.create SimpleObject ub_32_57
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.geometry ub_32_57
+
+include ub_32_57.tweak

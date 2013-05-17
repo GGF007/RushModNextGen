@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh cmt_bridge
+CollisionManager.createTemplate cmt_bridge
+
+ObjectTemplate.create SimpleObject cmt_bridge
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh cmt_bridge
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 1 Pentrable_Metal_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry cmt_bridge
+
+include cmt_bridge.tweak

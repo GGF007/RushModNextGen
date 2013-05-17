@@ -1,0 +1,14 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 12:52]
+ObjectTemplate.activeSafe AntennaObject cf_jep_gwagon_antenna
+ObjectTemplate.creator MDA-1:mda
+ObjectTemplate.modifiedByUser "Phil"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry cf_jep_gwagon_antenna
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.antenna.skeleton Objects/Vehicles/Common/Antenna/antenna_setup.ske
+ObjectTemplate.antenna.maxSwayAngle 30/30
+ObjectTemplate.antenna.stiffness 5
+ObjectTemplate.antenna.damping 0.05
+ObjectTemplate.antenna.accelerationFactor 20
+

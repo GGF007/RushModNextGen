@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh usammo_box
+CollisionManager.createTemplate usammo_box
+
+ObjectTemplate.create bundle usammo_box
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator WIZARDS:Guedoe
+ObjectTemplate.collisionMesh usammo_box
+ObjectTemplate.mapMaterial 0 metal_plate_thin 0
+ObjectTemplate.mapMaterial 1 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry usammo_box
+
+include usammo_box.tweak

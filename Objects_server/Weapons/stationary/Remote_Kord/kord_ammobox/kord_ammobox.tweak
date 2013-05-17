@@ -1,0 +1,12 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+ObjectTemplate.active kord_ammobox
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry kord_ammobox
+ObjectTemplate.setCollisionMesh kord_ammobox
+ObjectTemplate.mapMaterial 0 Metal_Plate_Thin 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+
+

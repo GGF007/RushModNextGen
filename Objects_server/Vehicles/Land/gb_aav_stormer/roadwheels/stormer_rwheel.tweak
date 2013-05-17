@@ -1,0 +1,22 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 12:52]
+GeometryTemplate.setSubGeometryLodDistance 0 0 64
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe RotationalBundle stormer_rwheel
+ObjectTemplate.creator Phil
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 14
+ObjectTemplate.geometry stormer_rwheel
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.rotateAsAnimatedUV 1
+ObjectTemplate.rotateAsAnimatedUVReverse 1
+ObjectTemplate.rotateAsAnimatedUVObject gb_aav_stormer_Rwheel_02
+rem -------------------------------------
+ObjectTemplate.addTemplate S_stormer_rwheel_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_stormer_rwheel_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+

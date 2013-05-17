@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh chr_fnc2
+CollisionManager.createTemplate chr_fnc2
+
+ObjectTemplate.create SimpleObject chr_fnc2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh chr_fnc2
+ObjectTemplate.mapMaterial 0 Penetrable_Wood 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry chr_fnc2
+
+include chr_fnc2.tweak

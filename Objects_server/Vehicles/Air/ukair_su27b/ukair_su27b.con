@@ -1,0 +1,221 @@
+GeometryTemplate.create BundledMesh ukair_su27b
+CollisionManager.createTemplate ukair_su27b
+
+ObjectTemplate.create PlayerControlObject ukair_su27b
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh ukair_su27b
+ObjectTemplate.mapMaterial 0 Airplane 0
+ObjectTemplate.mapMaterial 1 Glass_vehicle 0
+ObjectTemplate.mapMaterial 2 Wreck 0
+ObjectTemplate.mapMaterial 3 rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry ukair_su27b
+ObjectTemplate.addTemplate ukair_su27b_AirBrake
+ObjectTemplate.setPosition 0/1.1133/1.5929
+ObjectTemplate.addTemplate ukair_su27b_Elevator
+ObjectTemplate.setPosition 0/-0.1886/-7.1149
+ObjectTemplate.addTemplate ukair_su27b_F_Gear_1
+ObjectTemplate.setPosition 0/-0.0667/2.7845
+ObjectTemplate.addTemplate ukair_su27b_F_Gear_2
+ObjectTemplate.setPosition 0/-0.0650/1.5101
+ObjectTemplate.addTemplate ukair_su27b_F_GrDr
+ObjectTemplate.setPosition 0.2775/-0.2401/3.6923
+ObjectTemplate.setRotation 0/3.0000/0
+ObjectTemplate.addTemplate ukair_su27b_hydralic
+ObjectTemplate.setPosition 0/0.5293/-1.1862
+ObjectTemplate.addTemplate ukair_su27b_L_Gear
+ObjectTemplate.setPosition -1.8590/-0.0060/-2.9560
+ObjectTemplate.addTemplate ukair_su27b_L_GrDr_1
+ObjectTemplate.setPosition -2.1760/0.1532/-0.9019
+ObjectTemplate.setRotation 0/0.9000/-110.0000
+ObjectTemplate.addTemplate ukair_su27b_L_GrDr_2
+ObjectTemplate.setPosition -2.1164/0.0751/-2.5554
+ObjectTemplate.setRotation 0/0/-90.0000
+ObjectTemplate.addTemplate ukair_su27b_L_VisAli
+ObjectTemplate.setPosition -3.9730/0.2510/-4.4100
+ObjectTemplate.setRotation -23.4560/0/0
+ObjectTemplate.addTemplate ukair_su27b_L_VisRudder
+ObjectTemplate.setPosition -2.0640/1.6149/-6.4806
+ObjectTemplate.setRotation 0/-12.7545/-90.0000
+ObjectTemplate.addTemplate ukair_su27b_R_Gear
+ObjectTemplate.setPosition 1.8591/-0.0060/-2.9560
+ObjectTemplate.addTemplate ukair_su27b_R_GrDr_1
+ObjectTemplate.setPosition 2.1760/0.1532/-0.9019
+ObjectTemplate.setRotation 0/0.9000/110.0001
+ObjectTemplate.addTemplate ukair_su27b_R_GrDr_2
+ObjectTemplate.setPosition 2.1160/0.0751/-2.5554
+ObjectTemplate.setRotation 0/0/90.0000
+ObjectTemplate.addTemplate ukair_su27b_R_VisAli
+ObjectTemplate.setPosition 3.9730/0.2510/-4.4100
+ObjectTemplate.setRotation 23.4559/0/0
+ObjectTemplate.addTemplate ukair_su27b_R_VisRudder
+ObjectTemplate.setPosition 2.0641/1.6149/-6.4806
+ObjectTemplate.setRotation 0/-12.7545/-90.0000
+
+ObjectTemplate.create RotationalBundle ukair_su27b_AirBrake
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create Wing ukair_su27b_Elevator
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create LandingGear ukair_su27b_F_Gear_1
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate ukair_su27b_F_GearTurn
+ObjectTemplate.setPosition 0/-1.6308/0
+
+ObjectTemplate.create RotationalBundle ukair_su27b_F_GearTurn
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+ObjectTemplate.addTemplate ukair_su27b_F_Whl
+ObjectTemplate.setPosition 0/-0.4348/-0.2345
+
+ObjectTemplate.create Spring ukair_su27b_F_Whl
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create LandingGear ukair_su27b_F_Gear_2
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create LandingGear ukair_su27b_F_GrDr
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle ukair_su27b_hydralic
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create LandingGear ukair_su27b_L_Gear
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+ObjectTemplate.addTemplate ukair_su27b_L_Gear_1
+ObjectTemplate.setPosition -0.0080/-1.7890/0
+
+ObjectTemplate.create LandingGear ukair_su27b_L_Gear_1
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+ObjectTemplate.addTemplate ukair_su27b_L_Whl
+ObjectTemplate.setPosition -0.2490/-0.1295/-0.0077
+
+ObjectTemplate.create Spring ukair_su27b_L_Whl
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create LandingGear ukair_su27b_L_GrDr_1
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create LandingGear ukair_su27b_L_GrDr_2
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create RotationalBundle ukair_su27b_L_VisAli
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create RotationalBundle ukair_su27b_L_VisRudder
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create LandingGear ukair_su27b_R_Gear
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+ObjectTemplate.addTemplate ukair_su27b_R_Gear_1
+ObjectTemplate.setPosition 0.0079/-1.7891/0
+
+ObjectTemplate.create LandingGear ukair_su27b_R_Gear_1
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+ObjectTemplate.addTemplate ukair_su27b_R_Whl
+ObjectTemplate.setPosition 0.2488/-0.1294/-0.0077
+
+ObjectTemplate.create Spring ukair_su27b_R_Whl
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create LandingGear ukair_su27b_R_GrDr_1
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create LandingGear ukair_su27b_R_GrDr_2
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create RotationalBundle ukair_su27b_R_VisAli
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create RotationalBundle ukair_su27b_R_VisRudder
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+include ukair_su27b.tweak

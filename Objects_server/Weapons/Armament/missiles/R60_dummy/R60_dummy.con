@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject R60_dummy
+ObjectTemplate.createdInEditor 1
+
+include R60_dummy.tweak

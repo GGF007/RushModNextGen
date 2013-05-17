@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh cf_apc_lav3_towmisslerack
+CollisionManager.createTemplate cf_apc_lav3_towmisslerack
+
+ObjectTemplate.create rotationalbundle cf_apc_lav3_towmisslerack
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator WIZARDS:Guedoe
+ObjectTemplate.collisionMesh cf_apc_lav3_towmisslerack
+ObjectTemplate.mapMaterial 0 metal_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry cf_apc_lav3_towmisslerack
+
+include cf_apc_lav3_towmisslerack.tweak

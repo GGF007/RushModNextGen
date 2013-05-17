@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh join_2floor_v1
+CollisionManager.createTemplate join_2floor_v1
+
+ObjectTemplate.create DestroyableObject join_2floor_v1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh join_2floor_v1
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.mapMaterial 2 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry join_2floor_v1
+
+include join_2floor_v1.tweak

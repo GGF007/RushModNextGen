@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh f1grenade_projectile
+
+ObjectTemplate.create GenericFireArm f1grenade_projectile
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry f1grenade_projectile
+
+include f1grenade_projectile.tweak

@@ -1,0 +1,23 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/1/4 7:47]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject doppler
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry doppler
+ObjectTemplate.setCollisionMesh doppler
+ObjectTemplate.mapMaterial 0 concrete 78
+ObjectTemplate.mapMaterial 1 concrete 78
+ObjectTemplate.mapMaterial 2 Glass_common 17
+ObjectTemplate.mapMaterial 3 concrete 78
+ObjectTemplate.mapMaterial 4 concrete 78
+ObjectTemplate.mapMaterial 5 concrete 78
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

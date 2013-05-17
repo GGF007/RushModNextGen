@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh stinger_missile
+CollisionManager.createTemplate stinger_missile
+
+ObjectTemplate.create GenericProjectile stinger_missile
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator IGOR:andrew
+ObjectTemplate.collisionMesh stinger_missile
+ObjectTemplate.mapMaterial 0 stinger_missile 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry stinger_missile
+
+include stinger_missile.tweak

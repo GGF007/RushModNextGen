@@ -1,0 +1,53 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/21 14:16]
+ObjectTemplate.activeSafe EffectBundle e_dstate_soldier05
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WindAffector ---
+ObjectTemplate.createComponent WindAffector
+ObjectTemplate.windType Point
+ObjectTemplate.windIsDynamic 0
+ObjectTemplate.windDirection 0/0/0
+ObjectTemplate.windSpeed 0
+ObjectTemplate.windBlowTime 0
+ObjectTemplate.windFalloff 0
+ObjectTemplate.windRadialFalloff 0
+rem ---EndComp ---
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_dstate_soldier05_Start
+rem -------------------------------------
+rem begin Auto-generated effectProperties-part.
+ObjectTemplate.AlphaIntensityRange 0.8/1
+ObjectTemplate.AlphaIntensityUsed 0
+ObjectTemplate.AlphaIntensityFromSpeed 0/3
+ObjectTemplate.EmitScaleFactorRange 0.5/1
+ObjectTemplate.EmitScaleFactorUsed 0
+ObjectTemplate.EmitScaleFactorFromSpeed 0/8
+ObjectTemplate.EmitSpeedScaleRange 1/1
+ObjectTemplate.EmitSpeedScaleUsed 0
+ObjectTemplate.AgeScaleFactorRange 1/1
+ObjectTemplate.AgeScaleFactorUsed 0
+ObjectTemplate.StartAgeRange 0/0
+ObjectTemplate.StartAgeUsed 0
+rem end Auto-generated effectProperties-part.
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_dstate_soldier05_Start
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "Common/Sound/effects/death/effectdeathsoldier05.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 0
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4

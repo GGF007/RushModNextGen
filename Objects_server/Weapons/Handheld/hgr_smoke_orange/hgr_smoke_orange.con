@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh hgr_smoke_orange
+CollisionManager.createTemplate hgr_smoke_orange
+
+ObjectTemplate.create GenericFireArm hgr_smoke_orange
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.collisionMesh hgr_smoke
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry hgr_smoke_orange
+
+include hgr_smoke_orange.tweak

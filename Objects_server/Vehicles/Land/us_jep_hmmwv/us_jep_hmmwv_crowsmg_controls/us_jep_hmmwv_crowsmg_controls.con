@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh us_jep_hmmwv_crowsmg_controls
+
+ObjectTemplate.create Bundle us_jep_hmmwv_crowsmg_controls
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator STUDIO:J-MAR
+ObjectTemplate.geometry us_jep_hmmwv_crowsmg_controls
+
+include us_jep_hmmwv_crowsmg_controls.tweak

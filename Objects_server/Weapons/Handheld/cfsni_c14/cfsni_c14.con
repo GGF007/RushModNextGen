@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh cfsni_c14
+
+ObjectTemplate.create genericfirearm cfsni_c14
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry cfsni_c14
+
+include cfsni_c14.tweak

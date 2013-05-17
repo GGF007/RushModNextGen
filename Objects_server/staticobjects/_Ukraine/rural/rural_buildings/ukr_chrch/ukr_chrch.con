@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh ukr_chrch
+CollisionManager.createTemplate ukr_chrch
+
+ObjectTemplate.create SimpleObject ukr_chrch
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator GUEST:Owner
+ObjectTemplate.collisionMesh ukr_chrch
+ObjectTemplate.mapMaterial 0 wood_solid 0
+ObjectTemplate.mapMaterial 1 Glass_common 0
+ObjectTemplate.mapMaterial 2 concrete 0
+ObjectTemplate.mapMaterial 3 wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukr_chrch
+
+include ukr_chrch.tweak

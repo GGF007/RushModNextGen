@@ -1,0 +1,307 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/21 9:50]
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.4
+GeometryTemplate.setMaterialReflectionScale 0 0 1 2
+GeometryTemplate.setMaterialReflectionScale 1 0 0 0.25
+GeometryTemplate.setMaterialReflectionScale 1 0 1 2
+GeometryTemplate.setMaterialReflectionScale 1 1 0 1
+GeometryTemplate.setMaterialReflectionScale 1 1 1 0.25
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm mecsni_ssgp1
+ObjectTemplate.creator TDA-1:tda
+ObjectTemplate.modifiedByUser "Boserup"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 10
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\Select\mecsni_ssgp1.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Select\mecsni_ssgp1.tga
+ObjectTemplate.weaponHud.hudName "SSGP-1"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+rem ---ObjectTemplate.createComponent PostProcess---
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+ObjectTemplate.fire.busyUntilButtonRelease 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 7
+ObjectTemplate.ammo.magSize 5
+ObjectTemplate.ammo.reloadTime 5
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+ObjectTemplate.createComponent SoldierBasedRecoilComp
+ObjectTemplate.recoil.hasRecoilForce 1
+ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/5.2/4/0
+ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-1/1/0
+ObjectTemplate.recoil.zoomModifier 0.45
+ObjectTemplate.recoil.recoilGraphFrameCount 14
+ObjectTemplate.recoil.recoilGraphExponent 7
+ObjectTemplate.recoil.recoilGraphTotalMovement 0.1
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_HANDHELD_SNIPERRIFLE_CONTROLS_switchToScopeView"
+ObjectTemplate.HelpHud.helpSoundKey "USRIF_M24"
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.setFireDev 3 0.2 0.05
+ObjectTemplate.deviation.minDev 5
+ObjectTemplate.deviation.setTurnDev 1.0 0.5 0.2 0.1
+ObjectTemplate.deviation.setSpeedDev 3.5 0.2 0.2 0.1 
+ObjectTemplate.deviation.setMiscDev 2.5 1.5 0.05
+ObjectTemplate.deviation.devModStand 2
+ObjectTemplate.deviation.devModCrouch 1.5
+ObjectTemplate.deviation.devModLie 0.8
+ObjectTemplate.deviation.devModZoom 0.005
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.useShiftAnimation 1
+ObjectTemplate.animation.shiftDelay 1.8
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.zoomDelay 0.4
+ObjectTemplate.zoom.zoomLod 1
+ObjectTemplate.zoom.addZoomFactor 0
+ObjectTemplate.zoom.addZoomFactor 0.2
+ObjectTemplate.zoom.mouseSpeedMod 0.6
+ObjectTemplate.zoom.zoomOutAfterFire 0
+ObjectTemplate.zoom.disableMuzzleWhenZoomed 1
+rem ---EndComp ---
+ObjectTemplate.geometry mecsni_ssgp1
+ObjectTemplate.setCollisionMesh mecsni_ssgp1
+ObjectTemplate.mapMaterial 0 Collision_Material 68
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate usrif_m24AI
+rem -------------------------------------
+ObjectTemplate.addTemplate S_mecsni_ssgp1_Fire1P
+ObjectTemplate.addTemplate S_mecsni_ssgp1_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_mecsni_ssgp1_Fire3P
+ObjectTemplate.setPosition 0.00555/0.07091/0.64172
+ObjectTemplate.addTemplate S_mecsni_ssgp1_BoltClick
+ObjectTemplate.addTemplate S_mecsni_ssgp1_TriggerClick
+ObjectTemplate.addTemplate S_mecsni_ssgp1_SwitchFireRate
+ObjectTemplate.addTemplate S_mecsni_ssgp1_Reload1P
+ObjectTemplate.addTemplate S_mecsni_ssgp1_Reload3P
+ObjectTemplate.setPosition 0/0.02758/-0.0819
+ObjectTemplate.addTemplate S_mecsni_ssgp1_Deploy1P
+ObjectTemplate.addTemplate S_mecsni_ssgp1_Deploy3P
+ObjectTemplate.addTemplate S_mecsni_ssgp1_Zoom
+ObjectTemplate.addTemplate e_dist_dragunov 
+ObjectTemplate.setPosition 0.00555/0.07091/0.54172
+ObjectTemplate.addTemplate e_muzz_sniper
+ObjectTemplate.setPosition 0.00555/0.07091/0.54172
+ObjectTemplate.addTemplate e_shellejection_rifle
+ObjectTemplate.setPosition -0.00356/0.05122/-0.08146
+ObjectTemplate.setRotation -3.4/3.8/1.2
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/mecsni_ssgp1/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/mecsni_ssgp1/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate mecsni_ssgp1_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 700
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 2.3
+
+ObjectTemplate.create GenericProjectile mecsni_ssgp1_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 1
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+rem ---EndComp ---
+ObjectTemplate.drag 8
+ObjectTemplate.mass 1000
+ObjectTemplate.gravityModifier 0.4
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 380
+rem -------------------------------------
+ObjectTemplate.addTemplate S_mecsni_ssgp1_Projectile_Looping
+ObjectTemplate.addTemplate e_bullet_trail
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.material 380
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 20
+ObjectTemplate.maxTracerScaler 40
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 0.4
+ObjectTemplate.tracerTemplate p_tracer2_eu
+ObjectTemplate.tracerConvergeDistance -1
+ObjectTemplate.damageMandownSoldiers 1
+ObjectTemplate.minDamage 5
+ObjectTemplate.damage 60
+ObjectTemplate.distToStartLoseDamage 350
+ObjectTemplate.distToMinDamage 1000
+
+ObjectTemplate.activeSafe Sound S_mecsni_ssgp1_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/mecsni_ssgp1/sounds/ssgp1_1p_outdoor.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.982/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_mecsni_ssgp1_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/mecsni_ssgp1/sounds/ssgp1_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1 
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0.00555/0.07091/0.64172
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 20
+
+ObjectTemplate.activeSafe Sound S_mecsni_ssgp1_BoltClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m16a4/sounds/m16_boltclick.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_mecsni_ssgp1_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_mecsni_ssgp1_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/ussni_m24/sounds/Sniper_Regulate.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_mecsni_ssgp1_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/mecsni_ssgp1/sounds/ssgp1_reload_1p.wav,objects/weapons/handheld/mecsni_ssgp1/sounds/ssgp1_shift_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_mecsni_ssgp1_Reload3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m24/sounds/m24_reload_3p.wav,objects/weapons/handheld/mecsni_ssgp1/sounds/ssgp1_shift_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.02758/-0.0819
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_mecsni_ssgp1_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/mecsni_ssgp1/sounds/ssgp1_deploy_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_mecsni_ssgp1_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/mecsni_ssgp1/sounds/ssgp1_deploy_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.65
+ObjectTemplate.halfVolumeDistance 1.3
+
+ObjectTemplate.activeSafe Sound S_mecsni_ssgp1_Zoom
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/weapons/Zoom.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

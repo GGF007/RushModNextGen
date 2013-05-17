@@ -1,0 +1,160 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe DestroyableObject civiliancar6
+ObjectTemplate.creator PHO-1:pho
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 4.2
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 700
+ObjectTemplate.armor.hitPoints 700
+ObjectTemplate.armor.defaultMaterial 110
+ObjectTemplate.armor.hpLostWhileCriticalDamage 18
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.deepWaterLevel 0.3
+ObjectTemplate.armor.explosionForce 10
+ObjectTemplate.armor.explosionForceMod 12
+ObjectTemplate.armor.explosionForceMax 5000
+ObjectTemplate.armor.explosionDamage 300
+ObjectTemplate.armor.explosionRadius 6
+ObjectTemplate.armor.explosionMaterial 101
+ObjectTemplate.armor.wreckExplosionForce 50
+ObjectTemplate.armor.wreckExplosionForceMax 60
+ObjectTemplate.armor.wreckExplosionDamage 50
+ObjectTemplate.armor.wreckExplosionRadius 4
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 0
+ObjectTemplate.armor.timeToStayAsWreck -1
+ObjectTemplate.armor.timeToStayAfterDestroyed -1
+ObjectTemplate.armor.wreckDelay 0.05
+ObjectTemplate.armor.canBeDestroyed 0
+ObjectTemplate.armor.criticalDamage 101
+ObjectTemplate.armor.showDamageAsDirt 500
+ObjectTemplate.armor.addArmorEffect 80 e_vexp_car_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_land_lightsmoke 0.226044/0.457229/1.88087 0/0/0
+ObjectTemplate.armor.addArmorEffect 40 e_vexp_car_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_dstate_land_MediumSmoke 0.292608/0.35529/1.84367 0/0/0
+ObjectTemplate.armor.addArmorEffect 15 e_vexp_car_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_land_heavysmoke 0.273109/0.403387/1.86168 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_vexp_armoredcar 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_vexp_armoredCar_spec 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_sAmb_wreckfire 0/0/1.51946 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_dstate_static_lightsmoke 0/0/-0.618567 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_dAmb_fireFlys 0/0.4/0 0/0/0
+rem ---EndComp ---
+ObjectTemplate.geometry civiliancar6
+ObjectTemplate.setCollisionMesh civiliancar6
+ObjectTemplate.mapMaterial 0 Metal_plate_thin 111  
+ObjectTemplate.mapMaterial 1 Glass_vehicle 1006
+ObjectTemplate.mapMaterial 2 cloth 1016
+ObjectTemplate.mapMaterial 3 col_wreck 60
+ObjectTemplate.mapMaterial 4 Rubber 22
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+
+ObjectTemplate.activeSafe SimpleObject civiliancar6_Steeringwheel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+
+ObjectTemplate.activeSafe RotationalBundle civiliancar6_drivetrain
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_civiliancar6_drivetrain_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_civiliancar6_drivetrain_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle civiliancar6_Engine
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_civiliancar6_Engine_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_civiliancar6_Engine_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle civiliancar6_nav_RF
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_civiliancar6_nav_RF_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_civiliancar6_nav_RF_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle civiliancar6_Wheel_RF
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_civiliancar6_Wheel_RF_Rotation
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_civiliancar6_Wheel_RF_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle civiliancar6_nav_LF
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_civiliancar6_nav_LF_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_civiliancar6_nav_LF_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle civiliancar6_Wheel_LF
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_civiliancar6_Wheel_LF_Rotation
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_civiliancar6_Wheel_LF_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle civiliancar6_Wheel_LR
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_civiliancar6_Wheel_LR_Rotation
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_civiliancar6_Wheel_LR_Rotation
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle civiliancar6_Wheel_RR
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_civiliancar6_Wheel_RR_Rotation
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_civiliancar6_Wheel_RR_Rotation
+ObjectTemplate.modifiedByUser "999"
+

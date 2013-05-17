@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh afghan_doorway4m01
+CollisionManager.createTemplate afghan_doorway4m01
+
+ObjectTemplate.create SimpleObject afghan_doorway4m01
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh afghan_doorway4m01
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry afghan_doorway4m01
+
+include afghan_doorway4m01.tweak

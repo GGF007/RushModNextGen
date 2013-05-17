@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_EMP_mobileradar_us
+ObjectTemplate.createdInEditor 1
+
+include e_EMP_mobileradar_us.tweak

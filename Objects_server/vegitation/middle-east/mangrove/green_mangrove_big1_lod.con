@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh green_mangrove_big1_lod
+
+ObjectTemplate.create SimpleObject green_mangrove_big1_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.geometry green_mangrove_big1_lod
+
+include green_mangrove_big1_lod.tweak

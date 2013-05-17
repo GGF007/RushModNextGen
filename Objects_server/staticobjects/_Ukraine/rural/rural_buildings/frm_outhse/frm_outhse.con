@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh frm_outhse
+CollisionManager.createTemplate frm_outhse
+
+ObjectTemplate.create SimpleObject frm_outhse
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh frm_outhse
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Penetrable_Wood 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry frm_outhse
+
+include frm_outhse.tweak

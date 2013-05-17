@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh rurgl_ak74mgl
+CollisionManager.createTemplate rurgl_ak74mgl
+
+ObjectTemplate.create GenericFireArm rurgl_ak74mgl
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.collisionMesh rurif_ak74mgl
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry rurif_ak74mgl
+
+include rurgl_ak74mgl.tweak

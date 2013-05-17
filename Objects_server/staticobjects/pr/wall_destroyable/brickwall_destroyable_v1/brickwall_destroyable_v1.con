@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh brickwall_destroyable_v1
+CollisionManager.createTemplate brickwall_destroyable_v1
+
+ObjectTemplate.create DestroyableObject brickwall_destroyable_v1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB:mbortolino
+ObjectTemplate.collisionMesh brickwall_destroyable_v1
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.mapMaterial 1 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry brickwall_destroyable_v1
+
+include brickwall_destroyable_v1.tweak

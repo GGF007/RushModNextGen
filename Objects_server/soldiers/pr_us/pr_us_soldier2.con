@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh pr_us_soldier2
+
+ObjectTemplate.create Soldier pr_us_soldier2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.geometry pr_us_soldier2
+
+include pr_us_soldier2.tweak

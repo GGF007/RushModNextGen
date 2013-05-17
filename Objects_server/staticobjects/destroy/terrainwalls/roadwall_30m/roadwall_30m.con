@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh roadwall_30m
+CollisionManager.createTemplate roadwall_30m
+
+ObjectTemplate.create SimpleObject roadwall_30m
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator destructo
+ObjectTemplate.collisionMesh roadwall_30m
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry roadwall_30m
+ObjectTemplate.anchor 0/-0.001/0
+
+include roadwall_30m.tweak

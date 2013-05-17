@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh p_tunnel_door
+CollisionManager.createTemplate p_tunnel_door
+
+ObjectTemplate.create Particle p_tunnel_door
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh p_tunnel_door
+ObjectTemplate.mapMaterial 0 Metal_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_tunnel_door
+
+include p_tunnel_door.tweak

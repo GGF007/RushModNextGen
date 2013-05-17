@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh ukr_wall_short
+CollisionManager.createTemplate ukr_wall_short
+
+ObjectTemplate.create SimpleObject ukr_wall_short
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ILLICITFILMS-PC:IllicitFilms
+ObjectTemplate.collisionMesh ukr_wall_short
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukr_wall_short
+
+include ukr_wall_short.tweak

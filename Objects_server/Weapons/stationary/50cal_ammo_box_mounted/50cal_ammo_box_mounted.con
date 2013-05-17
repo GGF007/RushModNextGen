@@ -1,0 +1,9 @@
+GeometryTemplate.create BundledMesh 50cal_ammo_box_mounted
+
+ObjectTemplate.create SimpleObject 50cal_ammo_box_mounted
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BF-K-ZENTRALE:Zefan
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry 50cal_ammo_box_mounted
+
+include 50cal_ammo_box_mounted.tweak

@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh urban_bld_11
+CollisionManager.createTemplate urban_bld_11
+
+ObjectTemplate.create SimpleObject urban_bld_11
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JILTED:Josh
+ObjectTemplate.collisionMesh urban_bld_11
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.mapMaterial 2 Wood_thin 0
+ObjectTemplate.mapMaterial 3 Plastic 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry urban_bld_11
+
+include urban_bld_11.tweak

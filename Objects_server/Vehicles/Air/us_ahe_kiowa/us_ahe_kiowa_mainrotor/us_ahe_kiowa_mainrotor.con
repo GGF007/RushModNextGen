@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh us_ahe_kiowa_mainrotor
+CollisionManager.createTemplate us_ahe_kiowa_mainrotor
+
+ObjectTemplate.create Rotor us_ahe_kiowa_mainrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHILSCH-Z4KV58U:Phil
+ObjectTemplate.collisionMesh us_ahe_kiowa_mainrotor
+ObjectTemplate.mapMaterial 0 HelicopterArmor 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry us_ahe_kiowa_mainrotor
+
+include us_ahe_kiowa_mainrotor.tweak

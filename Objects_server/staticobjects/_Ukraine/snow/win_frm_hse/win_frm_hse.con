@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh win_frm_hse
+CollisionManager.createTemplate win_frm_hse
+
+ObjectTemplate.create SimpleObject win_frm_hse
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh win_frm_hse
+ObjectTemplate.mapMaterial 0 Wood_solid 0
+ObjectTemplate.mapMaterial 1 rock 0
+ObjectTemplate.mapMaterial 2 Glass_common 0
+ObjectTemplate.mapMaterial 3 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry win_frm_hse
+
+include win_frm_hse.tweak

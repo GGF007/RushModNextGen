@@ -1,0 +1,86 @@
+GeometryTemplate.create BundledMesh e_vexp_dingo
+
+ObjectTemplate.create EffectBundle e_vexp_dingo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+rem --------------------------------------
+ObjectTemplate.addTemplate em_p_dingo_turret
+ObjectTemplate.setPosition 0/1.7/-0.7
+ObjectTemplate.addTemplate em_p_dingo_hood
+ObjectTemplate.setPosition 0/0.9/1.95
+ObjectTemplate.addTemplate em_p_dingo_lf_dr
+ObjectTemplate.setPosition -0.9/0.95/0.66
+ObjectTemplate.addTemplate em_p_dingo_lr_dr
+ObjectTemplate.setPosition -0.84/0.95/-0.6
+ObjectTemplate.addTemplate em_p_dingo_rf_dr
+ObjectTemplate.setPosition 0.9/0.95/.66
+ObjectTemplate.addTemplate em_p_dingo_rr_dr
+ObjectTemplate.setPosition 0.8/0.95/-0.6
+ObjectTemplate.addTemplate em_p_dingo_tire
+ObjectTemplate.setPosition 0.8/-0.2/1.65
+rem --------------------------------------
+
+ObjectTemplate.create Emitter em_p_dingo_turret
+ObjectTemplate.template p_dingo_turret
+
+ObjectTemplate.create Particle p_dingo_turret
+ObjectTemplate.collisionPart 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 0
+
+ObjectTemplate.create Emitter em_p_dingo_hood
+ObjectTemplate.template p_dingo_hood
+
+ObjectTemplate.create Particle p_dingo_hood
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create Emitter em_p_dingo_lf_dr
+ObjectTemplate.template p_dingo_lf_dr
+
+ObjectTemplate.create Particle p_dingo_lf_dr
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create Emitter em_p_dingo_lr_dr
+ObjectTemplate.template p_dingo_lr_dr
+
+ObjectTemplate.create Particle p_dingo_lr_dr
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create Emitter em_p_dingo_rf_dr
+ObjectTemplate.template p_dingo_rf_dr
+
+ObjectTemplate.create Particle p_dingo_rf_dr
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Emitter em_p_dingo_rr_dr
+ObjectTemplate.template p_dingo_rr_dr
+
+ObjectTemplate.create Particle p_dingo_rr_dr
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create Emitter em_p_dingo_tire
+ObjectTemplate.template p_dingo_tire
+
+ObjectTemplate.create Particle p_dingo_tire
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 6
+
+include e_vexp_dingo.tweak

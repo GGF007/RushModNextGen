@@ -1,0 +1,233 @@
+GeometryTemplate.create BundledMesh ukrair_mig25
+CollisionManager.createTemplate ukrair_mig25
+
+ObjectTemplate.create PlayerControlObject ukrair_mig25
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh ukrair_mig25
+ObjectTemplate.mapMaterial 0 airplane 0
+ObjectTemplate.mapMaterial 1 glass 0
+ObjectTemplate.mapMaterial 2 wreck 0
+ObjectTemplate.mapMaterial 3 rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry ukrair_mig25
+ObjectTemplate.addTemplate ukrair_mig25_Elevator
+ObjectTemplate.setPosition -0.0100/-0.2749/-7.3710
+ObjectTemplate.addTemplate ukrair_mig25_F_Gear
+ObjectTemplate.setPosition 0/-0.7626/2.6905
+ObjectTemplate.addTemplate ukrair_mig25_F_GearDr
+ObjectTemplate.setPosition 0/-0.9693/4.4076
+ObjectTemplate.addTemplate ukrair_mig25_FB_GearDr
+ObjectTemplate.setPosition 0/-0.8886/2.6148
+ObjectTemplate.addTemplate ukrair_mig25_FL_GearDr
+ObjectTemplate.setPosition -0.4010/-0.8161/3.9804
+ObjectTemplate.addTemplate ukrair_mig25_FR_GearDr
+ObjectTemplate.setPosition 0.4064/-0.8196/3.9546
+ObjectTemplate.addTemplate ukrair_mig25_L_Flap
+ObjectTemplate.setPosition -2.6310/0.5440/-4.9640
+ObjectTemplate.setRotation -25.2193/-49.6050/11.1842
+ObjectTemplate.addTemplate ukrair_mig25_L_Visible_Airleron
+ObjectTemplate.setPosition -4.5711/0.3551/-5.5810
+ObjectTemplate.setRotation -17.1308/0/5.7683
+ObjectTemplate.addTemplate ukrair_mig25_LGear
+ObjectTemplate.setPosition -1.4130/-0.5801/-2.1748
+ObjectTemplate.addTemplate ukrair_mig25_LGearDr1
+ObjectTemplate.setPosition -1.6440/-0.4110/-1.0170
+ObjectTemplate.addTemplate ukrair_mig25_LGearDr2
+ObjectTemplate.setPosition -1.6430/-0.4478/-2.3280
+ObjectTemplate.addTemplate ukrair_mig25_R_Flap
+ObjectTemplate.setPosition 2.6310/0.5440/-4.9640
+ObjectTemplate.setRotation 25.2191/-49.6047/-11.1840
+ObjectTemplate.addTemplate ukrair_mig25_R_Visible_Airleron
+ObjectTemplate.setPosition 4.5710/0.3551/-5.5810
+ObjectTemplate.setRotation 17.1310/0/-5.7680
+ObjectTemplate.addTemplate ukrair_mig25_RGear
+ObjectTemplate.setPosition 1.4131/-0.5801/-2.1748
+ObjectTemplate.addTemplate ukrair_mig25_RGearDr1
+ObjectTemplate.setPosition 1.6440/-0.4110/-1.0170
+ObjectTemplate.addTemplate ukrair_mig25_RGearDr2
+ObjectTemplate.setPosition 1.6430/-0.4480/-2.3280
+ObjectTemplate.addTemplate ukrair_mig25_Rudder_Visible_L
+ObjectTemplate.setPosition -1.4483/1.7095/-8.3590
+ObjectTemplate.setRotation -9.1143/-26.9001/-80.0086
+ObjectTemplate.addTemplate ukrair_mig25_Rudder_Visible_R
+ObjectTemplate.setPosition 1.4483/1.7494/-8.3590
+ObjectTemplate.setRotation 0/-26.9000/-99.9918
+
+ObjectTemplate.create Wing ukrair_mig25_Elevator
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create LandingGear ukrair_mig25_F_Gear
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate ukrair_mig25_F_GearTurn
+ObjectTemplate.setPosition 0/-1.0704/0.1831
+
+ObjectTemplate.create RotationalBundle ukrair_mig25_F_GearTurn
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate ukrair_mig25_F_Gear_Whl
+ObjectTemplate.setPosition 0/-0.4715/-0.1643
+
+ObjectTemplate.create Spring ukrair_mig25_F_Gear_Whl
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create LandingGear ukrair_mig25_F_GearDr
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create LandingGear ukrair_mig25_FB_GearDr
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create LandingGear ukrair_mig25_FL_GearDr
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create LandingGear ukrair_mig25_FR_GearDr
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create LandingGear ukrair_mig25_L_Flap
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create RotationalBundle ukrair_mig25_L_Visible_Airleron
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create LandingGear ukrair_mig25_LGear
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+ObjectTemplate.addTemplate ukrair_mig25_LGear2
+ObjectTemplate.setPosition -0.2790/-0.7962/-0.4992
+
+ObjectTemplate.create LandingGear ukrair_mig25_LGear2
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+ObjectTemplate.addTemplate ukrair_mig25_LGear_Whl
+ObjectTemplate.setPosition -0.2840/-0.5705/0.0498
+
+ObjectTemplate.create Spring ukrair_mig25_LGear_Whl
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create LandingGear ukrair_mig25_LGearDr1
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create LandingGear ukrair_mig25_LGearDr2
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create LandingGear ukrair_mig25_R_Flap
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create RotationalBundle ukrair_mig25_R_Visible_Airleron
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create LandingGear ukrair_mig25_RGear
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+ObjectTemplate.addTemplate ukrair_mig25_RGear2
+ObjectTemplate.setPosition 0.2787/-0.7962/-0.4993
+
+ObjectTemplate.create LandingGear ukrair_mig25_RGear2
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+ObjectTemplate.addTemplate ukrair_mig25_RGear_Whl
+ObjectTemplate.setPosition 0.2842/-0.5705/0.0500
+
+ObjectTemplate.create Spring ukrair_mig25_RGear_Whl
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create LandingGear ukrair_mig25_RGearDr1
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create LandingGear ukrair_mig25_RGearDr2
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+ObjectTemplate.create RotationalBundle ukrair_mig25_Rudder_Visible_L
+ObjectTemplate.collisionPart 23
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 23
+
+ObjectTemplate.create RotationalBundle ukrair_mig25_Rudder_Visible_R
+ObjectTemplate.collisionPart 24
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 24
+
+include ukrair_mig25.tweak

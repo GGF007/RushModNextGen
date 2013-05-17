@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh wall_v3_nondestroyable
+CollisionManager.createTemplate wall_v3_nondestroyable
+
+ObjectTemplate.create SimpleObject wall_v3_nondestroyable
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh wall_v3
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry wall_v3
+
+include wall_v3_nondestroyable.tweak

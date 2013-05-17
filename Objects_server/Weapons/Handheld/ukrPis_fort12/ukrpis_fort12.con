@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh ukrpis_fort12
+
+ObjectTemplate.create GenericFireArm ukrpis_fort12
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.geometry ukrpis_fort12
+
+include ukrpis_fort12.tweak

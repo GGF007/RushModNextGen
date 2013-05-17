@@ -1,0 +1,14 @@
+GeometryTemplate.create BundledMesh cone_dest
+CollisionManager.createTemplate cone_dest
+
+ObjectTemplate.create DestroyableObject cone_dest
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ENI-2:eni
+ObjectTemplate.collisionMesh xp2_pylon_01
+ObjectTemplate.mapMaterial 0 plastic 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry xp2_pylon_01
+ObjectTemplate.anchor 0/-0.7331/0
+
+include cone_dest.tweak

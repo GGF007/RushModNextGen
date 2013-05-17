@@ -1,0 +1,136 @@
+GeometryTemplate.create BundledMesh ushe_ah6
+CollisionManager.createTemplate ushe_ah6
+
+ObjectTemplate.create PlayerControlObject ushe_ah6
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh ushe_ah6
+ObjectTemplate.mapMaterial 0 Armor_6_helicopter 0
+ObjectTemplate.mapMaterial 1 Glass_bulletproof 0
+ObjectTemplate.mapMaterial 2 helicopter_landing_rail 0
+ObjectTemplate.mapMaterial 3 helicopter_rotor 0
+ObjectTemplate.mapMaterial 4 active_wreck 0
+ObjectTemplate.mapMaterial 5 rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry ushe_ah6
+ObjectTemplate.addTemplate ushe_ah6_Copilot
+ObjectTemplate.addTemplate ushe_ah6_FL_Damper
+ObjectTemplate.setPosition -0.9000/-1.3500/2.0000
+ObjectTemplate.addTemplate ushe_ah6_FR_Damper
+ObjectTemplate.setPosition 0.9000/-1.3500/2.0000
+ObjectTemplate.addTemplate ushe_ah6_L_JoyStick
+ObjectTemplate.setPosition -0.4260/-0.2520/1.2341
+ObjectTemplate.addTemplate ushe_ah6_R_JoyStick
+ObjectTemplate.setPosition 0.4260/-0.2520/1.2341
+ObjectTemplate.addTemplate ushe_ah6_RL_Damper
+ObjectTemplate.setPosition -0.9000/-1.3500/-2.0000
+ObjectTemplate.addTemplate ushe_ah6_RR_Damper
+ObjectTemplate.setPosition 0.9000/-1.3500/-2.0000
+ObjectTemplate.addTemplate ushe_ah6_WeapSys
+
+ObjectTemplate.create PlayerControlObject ushe_ah6_Copilot
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate ushe_ah6_gren_turret
+ObjectTemplate.setPosition 0.0020/-0.7033/1.8480
+
+ObjectTemplate.create RotationalBundle ushe_ah6_gren_turret
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate ushe_ah6_gren_barrel_base
+ObjectTemplate.setPosition 0/0.0144/0.0193
+
+ObjectTemplate.create RotationalBundle ushe_ah6_gren_barrel_base
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate ushe_ah6_gren_barrel
+ObjectTemplate.setPosition -0.0012/0/0.1831
+
+ObjectTemplate.create GenericFireArm ushe_ah6_gren_barrel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Spring ushe_ah6_FL_Damper
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create Spring ushe_ah6_FR_Damper
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create RotationalBundle ushe_ah6_L_JoyStick
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle ushe_ah6_R_JoyStick
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Spring ushe_ah6_RL_Damper
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring ushe_ah6_RR_Damper
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Bundle ushe_ah6_WeapSys
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+ObjectTemplate.addTemplate ushe_ah6_Gun
+
+ObjectTemplate.create GenericFireArm ushe_ah6_Gun
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+ObjectTemplate.addTemplate ushe_ah6_L_Barrel
+ObjectTemplate.setPosition -0.8363/-0.5336/0.7457
+ObjectTemplate.addTemplate ushe_ah6_R_Barrel
+ObjectTemplate.setPosition 0.8404/-0.5336/0.7457
+
+ObjectTemplate.create RotationalBundle ushe_ah6_L_Barrel
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create RotationalBundle ushe_ah6_R_Barrel
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+include ushe_ah6.tweak

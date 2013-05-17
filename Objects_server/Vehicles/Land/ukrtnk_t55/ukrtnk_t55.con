@@ -1,0 +1,197 @@
+GeometryTemplate.create BundledMesh ukrtnk_t55
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate ukrtnk_t55
+
+ObjectTemplate.create PlayerControlObject ukrtnk_t55
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh ukrtnk_t55
+ObjectTemplate.mapMaterial 0 Armor_5_tank_front 0
+ObjectTemplate.mapMaterial 1 Armor_3_tank_rear_top 0
+ObjectTemplate.mapMaterial 2 Armor_4_tank_sides 0
+ObjectTemplate.mapMaterial 3 Tracks 0
+ObjectTemplate.mapMaterial 4 Wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry ukrtnk_t55
+ObjectTemplate.addTemplate ukrtnk_t55_turret
+ObjectTemplate.setPosition 0.1046/0.7081/0.2151
+ObjectTemplate.addTemplate ukrtnk_t55_zMotor
+
+ObjectTemplate.create RotationalBundle ukrtnk_t55_turret
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate ukrtnk_t55_barrel_base
+ObjectTemplate.setPosition -0.0968/0.5699/0.8097
+ObjectTemplate.addTemplate ukrtnk_t55_mg_gunner_pco
+ObjectTemplate.setPosition 0.2737/0.8692/-0.4482
+
+ObjectTemplate.create RotationalBundle ukrtnk_t55_barrel_base
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate ukrtnk_t55_barrel
+ObjectTemplate.setPosition -0.0060/-0.1913/1.1718
+ObjectTemplate.addTemplate ukrtnk_t55_hud
+ObjectTemplate.setPosition 0/-0.0020/0
+
+ObjectTemplate.create GenericFireArm ukrtnk_t55_barrel
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create RotationalBundle ukrtnk_t55_hud
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create PlayerControlObject ukrtnk_t55_mg_gunner_pco
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate ukrtnk_t55_kord_mount_yaw
+
+ObjectTemplate.create RotationalBundle ukrtnk_t55_kord_mount_yaw
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate ukrtnk_t55_kord_mount_lense
+ObjectTemplate.setPosition -0.3629/0.1238/0.1098
+ObjectTemplate.addTemplate ukrtnk_t55_kord_mount_pitch
+ObjectTemplate.setPosition -0.0052/0.2482/0.1901
+
+ObjectTemplate.create RotationalBundle ukrtnk_t55_kord_mount_lense
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle ukrtnk_t55_kord_mount_pitch
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Engine ukrtnk_t55_zMotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+ObjectTemplate.addTemplate ukrtnk_t55_L_drivewheel
+ObjectTemplate.setPosition -1.3246/-0.1366/-2.5783
+ObjectTemplate.addTemplate ukrtnk_t55_L_wheel_1
+ObjectTemplate.setPosition -1.3488/-0.4088/1.9379
+ObjectTemplate.addTemplate ukrtnk_t55_L_wheel_2
+ObjectTemplate.setPosition -1.3488/-0.4088/0.9347
+ObjectTemplate.addTemplate ukrtnk_t55_L_wheel_3
+ObjectTemplate.setPosition -1.3488/-0.4088/0.0038
+ObjectTemplate.addTemplate ukrtnk_t55_L_wheel_4
+ObjectTemplate.setPosition -1.3488/-0.4088/-0.8952
+ObjectTemplate.addTemplate ukrtnk_t55_L_wheel_5
+ObjectTemplate.setPosition -1.3481/-0.4088/-1.8091
+ObjectTemplate.addTemplate ukrtnk_t55_R_drivewheel
+ObjectTemplate.setPosition 1.2710/-0.1366/-2.5783
+ObjectTemplate.addTemplate ukrtnk_t55_R_wheel_1
+ObjectTemplate.setPosition 1.2920/-0.4088/1.9379
+ObjectTemplate.addTemplate ukrtnk_t55_R_wheel_2
+ObjectTemplate.setPosition 1.2920/-0.4088/0.9347
+ObjectTemplate.addTemplate ukrtnk_t55_R_wheel_3
+ObjectTemplate.setPosition 1.2920/-0.4088/0.0038
+ObjectTemplate.addTemplate ukrtnk_t55_R_wheel_4
+ObjectTemplate.setPosition 1.2920/-0.4088/-0.8952
+ObjectTemplate.addTemplate ukrtnk_t55_R_wheel_5
+ObjectTemplate.setPosition 1.2920/-0.4088/-1.8091
+
+ObjectTemplate.create RotationalBundle ukrtnk_t55_L_drivewheel
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring ukrtnk_t55_L_wheel_1
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create Spring ukrtnk_t55_L_wheel_2
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring ukrtnk_t55_L_wheel_3
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Spring ukrtnk_t55_L_wheel_4
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create Spring ukrtnk_t55_L_wheel_5
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create RotationalBundle ukrtnk_t55_R_drivewheel
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring ukrtnk_t55_R_wheel_1
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring ukrtnk_t55_R_wheel_2
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring ukrtnk_t55_R_wheel_3
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring ukrtnk_t55_R_wheel_4
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring ukrtnk_t55_R_wheel_5
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+include ukrtnk_t55.tweak

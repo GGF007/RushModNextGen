@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh urb_bs_stp
+CollisionManager.createTemplate urb_bs_stp
+
+ObjectTemplate.create SimpleObject urb_bs_stp
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh urb_bs_stp
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 1 Penetrable_Wood 0
+ObjectTemplate.mapMaterial 2 Metal_plate_thin 0
+ObjectTemplate.mapMaterial 3 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry urb_bs_stp
+
+include urb_bs_stp.tweak

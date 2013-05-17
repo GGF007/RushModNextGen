@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh arcade_poe1
+CollisionManager.createTemplate arcade_poe1
+
+ObjectTemplate.create SimpleObject arcade_poe1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh arcade_poe1
+ObjectTemplate.mapMaterial 0 Wood_solid 0
+ObjectTemplate.mapMaterial 1 Glass_common 0
+ObjectTemplate.mapMaterial 2 plastic 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry arcade_poe1
+
+include arcade_poe1.tweak

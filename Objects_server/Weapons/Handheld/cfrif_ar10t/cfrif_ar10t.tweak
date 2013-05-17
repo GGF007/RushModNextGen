@@ -1,0 +1,297 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/14 17:21]
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.35
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm cfrif_ar10t
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 10
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\Select\cfrif_ar10t.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Select\cfrif_ar10t.tga
+ObjectTemplate.weaponHud.hudName "AR-10"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+rem ---ObjectTemplate.createComponent PostProcess---
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags 3
+ObjectTemplate.ammo.magSize 20
+ObjectTemplate.ammo.reloadTime 4.5
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+ObjectTemplate.createComponent SoldierBasedRecoilComp
+ObjectTemplate.recoil.hasRecoilForce 1
+ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/3.5/3.5/0
+ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-1.2/1.2/1
+ObjectTemplate.recoil.zoomModifier 0.25
+ObjectTemplate.recoil.goBackOnRecoil 1
+ObjectTemplate.recoil.recoilGraphFrameCount 5
+ObjectTemplate.recoil.recoilGraphExponent 5
+ObjectTemplate.recoil.recoilGraphTotalMovement 0.25
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.setFireDev 3.5 2.2 0.8
+ObjectTemplate.deviation.minDev 4.5
+ObjectTemplate.deviation.setTurnDev 0 0 0 0
+ObjectTemplate.deviation.setSpeedDev 3 0.5 0.5 1
+ObjectTemplate.deviation.setMiscDev 3 3 0.2
+ObjectTemplate.deviation.devModStand 2
+ObjectTemplate.deviation.devModCrouch 1.5 
+ObjectTemplate.deviation.devModLie 0.8
+ObjectTemplate.deviation.devModZoom 0.015
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.useShiftAnimation 1
+ObjectTemplate.animation.shiftDelay .05
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.zoomDelay 0.3
+ObjectTemplate.zoom.zoomLod 1
+ObjectTemplate.zoom.addZoomFactor 0
+ObjectTemplate.zoom.addZoomFactor 0.2
+ObjectTemplate.zoom.mouseSpeedMod 0.6
+ObjectTemplate.zoom.disableMuzzleWhenZoomed 0
+rem ---EndComp ---
+ObjectTemplate.geometry cfrif_ar10t
+ObjectTemplate.setCollisionMesh usrif_m16a2
+ObjectTemplate.mapMaterial 0 Collision_Material 68
+ObjectTemplate.mapMaterial 1 lambert1 68
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ChSni_Duragonov
+rem -------------------------------------
+ObjectTemplate.addTemplate S_cfrif_ar10t_Fire1P
+ObjectTemplate.addTemplate S_cfrif_ar10t_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_cfrif_ar10t_Fire3P
+ObjectTemplate.setPosition 0.00446/0.03787/0.69862
+ObjectTemplate.addTemplate S_cfrif_ar10t_BoltClick
+ObjectTemplate.addTemplate S_cfrif_ar10t_TriggerClick
+ObjectTemplate.addTemplate S_cfrif_ar10t_SwitchFireRate
+ObjectTemplate.addTemplate S_cfrif_ar10t_Reload1P
+ObjectTemplate.addTemplate S_cfrif_ar10t_Reload3P
+ObjectTemplate.setPosition 0.00446/-0.03384/0.02756
+ObjectTemplate.addTemplate S_cfrif_ar10t_Deploy1P
+ObjectTemplate.addTemplate S_cfrif_ar10t_Deploy3P
+ObjectTemplate.setPosition 0.00446/0.036/-0.02374
+ObjectTemplate.addTemplate S_cfrif_ar10t_Zoom
+ObjectTemplate.addTemplate e_dist_tpg
+ObjectTemplate.setPosition 0.00446/0.03787/0.59862
+ObjectTemplate.addTemplate e_muzz_svd
+ObjectTemplate.setPosition 0.00446/0.03787/0.59862
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0/0.03725/0.02
+ObjectTemplate.setRotation -10/0/2.5
+rem -------------------------------------
+ObjectTemplate.animationSystem1P objects/weapons/handheld/cfrif_ar10t/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P objects/weapons/handheld/cfrif_ar10t/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate cfrif_ar10t_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 600
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 1.7
+
+ObjectTemplate.create GenericProjectile cfrif_ar10t_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 1
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+rem ---EndComp ---
+ObjectTemplate.drag 8
+ObjectTemplate.mass 1000
+ObjectTemplate.gravityModifier 0.4
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 380
+rem -------------------------------------
+ObjectTemplate.addTemplate S_cfrif_ar10t_Projectile_Looping
+ObjectTemplate.addTemplate e_bullet_trail
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/3/0/0
+ObjectTemplate.material 380
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 20
+ObjectTemplate.maxTracerScaler 40
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 0.45
+ObjectTemplate.tracerTemplate p_tracer2_eu
+ObjectTemplate.tracerConvergeDistance -1
+ObjectTemplate.damageMandownSoldiers 1
+ObjectTemplate.minDamage 5
+ObjectTemplate.damage 50
+ObjectTemplate.distToStartLoseDamage 250
+ObjectTemplate.distToMinDamage 1000
+
+ObjectTemplate.activeSafe Sound S_cfrif_ar10t_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/cfrif_ar10t/sounds/ar10t_fire_1p_outdoor.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.982/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_cfrif_ar10t_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/cfrif_ar10t/sounds/ar10t_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.95
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0.00446/0.03787/0.69862
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 15
+
+ObjectTemplate.activeSafe Sound S_cfrif_ar10t_BoltClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m16a4/sounds/m16_boltclick.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_cfrif_ar10t_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_cfrif_ar10t_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/ussni_m24/sounds/Sniper_Regulate.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1 
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_cfrif_ar10t_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/cfrif_ar10t/sounds/AR15_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_cfrif_ar10t_Reload3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/cfrif_ar10t/sounds/AR15_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_cfrif_ar10t_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/cfrif_ar10t/sounds/AR15_deploy_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_cfrif_ar10t_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.86
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_cfrif_ar10t_Zoom
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/weapons/Zoom.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

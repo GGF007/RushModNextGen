@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh remote_mg3
+
+ObjectTemplate.create GenericFireArm remote_mg3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.geometry mg3_coax
+
+include remote_mg3.tweak

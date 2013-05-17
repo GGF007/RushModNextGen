@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh f1grenade
+
+ObjectTemplate.create GenericFireArm f1grenade
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JML:jmlasante
+ObjectTemplate.geometry f1grenade
+
+include f1grenade.tweak

@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh chrif_qbz95scope
+CollisionManager.createTemplate chrif_qbz95scope
+
+ObjectTemplate.create GenericFireArm chrif_qbz95scope
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ANB35:andrew
+ObjectTemplate.collisionMesh chrif_qbz95scope
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry chrif_qbz95scope
+
+include chrif_qbz95scope.tweak

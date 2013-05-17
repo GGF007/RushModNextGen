@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh hole_in_wall
+CollisionManager.createTemplate hole_in_wall
+
+ObjectTemplate.create DestroyableObject hole_in_wall
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh hole_in_wall
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry hole_in_wall
+
+include hole_in_wall.tweak

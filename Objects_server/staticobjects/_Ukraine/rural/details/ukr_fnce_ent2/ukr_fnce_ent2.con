@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh ukr_fnce_ent2
+CollisionManager.createTemplate ukr_fnce_ent2
+
+ObjectTemplate.create SimpleObject ukr_fnce_ent2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh ukr_fnce_ent2
+ObjectTemplate.mapMaterial 0 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukr_fnce_ent2
+
+include ukr_fnce_ent2.tweak

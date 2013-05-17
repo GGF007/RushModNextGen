@@ -1,0 +1,146 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 10:59]
+ObjectTemplate.activeSafe EffectBundle e_vexp_uh60
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_vexp_uh60_Start
+ObjectTemplate.addTemplate em_vexp_uh60_tail
+ObjectTemplate.setPosition -1.79433e-005/-0.101506/-5.97846
+ObjectTemplate.addTemplate em_vexp_uh60_rotor
+ObjectTemplate.setPosition -3.72413e-007/1.78669/4.52437e-006
+ObjectTemplate.addTemplate em_vexp_uh60_rotorblade
+ObjectTemplate.setPosition 1.39844e-007/2.42995/3.77744e-006
+ObjectTemplate.addTemplate em_vexp_uh60_engine
+ObjectTemplate.setPosition -1.10597/1.25797/5.63636e-006
+ObjectTemplate.addTemplate em_vexp_uh60_door
+ObjectTemplate.setPosition -1.26072/-7.83712e-006/-1.70606
+ObjectTemplate.setRotation -0.948504/0.179283/72.96
+ObjectTemplate.addTemplate em_vexp_uh60_chair
+ObjectTemplate.setPosition 3.95973e-005/4.39834e-005/3.0973
+rem ------------------------------------- 
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/15/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_vexp_uh60_Start
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Emitter em_vexp_uh60_tail
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.relativePositionOffset 50/0/0
+ObjectTemplate.template p_wreck_uh60_rotorblade
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-8/-12/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/10/12/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-2/3/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/-2/-3/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-3/3/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_uh60_rotor
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_uh60_rotor
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-4/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/15/20/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-3/0/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/-2/-6/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/20/10/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/15/-8/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_uh60_rotorblade
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_uh60_rotorblade
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/44/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-1/4/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/8/20/0
+ObjectTemplate.positionalSpeedInRight CRD_NORMAL/-20/20/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/4/-8/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/10/-20/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-4/4/0
+ObjectTemplate.startRotation CRD_UNIFORM/-120/120/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_uh60_engine
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_uh60_engine
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/2/-4/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/6/9/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-8/-12/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/0.5/1.5/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-2/2/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_uh60_door
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_uh60_door
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/2/-4/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/8/12/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-2/-5/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/0.5/1.5/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-2/2/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_uh60_chair
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_uh60_chair
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/22/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-1/-5/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/5/10/0
+ObjectTemplate.positionalSpeedInRight CRD_NORMAL/-10/10/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/-3/-4/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-3/3/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+

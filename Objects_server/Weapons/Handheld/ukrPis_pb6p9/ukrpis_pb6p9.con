@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh ukrpis_pb6p9
+CollisionManager.createTemplate ukrpis_pb6p9
+
+ObjectTemplate.create GenericFireArm ukrpis_pb6p9
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.collisionMesh ukrpis_pb6p9
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukrpis_pb6p9
+
+include ukrpis_pb6p9.tweak

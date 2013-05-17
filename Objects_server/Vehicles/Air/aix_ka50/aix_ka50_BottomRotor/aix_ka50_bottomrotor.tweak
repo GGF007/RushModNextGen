@@ -1,0 +1,23 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Rotor aix_ka50_bottomrotor
+ObjectTemplate.creator KYSTER:kyron
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry aix_ka50_bottomrotor
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate ade_heliDraft
+rem -------------------------------------
+ObjectTemplate.changeLodAt 0.15
+ObjectTemplate.tolerance 1.90734e-007
+ObjectTemplate.rotationSpeedMod -0.5
+ObjectTemplate.rotationSpeedModBlur -0.05
+ObjectTemplate.rotationAxle 0
+ObjectTemplate.engineName aix_ka50_Rotor
+

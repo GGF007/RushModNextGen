@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh tow2_dummy
+CollisionManager.createTemplate tow2_dummy
+
+ObjectTemplate.create bundle tow2_dummy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator WIZARDS:Guedoe
+ObjectTemplate.collisionMesh tow2_dummy
+ObjectTemplate.mapMaterial 0 airplane 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry tow2_dummy
+
+include tow2_dummy.tweak

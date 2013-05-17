@@ -1,0 +1,83 @@
+ObjectTemplate.activeSafe GenericFireArm audio_player_one
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.hasMag 0
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.showAmmo 0
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.showInfo 0
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\track1.tga
+ObjectTemplate.weaponHud.displaySelectOnActivation 1
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.fireInput PIAltFire
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.reloadTime 220
+ObjectTemplate.ammo.magLinkWeapon audio_player_two
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_audio_player_one_Fire3P
+rem -------------------------------------
+ObjectTemplate.projectileTemplate audio_player_one_Projectile
+ObjectTemplate.itemIndex 1
+
+
+ObjectTemplate.create GenericProjectile audio_player_one_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.material -1
+ObjectTemplate.minDamage 0
+ObjectTemplate.damage 0
+
+ObjectTemplate.activeSafe Sound S_audio_player_one_Fire3P
+ObjectTemplate.soundFilename "common/sound/Menu/music/muscle_car_1.ogg"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/1/1/1/1/0/1/1/
+ObjectTemplate.halfVolumeDistance 10

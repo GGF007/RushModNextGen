@@ -1,0 +1,62 @@
+ObjectTemplate.create Kit ru_at
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setNetworkableInfo KitInfo
+ObjectTemplate.kitType AT
+ObjectTemplate.aiTemplate AT
+ObjectTemplate.geometry ru_kits1
+ObjectTemplate.geometry.kit 6
+ObjectTemplate.geometry.dropGeom 9
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setCollisionMesh kitcol
+ObjectTemplate.unlockIndex 0
+ObjectTemplate.cullRadiusScale 2.4
+
+rem -------------------------------------
+ObjectTemplate.addTemplate knife_unlock
+ObjectTemplate.addTemplate RUPIS_Baghira
+ObjectTemplate.addTemplate insrg_aks_74u
+ObjectTemplate.addTemplate CHAT_ERYX
+ObjectTemplate.addTemplate hgr_smoke
+ObjectTemplate.addTemplate CHAA_ERYX
+ObjectTemplate.addTemplate nsrif_grapplinghook
+
+ObjectTemplate.addTemplate ParachuteLauncher
+
+ObjectTemplate.addTemplate UnlockSPETZAT
+ObjectTemplate.addTemplate UnlockSPETZAT2
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_ANTITANK"
+ObjectTemplate.vehicleHud.guiIndex 0
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_ATAA_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_ATAA.tga"
+ObjectTemplate.vehicleHud.spottedIcon 		"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.sprintStaminaDissipationFactor 0.6
+ObjectTemplate.vehicleHud.vehicleType		7
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---
+
+
+ObjectTemplate.create ItemContainer UnlockSPETZAT
+ObjectTemplate.addTemplate rurrif_ak74u
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSPETZAT2
+ObjectTemplate.addTemplate GBRIF_L85A2susat
+ObjectTemplate.replaceItem insrg_aks_74u
+ObjectTemplate.replaceItem rurrif_ak74u
+ObjectTemplate.unlockLevel 2

@@ -1,0 +1,21 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/6 11:5]
+ObjectTemplate.activeSafe EffectBundle e_tow_trail
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_tow_trail_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_tow_trail_Start
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+

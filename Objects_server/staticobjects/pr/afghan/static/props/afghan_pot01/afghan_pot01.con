@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh afghan_pot01
+CollisionManager.createTemplate afghan_pot01
+
+ObjectTemplate.create DestroyableObject afghan_pot01
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh afghan_pot01
+ObjectTemplate.mapMaterial 0 Glass_bulletproof 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry afghan_pot01
+
+include afghan_pot01.tweak

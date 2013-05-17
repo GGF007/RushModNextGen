@@ -1,0 +1,219 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/1/4 8:47]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm bf2aus_timed_c4
+ObjectTemplate.creator FUL-1:ful
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 10
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\Select\bf2aus_timed_c4.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Select\bf2aus_timed_c4.tga
+ObjectTemplate.weaponHud.specialAbilityIcon Ingame\Weapons\Icons\Hud\SpecialKitIcons\unl_c4.tga
+ObjectTemplate.weaponHud.hudName "C4-TimeBomb"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+rem ---ObjectTemplate.createComponent PostProcess---
+rem ---EndComp ---
+rem ---BeginComp:ThrownFireComp ---
+ObjectTemplate.createComponent ThrownFireComp
+ObjectTemplate.fire.fireLaunchDelay 0.05
+ObjectTemplate.fire.altFireInput PIAltFire
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.projectileStartPosition 0.1/-0.15/0
+ObjectTemplate.fire.maxProjectilesInWorld 5
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags 2
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.reloadTime 1
+ObjectTemplate.ammo.minimumTimeUntilReload 0.1
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 1
+ObjectTemplate.ammo.toggleWhenNoAmmo 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.noisy 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+ObjectTemplate.geometry bf2aus_timed_c4
+ObjectTemplate.setCollisionMesh bf2aus_timed_c4
+ObjectTemplate.mapMaterial 0 collisionmaterial 81
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate C4_AI
+rem -------------------------------------
+ObjectTemplate.addTemplate S_bf2aus_timed_c4_Fire1P
+ObjectTemplate.addTemplate S_bf2aus_timed_c4_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_bf2aus_timed_c4_Fire3P
+ObjectTemplate.addTemplate S_bf2aus_timed_c4_BoltClick
+ObjectTemplate.addTemplate S_bf2aus_timed_c4_TriggerClick
+ObjectTemplate.addTemplate S_bf2aus_timed_c4_SwitchFireRate
+ObjectTemplate.addTemplate S_bf2aus_timed_c4_Reload1P
+ObjectTemplate.addTemplate S_bf2aus_timed_c4_Reload3P
+ObjectTemplate.addTemplate S_bf2aus_timed_c4_Deploy1P
+ObjectTemplate.addTemplate S_bf2aus_timed_c4_Deploy3P
+ObjectTemplate.addTemplate S_bf2aus_timed_c4_Zoom
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/C4_Explosives/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/C4_Explosives/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate bf2aus_timed_c4_Projectile
+ObjectTemplate.keepProjectiles 3
+ObjectTemplate.velocity 5
+ObjectTemplate.itemIndex 7
+ObjectTemplate.delayToUse 1
+
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.create GenericProjectile bf2aus_timed_c4_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:StickyCollisionComp ---
+ObjectTemplate.createComponent StickyCollisionComp
+ObjectTemplate.collision.bouncing 1
+ObjectTemplate.collision.maxStickAngle 180
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 80
+ObjectTemplate.detonation.explosionRadius 4
+ObjectTemplate.detonation.explosionForce 30
+ObjectTemplate.detonation.explosionInnerConeRadius 20
+ObjectTemplate.detonation.explosionDamage 1000
+ObjectTemplate.detonation.detonateOnWaterCollision 0
+ObjectTemplate.detonation.endEffectTemplate e_exp_C4
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.geometry bf2aus_timed_c4
+ObjectTemplate.drag 15
+ObjectTemplate.gravityModifier 1.5
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 81
+rem -------------------------------------
+ObjectTemplate.addTemplate S_bf2aus_timed_c4_Projectile_Looping
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/21/0/0
+ObjectTemplate.material 81
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.damage 0
+ObjectTemplate.damageOwner 1
+ObjectTemplate.visibleOn3dMap 1
+ObjectTemplate.3dMapIcon 9
+
+ObjectTemplate.activeSafe Sound S_bf2aus_timed_c4_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_large/Sounds/c4_plant.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_bf2aus_timed_c4_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_bf2aus_timed_c4_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_large/Sounds/c4_plant.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_bf2aus_timed_c4_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_bf2aus_timed_c4_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_bf2aus_timed_c4_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_bf2aus_timed_c4_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_large/sounds/c4_deploy2_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_bf2aus_timed_c4_Reload3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_large/sounds/c4_deploy2_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.35
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_bf2aus_timed_c4_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_large/sounds/c4_deploy2_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_bf2aus_timed_c4_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_large/sounds/c4_deploy2_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.35
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_bf2aus_timed_c4_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_bf2aus_timed_c4_Projectile_Looping
+ObjectTemplate.modifiedByUser "999"

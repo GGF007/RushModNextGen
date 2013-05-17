@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh windmill
+CollisionManager.createTemplate windmill
+
+ObjectTemplate.create Bundle windmill
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh windmill
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.mapMaterial 1 Wood_thin 0
+ObjectTemplate.mapMaterial 2 Stairs_wood 0
+ObjectTemplate.mapMaterial 3 Stairs_wood 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry windmill
+
+include windmill.tweak

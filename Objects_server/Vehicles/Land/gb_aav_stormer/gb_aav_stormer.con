@@ -1,0 +1,211 @@
+GeometryTemplate.create BundledMesh gb_aav_stormer
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate gb_aav_stormer
+
+ObjectTemplate.create PlayerControlObject gb_aav_stormer
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHILS-B26IVBDBY:Phil
+ObjectTemplate.collisionMesh gb_aav_stormer
+ObjectTemplate.mapMaterial 0 Armor_5_tank_front 0
+ObjectTemplate.mapMaterial 1 Armor_Penetrable_Glass_vehicle 0
+ObjectTemplate.mapMaterial 2 Material_#82 0
+ObjectTemplate.mapMaterial 3 Material_#81 0
+ObjectTemplate.mapMaterial 4 Armor_3_tank_wheels 0
+ObjectTemplate.mapMaterial 5 wreck 0
+ObjectTemplate.mapMaterial 6 Tank_tracks 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry gb_aav_stormer
+ObjectTemplate.addTemplate gb_aav_stormer_Launcher_base
+ObjectTemplate.setPosition -0.0192/1.2464/-1.5337
+ObjectTemplate.addTemplate gb_aav_stormer_Sight_base
+ObjectTemplate.setPosition 0.2948/1.3185/0.0646
+ObjectTemplate.addTemplate gb_aav_stormer_zmotor
+
+ObjectTemplate.create RotationalBundle gb_aav_stormer_Launcher_base
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate gb_aav_stormer_Launcher
+ObjectTemplate.setPosition -0.0019/0.4611/0.0051
+ObjectTemplate.addTemplate gb_aav_stormer_Launcher_base_collision
+
+ObjectTemplate.create SimpleObject gb_aav_stormer_Launcher_base_collision
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+
+ObjectTemplate.create RotationalBundle gb_aav_stormer_Launcher
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create RotationalBundle gb_aav_stormer_Sight_base
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate gb_aav_stormer_Sight
+ObjectTemplate.setPosition 0.0061/0.1653/-0.0525
+
+ObjectTemplate.create RotationalBundle gb_aav_stormer_Sight
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Engine gb_aav_stormer_zmotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate gb_aav_stormer_LDriveWheel
+ObjectTemplate.setPosition -0.9056/-0.1808/2.1891
+ObjectTemplate.addTemplate gb_aav_stormer_Lwheel_02
+ObjectTemplate.setPosition -0.9161/-0.4353/-1.5783
+ObjectTemplate.addTemplate gb_aav_stormer_Lwheel_03
+ObjectTemplate.setPosition -0.9161/-0.4353/-0.9632
+ObjectTemplate.addTemplate gb_aav_stormer_Lwheel_04
+ObjectTemplate.setPosition -0.9161/-0.4353/-0.3439
+ObjectTemplate.addTemplate gb_aav_stormer_Lwheel_05
+ObjectTemplate.setPosition -0.9161/-0.4353/0.2682
+ObjectTemplate.addTemplate gb_aav_stormer_Lwheel_06
+ObjectTemplate.setPosition -0.9161/-0.4353/0.8729
+ObjectTemplate.addTemplate gb_aav_stormer_Lwheel_07
+ObjectTemplate.setPosition -0.9161/-0.4353/1.5221
+ObjectTemplate.addTemplate gb_aav_stormer_RDriveWheel
+ObjectTemplate.setPosition 0.8228/-0.1808/2.1891
+ObjectTemplate.addTemplate gb_aav_stormer_Rear_Lwheel
+ObjectTemplate.setPosition -0.9518/-0.2260/-2.0963
+ObjectTemplate.addTemplate gb_aav_stormer_Rear_Rwheel
+ObjectTemplate.setPosition 0.8958/-0.2260/-2.0963
+ObjectTemplate.addTemplate gb_aav_stormer_Rwheel_02
+ObjectTemplate.setPosition 0.8344/-0.4353/-1.5783
+ObjectTemplate.addTemplate gb_aav_stormer_Rwheel_03
+ObjectTemplate.setPosition 0.8344/-0.4353/-0.9632
+ObjectTemplate.addTemplate gb_aav_stormer_Rwheel_04
+ObjectTemplate.setPosition 0.8344/-0.4353/-0.3439
+ObjectTemplate.addTemplate gb_aav_stormer_Rwheel_05
+ObjectTemplate.setPosition 0.8344/-0.4353/0.2682
+ObjectTemplate.addTemplate gb_aav_stormer_Rwheel_06
+ObjectTemplate.setPosition 0.8344/-0.4353/0.8729
+ObjectTemplate.addTemplate gb_aav_stormer_Rwheel_07
+ObjectTemplate.setPosition 0.8344/-0.4353/1.5221
+
+ObjectTemplate.create RotationalBundle gb_aav_stormer_LDriveWheel
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create Spring gb_aav_stormer_Lwheel_02
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Spring gb_aav_stormer_Lwheel_03
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Spring gb_aav_stormer_Lwheel_04
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring gb_aav_stormer_Lwheel_05
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring gb_aav_stormer_Lwheel_06
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create Spring gb_aav_stormer_Lwheel_07
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create RotationalBundle gb_aav_stormer_RDriveWheel
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create RotationalBundle gb_aav_stormer_Rear_Lwheel
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create RotationalBundle gb_aav_stormer_Rear_Rwheel
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create Spring gb_aav_stormer_Rwheel_02
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring gb_aav_stormer_Rwheel_03
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring gb_aav_stormer_Rwheel_04
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring gb_aav_stormer_Rwheel_05
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring gb_aav_stormer_Rwheel_06
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring gb_aav_stormer_Rwheel_07
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+include gb_aav_stormer.tweak

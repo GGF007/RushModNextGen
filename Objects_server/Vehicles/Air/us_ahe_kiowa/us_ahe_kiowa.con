@@ -1,0 +1,90 @@
+GeometryTemplate.create BundledMesh us_ahe_kiowa
+CollisionManager.createTemplate us_ahe_kiowa
+
+ObjectTemplate.create PlayerControlObject us_ahe_kiowa
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHILSCH-Z4KV58U:Phil
+ObjectTemplate.collisionMesh us_ahe_kiowa
+ObjectTemplate.mapMaterial 0 Armor_6_helicopter 0
+ObjectTemplate.mapMaterial 1 Glass_bulletproof 0
+ObjectTemplate.mapMaterial 2 MetalSolid 0
+ObjectTemplate.mapMaterial 3 helicopter_landing_rail 0
+ObjectTemplate.mapMaterial 4 active_wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry us_ahe_kiowa
+ObjectTemplate.addTemplate us_ahe_kiowa_Copilot
+ObjectTemplate.setPosition -0.2396/-0.6739/1.2005
+ObjectTemplate.addTemplate us_ahe_kiowa_Damper00
+ObjectTemplate.setPosition -0.7944/-1.3861/1.5630
+ObjectTemplate.addTemplate us_ahe_kiowa_Damper01
+ObjectTemplate.setPosition 0.7944/-1.3861/1.5630
+ObjectTemplate.addTemplate us_ahe_kiowa_Damper02
+ObjectTemplate.setPosition 0.7944/-1.3824/-0.7437
+ObjectTemplate.addTemplate us_ahe_kiowa_Damper03
+ObjectTemplate.setPosition -0.7944/-1.3824/-0.7437
+ObjectTemplate.addTemplate us_ahe_kiowa_joystick_left
+ObjectTemplate.setPosition -0.2829/-0.9143/1.6526
+ObjectTemplate.addTemplate us_ahe_kiowa_joystick_right
+ObjectTemplate.setPosition 0.2853/-0.9110/1.6526
+
+ObjectTemplate.create PlayerControlObject us_ahe_kiowa_Copilot
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate us_ahe_kiowa_Sensor_Pod_Mast
+ObjectTemplate.setPosition 0.2396/2.1010/-1.2261
+
+ObjectTemplate.create RotationalBundle us_ahe_kiowa_Sensor_Pod_Mast
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate us_ahe_kiowa_Sensor_Pod_Ball
+ObjectTemplate.setPosition 0/0.8489/0
+
+ObjectTemplate.create RotationalBundle us_ahe_kiowa_Sensor_Pod_Ball
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create Spring us_ahe_kiowa_Damper00
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Spring us_ahe_kiowa_Damper01
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create Spring us_ahe_kiowa_Damper02
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create Spring us_ahe_kiowa_Damper03
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle us_ahe_kiowa_joystick_left
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create RotationalBundle us_ahe_kiowa_joystick_right
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+include us_ahe_kiowa.tweak

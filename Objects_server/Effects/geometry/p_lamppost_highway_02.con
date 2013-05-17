@@ -1,0 +1,4 @@
+ObjectTemplate.create Particle p_lamppost_highway_02
+ObjectTemplate.createdInEditor 1
+
+include p_lamppost_highway_02.tweak

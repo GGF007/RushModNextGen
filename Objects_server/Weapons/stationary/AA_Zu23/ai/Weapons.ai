@@ -1,0 +1,12 @@
+rem *** m224_mortar ***
+weaponTemplate.create Zu23_gun_ai
+weaponTemplate.indirect 0
+weaponTemplate.minRange 20.0
+weaponTemplate.maxRange 350.0
+weaponTemplate.setStrength Infantry     8.0
+weaponTemplate.setStrength LightArmour  4.0
+weaponTemplate.setStrength HeavyArmour  0.0
+weaponTemplate.setStrength NavalArmour  0.0
+weaponTemplate.setStrength Helicopter   12.0
+weaponTemplate.setStrength AirPlane     9.0
+weaponTemplate.setFiresThroughTransparent 1

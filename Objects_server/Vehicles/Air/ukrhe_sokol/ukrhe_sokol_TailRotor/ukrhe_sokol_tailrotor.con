@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh ukrhe_sokol_tailrotor
+
+ObjectTemplate.create Rotor ukrhe_sokol_tailrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.geometry ukrhe_sokol_tailrotor
+
+include ukrhe_sokol_tailrotor.tweak

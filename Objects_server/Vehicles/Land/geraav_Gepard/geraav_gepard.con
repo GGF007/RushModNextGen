@@ -1,0 +1,226 @@
+GeometryTemplate.create BundledMesh geraav_gepard
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate geraav_gepard
+
+ObjectTemplate.create PlayerControlObject geraav_gepard
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh geraav_gepard
+ObjectTemplate.mapMaterial 0 Armor_2_light_armored_vehicles 0
+ObjectTemplate.mapMaterial 1 Armor_3_tank_rear_top 0
+ObjectTemplate.mapMaterial 2 Tank_tracks 0
+ObjectTemplate.mapMaterial 3 Wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry geraav_gepard
+ObjectTemplate.addTemplate geraav_Gepard_Turret
+ObjectTemplate.setPosition 0/0.8097/0.5802
+ObjectTemplate.addTemplate geraav_Gepard_zMotor
+
+ObjectTemplate.create RotationalBundle geraav_Gepard_Turret
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate geraav_Gepard_Barrel_Base
+ObjectTemplate.setPosition 0/0.7367/-0.7964
+ObjectTemplate.addTemplate geraav_Gepard_Hud
+ObjectTemplate.setPosition 0/0.7367/-0.7964
+ObjectTemplate.addTemplate geraav_Gepard_NoseRadar
+ObjectTemplate.setPosition 0/0.7416/1.4659
+ObjectTemplate.addTemplate geraav_Gepard_Rear_Radar
+ObjectTemplate.setPosition 0/1.3765/-2.3223
+
+ObjectTemplate.create RotationalBundle geraav_Gepard_Barrel_Base
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate geraav_Gepard_Guns
+
+ObjectTemplate.create GenericFireArm geraav_Gepard_Guns
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate geraav_Gepard_L_Barrel
+ObjectTemplate.setPosition -0.8886/0.0290/0
+ObjectTemplate.addTemplate geraav_Gepard_R_Barrel
+ObjectTemplate.setPosition 0.8886/0.0290/0
+
+ObjectTemplate.create Bundle geraav_Gepard_L_Barrel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Bundle geraav_Gepard_R_Barrel
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create RotationalBundle geraav_Gepard_Hud
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create RotationalBundle geraav_Gepard_NoseRadar
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle geraav_Gepard_Rear_Radar
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Engine geraav_Gepard_zMotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+ObjectTemplate.addTemplate geraav_Gepard_L_DriveWheel
+ObjectTemplate.setPosition -1.3279/-0.0428/-2.7396
+ObjectTemplate.addTemplate geraav_Gepard_L_Wheel01
+ObjectTemplate.setPosition -1.3567/-0.7495/-2.0405
+ObjectTemplate.addTemplate geraav_Gepard_L_Wheel02
+ObjectTemplate.setPosition -1.3518/-0.7495/-1.3261
+ObjectTemplate.addTemplate geraav_Gepard_L_Wheel03
+ObjectTemplate.setPosition -1.3518/-0.7495/-0.6179
+ObjectTemplate.addTemplate geraav_Gepard_L_Wheel04
+ObjectTemplate.setPosition -1.3518/-0.7495/0.0926
+ObjectTemplate.addTemplate geraav_Gepard_L_Wheel05
+ObjectTemplate.setPosition -1.3518/-0.7495/0.8161
+ObjectTemplate.addTemplate geraav_Gepard_L_Wheel06
+ObjectTemplate.setPosition -1.3518/-0.7495/1.5381
+ObjectTemplate.addTemplate geraav_Gepard_L_Wheel07
+ObjectTemplate.setPosition -1.3514/-0.7495/2.2441
+ObjectTemplate.addTemplate geraav_Gepard_R_DriveWheel
+ObjectTemplate.setPosition 1.3280/-0.0428/-2.7396
+ObjectTemplate.addTemplate geraav_Gepard_R_Wheel01
+ObjectTemplate.setPosition 1.3642/-0.7495/-2.0405
+ObjectTemplate.addTemplate geraav_Gepard_R_Wheel02
+ObjectTemplate.setPosition 1.3589/-0.7495/-1.3261
+ObjectTemplate.addTemplate geraav_Gepard_R_Wheel03
+ObjectTemplate.setPosition 1.3589/-0.7495/-0.6179
+ObjectTemplate.addTemplate geraav_Gepard_R_Wheel04
+ObjectTemplate.setPosition 1.3589/-0.7495/0.0926
+ObjectTemplate.addTemplate geraav_Gepard_R_Wheel05
+ObjectTemplate.setPosition 1.3589/-0.7495/0.8161
+ObjectTemplate.addTemplate geraav_Gepard_R_Wheel06
+ObjectTemplate.setPosition 1.3589/-0.7495/1.5381
+ObjectTemplate.addTemplate geraav_Gepard_R_Wheel07
+ObjectTemplate.setPosition 1.3589/-0.7495/2.2441
+
+ObjectTemplate.create RotationalBundle geraav_Gepard_L_DriveWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring geraav_Gepard_L_Wheel01
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create Spring geraav_Gepard_L_Wheel02
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring geraav_Gepard_L_Wheel03
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Spring geraav_Gepard_L_Wheel04
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create Spring geraav_Gepard_L_Wheel05
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create Spring geraav_Gepard_L_Wheel06
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring geraav_Gepard_L_Wheel07
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create RotationalBundle geraav_Gepard_R_DriveWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring geraav_Gepard_R_Wheel01
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring geraav_Gepard_R_Wheel02
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring geraav_Gepard_R_Wheel03
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create Spring geraav_Gepard_R_Wheel04
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+ObjectTemplate.create Spring geraav_Gepard_R_Wheel05
+ObjectTemplate.collisionPart 23
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 23
+
+ObjectTemplate.create Spring geraav_Gepard_R_Wheel06
+ObjectTemplate.collisionPart 24
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 24
+
+ObjectTemplate.create Spring geraav_Gepard_R_Wheel07
+ObjectTemplate.collisionPart 25
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 25
+
+include geraav_gepard.tweak

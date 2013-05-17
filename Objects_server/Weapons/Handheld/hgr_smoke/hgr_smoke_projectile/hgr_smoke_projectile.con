@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh hgr_smoke_projectile
+
+ObjectTemplate.create GenericFireArm hgr_smoke_projectile
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry hgr_smoke_projectile
+
+include hgr_smoke_projectile.tweak

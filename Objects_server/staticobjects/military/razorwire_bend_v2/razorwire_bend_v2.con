@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh razorwire_bend_v2
+CollisionManager.createTemplate razorwire_bend_v2
+
+ObjectTemplate.create SimpleObject razorwire_bend_v2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.collisionMesh razorwire_bend_v2
+ObjectTemplate.mapMaterial 0 Metal_solid 0
+ObjectTemplate.mapMaterial 1 Stairs_metal 0
+ObjectTemplate.mapMaterial 2 Death_material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry razorwire_bend_v2
+
+include razorwire_bend_v2.tweak

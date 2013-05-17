@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh us_jep_hmmwv_crowsmg_controls_js
+CollisionManager.createTemplate us_jep_hmmwv_crowsmg_controls_js
+
+ObjectTemplate.create RotationalBundle us_jep_hmmwv_crowsmg_controls_js
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator STUDIO:J-MAR
+ObjectTemplate.collisionMesh us_jep_hmmwv_crowsmg_controls_js
+ObjectTemplate.mapMaterial 0 Armor_1_metal_plating1 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry us_jep_hmmwv_crowsmg_controls_js
+
+include us_jep_hmmwv_crowsmg_controls_js.tweak

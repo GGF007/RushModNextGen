@@ -1,0 +1,30 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/1/4 7:47]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe DestroyableObject hole_in_wall
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.isDestructable 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 200
+ObjectTemplate.armor.hitPoints 200
+ObjectTemplate.armor.defaultMaterial 115
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.explosionMaterial 101
+ObjectTemplate.armor.wreckExplosionMaterial 78
+ObjectTemplate.armor.wreckHitPoints 200
+rem ---EndComp ---
+ObjectTemplate.geometry hole_in_wall
+ObjectTemplate.setCollisionMesh hole_in_wall
+ObjectTemplate.mapMaterial 0 rock 12
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

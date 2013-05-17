@@ -1,0 +1,219 @@
+GeometryTemplate.create BundledMesh usapc_m2a2
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate usapc_m2a2
+
+ObjectTemplate.create PlayerControlObject usapc_m2a2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator W1002:Nordstern
+ObjectTemplate.collisionMesh usapc_m2a2
+ObjectTemplate.mapMaterial 0 Armor_2_light_armored_vehicles 0
+ObjectTemplate.mapMaterial 1 Armor_3_tank_rear_top 0
+ObjectTemplate.mapMaterial 2 USTNK_M1A2_Armor_4_tank_sides 0
+ObjectTemplate.mapMaterial 3 penetrable_glass 0
+ObjectTemplate.mapMaterial 4 Armor_2_light_armored_vehicles 0
+ObjectTemplate.mapMaterial 5 USTNK_M1A2_Penetrable_Cloth 0
+ObjectTemplate.mapMaterial 6 penetrable_metal_thin 0
+ObjectTemplate.mapMaterial 7 USTNK_M1A2_Penetrable_Cardboardbox 0
+ObjectTemplate.mapMaterial 8 Tank_tracks 0
+ObjectTemplate.mapMaterial 9 wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry usapc_m2a2
+ObjectTemplate.addTemplate usapc_m2a2_turret
+ObjectTemplate.setPosition 0.1914/1.8486/-0.5994
+ObjectTemplate.addTemplate usapc_m2a2_zmotor
+ObjectTemplate.setPosition -0.3390/1.4107/-2.5440
+
+ObjectTemplate.create RotationalBundle usapc_m2a2_turret
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate usapc_m2a2_barrelbase
+ObjectTemplate.setPosition 0.1246/0.3768/0.6484
+ObjectTemplate.addTemplate usapc_m2a2_tow
+ObjectTemplate.setPosition -1.2739/0.3918/0.4044
+
+ObjectTemplate.create RotationalBundle usapc_m2a2_barrelbase
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate usapc_m2a2_barrel
+
+ObjectTemplate.create GenericFireArm usapc_m2a2_barrel
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create RotationalBundle usapc_m2a2_tow
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+ObjectTemplate.addTemplate usapc_m2a2_towbase
+ObjectTemplate.setPosition 0.2423/0.4037/0
+ObjectTemplate.setRotation -180.0000/0/0
+
+ObjectTemplate.create RotationalBundle usapc_m2a2_towbase
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create Engine usapc_m2a2_zmotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate usapc_m2a2_LDriveWheel
+ObjectTemplate.setPosition -0.9928/-0.8965/-0.2420
+ObjectTemplate.addTemplate usapc_m2a2_LWheel_1
+ObjectTemplate.setPosition -0.8884/-0.8971/5.3799
+ObjectTemplate.addTemplate usapc_m2a2_LWheel_2
+ObjectTemplate.setPosition -0.9446/-1.2447/4.4331
+ObjectTemplate.addTemplate usapc_m2a2_LWheel_3
+ObjectTemplate.setPosition -0.9446/-1.2447/3.6765
+ObjectTemplate.addTemplate usapc_m2a2_LWheel_4
+ObjectTemplate.setPosition -0.9446/-1.2447/2.9622
+ObjectTemplate.addTemplate usapc_m2a2_LWheel_5
+ObjectTemplate.setPosition -0.9446/-1.2447/2.0321
+ObjectTemplate.addTemplate usapc_m2a2_LWheel_6
+ObjectTemplate.setPosition -0.9446/-1.2447/1.2787
+ObjectTemplate.addTemplate usapc_m2a2_LWheel_7
+ObjectTemplate.setPosition -0.9446/-1.2447/0.5469
+ObjectTemplate.addTemplate usapc_m2a2_RDriveWheel
+ObjectTemplate.setPosition 1.6974/-0.8965/-0.2420
+ObjectTemplate.addTemplate usapc_m2a2_RWheel_1
+ObjectTemplate.setPosition 1.5931/-0.8971/5.3799
+ObjectTemplate.addTemplate usapc_m2a2_RWheel_2
+ObjectTemplate.setPosition 1.6493/-1.2447/4.4331
+ObjectTemplate.addTemplate usapc_m2a2_RWheel_3
+ObjectTemplate.setPosition 1.6493/-1.2447/3.6765
+ObjectTemplate.addTemplate usapc_m2a2_RWheel_4
+ObjectTemplate.setPosition 1.6493/-1.2447/2.9622
+ObjectTemplate.addTemplate usapc_m2a2_RWheel_5
+ObjectTemplate.setPosition 1.6493/-1.2447/2.0321
+ObjectTemplate.addTemplate usapc_m2a2_RWheel_6
+ObjectTemplate.setPosition 1.6493/-1.2447/1.2787
+ObjectTemplate.addTemplate usapc_m2a2_RWheel_7
+ObjectTemplate.setPosition 1.6493/-1.2447/0.5469
+
+ObjectTemplate.create RotationalBundle usapc_m2a2_LDriveWheel
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle usapc_m2a2_LWheel_1
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Spring usapc_m2a2_LWheel_2
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring usapc_m2a2_LWheel_3
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring usapc_m2a2_LWheel_4
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create Spring usapc_m2a2_LWheel_5
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring usapc_m2a2_LWheel_6
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Spring usapc_m2a2_LWheel_7
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create RotationalBundle usapc_m2a2_RDriveWheel
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create RotationalBundle usapc_m2a2_RWheel_1
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring usapc_m2a2_RWheel_2
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring usapc_m2a2_RWheel_3
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring usapc_m2a2_RWheel_4
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring usapc_m2a2_RWheel_5
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring usapc_m2a2_RWheel_6
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create Spring usapc_m2a2_RWheel_7
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+include usapc_m2a2.tweak

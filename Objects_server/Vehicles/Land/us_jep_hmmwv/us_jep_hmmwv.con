@@ -1,0 +1,104 @@
+GeometryTemplate.create BundledMesh us_jep_hmmwv
+CollisionManager.createTemplate us_jep_hmmwv
+
+ObjectTemplate.create PlayerControlObject us_jep_hmmwv
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JMLASANTE:jarleif
+ObjectTemplate.collisionMesh us_jep_hmmwv
+ObjectTemplate.mapMaterial 0 Armor_1_metal_plating1 0
+ObjectTemplate.mapMaterial 1 Armor_1_metal_plating1 0
+ObjectTemplate.mapMaterial 2 PenetrableCloth_carpet 0
+ObjectTemplate.mapMaterial 3 Armor_1_metal_plating1 0
+ObjectTemplate.mapMaterial 4 Glass_bulletproof 0
+ObjectTemplate.mapMaterial 5 wreck 0
+ObjectTemplate.mapMaterial 6 Armor_1_metal_plating1 0
+ObjectTemplate.mapMaterial 7 rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry us_jep_hmmwv
+ObjectTemplate.addTemplate us_jep_hmmwv_SteeringWheel
+ObjectTemplate.setPosition -0.7076/0.4902/1.1428
+ObjectTemplate.setRotation 0/27.0502/0
+ObjectTemplate.addTemplate us_jep_hmmwv_CupolaBase
+ObjectTemplate.setPosition 0/0/-0.1765
+ObjectTemplate.addTemplate us_jep_hmmwv_zMotor
+ObjectTemplate.setPosition 0/-0.3169/0
+
+ObjectTemplate.create simpleObject us_jep_hmmwv_CupolaBase
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create RotationalBundle us_jep_hmmwv_Lav
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create RotationalBundle us_jep_hmmwv_SteeringWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Engine us_jep_hmmwv_zMotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate us_jep_hmmwv_whl_Nav_BL
+ObjectTemplate.setPosition -0.9713/0.0739/-1.2981
+ObjectTemplate.addTemplate us_jep_hmmwv_whl_Nav_BR
+ObjectTemplate.setPosition 0.9713/0.0739/-1.2981
+ObjectTemplate.addTemplate us_jep_hmmwv_whl_Nav_FL
+ObjectTemplate.setPosition -0.9713/0.0739/2.1716
+ObjectTemplate.addTemplate us_jep_hmmwv_whl_Nav_FR
+ObjectTemplate.setPosition 0.9713/0.0739/2.1716
+
+ObjectTemplate.create Bundle us_jep_hmmwv_whl_Nav_BL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate us_jep_hmmwv_whl_BL
+ObjectTemplate.setPosition 0.0493/0/0
+
+ObjectTemplate.create Spring us_jep_hmmwv_whl_BL
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Bundle us_jep_hmmwv_whl_Nav_BR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+ObjectTemplate.addTemplate us_jep_hmmwv_whl_BR
+ObjectTemplate.setPosition -0.0633/0/0
+
+ObjectTemplate.create Spring us_jep_hmmwv_whl_BR
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create RotationalBundle us_jep_hmmwv_whl_Nav_FL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+ObjectTemplate.addTemplate us_jep_hmmwv_whl_FL
+ObjectTemplate.setPosition 0.0493/0/0
+
+ObjectTemplate.create Spring us_jep_hmmwv_whl_FL
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create RotationalBundle us_jep_hmmwv_whl_Nav_FR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+ObjectTemplate.addTemplate us_jep_hmmwv_whl_FR
+ObjectTemplate.setPosition -0.0633/0/0
+
+ObjectTemplate.create Spring us_jep_hmmwv_whl_FR
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+include us_jep_hmmwv.tweak

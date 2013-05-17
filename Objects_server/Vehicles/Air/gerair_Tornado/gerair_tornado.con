@@ -1,0 +1,238 @@
+GeometryTemplate.create BundledMesh gerair_tornado
+CollisionManager.createTemplate gerair_tornado
+
+ObjectTemplate.create PlayerControlObject gerair_tornado
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh gerair_tornado
+ObjectTemplate.mapMaterial 0 Airplane 0
+ObjectTemplate.mapMaterial 1 Glass_vehicle 0
+ObjectTemplate.mapMaterial 2 Wreck 0
+ObjectTemplate.mapMaterial 3 Rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry gerair_tornado
+ObjectTemplate.addTemplate gerair_tornado_Elevator
+ObjectTemplate.setPosition 0/0.0666/-7.2689
+ObjectTemplate.addTemplate gerair_tornado_FDoor
+ObjectTemplate.setPosition 0/-1.0440/3.4711
+ObjectTemplate.addTemplate gerair_tornado_FDoorL
+ObjectTemplate.setPosition 0.4118/-1.0252/5.1819
+ObjectTemplate.addTemplate gerair_tornado_FDoorR
+ObjectTemplate.setPosition -0.4118/-1.0252/5.1819
+ObjectTemplate.addTemplate gerair_tornado_FGear
+ObjectTemplate.setPosition 0/-0.5481/3.6218
+ObjectTemplate.addTemplate gerair_tornado_LAirBrake
+ObjectTemplate.setPosition -1.1381/0.9928/-4.9405
+ObjectTemplate.setRotation -5.6932/-0.6115/13.1808
+ObjectTemplate.addTemplate gerair_tornado_LGear
+ObjectTemplate.setPosition -1.1780/-0.4952/-2.7431
+ObjectTemplate.addTemplate gerair_tornado_LGearDoor
+ObjectTemplate.setPosition -1.4538/-0.3963/-1.6148
+ObjectTemplate.addTemplate gerair_tornado_LWing
+ObjectTemplate.setPosition -2.5953/0.6143/-0.9237
+ObjectTemplate.addTemplate gerair_tornado_RAirBrake
+ObjectTemplate.setPosition 1.1381/0.9928/-4.9405
+ObjectTemplate.setRotation 5.6932/-0.6115/-13.1807
+ObjectTemplate.addTemplate gerair_tornado_RGear
+ObjectTemplate.setPosition 1.1780/-0.4952/-2.7431
+ObjectTemplate.addTemplate gerair_tornado_RGearDoor
+ObjectTemplate.setPosition 1.4538/-0.3963/-1.6148
+ObjectTemplate.addTemplate gerair_tornado_Rudder
+ObjectTemplate.setPosition 0/2.4769/-8.3459
+ObjectTemplate.setRotation 0/-35.6470/-90.0000
+ObjectTemplate.addTemplate gerair_tornado_RWing
+ObjectTemplate.setPosition 2.5953/0.6143/-0.9237
+
+ObjectTemplate.create Wing gerair_tornado_Elevator
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create LandingGear gerair_tornado_FDoor
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create LandingGear gerair_tornado_FDoorL
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create LandingGear gerair_tornado_FDoorR
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create LandingGear gerair_tornado_FGear
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate gerair_tornado_FGear_Turn
+ObjectTemplate.setPosition 0/-1.0753/0
+
+ObjectTemplate.create RotationalBundle gerair_tornado_FGear_Turn
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate gerair_tornado_FWheel
+ObjectTemplate.setPosition 0/-0.6696/0.0606
+
+ObjectTemplate.create Spring gerair_tornado_FWheel
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle gerair_tornado_LAirBrake
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create LandingGear gerair_tornado_LGear
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+ObjectTemplate.addTemplate gerair_tornado_LWheel
+ObjectTemplate.setPosition -0.7068/-1.7099/0.1548
+
+ObjectTemplate.create Spring gerair_tornado_LWheel
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create LandingGear gerair_tornado_LGearDoor
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create LandingGear gerair_tornado_LWing
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+ObjectTemplate.addTemplate gerair_tornado_LAirleron
+ObjectTemplate.setPosition -5.0724/-0.1451/-3.6866
+ObjectTemplate.setRotation -15.5400/0/1.8460
+ObjectTemplate.addTemplate gerair_tornado_LPylon01
+ObjectTemplate.setPosition -4.1162/-0.2918/-2.4864
+ObjectTemplate.addTemplate gerair_tornado_LPylon
+ObjectTemplate.setPosition -0.2709/-0.1618/-0.9083
+
+ObjectTemplate.create RotationalBundle gerair_tornado_LAirleron
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create LandingGear gerair_tornado_LPylon01
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create LandingGear gerair_tornado_LPylon
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create RotationalBundle gerair_tornado_RAirBrake
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create LandingGear gerair_tornado_RGear
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+ObjectTemplate.addTemplate gerair_tornado_RWheel
+ObjectTemplate.setPosition 0.7150/-1.7099/0.1548
+
+ObjectTemplate.create Spring gerair_tornado_RWheel
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create LandingGear gerair_tornado_RGearDoor
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Wing gerair_tornado_Rudder
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create LandingGear gerair_tornado_RWing
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+ObjectTemplate.addTemplate gerair_tornado_RAirleron
+ObjectTemplate.setPosition 5.0724/-0.1451/-3.6866
+ObjectTemplate.setRotation 15.5400/0/-1.8460
+ObjectTemplate.addTemplate gerair_tornado_RPylon01
+ObjectTemplate.setPosition 4.1162/-0.2918/-2.4864
+ObjectTemplate.addTemplate gerair_tornado_RPylon
+ObjectTemplate.setPosition 0.2709/-0.1618/-0.9083
+
+ObjectTemplate.create RotationalBundle gerair_tornado_RAirleron
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+ObjectTemplate.create LandingGear gerair_tornado_RPylon01
+ObjectTemplate.collisionPart 23
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 23
+
+ObjectTemplate.create LandingGear gerair_tornado_RPylon
+ObjectTemplate.collisionPart 24
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 24
+
+include gerair_tornado.tweak

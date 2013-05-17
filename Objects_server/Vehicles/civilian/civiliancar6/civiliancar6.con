@@ -1,0 +1,82 @@
+GeometryTemplate.create BundledMesh civiliancar6
+CollisionManager.createTemplate civiliancar6
+
+ObjectTemplate.create DestroyableObject civiliancar6
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHO-1:pho
+ObjectTemplate.collisionMesh civiliancar6
+ObjectTemplate.mapMaterial 0 Metal_plate_thin 0
+ObjectTemplate.mapMaterial 1 Glass_vehicle 0
+ObjectTemplate.mapMaterial 2 cloth 0
+ObjectTemplate.mapMaterial 3 col_wreck 0
+ObjectTemplate.mapMaterial 4 Rubber 0
+ObjectTemplate.hasCollisionPhysics 1 
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry civiliancar6
+ObjectTemplate.addTemplate civiliancar6_Steeringwheel
+ObjectTemplate.setPosition -0.3853/0.5270/0.7178
+ObjectTemplate.setRotation 0/25.0000/0
+ObjectTemplate.addTemplate civiliancar6_drivetrain
+ObjectTemplate.addTemplate civiliancar6_Engine
+ObjectTemplate.setPosition 0/0.1/0
+ObjectTemplate.setRotation 0/2.5/0
+
+ObjectTemplate.create SimpleObject civiliancar6_Steeringwheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create RotationalBundle civiliancar6_drivetrain
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create RotationalBundle civiliancar6_Engine
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate civiliancar6_nav_RF
+ObjectTemplate.setPosition 0.7/-0.3/1.52
+ObjectTemplate.addTemplate civiliancar6_nav_LF
+ObjectTemplate.setPosition -0.7/-0.3/1.52
+ObjectTemplate.addTemplate civiliancar6_Wheel_LR
+ObjectTemplate.setPosition -0.7/-0.43/-1
+ObjectTemplate.addTemplate civiliancar6_Wheel_RR
+ObjectTemplate.setPosition 0.7/-0.43/-1
+
+ObjectTemplate.create RotationalBundle civiliancar6_nav_RF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+ObjectTemplate.addTemplate civiliancar6_Wheel_RF
+
+ObjectTemplate.create RotationalBundle civiliancar6_Wheel_RF
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create RotationalBundle civiliancar6_nav_LF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate civiliancar6_Wheel_LF
+
+ObjectTemplate.create RotationalBundle civiliancar6_Wheel_LF
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle civiliancar6_Wheel_LR
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create RotationalBundle civiliancar6_Wheel_RR
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+include civiliancar6.tweak

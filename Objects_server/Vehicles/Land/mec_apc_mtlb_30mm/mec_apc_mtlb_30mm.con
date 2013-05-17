@@ -1,0 +1,197 @@
+GeometryTemplate.create BundledMesh mec_apc_mtlb_30mm
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate mec_apc_mtlb_30mm
+
+ObjectTemplate.create PlayerControlObject mec_apc_mtlb_30mm
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator Hauteclocque
+ObjectTemplate.collisionMesh mec_apc_mtlb_30mm
+ObjectTemplate.mapMaterial 0 Side_Armour 0
+ObjectTemplate.mapMaterial 1 Back_Armour 0
+ObjectTemplate.mapMaterial 2 Front_Armour 0
+ObjectTemplate.mapMaterial 3 Glass 0
+ObjectTemplate.mapMaterial 4 thin_Metal 0
+ObjectTemplate.mapMaterial 5 Tracks 0
+ObjectTemplate.mapMaterial 6 wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry mec_apc_mtlb_30mm
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Gunner
+ObjectTemplate.setPosition 0.5925/0.808/1.2181
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_zmotor
+ObjectTemplate.setPosition 0/-0.3365/0
+
+ObjectTemplate.create RotationalBundle mec_apc_mtlb_30mm_Gunner
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Turret
+ObjectTemplate.setPosition -0.59250/0.0118/-2.4715
+
+ObjectTemplate.create RotationalBundle mec_apc_mtlb_30mm_Turret
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Mantle
+ObjectTemplate.setPosition -0.0212/0.5329/-0.4911
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Turret_Collision
+
+ObjectTemplate.create SimpleObject mec_apc_mtlb_30mm_Turret_Collision
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+
+ObjectTemplate.create RotationalBundle mec_apc_mtlb_30mm_Mantle
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Gun_Barrel
+ObjectTemplate.setPosition -0.0031/-0.0404/1.2561
+
+ObjectTemplate.create GenericFireArm mec_apc_mtlb_30mm_Gun_Barrel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Engine mec_apc_mtlb_30mm_zmotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_LDriveWheel
+ObjectTemplate.setPosition -1.2039/0.1497/-2.5957
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Lwheel_01
+ObjectTemplate.setPosition -1.2030/0.2253/2.3296
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Lwheel_02
+ObjectTemplate.setPosition -1.2039/-0.1193/1.6132
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Lwheel_03
+ObjectTemplate.setPosition -1.2039/-0.1193/0.8929
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Lwheel_04
+ObjectTemplate.setPosition -1.2039/-0.1193/0.1726
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Lwheel_05
+ObjectTemplate.setPosition -1.2039/-0.1193/-0.5378
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Lwheel_06
+ObjectTemplate.setPosition -1.2039/-0.1193/-1.2680
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Lwheel_07
+ObjectTemplate.setPosition -1.2039/-0.1193/-1.9592
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_RDriveWheel
+ObjectTemplate.setPosition 1.2119/0.1497/-2.5957
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Rwheel_01
+ObjectTemplate.setPosition 1.2119/0.2253/2.3296
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Rwheel_02
+ObjectTemplate.setPosition 1.2119/-0.1193/1.6132
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Rwheel_03
+ObjectTemplate.setPosition 1.2119/-0.1193/0.8929
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Rwheel_04
+ObjectTemplate.setPosition 1.2119/-0.1193/0.1726
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Rwheel_05
+ObjectTemplate.setPosition 1.2119/-0.1193/-0.5378
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Rwheel_06
+ObjectTemplate.setPosition 1.2119/-0.1193/-1.2680
+ObjectTemplate.addTemplate mec_apc_mtlb_30mm_Rwheel_07
+ObjectTemplate.setPosition 1.2119/-0.1193/-1.9592
+
+ObjectTemplate.create RotationalBundle mec_apc_mtlb_30mm_LDriveWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create RotationalBundle mec_apc_mtlb_30mm_Lwheel_01
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Spring mec_apc_mtlb_30mm_Lwheel_02
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Spring mec_apc_mtlb_30mm_Lwheel_03
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring mec_apc_mtlb_30mm_Lwheel_04
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring mec_apc_mtlb_30mm_Lwheel_05
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create Spring mec_apc_mtlb_30mm_Lwheel_06
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring mec_apc_mtlb_30mm_Lwheel_07
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create RotationalBundle mec_apc_mtlb_30mm_RDriveWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create RotationalBundle mec_apc_mtlb_30mm_Rwheel_01
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create Spring mec_apc_mtlb_30mm_Rwheel_02
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring mec_apc_mtlb_30mm_Rwheel_03
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring mec_apc_mtlb_30mm_Rwheel_04
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring mec_apc_mtlb_30mm_Rwheel_05
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring mec_apc_mtlb_30mm_Rwheel_06
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring mec_apc_mtlb_30mm_Rwheel_07
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+include mec_apc_mtlb_30mm.tweak

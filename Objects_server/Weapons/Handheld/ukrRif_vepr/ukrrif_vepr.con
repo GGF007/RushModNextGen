@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh ukrrif_vepr
+CollisionManager.createTemplate ukrrif_vepr
+
+ObjectTemplate.create GenericFireArm ukrrif_vepr
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.collisionMesh ukrrif_vepr
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukrrif_vepr
+
+include ukrrif_vepr.tweak

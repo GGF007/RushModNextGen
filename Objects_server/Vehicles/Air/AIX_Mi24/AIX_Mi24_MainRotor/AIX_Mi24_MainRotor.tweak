@@ -1,0 +1,28 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/2 9:17]
+GeometryTemplate.setSubGeometryLodDistance 0 0 25
+GeometryTemplate.setSubGeometryLodDistance 1 0 15
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Rotor AIX_Mi24_MainRotor
+ObjectTemplate.creator MHE-1:mhe
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry AIX_Mi24_MainRotor
+ObjectTemplate.setCollisionMesh AIX_Mi24_MainRotor
+ObjectTemplate.mapMaterial 0 rotor 31
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate ade_heliDraft
+ObjectTemplate.setRotation 0/0/180
+rem -------------------------------------
+ObjectTemplate.changeLodAt 0.15
+ObjectTemplate.tolerance 1.52587e-006
+ObjectTemplate.rotationSpeedMod -0.5
+ObjectTemplate.rotationSpeedModBlur -0.05
+ObjectTemplate.rotationAxle 0
+ObjectTemplate.engineName AIX_Mi24_Rotor
+

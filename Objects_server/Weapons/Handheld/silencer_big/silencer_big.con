@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh silencer_big
+
+ObjectTemplate.create SimpleObject silencer_big
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.geometry silencer_big
+
+include silencer_big.tweak

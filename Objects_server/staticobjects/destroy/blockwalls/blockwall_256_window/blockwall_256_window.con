@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh blockwall_256_window
+CollisionManager.createTemplate blockwall_256_window
+
+ObjectTemplate.create DestroyableObject blockwall_256_window
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator destructo
+ObjectTemplate.collisionMesh blockwall_256_window
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry blockwall_256_window
+
+include blockwall_256_window.tweak

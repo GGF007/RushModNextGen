@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh sbr_tnt
+CollisionManager.createTemplate sbr_tnt
+
+ObjectTemplate.create SimpleObject sbr_tnt
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh sbr_tnt
+ObjectTemplate.mapMaterial 0 Cloth_carpet 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry sbr_tnt
+
+include sbr_tnt.tweak

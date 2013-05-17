@@ -1,0 +1,18 @@
+GeometryTemplate.create BundledMesh frc_bipod
+
+ObjectTemplate.create PlayerControlObject frc_bipod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.collisionMesh mec_bipod
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry frc_bipod
+ObjectTemplate.addTemplate frc_bipod_Down
+
+ObjectTemplate.create RotationalBundle frc_bipod_Down
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+include frc_bipod.tweak

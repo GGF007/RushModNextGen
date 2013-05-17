@@ -1,0 +1,102 @@
+GeometryTemplate.create BundledMesh cf_jep_gwagon
+CollisionManager.createTemplate cf_jep_gwagon
+
+ObjectTemplate.create PlayerControlObject cf_jep_gwagon
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHILSCH-Z4KV58U:Phil
+ObjectTemplate.collisionMesh cf_jep_gwagon
+ObjectTemplate.mapMaterial 0 Armor_1_metal_plating 0
+ObjectTemplate.mapMaterial 1 Rubber 0
+ObjectTemplate.mapMaterial 2 Glass_bulletproof 0
+ObjectTemplate.mapMaterial 3 Plastic 0
+ObjectTemplate.mapMaterial 4 PenetrableCloth_carpet 0
+ObjectTemplate.mapMaterial 5 Wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry cf_jep_gwagon
+ObjectTemplate.addTemplate cf_jep_gwagon_asteeringwheel
+ObjectTemplate.setPosition -0.4020/0.8575/0.3189
+ObjectTemplate.setRotation 0/13.3970/0
+ObjectTemplate.addTemplate cf_jep_gwagon_Gunner
+ObjectTemplate.setPosition 0/0.4552/-0.9546
+ObjectTemplate.addTemplate cf_jep_gwagon_zmotor
+ObjectTemplate.setPosition 0/0.1899/0
+
+ObjectTemplate.create RotationalBundle cf_jep_gwagon_asteeringwheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create PlayerControlObject cf_jep_gwagon_Gunner
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate cf_jep_gwagon_turret
+ObjectTemplate.setPosition 0/1.2060/0
+
+ObjectTemplate.create RotationalBundle cf_jep_gwagon_turret
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate cf_jep_gwagon_gwagon_gunmount
+ObjectTemplate.setPosition 0/0.2380/0.6535
+
+ObjectTemplate.create RotationalBundle cf_jep_gwagon_gwagon_gunmount
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Engine cf_jep_gwagon_zmotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate cf_jep_gwagon_Nav_FL
+ObjectTemplate.setPosition -0.6877/-0.3106/1.4574
+ObjectTemplate.addTemplate cf_jep_gwagon_Nav_FR
+ObjectTemplate.setPosition 0.6882/-0.3106/1.4574
+ObjectTemplate.addTemplate cf_jep_gwagon_wheel_bl
+ObjectTemplate.setPosition -0.6877/-0.3106/-1.5467
+ObjectTemplate.addTemplate cf_jep_gwagon_wheel_br
+ObjectTemplate.setPosition 0.6882/-0.3106/-1.5467
+
+ObjectTemplate.create RotationalBundle cf_jep_gwagon_Nav_FL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate cf_jep_gwagon_wheel_fl
+
+ObjectTemplate.create Spring cf_jep_gwagon_wheel_fl
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle cf_jep_gwagon_Nav_FR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+ObjectTemplate.addTemplate cf_jep_gwagon_wheel_fr
+
+ObjectTemplate.create Spring cf_jep_gwagon_wheel_fr
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring cf_jep_gwagon_wheel_bl
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring cf_jep_gwagon_wheel_br
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+include cf_jep_gwagon.tweak

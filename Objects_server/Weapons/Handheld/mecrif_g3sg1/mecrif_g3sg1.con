@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh mecrif_g3sg1
+
+ObjectTemplate.create GenericFirearm mecrif_g3sg1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry mecrif_g3sg1
+
+include mecrif_g3sg1.tweak

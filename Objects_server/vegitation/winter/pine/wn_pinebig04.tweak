@@ -1,0 +1,18 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/9 14:35]
+GeometryTemplate.setSubGeometryLodDistance 0 0 1000
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject wn_pinebig04
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry wn_pinebig04
+ObjectTemplate.setCollisionMesh wn_pinebig04
+ObjectTemplate.mapMaterial 0 leafCol 1007
+ObjectTemplate.mapMaterial 1 wood_col 93
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

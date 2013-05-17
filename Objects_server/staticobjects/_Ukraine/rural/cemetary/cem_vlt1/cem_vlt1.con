@@ -1,0 +1,18 @@
+GeometryTemplate.create StaticMesh cem_vlt1
+CollisionManager.createTemplate cem_vlt1
+
+ObjectTemplate.create SimpleObject cem_vlt1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh cem_vlt1
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Stairs_concrete 0
+ObjectTemplate.mapMaterial 2 Glass_common 0
+ObjectTemplate.mapMaterial 3 Wood_thin 0
+ObjectTemplate.mapMaterial 4 concrete 0
+ObjectTemplate.mapMaterial 5 Ceramic_tiles 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry cem_vlt1
+
+include cem_vlt1.tweak

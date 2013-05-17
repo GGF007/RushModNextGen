@@ -1,0 +1,20 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/1/4 7:47]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject roadbarrier
+ObjectTemplate.creator ENI-2:eni
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 3
+ObjectTemplate.geometry roadbarrier
+ObjectTemplate.setCollisionMesh roadbarrier
+ObjectTemplate.mapMaterial 0 concrete 78
+ObjectTemplate.treeCollisionDiameter 0.6
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

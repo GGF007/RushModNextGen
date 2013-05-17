@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh sandbox
+CollisionManager.createTemplate sandbox
+
+ObjectTemplate.create SimpleObject sandbox
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator NONE-CRGH5JPLN7:Trystan
+ObjectTemplate.collisionMesh sandbox
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry sandbox
+
+include sandbox.tweak

@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh chaa_eryx
+CollisionManager.createTemplate chaa_eryx
+
+ObjectTemplate.create GenericFireArm chaa_eryx
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.collisionMesh chat_eryx
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry chat_eryx
+
+include chaa_eryx.tweak

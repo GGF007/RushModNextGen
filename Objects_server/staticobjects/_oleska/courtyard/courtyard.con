@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh courtyard
+CollisionManager.createTemplate courtyard
+
+ObjectTemplate.create SimpleObject courtyard
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main-Josh
+ObjectTemplate.collisionMesh courtyard
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry courtyard
+
+include courtyard.tweak

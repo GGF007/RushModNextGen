@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh bigtree4
+CollisionManager.createTemplate bigtree4
+
+ObjectTemplate.create SimpleObject bigtree4
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PETERCLARKE-PC:Peter_Clarke
+ObjectTemplate.collisionMesh bigtree4
+ObjectTemplate.mapMaterial 0 wood_col 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry bigtree4
+ObjectTemplate.anchor 0/4/0
+
+ObjectTemplate.create SimpleObject lod1
+
+include bigtree4.tweak

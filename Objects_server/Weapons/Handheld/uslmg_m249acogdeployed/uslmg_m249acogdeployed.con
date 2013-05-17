@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh uslmg_m249acogdeployed
+
+ObjectTemplate.create GenericFireArm uslmg_m249acogdeployed
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry uslmg_m249acog
+
+include uslmg_m249acogdeployed.tweak

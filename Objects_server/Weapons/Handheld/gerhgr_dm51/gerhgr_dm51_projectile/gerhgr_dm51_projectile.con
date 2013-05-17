@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh gerhgr_dm51_projectile
+
+ObjectTemplate.create GenericFireArm gerhgr_dm51_projectile
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry gerhgr_dm51_projectile
+
+include gerhgr_dm51_projectile.tweak

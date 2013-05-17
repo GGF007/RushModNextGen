@@ -1,0 +1,210 @@
+GeometryTemplate.create BundledMesh ukrapc_bmp2
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate ukrapc_bmp2
+
+ObjectTemplate.create PlayerControlObject ukrapc_bmp2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Andreas_Johansen
+ObjectTemplate.collisionMesh ukrapc_bmp2
+ObjectTemplate.mapMaterial 0 Armour 0
+ObjectTemplate.mapMaterial 1 Armor_3_tank_rear_top 0
+ObjectTemplate.mapMaterial 2 tank_track 0
+ObjectTemplate.mapMaterial 3 wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry ukrapc_bmp2
+ObjectTemplate.addTemplate ukrapc_bmp2_ahudPass
+ObjectTemplate.setPosition 0/0.0763/0
+ObjectTemplate.addTemplate ukrapc_bmp2_turret
+ObjectTemplate.setPosition 0.0013/0.2632/-0.4766
+ObjectTemplate.addTemplate ukrapc_bmp2_xwater_ramp
+ObjectTemplate.setPosition 0.0159/-0.0885/3.3409
+ObjectTemplate.addTemplate ukrapc_bmp2_zMotor
+
+ObjectTemplate.create SimpleObject ukrapc_bmp2_ahudPass
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create RotationalBundle ukrapc_bmp2_turret
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate ukrapc_bmp2_maingunbase
+ObjectTemplate.setPosition 0.0052/0.3326/0.4726
+
+ObjectTemplate.create RotationalBundle ukrapc_bmp2_maingunbase
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate ukrapc_bmp2_hud
+ObjectTemplate.addTemplate ukrapc_bmp2_maingun
+
+ObjectTemplate.create RotationalBundle ukrapc_bmp2_hud
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create GenericFireArm ukrapc_bmp2_maingun
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create RotationalBundle ukrapc_bmp2_xwater_ramp
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Engine ukrapc_bmp2_zMotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+ObjectTemplate.addTemplate ukrapc_bmp2_drivewhl_L1
+ObjectTemplate.setPosition -1.1930/-0.5615/2.3761
+ObjectTemplate.addTemplate ukrapc_bmp2_drivewhl_L2
+ObjectTemplate.setPosition -1.1930/-0.7156/-2.7632
+ObjectTemplate.addTemplate ukrapc_bmp2_drivewhl_R1
+ObjectTemplate.setPosition 1.1929/-0.5615/2.3761
+ObjectTemplate.addTemplate ukrapc_bmp2_drivewhl_R2
+ObjectTemplate.setPosition 1.1929/-0.7156/-2.7632
+ObjectTemplate.addTemplate ukrapc_bmp2_Lwhl1
+ObjectTemplate.setPosition -1.1930/-1.0302/1.6607
+ObjectTemplate.addTemplate ukrapc_bmp2_Lwhl2
+ObjectTemplate.setPosition -1.1930/-1.0302/0.9960
+ObjectTemplate.addTemplate ukrapc_bmp2_Lwhl3
+ObjectTemplate.setPosition -1.1930/-1.0302/0.3092
+ObjectTemplate.addTemplate ukrapc_bmp2_Lwhl4
+ObjectTemplate.setPosition -1.1930/-1.0302/-0.3860
+ObjectTemplate.addTemplate ukrapc_bmp2_Lwhl5
+ObjectTemplate.setPosition -1.1930/-1.0302/-1.1335
+ObjectTemplate.addTemplate ukrapc_bmp2_Lwhl6
+ObjectTemplate.setPosition -1.1930/-1.0302/-1.9191
+ObjectTemplate.addTemplate ukrapc_bmp2_Rwhl1
+ObjectTemplate.setPosition 1.1929/-1.0302/1.6607
+ObjectTemplate.addTemplate ukrapc_bmp2_Rwhl2
+ObjectTemplate.setPosition 1.1929/-1.0302/0.9960
+ObjectTemplate.addTemplate ukrapc_bmp2_Rwhl3
+ObjectTemplate.setPosition 1.1929/-1.0302/0.3092
+ObjectTemplate.addTemplate ukrapc_bmp2_Rwhl4
+ObjectTemplate.setPosition 1.1929/-1.0302/-0.3860
+ObjectTemplate.addTemplate ukrapc_bmp2_Rwhl5
+ObjectTemplate.setPosition 1.1929/-1.0302/-1.1335
+ObjectTemplate.addTemplate ukrapc_bmp2_Rwhl6
+ObjectTemplate.setPosition 1.1929/-1.0302/-1.9191
+
+ObjectTemplate.create RotationalBundle ukrapc_bmp2_drivewhl_L1
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create RotationalBundle ukrapc_bmp2_drivewhl_L2
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create RotationalBundle ukrapc_bmp2_drivewhl_R1
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create RotationalBundle ukrapc_bmp2_drivewhl_R2
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring ukrapc_bmp2_Lwhl1
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Spring ukrapc_bmp2_Lwhl2
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create Spring ukrapc_bmp2_Lwhl3
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create Spring ukrapc_bmp2_Lwhl4
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring ukrapc_bmp2_Lwhl5
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring ukrapc_bmp2_Lwhl6
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring ukrapc_bmp2_Rwhl1
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring ukrapc_bmp2_Rwhl2
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring ukrapc_bmp2_Rwhl3
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create Spring ukrapc_bmp2_Rwhl4
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+ObjectTemplate.create Spring ukrapc_bmp2_Rwhl5
+ObjectTemplate.collisionPart 23
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 23
+
+ObjectTemplate.create Spring ukrapc_bmp2_Rwhl6
+ObjectTemplate.collisionPart 24
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 24
+
+include ukrapc_bmp2.tweak

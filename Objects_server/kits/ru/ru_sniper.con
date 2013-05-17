@@ -1,0 +1,61 @@
+ObjectTemplate.create Kit ru_sniper
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setNetworkableInfo KitInfo
+ObjectTemplate.kitType Sniper
+ObjectTemplate.aiTemplate Sniper
+ObjectTemplate.geometry ru_kits1
+ObjectTemplate.geometry.kit 0 
+ObjectTemplate.geometry.dropGeom 9
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setCollisionMesh kitcol
+ObjectTemplate.unlockIndex 6
+ObjectTemplate.cullRadiusScale 2.4
+
+rem -------------------------------------
+ObjectTemplate.addTemplate knife_unlock
+ObjectTemplate.addTemplate ukrSmg_asval
+ObjectTemplate.addTemplate rurif_svd
+ObjectTemplate.addTemplate f1grenade
+ObjectTemplate.addTemplate USMIN_Claymore
+ObjectTemplate.addTemplate unl_sonar
+ObjectTemplate.addTemplate nsrif_grapplinghook
+ObjectTemplate.addTemplate nsrif_crossbow2
+ObjectTemplate.addTemplate ParachuteLauncher
+
+ObjectTemplate.addTemplate UnlockSPETZSniper
+ObjectTemplate.addTemplate UnlockSPETZSniper2
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_SNIPER"
+ObjectTemplate.vehicleHud.guiIndex 0
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Sniper_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Sniper.tga"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 	0.2
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage		"sniper_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockSPETZSniper
+ObjectTemplate.addTemplate aix_Barrett_M109
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSPETZSniper2
+ObjectTemplate.addTemplate rusni_sv98
+ObjectTemplate.replaceItem rurif_svd
+ObjectTemplate.replaceItem aix_Barrett_M109
+ObjectTemplate.unlockLevel 2

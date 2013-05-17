@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh ammoboxes
+CollisionManager.createTemplate ammoboxes
+
+ObjectTemplate.create DestroyableObject ammoboxes
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB:mbortolino
+ObjectTemplate.collisionMesh ammoboxes
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ammoboxes
+
+include ammoboxes.tweak

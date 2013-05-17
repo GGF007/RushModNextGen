@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh concrete_pipe
+CollisionManager.createTemplate concrete_pipe
+
+ObjectTemplate.create SimpleObject concrete_pipe
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator destructo
+ObjectTemplate.collisionMesh concrete_pipe
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.mapMaterial 1 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry concrete_pipe
+
+include concrete_pipe.tweak

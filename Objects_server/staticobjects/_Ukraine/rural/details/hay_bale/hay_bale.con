@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh hay_bale
+CollisionManager.createTemplate hay_bale
+
+ObjectTemplate.create SimpleObject hay_bale
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh hay_bale
+ObjectTemplate.mapMaterial 0 grass 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry hay_bale
+
+include hay_bale.tweak

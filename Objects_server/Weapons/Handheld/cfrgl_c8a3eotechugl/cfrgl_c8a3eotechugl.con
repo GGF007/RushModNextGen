@@ -1,0 +1,9 @@
+GeometryTemplate.create BundledMesh cfrgl_c8a3eotechugl
+
+ObjectTemplate.create GenericFirearm cfrgl_c8a3eotechugl
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry cfrgl_c8a3eotechugl
+
+include cfrgl_c8a3eotechugl.tweak
+ 

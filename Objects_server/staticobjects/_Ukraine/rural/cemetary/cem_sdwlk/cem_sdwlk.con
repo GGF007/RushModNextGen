@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh cem_sdwlk
+CollisionManager.createTemplate cem_sdwlk
+
+ObjectTemplate.create SimpleObject cem_sdwlk
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh cem_sdwlk
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry cem_sdwlk
+
+include cem_sdwlk.tweak

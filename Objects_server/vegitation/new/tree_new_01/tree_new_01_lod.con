@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh tree_new_01_lod
+
+ObjectTemplate.create SimpleObject tree_new_01_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator destructo
+ObjectTemplate.geometry tree_new_01_lod
+
+include tree_new_01_lod.tweak

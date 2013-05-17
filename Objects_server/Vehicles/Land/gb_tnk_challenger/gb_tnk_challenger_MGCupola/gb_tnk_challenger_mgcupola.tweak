@@ -1,0 +1,134 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 12:52]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe RotationalBundle gb_tnk_challenger_mgcupola
+ObjectTemplate.creator JAREDSPC:Jared
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 6
+ObjectTemplate.geometry gb_tnk_challenger_mgcupola
+ObjectTemplate.setCollisionMesh gb_tnk_challenger_mgcupola
+ObjectTemplate.mapMaterial 0 Armor_5_tank_front 30
+ObjectTemplate.mapMaterial 1 wreck 60
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_gb_tnk_challenger_mgcupola_RotationRpm
+ObjectTemplate.addTemplate gb_tnk_challenger_MGCupolaBase_Camera
+ObjectTemplate.setRotation 0/-20/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 90/1/1
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.automaticYawStabilization 1
+ObjectTemplate.regulateYaw -0.15/0.1
+
+ObjectTemplate.activeSafe Sound S_gb_tnk_challenger_mgcupola_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "sound/weapons/rotate.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0/0/0/0.421/0.995/0/
+ObjectTemplate.position 0/0/0.1
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 1.5
+
+ObjectTemplate.activeSafe RotationalBundle gb_tnk_challenger_MGCupola_Gunmount
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_gb_tnk_challenger_MGCupola_Gunmount_RotationRpm
+ObjectTemplate.addTemplate 50cal_m2hb
+ObjectTemplate.setPosition 0.08774/-0.00096/0.593
+ObjectTemplate.addTemplate 50cal_ammo_box_mounted
+ObjectTemplate.setPosition -0.20244/-0.15387/0.51296
+ObjectTemplate.addTemplate gb_tnk_challenger_mgcupolaCamera
+ObjectTemplate.setPosition 0.088/0.28/-0.1
+ObjectTemplate.setRotation 0/3.0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/90/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.regulatePitch 0.15/-0.1
+
+ObjectTemplate.activeSafe Sound S_gb_tnk_challenger_MGCupola_Gunmount_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Camera gb_tnk_challenger_mgcupolaCamera
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_gb_tnk_challenger_mgcupolaCamera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/-0.5/0
+ObjectTemplate.setMaxRotation 1/0.5/0
+ObjectTemplate.setPivotPosition 0/0/-2
+ObjectTemplate.setMaxSpeed 5/5/0
+ObjectTemplate.setAcceleration 2/1/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.cameraShakeStartSpeed 14
+ObjectTemplate.cameraShakeMaxSpeed 20
+ObjectTemplate.followStiffness 3
+ObjectTemplate.chaseDistance 16
+ObjectTemplate.chaseAngle 0.2
+ObjectTemplate.chaseOffset 0/1/7
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection 0/-1/0
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/1/1
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+
+ObjectTemplate.activeSafe Sound S_gb_tnk_challenger_mgcupolaCamera_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Camera gb_tnk_challenger_MGCupolaBase_Camera
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_gb_tnk_challenger_MGCupolaBase_Camera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.CameraId 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection 0/-1/0
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/1/1
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+
+ObjectTemplate.activeSafe Sound S_gb_tnk_challenger_MGCupolaBase_Camera_RotationRpm
+ObjectTemplate.modifiedByUser "999"

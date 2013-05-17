@@ -1,0 +1,22 @@
+GeometryTemplate.create BundledMesh gb_tnk_challenger_mgcupola
+CollisionManager.createTemplate gb_tnk_challenger_mgcupola
+
+ObjectTemplate.create RotationalBundle gb_tnk_challenger_mgcupola
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAREDSPC:Jared
+ObjectTemplate.collisionMesh gb_tnk_challenger_mgcupola
+ObjectTemplate.mapMaterial 0 Armor_5_tank_front 0
+ObjectTemplate.mapMaterial 1 wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry gb_tnk_challenger_mgcupola
+ObjectTemplate.addTemplate gb_tnk_challenger_MGCupola_Gunmount
+ObjectTemplate.setPosition -0.0554/0.3369/0.5238
+
+ObjectTemplate.create RotationalBundle gb_tnk_challenger_MGCupola_Gunmount
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 1
+
+include gb_tnk_challenger_mgcupola.tweak

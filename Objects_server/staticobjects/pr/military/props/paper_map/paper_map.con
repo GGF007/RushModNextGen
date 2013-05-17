@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh paper_map
+CollisionManager.createTemplate paper_map
+
+ObjectTemplate.create SimpleObject paper_map
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh paper_map
+ObjectTemplate.mapMaterial 0 col_paper 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry paper_map
+
+include paper_map.tweak

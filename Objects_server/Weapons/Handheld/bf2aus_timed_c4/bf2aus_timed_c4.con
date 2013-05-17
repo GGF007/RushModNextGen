@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh bf2aus_timed_c4
+CollisionManager.createTemplate bf2aus_timed_c4
+
+ObjectTemplate.create GenericFireArm bf2aus_timed_c4
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator GOONAR-C57DC25E:beex
+ObjectTemplate.collisionMesh bf2aus_timed_c4
+ObjectTemplate.mapMaterial 0 c4pack 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry bf2aus_timed_c4
+
+include bf2aus_timed_c4.tweak

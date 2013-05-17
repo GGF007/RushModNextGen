@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh balancebeam
+CollisionManager.createTemplate balancebeam
+
+ObjectTemplate.create SimpleObject balancebeam
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ILLICITFILMS-PC:IllicitFilms
+ObjectTemplate.collisionMesh balancebeam
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry balancebeam
+
+include balancebeam.tweak

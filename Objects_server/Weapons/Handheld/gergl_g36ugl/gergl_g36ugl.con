@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh gergl_g36ugl
+CollisionManager.createTemplate gergl_g36ugl
+
+ObjectTemplate.create GenericFireArm gergl_g36ugl
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.collisionMesh gerrif_g36scopeugl
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry gerrif_g36scopeugl
+
+include gergl_g36ugl.tweak

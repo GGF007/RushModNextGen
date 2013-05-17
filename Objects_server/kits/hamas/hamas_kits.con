@@ -1,0 +1,9 @@
+GeometryTemplate.create SkinnedMesh hamas_kits
+
+ObjectTemplate.create SimpleObject hamas_kits
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry hamas_kits
+
+include hamas_kits.tweak
+ 

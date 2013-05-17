@@ -1,0 +1,25 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 12:52]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe DestroyableObject afghan_chair01
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.defaultMaterial 97
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_woodencrate_small 0/0/0 0/0/0
+rem ---EndComp ---
+ObjectTemplate.geometry afghan_chair01
+ObjectTemplate.setCollisionMesh afghan_chair01
+ObjectTemplate.mapMaterial 0 wood 14
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

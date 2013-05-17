@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh vpb
+CollisionManager.createTemplate vpb
+
+ObjectTemplate.create SimpleObject vpb
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh vpb
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry vpb
+
+include vpb.tweak

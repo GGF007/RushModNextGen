@@ -1,0 +1,30 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 12:52]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe DestroyableObject afghan_cupboard01
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 35
+ObjectTemplate.armor.hitPoints 35
+ObjectTemplate.armor.defaultMaterial 72
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.wreckDelay 0.05
+ObjectTemplate.armor.wreckHitPoints 0
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_woodencrate_small 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_fence_sound 0/1/0 0/0/0
+rem ---EndComp ---
+ObjectTemplate.geometry afghan_cupboard01
+ObjectTemplate.setCollisionMesh afghan_cupboard01
+ObjectTemplate.mapMaterial 0 Wood_thin 14
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

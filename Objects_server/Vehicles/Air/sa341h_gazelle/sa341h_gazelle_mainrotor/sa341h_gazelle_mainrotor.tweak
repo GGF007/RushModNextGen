@@ -1,0 +1,21 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Rotor sa341h_gazelle_mainrotor
+ObjectTemplate.creator MEDION3GHZ:Fabian
+ObjectTemplate.modifiedByUser "Fabian"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry sa341h_gazelle_mainrotor
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.castsDynamicShadow 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ade_heliDraft
+rem -------------------------------------
+ObjectTemplate.changeLodAt 0.18
+ObjectTemplate.tolerance 3.81467e-007
+ObjectTemplate.rotationSpeedMod 0.4
+ObjectTemplate.rotationSpeedModBlur 0.12
+ObjectTemplate.rotationAxle 0
+ObjectTemplate.engineName sa341h_gazelle_Rotor

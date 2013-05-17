@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh pillbox_destroyable
+CollisionManager.createTemplate pillbox_destroyable
+
+ObjectTemplate.create DestroyableObject pillbox_destroyable
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh pillbox_destroyable
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.mapMaterial 1 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry pillbox_destroyable
+
+include pillbox_destroyable.tweak

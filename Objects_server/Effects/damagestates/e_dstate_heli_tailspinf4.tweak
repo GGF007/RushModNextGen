@@ -1,0 +1,37 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/21 14:16]
+ObjectTemplate.activeSafe EffectBundle e_dstate_heli_tailspinf4
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate tailSpinForce4
+ObjectTemplate.addTemplate downwardForce4
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/90/0
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.create ForceObject tailSpinForce4
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.rotationalForce 360/0/0
+ObjectTemplate.force 100
+ObjectTemplate.constantForce 100
+ObjectTemplate.onlyWhenOccupied 0
+
+ObjectTemplate.create ForceObject downwardForce4
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.constantForce 80
+ObjectTemplate.useAbsoluteDirection 1
+ObjectTemplate.startDelay 5
+ObjectTemplate.onlyWhenOccupied 0

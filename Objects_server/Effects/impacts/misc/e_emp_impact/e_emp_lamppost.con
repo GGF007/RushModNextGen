@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_emp_lamppost
+ObjectTemplate.createdInEditor 1
+
+include e_emp_lamppost.tweak

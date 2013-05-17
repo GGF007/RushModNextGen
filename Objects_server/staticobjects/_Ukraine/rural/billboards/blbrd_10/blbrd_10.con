@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh blbrd_10
+CollisionManager.createTemplate blbrd_10
+
+ObjectTemplate.create SimpleObject blbrd_10
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.collisionMesh blbrd_10
+ObjectTemplate.mapMaterial 0 Metal_solid 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry blbrd_10
+
+include blbrd_10.tweak

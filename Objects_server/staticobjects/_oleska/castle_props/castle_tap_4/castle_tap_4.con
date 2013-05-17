@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh castle_tap_4
+CollisionManager.createTemplate castle_tap_4
+
+ObjectTemplate.create SimpleObject castle_tap_4
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh castle_tap_4
+ObjectTemplate.mapMaterial 0 Cloth_carpet 0
+ObjectTemplate.mapMaterial 1 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry castle_tap_4
+
+include castle_tap_4.tweak

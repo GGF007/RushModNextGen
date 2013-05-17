@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh afghan_basket02_lid
+CollisionManager.createTemplate afghan_basket02_lid
+
+ObjectTemplate.create DestroyableObject afghan_basket02_lid
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh afghan_basket02_lid
+ObjectTemplate.mapMaterial 0 wood 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry afghan_basket02_lid
+
+include afghan_basket02_lid.tweak

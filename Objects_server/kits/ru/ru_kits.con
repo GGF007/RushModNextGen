@@ -1,0 +1,14 @@
+GeometryTemplate.create SkinnedMesh ru_kits1
+GeometryTemplate.create SkinnedMesh ru_kits2
+
+ObjectTemplate.create SimpleObject ru_kits1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry ru_kits1
+
+ObjectTemplate.create SimpleObject ru_kits2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry ru_kits2
+
+include ru_kits.tweak

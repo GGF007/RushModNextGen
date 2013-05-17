@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh swing_set
+CollisionManager.createTemplate swing_set
+
+ObjectTemplate.create SimpleObject swing_set
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ILLICITFILMS-PC:IllicitFilms
+ObjectTemplate.collisionMesh swing_set
+ObjectTemplate.mapMaterial 0 Metal_solid 0
+ObjectTemplate.mapMaterial 1 Cloth_carpet 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry swing_set
+
+include swing_set.tweak

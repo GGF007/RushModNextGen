@@ -1,0 +1,226 @@
+GeometryTemplate.create BundledMesh gb_jet_harrier
+CollisionManager.createTemplate gb_jet_harrier
+
+ObjectTemplate.create PlayerControlObject gb_jet_harrier
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHILS-B26IVBDBY:Phil
+ObjectTemplate.collisionMesh gb_jet_harrier
+ObjectTemplate.mapMaterial 0 Airplane 0
+ObjectTemplate.mapMaterial 1 Glass_bulletproof 0
+ObjectTemplate.mapMaterial 2 wreck 0
+ObjectTemplate.mapMaterial 3 Rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry gb_jet_harrier
+ObjectTemplate.addTemplate gb_jet_harrier_AirBrake
+ObjectTemplate.setPosition 0/-1.0124/-2.7859
+ObjectTemplate.addTemplate gb_jet_harrier_Compressor
+ObjectTemplate.setPosition 0/-0.3702/1.7590
+ObjectTemplate.addTemplate gb_jet_harrier_Elevator
+ObjectTemplate.setPosition 0/0.1614/-6.4329
+ObjectTemplate.addTemplate gb_jet_harrier_frntgd
+ObjectTemplate.setPosition 0/-1.0933/1.5668
+ObjectTemplate.addTemplate gb_jet_harrier_Jetnozzle_back
+ObjectTemplate.setPosition 0/-0.3464/-1.4078
+ObjectTemplate.addTemplate gb_jet_harrier_Jetnozzle_front
+ObjectTemplate.setPosition 0/-0.3346/0.4133
+ObjectTemplate.addTemplate gb_jet_harrier_Laileron
+ObjectTemplate.setPosition -3.4062/-0.4921/-2.5294
+ObjectTemplate.setRotation -19.3191/3.0346/14.8520
+ObjectTemplate.addTemplate gb_jet_harrier_landingGear_front
+ObjectTemplate.setPosition 0/-0.8043/1.7315
+ObjectTemplate.addTemplate gb_jet_harrier_lfgeardr
+ObjectTemplate.setPosition -0.1789/-1.0608/2.3690
+ObjectTemplate.addTemplate gb_jet_harrier_ltflap
+ObjectTemplate.setPosition -1.6406/-0.0344/-1.6419
+ObjectTemplate.setRotation -24.7601/4.1745/13.6030
+ObjectTemplate.addTemplate gb_jet_harrier_Raileron
+ObjectTemplate.setPosition 3.2914/-0.4921/-2.5289
+ObjectTemplate.setRotation 19.3192/3.0346/-14.8520
+ObjectTemplate.addTemplate gb_jet_harrier_rfgeardr
+ObjectTemplate.setPosition 0.1789/-1.0608/2.3690
+ObjectTemplate.addTemplate gb_jet_harrier_rtflap
+ObjectTemplate.setPosition 1.6406/-0.0344/-1.6419
+ObjectTemplate.setRotation 24.7275/4.3755/-14.5207
+ObjectTemplate.addTemplate gb_jet_harrier_Rudder
+ObjectTemplate.setPosition 0/1.1006/-6.7359
+ObjectTemplate.setRotation 0/-13.0000/-90.0000
+ObjectTemplate.addTemplate gb_jet_harrier_Undercarriage_middle
+ObjectTemplate.setPosition 0.0015/-0.6254/-6.5660
+ObjectTemplate.addTemplate gb_jet_harrier_Undercarriage_middle_door
+ObjectTemplate.setPosition 0/-1.1171/-1.3808
+ObjectTemplate.addTemplate gb_jet_harrier_wng_Lundercarriage
+ObjectTemplate.setPosition -2.5384/-0.5172/-2.3337
+ObjectTemplate.addTemplate gb_jet_harrier_wng_Rundercarriage
+ObjectTemplate.setPosition 2.5384/-0.5172/-2.3340
+
+ObjectTemplate.create RotationalBundle gb_jet_harrier_AirBrake
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create RotationalBundle gb_jet_harrier_Compressor
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create Wing gb_jet_harrier_Elevator
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create landinggear gb_jet_harrier_frntgd
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create RotationalBundle gb_jet_harrier_Jetnozzle_back
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create RotationalBundle gb_jet_harrier_Jetnozzle_front
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create Wing gb_jet_harrier_Laileron
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create LandingGear gb_jet_harrier_landingGear_front
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+ObjectTemplate.addTemplate gb_jet_harrier_landingGear_frontStr
+ObjectTemplate.setPosition 0/-0.5606/0
+
+ObjectTemplate.create RotationalBundle gb_jet_harrier_landingGear_frontStr
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+ObjectTemplate.addTemplate gb_jet_harrier_Front_wheel
+ObjectTemplate.setPosition 0.0017/-0.5661/-0.3338
+
+ObjectTemplate.create Spring gb_jet_harrier_Front_wheel
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create LandingGear gb_jet_harrier_lfgeardr
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create landinggear gb_jet_harrier_ltflap
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Wing gb_jet_harrier_Raileron
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create LandingGear gb_jet_harrier_rfgeardr
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create landinggear gb_jet_harrier_rtflap
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create RotationalBundle gb_jet_harrier_Rudder
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create LandingGear gb_jet_harrier_Undercarriage_middle
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+ObjectTemplate.addTemplate gb_jet_harrier_Undercarriage_middle_wheels
+ObjectTemplate.setPosition 0/-1.0944/4.7475
+
+ObjectTemplate.create Spring gb_jet_harrier_Undercarriage_middle_wheels
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create LandingGear gb_jet_harrier_Undercarriage_middle_door
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create LandingGear gb_jet_harrier_wng_Lundercarriage
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+ObjectTemplate.addTemplate gb_jet_harrier_wng_Lundercarriage_wheel
+ObjectTemplate.setPosition -0.0014/-1.3211/-0.0145
+
+ObjectTemplate.create Spring gb_jet_harrier_wng_Lundercarriage_wheel
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create LandingGear gb_jet_harrier_wng_Rundercarriage
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+ObjectTemplate.addTemplate gb_jet_harrier_wng_Rundercarriage_wheel
+ObjectTemplate.setPosition 0.0014/-1.3211/-0.0142
+
+ObjectTemplate.create Spring gb_jet_harrier_wng_Rundercarriage_wheel
+ObjectTemplate.collisionPart 23
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 23
+
+include gb_jet_harrier.tweak

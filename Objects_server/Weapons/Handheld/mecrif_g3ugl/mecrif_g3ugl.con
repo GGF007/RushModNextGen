@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh mecrif_g3ugl
+CollisionManager.createTemplate mecrif_g3ugl
+
+ObjectTemplate.create GenericFirearm mecrif_g3ugl
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator INTEL:Alastair
+ObjectTemplate.collisionMesh mecrif_g3ugl
+ObjectTemplate.mapMaterial 0 UNDEFINED 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry mecrif_g3ugl
+
+include mecrif_g3ugl.tweak

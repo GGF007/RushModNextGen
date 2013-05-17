@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh fire_hydrant
+CollisionManager.createTemplate fire_hydrant
+
+ObjectTemplate.create SimpleObject fire_hydrant
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh fire_hydrant
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry fire_hydrant
+
+include fire_hydrant.tweak

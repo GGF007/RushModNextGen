@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh starstreak_hvm_dummy
+
+ObjectTemplate.create SimpleObject starstreak_hvm_dummy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.geometry starstreak_hvm_dummy
+
+include starstreak_hvm_dummy.tweak

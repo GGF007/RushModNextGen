@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh ukrsmg_asval
+CollisionManager.createTemplate ukrsmg_asval
+
+ObjectTemplate.create GenericFireArm ukrsmg_asval
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.collisionMesh ukrsmg_asval
+ObjectTemplate.mapMaterial 0 Soldier_Weapon 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukrsmg_asval
+
+include ukrsmg_asval.tweak

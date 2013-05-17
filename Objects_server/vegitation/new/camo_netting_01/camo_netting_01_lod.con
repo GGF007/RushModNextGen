@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh camo_netting_01_lod
+
+ObjectTemplate.create SimpleObject camo_netting_01_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator destructo
+ObjectTemplate.geometry camo_netting_01_lod
+
+include camo_netting_01_lod.tweak

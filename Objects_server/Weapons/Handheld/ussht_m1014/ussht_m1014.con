@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh ussht_m1014
+
+ObjectTemplate.create GenericFireArm ussht_m1014
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry ussht_m1014
+
+include ussht_m1014.tweak

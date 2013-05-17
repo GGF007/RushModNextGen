@@ -1,0 +1,32 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 12:52]
+GeometryTemplate.doNotGenerateLightmaps 1
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe DestroyableObject muttrah_mosque_window
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.isDestructable 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 10
+ObjectTemplate.armor.hitPoints 10
+ObjectTemplate.armor.defaultMaterial 115
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.explosionForce 0
+ObjectTemplate.armor.explosionDamage 0
+ObjectTemplate.armor.explosionMaterial 115
+ObjectTemplate.armor.wreckHitPoints 0
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_mosque_window 0/0/0 0/0/0
+rem ---EndComp ---
+ObjectTemplate.geometry muttrah_mosque_window
+ObjectTemplate.setCollisionMesh muttrah_mosque_window
+ObjectTemplate.mapMaterial 0 Glass_bulletproof 1006
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

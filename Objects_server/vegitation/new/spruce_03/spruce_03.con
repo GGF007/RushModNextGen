@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh spruce_03
+CollisionManager.createTemplate spruce_03
+
+ObjectTemplate.create SimpleObject spruce_03
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator SHITBOX3000:mb
+ObjectTemplate.collisionMesh spruce_03
+ObjectTemplate.mapMaterial 0 wood_col 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry spruce_03
+ObjectTemplate.anchor 0/-3.82/0
+
+include spruce_03.tweak

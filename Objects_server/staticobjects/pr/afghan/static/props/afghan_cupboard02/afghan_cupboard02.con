@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh afghan_cupboard02
+CollisionManager.createTemplate afghan_cupboard02
+
+ObjectTemplate.create DestroyableObject afghan_cupboard02
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh afghan_cupboard02
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry afghan_cupboard02
+
+include afghan_cupboard02.tweak

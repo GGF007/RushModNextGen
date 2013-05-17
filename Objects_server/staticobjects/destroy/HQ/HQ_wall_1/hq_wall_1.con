@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh hq_wall_1
+CollisionManager.createTemplate hq_wall_1
+
+ObjectTemplate.create DestroyableObject hq_wall_1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.collisionMesh hq_wall_1
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 1 Pentrable_Metal_thin 0
+ObjectTemplate.mapMaterial 2 concrete 0
+ObjectTemplate.mapMaterial 3 Stairs_concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry hq_wall_1
+
+include hq_wall_1.tweak

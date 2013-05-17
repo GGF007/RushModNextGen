@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh ukr_watermill_sn
+CollisionManager.createTemplate ukr_watermill_sn
+
+ObjectTemplate.create SimpleObject ukr_watermill_sn
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh ukr_watermill_sn
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.mapMaterial 1 wood_solid 0
+ObjectTemplate.mapMaterial 2 Glass_common 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukr_watermill_sn
+
+include ukr_watermill_sn.tweak

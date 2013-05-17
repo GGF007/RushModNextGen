@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh p_antenna
+CollisionManager.createTemplate p_antenna
+
+ObjectTemplate.create Particle p_antenna
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh p_antenna
+ObjectTemplate.mapMaterial 0 Armor_5_tank_front 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_antenna
+
+include p_antenna.tweak

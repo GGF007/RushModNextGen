@@ -1,0 +1,20 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/2 9:17]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Rotor us_ahe_kiowa_tailrotor
+ObjectTemplate.creator MHE-1:mhe
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry us_ahe_kiowa_tailrotor
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.changeLodAt 0.15
+ObjectTemplate.tolerance 0.000390625
+ObjectTemplate.rotationSpeedMod 3.5
+ObjectTemplate.rotationSpeedModBlur 0.1
+ObjectTemplate.rotationAxle 1
+ObjectTemplate.engineName us_ahe_kiowa_TailEngine
+

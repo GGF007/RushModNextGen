@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh vp2
+CollisionManager.createTemplate vp2
+
+ObjectTemplate.create SimpleObject vp2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh vp2
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry vp2
+
+include vp2.tweak

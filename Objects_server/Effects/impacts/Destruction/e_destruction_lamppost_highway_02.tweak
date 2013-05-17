@@ -1,0 +1,37 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+ObjectTemplate.activeSafe EffectBundle e_destruction_lamppost_highway_02
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_destruction_lamppost_highway_02_Start
+ObjectTemplate.addTemplate em_destruction_lamppost_highway_02_mesh
+ObjectTemplate.addTemplate e_emp_lamppost
+ObjectTemplate.setPosition 0/-2.52157/0
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_destruction_lamppost_highway_02_Start
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+
+ObjectTemplate.create Emitter em_destruction_lamppost_highway_02_mesh
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_lamppost_highway_02
+ObjectTemplate.positionalSpeedInDof CRD_NONE/3/3/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/0/1/1
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/1/1/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1

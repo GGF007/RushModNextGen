@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh cem_fence
+CollisionManager.createTemplate cem_fence
+
+ObjectTemplate.create SimpleObject cem_fence
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh cem_fence
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Pentrable_Metal_plating 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry cem_fence
+
+include cem_fence.tweak

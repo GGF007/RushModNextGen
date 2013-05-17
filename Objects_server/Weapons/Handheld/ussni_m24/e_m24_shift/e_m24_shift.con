@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_m24_shift
+ObjectTemplate.createdInEditor 1
+
+include e_m24_shift.tweak

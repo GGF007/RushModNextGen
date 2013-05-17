@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh counter
+CollisionManager.createTemplate counter
+
+ObjectTemplate.create SimpleObject counter
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh counter
+ObjectTemplate.mapMaterial 0 Metal_plate_thin 0
+ObjectTemplate.mapMaterial 1 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry counter
+
+include counter.tweak

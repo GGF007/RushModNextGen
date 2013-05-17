@@ -1,0 +1,9 @@
+GeometryTemplate.create BundledMesh usrif_m16a4aimpoint
+
+ObjectTemplate.create GenericFirearm usrif_m16a4aimpoint
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry usrif_m16a4aimpoint
+
+include usrif_m16a4aimpoint.tweak
+ 

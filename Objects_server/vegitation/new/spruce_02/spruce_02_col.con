@@ -1,0 +1,12 @@
+CollisionManager.createTemplate spruce_02
+
+ObjectTemplate.create SimpleObject spruce_02_col
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator SHITBOX3000:mb
+ObjectTemplate.collisionMesh spruce_02
+ObjectTemplate.mapMaterial 0 wood_col 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.anchor 0/-4.12/0
+
+include spruce_02_col.tweak

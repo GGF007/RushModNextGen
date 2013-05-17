@@ -1,0 +1,18 @@
+GeometryTemplate.create StaticMesh doppler
+CollisionManager.createTemplate doppler
+
+ObjectTemplate.create SimpleObject doppler
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh doppler
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 concrete 0
+ObjectTemplate.mapMaterial 2 Glass_common 0
+ObjectTemplate.mapMaterial 3 concrete 0
+ObjectTemplate.mapMaterial 4 concrete 0
+ObjectTemplate.mapMaterial 5 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry doppler
+
+include doppler.tweak

@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh cf_jep_gwagon_antenna
+
+ObjectTemplate.create AntennaObject cf_jep_gwagon_antenna
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHILSCH-Z4KV58U:Phil
+ObjectTemplate.geometry cf_jep_gwagon_antenna
+
+include cf_jep_gwagon_antenna.tweak

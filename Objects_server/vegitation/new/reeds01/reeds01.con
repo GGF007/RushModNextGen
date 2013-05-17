@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh reeds01
+
+ObjectTemplate.create SimpleObject reeds01
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator destructo
+ObjectTemplate.geometry reeds01
+
+include reeds01.tweak

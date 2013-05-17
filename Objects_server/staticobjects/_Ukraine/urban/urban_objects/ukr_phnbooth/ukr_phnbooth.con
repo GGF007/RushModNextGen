@@ -1,0 +1,18 @@
+GeometryTemplate.create StaticMesh ukr_phnbooth
+CollisionManager.createTemplate ukr_phnbooth
+
+ObjectTemplate.create SimpleObject ukr_phnbooth
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh ukr_phnbooth
+ObjectTemplate.mapMaterial 0 Pentrable_Metal_thin 1000
+ObjectTemplate.mapMaterial 1 Pentrable_Metal_thin 1000
+ObjectTemplate.mapMaterial 2 Pentrable_Metal_thin 1000
+ObjectTemplate.mapMaterial 3 Pentrable_Metal_thin 1000
+ObjectTemplate.mapMaterial 4 Pentrable_Metal_thin 1000
+ObjectTemplate.mapMaterial 5 Pentrable_Metal_thin 1000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukr_phnbooth
+
+include ukr_phnbooth.tweak

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh insrg_scorpion
+
+ObjectTemplate.create GenericFireArm insrg_scorpion
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry insrg_scorpion
+
+include insrg_scorpion.tweak

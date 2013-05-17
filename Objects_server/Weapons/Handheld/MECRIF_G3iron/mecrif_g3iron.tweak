@@ -1,0 +1,302 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/4 13:40]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm mecrif_g3iron
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 10
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\Select\mecrif_g3iron.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Select\mecrif_g3iron.tga
+ObjectTemplate.weaponHud.hudName "G3-A3"
+ObjectTemplate.weaponHud.guiIndex 4
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 25 
+ObjectTemplate.weaponHud.minVisualDeviation 6
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 4
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+rem ---ObjectTemplate.createComponent PostProcess---
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 600
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1 
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.magSize 25
+ObjectTemplate.ammo.nrOfMags 6
+ObjectTemplate.ammo.reloadTime 4
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+ObjectTemplate.createComponent SoldierBasedRecoilComp
+ObjectTemplate.recoil.hasRecoilForce 1
+ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/0.3/0.4/0
+ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.5/0.5/0
+ObjectTemplate.recoil.zoomModifier 0.45
+ObjectTemplate.recoil.goBackOnRecoil 1
+ObjectTemplate.recoil.recoilGraphFrameCount 4
+ObjectTemplate.recoil.recoilGraphExponent 4
+ObjectTemplate.recoil.recoilGraphTotalMovement 0.6
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.setFireDev 2.3 0.2 0.05
+ObjectTemplate.deviation.minDev 0.35
+ObjectTemplate.deviation.setTurnDev 0 0 0 0
+ObjectTemplate.deviation.setSpeedDev 1.2 0.2 0.2 0.1
+ObjectTemplate.deviation.setMiscDev 3.2 2 0.05
+ObjectTemplate.deviation.devModStand 1.3
+ObjectTemplate.deviation.devModCrouch 1.2
+ObjectTemplate.deviation.devModZoom 0.8
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.useShiftAnimation 1
+ObjectTemplate.animation.shiftDelay .05
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.zoomDelay 0.3
+ObjectTemplate.zoom.zoomLod 0
+ObjectTemplate.zoom.addZoomFactor 0
+ObjectTemplate.zoom.addZoomFactor 0.8
+ObjectTemplate.zoom.mouseSpeedMod 0.6
+rem ---EndComp ---
+ObjectTemplate.geometry mecrif_g3iron
+ObjectTemplate.setCollisionMesh mecrif_g3iron
+ObjectTemplate.mapMaterial 0 Collision_Material 68
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate Usrif_G3A3
+rem -------------------------------------
+ObjectTemplate.addTemplate S_mecrif_g3iron_Fire1P
+ObjectTemplate.addTemplate S_mecrif_g3iron_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_mecrif_g3iron_Fire3P
+ObjectTemplate.setPosition 0/0.00718/0.67459
+ObjectTemplate.addTemplate S_mecrif_g3iron_BoltClick
+ObjectTemplate.addTemplate S_mecrif_g3iron_TriggerClick
+ObjectTemplate.addTemplate S_mecrif_g3iron_SwitchFireRate
+ObjectTemplate.addTemplate S_mecrif_g3iron_Reload1P 
+ObjectTemplate.addTemplate S_mecrif_g3iron_Reload3P
+ObjectTemplate.setPosition 0/-0.034/0.06434
+ObjectTemplate.addTemplate S_mecrif_g3iron_Deploy1P
+ObjectTemplate.addTemplate S_mecrif_g3iron_Deploy3P
+ObjectTemplate.addTemplate S_mecrif_g3iron_Zoom
+ObjectTemplate.addTemplate e_dist_g3a2
+ObjectTemplate.setPosition 0/0.00718/0.57459
+ObjectTemplate.addTemplate e_muzz_g3a3
+ObjectTemplate.setPosition 0/0.00718/0.57459
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0.01117/0.02483/0.0506
+ObjectTemplate.setRotation -7.5/0/2.5 
+rem -------------------------------------
+ObjectTemplate.animationSystem1P objects/Weapons/Handheld/mecrif_g3iron/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P objects/weapons/handheld/mecrif_g3iron/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate mecrif_g3iron_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 400
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 1.2
+
+ObjectTemplate.create GenericProjectile mecrif_g3iron_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 1
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+rem ---EndComp ---
+ObjectTemplate.drag 8
+ObjectTemplate.mass 1000
+ObjectTemplate.gravityModifier 0.4
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 38
+rem -------------------------------------
+ObjectTemplate.addTemplate S_mecrif_g3iron_Projectile_Looping
+ObjectTemplate.addTemplate e_bullet_trail
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.material 38
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 20
+ObjectTemplate.maxTracerScaler 30
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 0.2
+ObjectTemplate.tracerTemplate p_tracer2_eu
+ObjectTemplate.tracerInterval 1
+ObjectTemplate.tracerConvergeDistance -1
+ObjectTemplate.damageMandownSoldiers 1
+ObjectTemplate.minDamage 10
+ObjectTemplate.damage 40
+ObjectTemplate.distToStartLoseDamage 200
+ObjectTemplate.distToMinDamage 1000
+
+ObjectTemplate.activeSafe Sound S_mecrif_g3iron_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/mecrif_g3iron/sounds/g3a3_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.982/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_mecrif_g3iron_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/mecrif_g3iron/sounds/g3a3_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position -0.00379/-0.00079/0.63318
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 12
+
+ObjectTemplate.activeSafe Sound S_mecrif_g3iron_BoltClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_ak74m/sounds/ak74_bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.5
+
+ObjectTemplate.activeSafe Sound S_mecrif_g3iron_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_ak74m/sounds/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1.3
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_mecrif_g3iron_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/chrif_type95/sounds/type95_firerate.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1.2
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_mecrif_g3iron_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/mecrif_g3iron/sounds/G3A3_reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_mecrif_g3iron_Reload3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/mecrif_g3iron/sounds/G3A3_reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.45
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.034/0.06434
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_mecrif_g3iron_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/mecrif_g3iron/sounds/G3A3_deploy_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_mecrif_g3iron_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/mecrif_g3iron/sounds/G3A3_deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_mecrif_g3iron_Zoom
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/weapons/Zoom.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

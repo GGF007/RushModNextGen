@@ -1,0 +1,191 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe PlayerControlObject cf_tnk_leo2a6_MGCupola
+ObjectTemplate.creator BERNIE:Bernhard
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "L2A6"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 25/17
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.firstWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserlockicon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_TANK_TURRET_CONTROLS_duckInTurret"
+ObjectTemplate.HelpHud.helpSoundKey "DuckInTurret"
+rem ---EndComp ---
+ObjectTemplate.geometry cf_tnk_leo2a6_MGCupola
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.aiTemplate T90_TopMG_AI
+rem -------------------------------------
+ObjectTemplate.addTemplate S_cf_tnk_leo2a6_MGCupola_Ambient
+ObjectTemplate.addTemplate S_cf_tnk_leo2a6_MGCupola_AmbientDamaged
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.5/2.5/0 0/0/0
+ObjectTemplate.exitSpeedMod 0.5
+ObjectTemplate.seatInformation cf_tnk_leo2a6_MGCupola_rolle 0/-0.05/0 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_gunturret_A_animSys.inc
+ObjectTemplate.soundFilter vehicle
+ObjectTemplate.cockpitSubGeom 1
+ObjectTemplate.allowDucking 1
+rem ObjectTemplate.crewKitIndex 7
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_cf_tnk_leo2a6_MGCupola_Ambient
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_cf_tnk_leo2a6_MGCupola_AmbientDamaged
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle cf_tnk_leo2a6_MGCupola_rolle
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_cf_tnk_leo2a6_MGCupola_rolle_RotationRpm
+ObjectTemplate.addTemplate cf_tnk_leo2a6_DuckCamera
+ObjectTemplate.setPosition 0/0.03809/0
+ObjectTemplate.setRotation 0/-20/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 90/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.automaticYawStabilization 1
+ObjectTemplate.regulateYaw -0.15/0.1
+
+ObjectTemplate.activeSafe Sound S_cf_tnk_leo2a6_MGCupola_rolle_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "sound/weapons/rotate.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0/0/0/0.421/0.995/0/
+ObjectTemplate.position 0/0/0.1
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 1.5
+
+ObjectTemplate.activeSafe RotationalBundle cf_tnk_leo2a6_MGCupola_xdreh
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_cf_tnk_leo2a6_MGCupola_xdreh_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -25/0/0
+ObjectTemplate.setMaxRotation 25/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+
+ObjectTemplate.activeSafe Sound S_cf_tnk_leo2a6_MGCupola_xdreh_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle cf_tnk_leo2a6_MGCupola_ydreh
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_cf_tnk_leo2a6_MGCupola_ydreh_RotationRpm
+ObjectTemplate.addTemplate cf_tnk_leo2a6_Cupola_Camera
+ObjectTemplate.setPosition -0.01/0.3764/-0.46297
+ObjectTemplate.addTemplate 50cal_m2hb
+ObjectTemplate.setPosition -0.00878/0.16450/0.49918
+ObjectTemplate.addTemplate 50cal_ammo_box_mounted
+ObjectTemplate.setPosition -0.24794/0.01347/0.40393
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/90/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.regulatePitch 0.15/-0.1
+
+ObjectTemplate.activeSafe Sound S_cf_tnk_leo2a6_MGCupola_ydreh_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Camera cf_tnk_leo2a6_Cupola_Camera
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_cf_tnk_leo2a6_Cupola_Camera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/-0.5/0
+ObjectTemplate.setMaxRotation 1/0.5/0
+ObjectTemplate.setPivotPosition 0/0/-2
+ObjectTemplate.setMaxSpeed 5/5/0
+ObjectTemplate.setAcceleration 2/1/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.cameraShakeStartSpeed 14
+ObjectTemplate.cameraShakeMaxSpeed 20
+ObjectTemplate.followStiffness 3
+ObjectTemplate.chaseDistance 16
+ObjectTemplate.chaseAngle 0.2
+ObjectTemplate.chaseOffset 0/1/7
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection 0/-1/0
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/1/1
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+
+ObjectTemplate.activeSafe Sound S_cf_tnk_leo2a6_Cupola_Camera_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Camera cf_tnk_leo2a6_DuckCamera
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_cf_tnk_leo2a6_DuckCamera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.CameraId 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection 0/-1/0
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/1/1
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+
+ObjectTemplate.activeSafe Sound S_cf_tnk_leo2a6_DuckCamera_RotationRpm
+ObjectTemplate.modifiedByUser "999"

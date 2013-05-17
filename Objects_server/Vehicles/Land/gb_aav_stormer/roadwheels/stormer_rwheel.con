@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh stormer_rwheel
+
+ObjectTemplate.create RotationalBundle stormer_rwheel
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHILS-B26IVBDBY:Phil
+ObjectTemplate.geometry stormer_rwheel
+
+include stormer_rwheel.tweak

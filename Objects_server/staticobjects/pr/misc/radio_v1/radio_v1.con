@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh radio_v1
+CollisionManager.createTemplate radio_v1
+
+ObjectTemplate.create DestroyableObject radio_v1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB:mbortolino
+ObjectTemplate.collisionMesh radio_v1
+ObjectTemplate.mapMaterial 0 metal_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry radio_v1
+
+include radio_v1.tweak

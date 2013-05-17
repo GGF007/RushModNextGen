@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh afghan_rug01
+CollisionManager.createTemplate afghan_rug01
+
+ObjectTemplate.create SimpleObject afghan_rug01
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh afghan_rug01
+ObjectTemplate.mapMaterial 0 Cloth_carpet 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry afghan_rug01
+
+include afghan_rug01.tweak

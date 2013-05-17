@@ -1,0 +1,21 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject ukr_shop_mi_nowall
+ObjectTemplate.creator ERDE:Micha
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry ukr_shop_mi_nowall
+ObjectTemplate.setCollisionMesh ukr_shop_mi_nowall
+ObjectTemplate.mapMaterial 0 Metal_solid 21
+ObjectTemplate.mapMaterial 1 concrete 78
+ObjectTemplate.mapMaterial 2 Wood_solid 15
+ObjectTemplate.mapMaterial 3 Glass_common 17
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

@@ -1,0 +1,12 @@
+GeometryTemplate.create StaticMesh fueltank_destroy
+CollisionManager.createTemplate fueltank_destroy
+
+ObjectTemplate.create destroyableObject fueltank_destroy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.collisionMesh fueltank_destroy
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry fueltank_destroy
+
+include fueltank_destroy.tweak

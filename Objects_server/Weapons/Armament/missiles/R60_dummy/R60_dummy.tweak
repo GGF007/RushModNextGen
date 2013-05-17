@@ -1,0 +1,7 @@
+ObjectTemplate.active R60_dummy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry R60_missile
+ObjectTemplate.setCollisionMesh R60_missile
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.mapMaterial 0 Airplane 31

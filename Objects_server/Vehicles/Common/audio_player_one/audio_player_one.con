@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm audio_player_one
+
+include audio_player_one.tweak
+

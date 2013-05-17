@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh muttrah_mosque_window
+CollisionManager.createTemplate muttrah_mosque_window
+
+ObjectTemplate.create DestroyableObject muttrah_mosque_window
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh muttrah_mosque_window
+ObjectTemplate.mapMaterial 0 Glass_bulletproof 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry muttrah_mosque_window
+
+include muttrah_mosque_window.tweak

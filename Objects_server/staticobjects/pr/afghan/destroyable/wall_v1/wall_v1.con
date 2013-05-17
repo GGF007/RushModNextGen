@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh wall_v1
+CollisionManager.createTemplate wall_v1
+
+ObjectTemplate.create DestroyableObject wall_v1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh wall_v1
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry wall_v1
+
+include wall_v1.tweak

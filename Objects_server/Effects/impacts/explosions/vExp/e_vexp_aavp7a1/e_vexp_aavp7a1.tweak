@@ -1,0 +1,85 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 10:59]
+ObjectTemplate.activeSafe EffectBundle e_vexp_aavp7a1
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_vexp_aavp7a1_Start
+ObjectTemplate.addTemplate em_vexp_aavp7a1_hatch_01
+ObjectTemplate.setPosition -1.41284/-0.64161/2.63248
+ObjectTemplate.addTemplate em_vexp_aavp7a1_hatch_02
+ObjectTemplate.setPosition -0.432693/0.975239/-0.782428
+ObjectTemplate.addTemplate em_vexp_aavp7a1_wreckparticles
+ObjectTemplate.setPosition 0/1.38627/0
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/30/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_vexp_aavp7a1_Start
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Emitter em_vexp_aavp7a1_hatch_01
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_btr90_hatch
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/3/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/1/3/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/2/6/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-1/-3/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/-5/5/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/-5/5/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-20/15/0
+ObjectTemplate.startRotation CRD_UNIFORM/-8/8/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_aavp7a1_hatch_02
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_btr90_hatch
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/3/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/1/2/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/8/18/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/4/8/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/-2/2/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/-3/4/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-4/9/0
+ObjectTemplate.startRotation CRD_UNIFORM/-4/4/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_aavp7a1_wreckparticles
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_11
+ObjectTemplate.alternateTemplate0 p_wreck_09
+ObjectTemplate.alternateTemplate1 p_wreck_08
+ObjectTemplate.alternateTemplate2 p_wreck_05
+ObjectTemplate.alternateTemplate3 p_wreck_02
+ObjectTemplate.alternateTemplate4 p_wreck_10
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/100/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/1/8/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/8/12/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/5/8/1
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/-10/15/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/-22/24/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-20/15/0
+ObjectTemplate.startRotation CRD_UNIFORM/-8/8/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+

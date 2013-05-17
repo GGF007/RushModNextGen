@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh at_mine_usm19
+CollisionManager.createTemplate at_mine_usm19
+
+ObjectTemplate.create GenericFireArm at_mine_usm19
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator LARRY:HP_Owner
+ObjectTemplate.collisionMesh at_mine
+ObjectTemplate.mapMaterial 0 lambert1 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry at_mine_usm19
+
+include at_mine_usm19.tweak

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh rulmg_pkm_stationary
+
+ObjectTemplate.create GenericFireArm rulmg_pkm_stationary
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry rulmg_pkm_stationary
+
+include rulmg_pkm_stationary.tweak

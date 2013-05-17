@@ -1,0 +1,159 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/7/5 5:15]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+GeometryTemplate.hasAdditiveAlpha 1
+ObjectTemplate.activeSafe GenericFireArm knife_unlock
+ObjectTemplate.creator TDA-1:tda
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\Select\Knife.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Select\Knife.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_knife_unlock"
+ObjectTemplate.weaponHud.guiIndex 4
+ObjectTemplate.weaponHud.altGuiIndex 4
+ObjectTemplate.weaponHud.deviationFactor 3 
+ObjectTemplate.weaponHud.maxVisualDeviation 65
+ObjectTemplate.weaponHud.minVisualDeviation 10
+ObjectTemplate.weaponHud.showInfo 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 4
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+rem ---ObjectTemplate.createComponent PostProcess---
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 120
+ObjectTemplate.fire.fireLaunchDelay 0.27
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize -1
+ObjectTemplate.ammo.reloadTime 0
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+ObjectTemplate.createComponent SoldierBasedRecoilComp
+ObjectTemplate.recoil.hasRecoilForce 1
+ObjectTemplate.recoil.goBackOnRecoil 0
+ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/1/2/0
+ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.3/0.3/0
+ObjectTemplate.recoil.zoomModifier 0.3
+ObjectTemplate.recoil.recoilGraphFrameCount 5
+ObjectTemplate.recoil.recoilGraphExponent 5
+ObjectTemplate.recoil.recoilGraphTotalMovement 0.25
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.subProjectileDev 1
+ObjectTemplate.deviation.setTurnDev 0 0 0 1
+ObjectTemplate.deviation.setSpeedDev 0.1 0 0 1
+ObjectTemplate.deviation.setMiscDev 0 0 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.muteOnFire 0
+ObjectTemplate.sound.noisy 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+ObjectTemplate.geometry knife_unlock
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate Knife
+rem -------------------------------------
+ObjectTemplate.addTemplate S_knife_unlock_Fire1P
+ObjectTemplate.addTemplate S_knife_unlock_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_knife_unlock_Fire3P
+ObjectTemplate.addTemplate S_knife_unlock_BoltClick
+ObjectTemplate.addTemplate S_knife_unlock_TriggerClick
+ObjectTemplate.addTemplate S_knife_unlock_SwitchFireRate
+ObjectTemplate.addTemplate S_knife_unlock_Reload1P
+ObjectTemplate.addTemplate S_knife_unlock_Reload3P
+ObjectTemplate.addTemplate S_knife_unlock_Deploy1P
+ObjectTemplate.addTemplate S_knife_unlock_Deploy3P
+ObjectTemplate.addTemplate S_knife_unlock_Zoom
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/knife_unlock/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/knife_unlock/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate knife_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 25
+ObjectTemplate.itemIndex 1
+ObjectTemplate.delayToUse 0.5
+ObjectTemplate.allowEmoteAnimation 1
+
+ObjectTemplate.activeSafe Sound S_knife_unlock_Fire1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/Knife/sounds/knife_fire.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_knife_unlock_Fire1P_Outdoor
+
+ObjectTemplate.activeSafe Sound S_knife_unlock_Fire3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/Knife/sounds/knife_fire.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 3
+
+ObjectTemplate.activeSafe Sound S_knife_unlock_BoltClick
+
+ObjectTemplate.activeSafe Sound S_knife_unlock_TriggerClick
+
+ObjectTemplate.activeSafe Sound S_knife_unlock_SwitchFireRate
+
+ObjectTemplate.activeSafe Sound S_knife_unlock_Reload1P
+
+ObjectTemplate.activeSafe Sound S_knife_unlock_Reload3P
+
+ObjectTemplate.activeSafe Sound S_knife_unlock_Deploy1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/Knife/sounds/Knife_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_knife_unlock_Deploy3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/Knife/sounds/Knife_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_knife_unlock_Zoom

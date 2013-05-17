@@ -1,0 +1,8 @@
+ObjectTemplate.activeSafe PlayerControlObject kitcol
+ObjectTemplate.creator egg
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setCollisionMesh kitcol
+ObjectTemplate.mapMaterial 0 collision_material 76
+ObjectTemplate.physicsType Point

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh ukraav_shilka_radar
+
+ObjectTemplate.create RotationalBundle ukraav_shilka_radar
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.geometry ukraav_shilka_radar
+
+include ukraav_shilka_radar.tweak

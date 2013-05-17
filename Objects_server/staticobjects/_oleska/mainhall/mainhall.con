@@ -1,0 +1,19 @@
+GeometryTemplate.create StaticMesh mainhall
+CollisionManager.createTemplate mainhall
+
+ObjectTemplate.create SimpleObject mainhall
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main-Josh
+ObjectTemplate.collisionMesh mainhall
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 stairs 0
+ObjectTemplate.mapMaterial 2 Stairs_wood 0
+ObjectTemplate.mapMaterial 3 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 4 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 5 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 6 Ceramic_tiles 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry mainhall
+
+include mainhall.tweak

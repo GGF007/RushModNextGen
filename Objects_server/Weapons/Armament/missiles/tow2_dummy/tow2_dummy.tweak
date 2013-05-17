@@ -1,0 +1,14 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.setSpecularStaticGloss 0 0 1 1.5
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Bundle tow2_dummy
+ObjectTemplate.creator WIZARDS:Guedoe
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry tow2_dummy
+ObjectTemplate.setCollisionMesh tow2_dummy
+ObjectTemplate.mapMaterial 0 airplane 31
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh

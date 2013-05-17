@@ -1,0 +1,19 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/1/4 7:47]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject fishing_bucket
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry fishing_bucket
+ObjectTemplate.setCollisionMesh fishing_bucket
+ObjectTemplate.mapMaterial 0 Metal_plate_thin 20
+ObjectTemplate.mapMaterial 1 Rubber 22
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

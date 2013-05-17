@@ -1,0 +1,95 @@
+GeometryTemplate.create BundledMesh aix_ka50
+CollisionManager.createTemplate aix_ka50
+
+ObjectTemplate.create playerControlObject aix_ka50
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator AMD-3500:clive
+ObjectTemplate.collisionMesh aix_ka50
+ObjectTemplate.mapMaterial 0 helicopter_armour 0
+ObjectTemplate.mapMaterial 1 rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry aix_ka50
+ObjectTemplate.addTemplate aix_ka50_Cannon
+ObjectTemplate.setPosition 0/0/0.0036
+ObjectTemplate.addTemplate aix_ka50_GearF
+ObjectTemplate.setPosition 0.0017/-0.9544/4.6945
+ObjectTemplate.addTemplate aix_ka50_GearLPivot
+ObjectTemplate.setPosition -1.0664/12.0000/-0.9337
+ObjectTemplate.addTemplate aix_ka50_GearRPivot
+ObjectTemplate.setPosition 1.0699/12.0000/-0.9349
+ObjectTemplate.setRotation 180.0000/0/-180.0000
+ObjectTemplate.addTemplate aix_ka50_glass
+ObjectTemplate.setPosition 0/0/0.7070
+ObjectTemplate.addTemplate aix_ka50_LeftFlapPivot
+ObjectTemplate.setPosition -1.0883/-0.2463/-1.1349
+ObjectTemplate.setRotation -8.0000/10.0000/0
+ObjectTemplate.addTemplate aix_ka50_RightFlapPivot
+ObjectTemplate.setPosition 1.0883/-0.2463/-1.1361
+ObjectTemplate.setRotation -172.0000/-10.0000/0
+
+ObjectTemplate.create genericFirearm aix_ka50_Cannon
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create LandingGear aix_ka50_GearF
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate aix_ka50_WheelF
+ObjectTemplate.setPosition 0/-0.9191/-0.1616
+
+ObjectTemplate.create Spring aix_ka50_WheelF
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create LandingGear aix_ka50_GearLPivot
+ObjectTemplate.geometryPart 4
+ObjectTemplate.addTemplate aix_ka50_GearL
+ObjectTemplate.setPosition -0.1266/-12.7857/-0.0013
+
+ObjectTemplate.create LandingGear aix_ka50_GearL
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate aix_ka50_WheelL
+ObjectTemplate.setPosition -0.1707/-0.8904/-0.4355
+
+ObjectTemplate.create Spring aix_ka50_WheelL
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create LandingGear aix_ka50_GearRPivot
+ObjectTemplate.geometryPart 7
+ObjectTemplate.addTemplate aix_ka50_GearR
+ObjectTemplate.setPosition 0.1233/12.7918/0
+ObjectTemplate.setRotation 180.0000/0/-180.0000
+
+ObjectTemplate.create LandingGear aix_ka50_GearR
+ObjectTemplate.geometryPart 8
+ObjectTemplate.addTemplate aix_ka50_WheelR
+ObjectTemplate.setPosition 0.1741/-0.8904/-0.4353
+
+ObjectTemplate.create spring aix_ka50_WheelR
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Bundle aix_ka50_glass
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create landingGear aix_ka50_LeftFlapPivot
+ObjectTemplate.geometryPart 11
+ObjectTemplate.addTemplate aix_ka50_LeftFlap
+
+ObjectTemplate.create landingGear aix_ka50_LeftFlap
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create landingGear aix_ka50_RightFlapPivot
+ObjectTemplate.geometryPart 13
+ObjectTemplate.addTemplate aix_ka50_RightFlap
+
+ObjectTemplate.create LandingGear aix_ka50_RightFlap
+ObjectTemplate.geometryPart 14
+
+include aix_ka50.tweak

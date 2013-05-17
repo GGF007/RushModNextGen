@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh gerpis_p8
+
+ObjectTemplate.create GenericFireArm gerpis_p8
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PC2_KEVIN:Kévin
+ObjectTemplate.geometry gerpis_p8
+
+include gerpis_p8.tweak

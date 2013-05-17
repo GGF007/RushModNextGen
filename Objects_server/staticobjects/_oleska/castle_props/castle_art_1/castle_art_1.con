@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh castle_art_1
+CollisionManager.createTemplate castle_art_1
+
+ObjectTemplate.create SimpleObject castle_art_1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh castle_art_1
+ObjectTemplate.mapMaterial 0 Metal_plate_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry castle_art_1
+
+include castle_art_1.tweak

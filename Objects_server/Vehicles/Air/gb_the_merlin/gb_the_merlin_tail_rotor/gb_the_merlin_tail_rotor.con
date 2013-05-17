@@ -1,0 +1,10 @@
+GeometryTemplate.create BundledMesh gb_the_merlin_tail_rotor
+CollisionManager.createTemplate gb_the_merlin_tail_rotor
+
+ObjectTemplate.create Rotor gb_the_merlin_tail_rotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ANB35:andrew
+ObjectTemplate.geometry gb_the_merlin_tail_rotor
+ObjectTemplate.collisionmesh gb_the_merlin_tail_rotor
+
+include gb_the_merlin_tail_rotor.tweak

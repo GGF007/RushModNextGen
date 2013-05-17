@@ -1,0 +1,16 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject cem_sdwlk
+ObjectTemplate.creator JILTED:Josh
+ObjectTemplate.modifiedByUser "Josh"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry cem_sdwlk
+ObjectTemplate.setCollisionMesh cem_sdwlk
+ObjectTemplate.mapMaterial 0 rock 12
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

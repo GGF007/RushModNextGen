@@ -1,0 +1,190 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe RotationalBundle cf_apc_lav3_towmisslerack
+ObjectTemplate.creator PHIL:Phil
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry cf_apc_lav3_towmisslerack
+ObjectTemplate.setCollisionMesh cf_apc_lav3_towmisslerack
+ObjectTemplate.mapMaterial 0 metal_solid 27
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_cf_apc_lav3_towmisslerack_RotationRpm
+ObjectTemplate.addTemplate cf_apc_lav3_towmisslerack_Launcher
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setPivotPosition 0/0/-0.6
+ObjectTemplate.setMaxSpeed 0/40/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch PIMouseLookY
+
+ObjectTemplate.activeSafe Sound S_cf_apc_lav3_towmisslerack_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create GenericFireArm cf_apc_lav3_towmisslerack_Launcher
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bomb.tga
+ObjectTemplate.weaponHud.hudName "TOW HJ8"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.hasFireRate 0
+rem ---EndComp ---
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.fireInput PIAltFire
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.projectileStartPosition 0/0/1
+ObjectTemplate.fire.addBarrelName cf_apc_lav3_towbarrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 6
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.minimumTimeUntilReload 12
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.cameraRecoilSpeed 13
+ObjectTemplate.recoil.cameraRecoilSize 1.5
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+rem ---BeginComp:LPTargetComp ---
+ObjectTemplate.createComponent LPTargetComp
+ObjectTemplate.target.maxDistance 9999
+ObjectTemplate.target.setTargetAtMaxDistance 1
+ObjectTemplate.target.targetSystem TSWireGuided
+ObjectTemplate.target.targetObjectTemplate UniqueTarget
+ObjectTemplate.target.disableGuidanceOnReload 0
+ObjectTemplate.target.disableGuidanceOnReload 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate Lav25TOW
+rem -------------------------------------
+ObjectTemplate.addTemplate S_cf_apc_lav3_towmisslerack_Launcher_Fire1P
+ObjectTemplate.addTemplate S_cf_apc_lav3_towmisslerack_Launcher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_cf_apc_lav3_towmisslerack_Launcher_Fire3P
+ObjectTemplate.addTemplate S_cf_apc_lav3_towmisslerack_Launcher_BoltClick
+ObjectTemplate.addTemplate S_cf_apc_lav3_towmisslerack_Launcher_TriggerClick
+ObjectTemplate.addTemplate S_cf_apc_lav3_towmisslerack_Launcher_SwitchFireRate
+ObjectTemplate.addTemplate S_cf_apc_lav3_towmisslerack_Launcher_Reload1P
+ObjectTemplate.addTemplate S_cf_apc_lav3_towmisslerack_Launcher_Reload3P
+ObjectTemplate.addTemplate S_cf_apc_lav3_towmisslerack_Launcher_Deploy1P
+ObjectTemplate.addTemplate S_cf_apc_lav3_towmisslerack_Launcher_Deploy3P
+ObjectTemplate.addTemplate S_cf_apc_lav3_towmisslerack_Launcher_Zoom
+ObjectTemplate.addTemplate eryxdummy
+ObjectTemplate.setPosition 0.00174/-0.18480/-0.26435
+ObjectTemplate.addTemplate eryxdummy
+ObjectTemplate.setPosition 0.00174/0.07960/-0.26435
+ObjectTemplate.addTemplate eryxdummy
+ObjectTemplate.setPosition 0.00174/-0.18480/0.45583
+ObjectTemplate.addTemplate eryxdummy
+ObjectTemplate.setPosition 0.00174/0.07960/0.45583
+ObjectTemplate.addTemplate cf_apc_lav3_towbarrel
+ObjectTemplate.setPosition 0.00951221/0.139434/0.802149
+ObjectTemplate.addTemplate cf_apc_lav3_towbarrel
+ObjectTemplate.setPosition 0.00951076/-0.135431/0.803797
+rem -------------------------------------
+ObjectTemplate.projectileTemplate tow_missile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 40
+
+ObjectTemplate.activeSafe Sound S_cf_apc_lav3_towmisslerack_Launcher_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/weapons/btr_tow/btr_tow_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.9
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_cf_apc_lav3_towmisslerack_Launcher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_cf_apc_lav3_towmisslerack_Launcher_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/weapons/btr_tow/btr_tow_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.9
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0.000721671/0.170038/0.602769
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 9
+
+ObjectTemplate.activeSafe Sound S_cf_apc_lav3_towmisslerack_Launcher_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_cf_apc_lav3_towmisslerack_Launcher_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_cf_apc_lav3_towmisslerack_Launcher_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_cf_apc_lav3_towmisslerack_Launcher_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/Vehicles/Land/USAPC_LAV25/sounds/Missile_Reload_Vehicle.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_cf_apc_lav3_towmisslerack_Launcher_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_cf_apc_lav3_towmisslerack_Launcher_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_cf_apc_lav3_towmisslerack_Launcher_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_cf_apc_lav3_towmisslerack_Launcher_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Bundle cf_apc_lav3_towbarrel
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate e_muzz_Tow
+ObjectTemplate.addTemplate e_missile_ignition
+ObjectTemplate.setPosition 0/0/-1.62044
+rem -------------------------------------

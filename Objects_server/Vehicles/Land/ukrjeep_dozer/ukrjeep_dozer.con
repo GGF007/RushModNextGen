@@ -1,0 +1,104 @@
+GeometryTemplate.create BundledMesh ukrjeep_dozer
+CollisionManager.createTemplate ukrjeep_dozer
+
+ObjectTemplate.create PlayerControlObject ukrjeep_dozer
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.collisionMesh ukrjeep_dozer
+ObjectTemplate.mapMaterial 0 Armor_2_light_armored_vehicles 0
+ObjectTemplate.mapMaterial 1 Armor_2_light_armored_vehicles 0
+ObjectTemplate.mapMaterial 2 Armor_2_light_armored_vehicles 0
+ObjectTemplate.mapMaterial 3 Penetrable_Glass_bulletproof 0
+ObjectTemplate.mapMaterial 4 Wreck 0
+ObjectTemplate.mapMaterial 5 Rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry ukrjeep_dozer
+ObjectTemplate.addTemplate ukrjeep_dozer_Cupola_Base
+ObjectTemplate.setPosition -0.0063/1.3520/-0.5478
+ObjectTemplate.addTemplate ukrjeep_dozer_Steering_Whl
+ObjectTemplate.setPosition -0.6264/0.5433/0.2672
+ObjectTemplate.setRotation 0/12.3577/0
+ObjectTemplate.addTemplate ukrjeep_dozer_zMotor
+ObjectTemplate.setPosition 0/-0.7099/-0.3850
+
+ObjectTemplate.create PlayerControlObject ukrjeep_dozer_Cupola_Base
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate ukrjeep_dozer_Cupola
+
+ObjectTemplate.create RotationalBundle ukrjeep_dozer_Cupola
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create RotationalBundle ukrjeep_dozer_Steering_Whl
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create Engine ukrjeep_dozer_zMotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+ObjectTemplate.addTemplate ukrjeep_dozer_whl_Nav_BL
+ObjectTemplate.setPosition -1.2000/0.0481/-1.3411
+ObjectTemplate.addTemplate ukrjeep_dozer_whl_Nav_BR
+ObjectTemplate.setPosition -1.2000/0.0481/-1.3411
+ObjectTemplate.addTemplate ukrjeep_dozer_whl_Nav_FL
+ObjectTemplate.setPosition -1.2000/-0.1729/1.8726
+ObjectTemplate.addTemplate ukrjeep_dozer_whl_Nav_FR
+ObjectTemplate.setPosition 1.2000/-0.1729/1.8726
+
+ObjectTemplate.create Bundle ukrjeep_dozer_whl_Nav_BL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate ukrjeep_dozer_whl_BL
+ObjectTemplate.setPosition 0/-0.0891/0
+
+ObjectTemplate.create Spring ukrjeep_dozer_whl_BL
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create Bundle ukrjeep_dozer_whl_Nav_BR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+ObjectTemplate.addTemplate ukrjeep_dozer_whl_BR
+ObjectTemplate.setPosition 2.4000/-0.0891/0
+
+ObjectTemplate.create Spring ukrjeep_dozer_whl_BR
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create RotationalBundle ukrjeep_dozer_whl_Nav_FL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+ObjectTemplate.addTemplate ukrjeep_dozer_whl_FL
+
+ObjectTemplate.create Spring ukrjeep_dozer_whl_FL
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create RotationalBundle ukrjeep_dozer_whl_Nav_FR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+ObjectTemplate.addTemplate ukrjeep_dozer_whl_FR
+
+ObjectTemplate.create Spring ukrjeep_dozer_whl_FR
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+include ukrjeep_dozer.tweak

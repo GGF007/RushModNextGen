@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh mi_antenna
+CollisionManager.createTemplate mi_antenna
+
+ObjectTemplate.create DestroyableObject mi_antenna
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator KHE-2:khe
+ObjectTemplate.collisionMesh antenna_destroyable
+ObjectTemplate.mapMaterial 0 Pentrable_Metal_thin 0
+ObjectTemplate.mapMaterial 1 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry antenna_destroyable
+
+include mi_antenna.tweak

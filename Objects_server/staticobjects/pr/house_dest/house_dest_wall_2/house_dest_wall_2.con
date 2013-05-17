@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh house_dest_wall_2
+CollisionManager.createTemplate house_dest_wall_2
+
+ObjectTemplate.create DestroyableObject house_dest_wall_2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh house_dest_wall_2
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry house_dest_wall_2
+ObjectTemplate.anchor -2.56/-0.477/-2.56
+
+include house_dest_wall_2.tweak

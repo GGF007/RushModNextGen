@@ -1,0 +1,23 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+GeometryTemplate.setSubGeometryLodDistance 0 0 45
+GeometryTemplate.setSubGeometryLodDistance 0 1 90
+GeometryTemplate.setSubGeometryLodDistance 0 2 150
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject win_ukr_church_out
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 3
+ObjectTemplate.geometry win_ukr_church_out
+ObjectTemplate.setCollisionMesh win_ukr_church_out
+ObjectTemplate.mapMaterial 0 Wood_thin 14
+ObjectTemplate.mapMaterial 1 concrete 78
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

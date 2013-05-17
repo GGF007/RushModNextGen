@@ -1,0 +1,14 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 12:52]
+ObjectTemplate.activeSafe AnimatedBundle challengerskirt
+ObjectTemplate.creator JAREDSPC:Jared
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 3
+ObjectTemplate.geometry challengerskirt
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.skeleton objects\vehicles\common\ChallengerSkirt\ChallengerSkirt_setup.ske
+ObjectTemplate.animationSystem1P objects\vehicles\common\ChallengerSkirt\animationsystem.inc
+ObjectTemplate.animationSystem3P objects\vehicles\common\ChallengerSkirt\animationsystem.inc
+

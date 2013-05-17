@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh unl_repair
+
+ObjectTemplate.create GenericFireArm unl_repair
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BHU-3:bhu
+ObjectTemplate.geometry unl_repair
+
+include unl_repair.tweak

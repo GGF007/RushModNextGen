@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh us_kits2
+
+ObjectTemplate.create SimpleObject us_kits2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair 
+ObjectTemplate.geometry us_kits2
+
+include us_kits2.tweak

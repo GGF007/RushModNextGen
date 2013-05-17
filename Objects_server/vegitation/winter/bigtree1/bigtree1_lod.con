@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh bigtree1_lod
+CollisionManager.createTemplate bigtree1_lod
+
+ObjectTemplate.create SimpleObject bigtree1_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PETERCLARKE-PC:Peter_Clarke
+ObjectTemplate.collisionMesh bigtree1_lod
+ObjectTemplate.mapMaterial 0 wood_col 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry bigtree1_lod
+
+include bigtree1_lod.tweak

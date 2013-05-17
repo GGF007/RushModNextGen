@@ -1,0 +1,80 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/29 18:47]
+ObjectTemplate.activeSafe EffectBundle e_vexp_f35
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_vexp_f35_Start
+ObjectTemplate.addTemplate em_vexp_f35_tail
+ObjectTemplate.setPosition -2.79088/0.97719/-3.71519
+ObjectTemplate.addTemplate em_vexp_f35_engine
+ObjectTemplate.setPosition 0/0/-6.41706
+ObjectTemplate.addTemplate em_vexp_f35_tailwing
+ObjectTemplate.setPosition 2.26322/0.197552/-6.97133
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/45/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_vexp_f35_Start
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Emitter em_vexp_f35_tail
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.relativePositionOffset 50/0/0
+ObjectTemplate.template p_wreck_f35_tail
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-8/-12/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/10/12/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-2/3/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/-2/-3/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-3/3/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_f35_engine
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_f35_engine
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-11/-6/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/6/4/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/4/3/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/1/-1/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/-2/2/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/3/9/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_f35_tailwing
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_f35_tailwing
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.relativePositionInDof CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/2/-4/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/6/8/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/5/-5/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/0.5/3/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/2/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-2/2/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1

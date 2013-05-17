@@ -1,0 +1,21 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.setSubGeometryLodDistance 0 0 10
+GeometryTemplate.setSubGeometryLodDistance 0 1 60
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 32
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject razorwire_bend_v2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 2
+ObjectTemplate.geometry razorwire_bend_v2
+ObjectTemplate.setCollisionMesh razorwire_bend_v2
+ObjectTemplate.mapMaterial 0 Metal_solid 21
+ObjectTemplate.mapMaterial 1 Stairs_metal 36
+ObjectTemplate.mapMaterial 2 Death_material 666
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

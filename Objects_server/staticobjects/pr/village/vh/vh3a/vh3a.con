@@ -1,0 +1,17 @@
+GeometryTemplate.create StaticMesh vh3a
+CollisionManager.createTemplate vh3a
+
+ObjectTemplate.create DestroyableObject vh3a
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh vh3a
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.mapMaterial 2 Pentrable_Metal_thin 0
+ObjectTemplate.mapMaterial 3 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 4 Stairs_concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry vh3a
+
+include vh3a.tweak

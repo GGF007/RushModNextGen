@@ -1,0 +1,263 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/22 17:49]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm chhgr_type82
+ObjectTemplate.creator TLO-1:tlo
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 10
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\Select\f1grenade.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Select\f1grenade.tga
+ObjectTemplate.weaponHud.specialAbilityIcon Ingame\Weapons\Icons\Hud\SpecialKitIcons\Unl_Grenade_Frag.tga
+ObjectTemplate.weaponHud.hudName "TP82"
+ObjectTemplate.weaponHud.guiIndex 63
+ObjectTemplate.weaponHud.altGuiIndex 63
+ObjectTemplate.weaponHud.deviationFactor 3
+ObjectTemplate.weaponHud.maxVisualDeviation 65
+ObjectTemplate.weaponHud.minVisualDeviation 10
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 63
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+rem ---ObjectTemplate.createComponent PostProcess---
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.useMessage AUTO_MOODGP_throwingfraggrenade
+rem ---EndComp ---
+rem ---BeginComp:ThrownFireComp ---
+ObjectTemplate.createComponent ThrownFireComp
+ObjectTemplate.fire.fireLaunchDelay 0.3
+ObjectTemplate.fire.altFireInput PIAltFire
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.projectileStartPosition 0/0/0.2
+ObjectTemplate.fire.fireLaunchDelaySoft 0.8
+ObjectTemplate.fire.showWeaponAfterReloadDelay 0.1
+ObjectTemplate.fire.pullBackTime 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags 4
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.reloadTime 0.5
+ObjectTemplate.ammo.minimumTimeUntilReload 0.5
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 1
+ObjectTemplate.ammo.toggleWhenNoAmmo 1
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_HANDHELD_HANDGRENADE_CONTROLS_rollGrenade"
+ObjectTemplate.HelpHud.helpSoundKey "ushgr_m67"
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.minDev 2
+ObjectTemplate.deviation.setTurnDev 0 0 0 0
+ObjectTemplate.deviation.setSpeedDev 0 0 0 0
+ObjectTemplate.deviation.setMiscDev 0 0 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.noisy 0
+rem ---EndComp ---
+rem ---BeginComp:ThrownAnimationComp ---
+ObjectTemplate.createComponent ThrownAnimationComp
+rem ---EndComp ---
+ObjectTemplate.geometry chhgr_type82
+ObjectTemplate.setCollisionMesh chhgr_type82
+ObjectTemplate.mapMaterial 0 Collision_Material 46
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ushgr_m67_AI
+rem -------------------------------------
+ObjectTemplate.addTemplate S_chhgr_type82_Fire1P
+ObjectTemplate.addTemplate S_chhgr_type82_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_chhgr_type82_Fire3P
+ObjectTemplate.addTemplate S_chhgr_type82_BoltClick
+ObjectTemplate.addTemplate S_chhgr_type82_TriggerClick
+ObjectTemplate.addTemplate S_chhgr_type82_SwitchFireRate
+ObjectTemplate.addTemplate S_chhgr_type82_Reload1P
+ObjectTemplate.addTemplate S_chhgr_type82_Reload3P
+ObjectTemplate.addTemplate S_chhgr_type82_Deploy1P
+ObjectTemplate.addTemplate S_chhgr_type82_Deploy3P
+ObjectTemplate.addTemplate S_chhgr_type82_Zoom
+ObjectTemplate.addTemplate e_grenade_spooneject
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/chhgr_type82/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/ushgr_m67/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate chhgr_type82_Projectile
+ObjectTemplate.velocity 25
+ObjectTemplate.itemIndex 4
+ObjectTemplate.delayToUse 1
+
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.create GenericProjectile chhgr_type82_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.bouncing 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 69
+ObjectTemplate.detonation.explosionRadius 5
+ObjectTemplate.detonation.explosionInnerConeRadius 15
+ObjectTemplate.detonation.explosionForce 8
+ObjectTemplate.detonation.explosionDamage 140
+ObjectTemplate.detonation.detonateOnWaterCollision 0
+ObjectTemplate.detonation.endEffectTemplate e_exp_grenade
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.geometry chhgr_type82_projectile
+ObjectTemplate.setCollisionMesh chhgr_type82
+ObjectTemplate.mapMaterial 0 Collision_Material 46
+ObjectTemplate.mass 2
+ObjectTemplate.floaterMod 0
+ObjectTemplate.centerOfCollisionOffset 0/-0.05/0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType RotationalPoint
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 46
+rem -------------------------------------
+ObjectTemplate.addTemplate S_chhgr_type82_Projectile_Looping
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/3.8/0/0
+ObjectTemplate.material 46
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 0
+ObjectTemplate.damageOwner 1
+
+ObjectTemplate.activeSafe Sound S_chhgr_type82_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/ushgr_m67/sounds/m67_throw_complete.wav,objects/weapons/handheld/ushgr_m67/sounds/m67_pin.wav,objects/weapons/handheld/ushgr_m67/sounds/m67_throw_small.wav,objects/weapons/handheld/ushgr_m67/sounds/m67_throw_big.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.64
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.901/1/
+
+ObjectTemplate.activeSafe Sound S_chhgr_type82_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/ushgr_m67/sounds/m67_throw_complete.wav,objects/weapons/handheld/ushgr_m67/sounds/m67_pin.wav,objects/weapons/handheld/ushgr_m67/sounds/m67_throw_small.wav,objects/weapons/handheld/ushgr_m67/sounds/m67_throw_big.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.64
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.901/1/
+
+ObjectTemplate.activeSafe Sound S_chhgr_type82_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/ushgr_m67/sounds/m67_throw_complete.wav,objects/weapons/handheld/ushgr_m67/sounds/m67_pin.wav,objects/weapons/handheld/ushgr_m67/sounds/m67_throw_small.wav,objects/weapons/handheld/ushgr_m67/sounds/m67_throw_big.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.62
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 1.5
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_chhgr_type82_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_chhgr_type82_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_chhgr_type82_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_chhgr_type82_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/ushgr_m67/sounds/m67_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_chhgr_type82_Reload3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/ushgr_m67/sounds/m67_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 1.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_chhgr_type82_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/ushgr_m67/sounds/m67_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+
+ObjectTemplate.activeSafe Sound S_chhgr_type82_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/ushgr_m67/sounds/m67_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0 
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 1.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_chhgr_type82_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_chhgr_type82_Projectile_Looping
+ObjectTemplate.modifiedByUser "999"

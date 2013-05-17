@@ -1,0 +1,17 @@
+GeometryTemplate.create StaticMesh castle
+CollisionManager.createTemplate castle
+
+ObjectTemplate.create SimpleObject castle
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh castle
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 wood_solid 0
+ObjectTemplate.mapMaterial 2 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 3 Stairs_concrete 0
+ObjectTemplate.mapMaterial 4 Death_material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry castle
+
+include castle.tweak

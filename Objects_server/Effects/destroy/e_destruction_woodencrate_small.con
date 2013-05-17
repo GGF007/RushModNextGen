@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_destruction_woodencrate_small
+ObjectTemplate.createdInEditor 1
+
+include e_destruction_woodencrate_small.tweak

@@ -1,0 +1,106 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe PlayerControlObject radar
+ObjectTemplate.creator DFR-1:dfr
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.isDestructable 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 1000
+ObjectTemplate.armor.hitPoints 1000
+ObjectTemplate.armor.defaultMaterial 98
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.explosionForce 7
+ObjectTemplate.armor.explosionDamage 200
+ObjectTemplate.armor.explosionRadius 4
+ObjectTemplate.armor.explosionMaterial 56
+ObjectTemplate.armor.wreckExplosionForce 7
+ObjectTemplate.armor.wreckExplosionDamage 50
+ObjectTemplate.armor.wreckExplosionRadius 10
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 1000
+ObjectTemplate.armor.timeToStayAsWreck 500
+ObjectTemplate.armor.canBeRepairedWhenWreck 1
+ObjectTemplate.armor.canBeDestroyed 0
+ObjectTemplate.armor.addArmorEffect 50 e_vexp_car_wreck_end 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_EMP_Mech 0/0/-0.55943 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_land_lightsmoke -0.50325/0.35173/0.99068 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_dstate_land_mediumSmoke -0.50325/0.35173/0.99068 0/0/0
+ObjectTemplate.armor.addArmorEffect 5 e_dstate_land_heavysmoke -0.293144/0.634664/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_mobileradar_us 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_EMP_mobileradar_us 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_car_wreck_end 0/1/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_car_wreck_end 0/0/-1 0/0/0
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.destroyedMessage satellite_destroyed
+ObjectTemplate.Radio.repairedMessage satellite_repaired
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.closeToHelpStringKeyFriendly "HUD_HELP_WORLD_PLAYER_RADAR_friendly"
+ObjectTemplate.HelpHud.closeToHelpSoundKeyFriendly "HUD_HELP_WORLD_PLAYER_RADAR_friendly"
+ObjectTemplate.HelpHud.closeToHelpStringKeyEnemy "HUD_HELP_WORLD_PLAYER_RADAR_enemy"
+ObjectTemplate.HelpHud.closeToHelpSoundKeyEnemy "HUD_HELP_WORLD_PLAYER_RADAR_enemy"
+ObjectTemplate.HelpHud.closeToDistance 20
+rem ---EndComp ---
+rem ---BeginComp:StrategicObject ---
+ObjectTemplate.createComponent StrategicObject
+ObjectTemplate.StrategicObject.strategicObjectName RADAR_US
+ObjectTemplate.StrategicObject.destroyedIcon Ingame\Minimap\Icons\Radar_broken.tga
+ObjectTemplate.StrategicObject.intactIcon Ingame\Minimap\Icons\Radar.tga
+ObjectTemplate.StrategicObject.3dMapIcon 2
+rem ---EndComp ---
+ObjectTemplate.geometry radar
+ObjectTemplate.setCollisionMesh radar
+ObjectTemplate.mapMaterial 0 Metal_solid 51
+ObjectTemplate.mapMaterial 1 metal_thin 51
+ObjectTemplate.mapMaterial 2 Rubber 51
+ObjectTemplate.mapMaterial 3 wreck 0
+ObjectTemplate.mass 6000
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_radar_Ambient
+ObjectTemplate.addTemplate S_radar_AmbientDamaged
+ObjectTemplate.addTemplate SatelliteControlObject
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_radar_Ambient
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_radar_AmbientDamaged
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe RotationalBundle usradar_turret
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usradar_turret_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 150/0/0
+ObjectTemplate.setContinousRotationSpeed 80/0/0
+
+ObjectTemplate.activeSafe Sound S_usradar_turret_RotationRpm
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/effects/mobileradar.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3.5
+ObjectTemplate.halfVolumeDistance 5
+

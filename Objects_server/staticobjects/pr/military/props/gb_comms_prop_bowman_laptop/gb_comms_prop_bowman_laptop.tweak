@@ -1,0 +1,40 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+GeometryTemplate.setSubGeometryLodDistance 0 0 5
+GeometryTemplate.setSubGeometryLodDistance 0 1 10
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe DestroyableObject gb_comms_prop_bowman_laptop
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 20
+ObjectTemplate.armor.hitPoints 20
+ObjectTemplate.armor.defaultMaterial 97
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.explosionForce 1
+ObjectTemplate.armor.explosionDamage 1
+ObjectTemplate.armor.explosionRadius 1
+ObjectTemplate.armor.explosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 5
+ObjectTemplate.armor.wreckDelay 1
+ObjectTemplate.armor.addArmorEffect 0 e_emp_lamppost 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_mexp_s_solidMetal 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_bhit_s_plastic 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_bhit_s_plastic 0/0/0 90/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_bhit_s_plastic 0/0/0 0/-90/0
+rem ---EndComp ---
+ObjectTemplate.geometry gb_comms_prop_bowman_laptop
+ObjectTemplate.setCollisionMesh gb_comms_prop_bowman_laptop
+ObjectTemplate.mapMaterial 0 Glass_bulletproof 1006
+ObjectTemplate.mapMaterial 1 metal_thin 111
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

@@ -1,0 +1,18 @@
+GeometryTemplate.create StaticMesh sandbag_bunker_destroyable
+CollisionManager.createTemplate sandbag_bunker_destroyable
+
+ObjectTemplate.create DestroyableObject sandbag_bunker_destroyable
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB:mbortolino
+ObjectTemplate.collisionMesh sandbag_bunker_destroyable
+ObjectTemplate.mapMaterial 0 Sandbags 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.mapMaterial 2 Pentrable_Metal_thin 0
+ObjectTemplate.mapMaterial 3 Stairs_concrete 0
+ObjectTemplate.mapMaterial 4 Wood_solid 0
+ObjectTemplate.mapMaterial 5 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry sandbag_bunker_destroyable
+
+include sandbag_bunker_destroyable.tweak

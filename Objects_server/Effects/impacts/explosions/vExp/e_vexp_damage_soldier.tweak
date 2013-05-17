@@ -1,0 +1,26 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+ObjectTemplate.activeSafe EffectBundle e_vexp_damage_soldier
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_vexp_heli_generic_Start
+ObjectTemplate.addTemplate em_vexp_damage_soldier_asset
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_vexp_heli_generic_Start
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create SupplyObject em_vexp_damage_soldier_asset
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.radius 7
+ObjectTemplate.workOnSoldiers 1
+ObjectTemplate.workOnVehicles 0
+ObjectTemplate.damageSpeed 25

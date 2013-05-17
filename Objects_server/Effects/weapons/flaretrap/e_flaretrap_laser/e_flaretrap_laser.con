@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_flaretrap_laser
+ObjectTemplate.createdInEditor 1
+
+include e_flaretrap_laser.tweak

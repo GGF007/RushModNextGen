@@ -1,0 +1,122 @@
+GeometryTemplate.create BundledMesh AIX_Mi24
+CollisionManager.createTemplate AIX_Mi24
+
+ObjectTemplate.create PlayerControlObject AIX_Mi24
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CLIVEWIL-DUO:clivewil
+ObjectTemplate.collisionMesh AIX_Mi24
+ObjectTemplate.mapMaterial 0 helicopter_armour 0
+ObjectTemplate.mapMaterial 1 Bulletproof_glass 0
+ObjectTemplate.mapMaterial 2 metalplale 0
+ObjectTemplate.mapMaterial 3 Rubber 0
+ObjectTemplate.mapMaterial 4 active_wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry AIX_Mi24
+ObjectTemplate.addTemplate AIX_Mi24_Cannons
+ObjectTemplate.addTemplate AIX_Mi24_CoGunner
+ObjectTemplate.addTemplate AIX_Mi24_GearDoorL
+ObjectTemplate.setPosition -1.1522/-0.9874/-1.4656
+ObjectTemplate.setRotation -1.3315/0/95.0000
+ObjectTemplate.addTemplate AIX_Mi24_GearDoorR
+ObjectTemplate.setPosition 1.1522/-0.9874/-1.4656
+ObjectTemplate.setRotation -178.6700/0/95.0000
+ObjectTemplate.addTemplate AIX_Mi24_GearF
+ObjectTemplate.setPosition 0/-1.5358/4.0382
+ObjectTemplate.addTemplate AIX_Mi24_GearIndicator
+ObjectTemplate.setPosition -0.1860/0.2621/4.5415
+ObjectTemplate.addTemplate AIX_Mi24_GearRearPivot
+ObjectTemplate.setPosition 0/-1.6899/4.5180
+
+ObjectTemplate.create GenericFirearm AIX_Mi24_Cannons
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create PlayerControlObject AIX_Mi24_CoGunner
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate AIX_Mi24_GunMount
+ObjectTemplate.setPosition 0/-1.8685/6.4575
+
+ObjectTemplate.create RotationalBundle AIX_Mi24_GunMount
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate AIX_Mi24_GunAzimuth
+
+ObjectTemplate.create RotationalBundle AIX_Mi24_GunAzimuth
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+ObjectTemplate.addTemplate AIX_Mi24_GunBarrels
+ObjectTemplate.setPosition 0/-0.0827/0
+
+ObjectTemplate.create RotationalBundle AIX_Mi24_GunBarrels
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create LandingGear AIX_Mi24_GearDoorL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create LandingGear AIX_Mi24_GearDoorR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create LandingGear AIX_Mi24_GearF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+ObjectTemplate.addTemplate AIX_Mi24_WheelF
+ObjectTemplate.setPosition 0/-1.0747/-0.1895
+ObjectTemplate.setRotation 0/-5.0000/0
+
+ObjectTemplate.create Spring AIX_Mi24_WheelF
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create LandingGear AIX_Mi24_GearIndicator
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create LandingGear AIX_Mi24_GearRearPivot
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+ObjectTemplate.addTemplate AIX_Mi24_GearL
+ObjectTemplate.setPosition -2.1951/1.5982/-7.5574
+ObjectTemplate.addTemplate AIX_Mi24_GearR
+ObjectTemplate.setPosition 2.1951/1.5982/-7.5574
+ObjectTemplate.setRotation 180.0000/0/0
+
+ObjectTemplate.create LandingGear AIX_Mi24_GearL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+ObjectTemplate.addTemplate AIX_Mi24_WheelL
+ObjectTemplate.setPosition 0.3879/-2.1288/1.3517
+
+ObjectTemplate.create Spring AIX_Mi24_WheelL
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create LandingGear AIX_Mi24_GearR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+ObjectTemplate.addTemplate AIX_Mi24_WheelR
+ObjectTemplate.setPosition 0.3879/-2.1288/-1.3517
+ObjectTemplate.setRotation -180.0000/0/0
+
+ObjectTemplate.create Spring AIX_Mi24_WheelR
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+include AIX_Mi24.tweak

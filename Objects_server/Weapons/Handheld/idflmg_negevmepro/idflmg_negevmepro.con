@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh idflmg_negevmepro
+
+ObjectTemplate.create GenericFireArm idflmg_negevmepro
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry idflmg_negevmepro
+
+include idflmg_negevmepro.tweak

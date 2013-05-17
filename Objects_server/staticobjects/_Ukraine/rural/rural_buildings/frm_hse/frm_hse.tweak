@@ -1,0 +1,22 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/1/4 7:47]
+GeometryTemplate.setSubGeometryLodDistance 0 2 100
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject frm_hse
+ObjectTemplate.creator JILTED:Josh
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry frm_hse
+ObjectTemplate.setCollisionMesh frm_hse
+ObjectTemplate.mapMaterial 0 wood_solid 15
+ObjectTemplate.mapMaterial 1 rock 12
+ObjectTemplate.mapMaterial 2 Glass_common 17
+ObjectTemplate.mapMaterial 3 Death_material 666
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

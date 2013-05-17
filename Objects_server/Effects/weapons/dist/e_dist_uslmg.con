@@ -1,0 +1,5 @@
+ObjectTemplate.create EffectBundle e_dist_uslmg
+ObjectTemplate.createdInEditor 1
+
+include e_dist_uslmg.tweak
+ 

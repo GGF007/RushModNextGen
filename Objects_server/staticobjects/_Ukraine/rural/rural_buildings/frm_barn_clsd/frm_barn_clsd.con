@@ -1,0 +1,17 @@
+GeometryTemplate.create StaticMesh frm_barn_clsd
+CollisionManager.createTemplate frm_barn_clsd
+
+ObjectTemplate.create SimpleObject frm_barn_clsd
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh frm_barn_clsd
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 2 wood_solid 0
+ObjectTemplate.mapMaterial 3 Glass_common 0
+ObjectTemplate.mapMaterial 4 Death_material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry frm_barn_clsd
+
+include frm_barn_clsd.tweak

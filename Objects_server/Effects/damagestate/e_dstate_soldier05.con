@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_dstate_soldier05
+ObjectTemplate.createdInEditor 1
+
+include e_dstate_soldier05.tweak

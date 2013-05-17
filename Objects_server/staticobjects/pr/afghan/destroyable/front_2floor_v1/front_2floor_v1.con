@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh front_2floor_v1
+CollisionManager.createTemplate front_2floor_v1
+
+ObjectTemplate.create DestroyableObject front_2floor_v1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh front_2floor_v1
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.mapMaterial 2 Wood_solid 0
+ObjectTemplate.mapMaterial 3 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry front_2floor_v1
+
+include front_2floor_v1.tweak

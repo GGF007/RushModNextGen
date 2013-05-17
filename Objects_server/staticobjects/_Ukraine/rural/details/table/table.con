@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh table
+CollisionManager.createTemplate table
+
+ObjectTemplate.create SimpleObject table
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh table
+ObjectTemplate.mapMaterial 0 wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry table
+
+include table.tweak

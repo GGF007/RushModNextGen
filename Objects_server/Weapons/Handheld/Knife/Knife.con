@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh knife
+
+ObjectTemplate.create GenericFireArm knife
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DTH-1:dth
+ObjectTemplate.geometry knife
+
+include knife.tweak

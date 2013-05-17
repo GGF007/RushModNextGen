@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh lumbermill
+CollisionManager.createTemplate lumbermill
+
+ObjectTemplate.create SimpleObject lumbermill
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh lumbermill
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 1 wood_solid 0
+ObjectTemplate.mapMaterial 2 Penetrable_Wood 0
+ObjectTemplate.mapMaterial 3 wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry lumbermill
+
+include lumbermill.tweak

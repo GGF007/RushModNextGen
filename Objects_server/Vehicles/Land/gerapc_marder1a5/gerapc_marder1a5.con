@@ -1,0 +1,200 @@
+GeometryTemplate.create BundledMesh gerapc_marder1a5
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate gerapc_marder1a5
+
+ObjectTemplate.create PlayerControlObject gerapc_marder1a5
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh gerapc_marder1a5
+ObjectTemplate.mapMaterial 0 Armor_2_light_armored_vehicles 0
+ObjectTemplate.mapMaterial 1 Armor_3_tank_rear_top 0
+ObjectTemplate.mapMaterial 2 TankTracks 0
+ObjectTemplate.mapMaterial 3 Wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry gerapc_marder1a5
+ObjectTemplate.addTemplate gerapc_marder1a5_turret_base
+ObjectTemplate.setPosition 0.0678/1.1600/0.2435
+ObjectTemplate.addTemplate gerapc_marder1a5_zMotor
+ObjectTemplate.setPosition 0/0.2127/0
+
+ObjectTemplate.create RotationalBundle gerapc_marder1a5_turret_base
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate gerapc_marder1a5_turret_pitch
+ObjectTemplate.setPosition -0.4335/0.2855/-0.4808
+
+ObjectTemplate.create RotationalBundle gerapc_marder1a5_turret_pitch
+ObjectTemplate.collisionPart 2 
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate gerapc_marder1a5_gun_main
+ObjectTemplate.setPosition 0.4502/0.0669/1.4513
+ObjectTemplate.addTemplate gerapc_marder1a5_hud
+
+ObjectTemplate.create GenericFireArm gerapc_marder1a5_gun_main
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create RotationalBundle gerapc_marder1a5_hud
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create Engine gerapc_marder1a5_zMotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate gerapc_marder1a5_L_Bck_DriveWheel
+ObjectTemplate.setPosition -1.4083/-0.5606/-2.9012
+ObjectTemplate.addTemplate gerapc_marder1a5_L_Fr_DriveWheel
+ObjectTemplate.setPosition -1.4083/-0.5606/2.9837
+ObjectTemplate.addTemplate gerapc_marder1a5_L_Wheel_1
+ObjectTemplate.setPosition -1.4653/-1.1132/2.3650
+ObjectTemplate.addTemplate gerapc_marder1a5_L_Wheel_2
+ObjectTemplate.setPosition -1.4653/-1.1132/1.4145
+ObjectTemplate.addTemplate gerapc_marder1a5_L_Wheel_3
+ObjectTemplate.setPosition -1.4653/-1.1132/0.5240
+ObjectTemplate.addTemplate gerapc_marder1a5_L_Wheel_4
+ObjectTemplate.setPosition -1.4653/-1.1132/-0.3561
+ObjectTemplate.addTemplate gerapc_marder1a5_L_Wheel_5
+ObjectTemplate.setPosition -1.4653/-1.1132/-1.3071
+ObjectTemplate.addTemplate gerapc_marder1a5_L_Wheel_6
+ObjectTemplate.setPosition -1.4653/-1.1132/-2.2050
+ObjectTemplate.addTemplate gerapc_marder1a5_R_Bck_DriveWheel
+ObjectTemplate.setPosition 1.4116/-0.5606/-2.9189
+ObjectTemplate.addTemplate gerapc_marder1a5_R_Fr_DriveWheel
+ObjectTemplate.setPosition 1.4116/-0.5606/3.0153
+ObjectTemplate.addTemplate gerapc_marder1a5_R_Wheel_1
+ObjectTemplate.setPosition 1.4504/-1.1132/2.3615
+ObjectTemplate.addTemplate gerapc_marder1a5_R_Wheel_2
+ObjectTemplate.setPosition 1.4504/-1.1132/1.4147
+ObjectTemplate.addTemplate gerapc_marder1a5_R_Wheel_3
+ObjectTemplate.setPosition 1.4504/-1.1132/0.5289
+ObjectTemplate.addTemplate gerapc_marder1a5_R_Wheel_4
+ObjectTemplate.setPosition 1.4504/-1.1132/-0.3620
+ObjectTemplate.addTemplate gerapc_marder1a5_R_Wheel_5
+ObjectTemplate.setPosition 1.4504/-1.1132/-1.3123
+ObjectTemplate.addTemplate gerapc_marder1a5_R_Wheel_6
+ObjectTemplate.setPosition 1.4504/-1.1132/-2.2050
+
+ObjectTemplate.create RotationalBundle gerapc_marder1a5_L_Bck_DriveWheel
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle gerapc_marder1a5_L_Fr_DriveWheel
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Spring gerapc_marder1a5_L_Wheel_1
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring gerapc_marder1a5_L_Wheel_2
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring gerapc_marder1a5_L_Wheel_3
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create Spring gerapc_marder1a5_L_Wheel_4
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring gerapc_marder1a5_L_Wheel_5
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Spring gerapc_marder1a5_L_Wheel_6
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create RotationalBundle gerapc_marder1a5_R_Bck_DriveWheel
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create RotationalBundle gerapc_marder1a5_R_Fr_DriveWheel
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring gerapc_marder1a5_R_Wheel_1
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring gerapc_marder1a5_R_Wheel_2
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring gerapc_marder1a5_R_Wheel_3
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring gerapc_marder1a5_R_Wheel_4
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring gerapc_marder1a5_R_Wheel_5
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create Spring gerapc_marder1a5_R_Wheel_6
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+include gerapc_marder1a5.tweak

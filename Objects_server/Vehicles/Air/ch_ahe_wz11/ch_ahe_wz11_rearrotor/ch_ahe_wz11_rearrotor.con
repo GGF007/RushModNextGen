@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh ch_ahe_wz11_rearrotor
+CollisionManager.createTemplate ch_ahe_wz11_rearrotor
+
+ObjectTemplate.create Rotor ch_ahe_wz11_rearrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEFFO:jeffev
+ObjectTemplate.collisionMesh ch_ahe_wz11_rearrotor
+ObjectTemplate.mapMaterial 0 rearrotor 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ch_ahe_wz11_rearrotor
+
+include ch_ahe_wz11_rearrotor.tweak

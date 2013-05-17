@@ -1,0 +1,218 @@
+GeometryTemplate.create BundledMesh gb_apc_warrior
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate gb_apc_warrior
+
+ObjectTemplate.create PlayerControlObject gb_apc_warrior
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAREDSPC:Jared
+ObjectTemplate.collisionMesh gb_apc_warrior
+ObjectTemplate.mapMaterial 0 Armor_2_light_armored_vehicles 0
+ObjectTemplate.mapMaterial 1 Armor_3_tank_rear_top 0
+ObjectTemplate.mapMaterial 2 USTNK_M1A2_Armor_4_tank_sides 0
+ObjectTemplate.mapMaterial 3 rubber 0
+ObjectTemplate.mapMaterial 4 penetrable_glass 0
+ObjectTemplate.mapMaterial 5 TankTracks 0
+ObjectTemplate.mapMaterial 6 wreck 0
+ObjectTemplate.mapMaterial 7 Armor_2_light_armored_vehicles 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry gb_apc_warrior
+ObjectTemplate.addTemplate gb_apc_warrior_hudPass
+ObjectTemplate.setPosition 0/1/0
+ObjectTemplate.addTemplate gb_apc_warrior_turret
+ObjectTemplate.setPosition -0.1304/1.7768/-0.368
+ObjectTemplate.addTemplate gb_apc_warrior_zmotor
+ObjectTemplate.setPosition -0.0633/1.3327/-2.4796
+
+ObjectTemplate.create SimpleObject gb_apc_warrior_hudPass
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create RotationalBundle gb_apc_warrior_turret
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate gb_apc_warrior_barrelbase
+ObjectTemplate.setPosition 0/0.2722/0.8714
+ObjectTemplate.addTemplate gb_apc_warrior_SmokeLauncher
+ObjectTemplate.addTemplate gb_apc_warrior_turret_collision
+
+ObjectTemplate.create GenericFireArm gb_apc_warrior_SmokeLauncher
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+
+ObjectTemplate.create Bundle gb_apc_warrior_SmokeLauncher_Barrel
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 0
+
+ObjectTemplate.create SimpleObject gb_apc_warrior_turret_collision
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+
+ObjectTemplate.create RotationalBundle gb_apc_warrior_barrelbase
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate gb_apc_warrior_barrel
+ObjectTemplate.setPosition 0.0517/-0.0296/1.2838
+
+ObjectTemplate.create GenericFireArm gb_apc_warrior_barrel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Engine gb_apc_warrior_zmotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate gb_apc_warrior_LDriveWheel
+ObjectTemplate.setPosition -1.1817/-0.7949/0.0936
+ObjectTemplate.addTemplate gb_apc_warrior_Lwheel_1
+ObjectTemplate.setPosition -1.1818/-0.7455/5.2413
+ObjectTemplate.addTemplate gb_apc_warrior_LWheel_2
+ObjectTemplate.setPosition -1.1775/-1.1438/4.3862
+ObjectTemplate.addTemplate gb_apc_warrior_LWheel_3
+ObjectTemplate.setPosition -1.1775/-1.1438/3.6466
+ObjectTemplate.addTemplate gb_apc_warrior_LWheel_4
+ObjectTemplate.setPosition -1.1775/-1.1438/2.9766
+ObjectTemplate.addTemplate gb_apc_warrior_LWheel_5
+ObjectTemplate.setPosition -1.1775/-1.1438/2.1065
+ObjectTemplate.addTemplate gb_apc_warrior_LWheel_6
+ObjectTemplate.setPosition -1.1775/-1.1438/1.4370
+ObjectTemplate.addTemplate gb_apc_warrior_LWheel_7
+ObjectTemplate.setPosition -1.1775/-1.1438/0.6882
+ObjectTemplate.addTemplate gb_apc_warrior_RDriveWheel
+ObjectTemplate.setPosition 1.3082/-0.7949/0.0936
+ObjectTemplate.addTemplate gb_apc_warrior_Rwheel_1
+ObjectTemplate.setPosition 1.3083/-0.7455/5.2413
+ObjectTemplate.addTemplate gb_apc_warrior_RWheel_2
+ObjectTemplate.setPosition 1.3041/-1.1438/4.3862
+ObjectTemplate.addTemplate gb_apc_warrior_RWheel_3
+ObjectTemplate.setPosition 1.3041/-1.1438/3.6466
+ObjectTemplate.addTemplate gb_apc_warrior_RWheel_4
+ObjectTemplate.setPosition 1.3041/-1.1438/2.9766
+ObjectTemplate.addTemplate gb_apc_warrior_RWheel_5
+ObjectTemplate.setPosition 1.3041/-1.1438/2.1065
+ObjectTemplate.addTemplate gb_apc_warrior_RWheel_6
+ObjectTemplate.setPosition 1.3041/-1.1438/1.4370
+ObjectTemplate.addTemplate gb_apc_warrior_RWheel_7
+ObjectTemplate.setPosition 1.3041/-1.1438/0.6882
+
+ObjectTemplate.create RotationalBundle gb_apc_warrior_LDriveWheel
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create RotationalBundle gb_apc_warrior_Lwheel_1
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Spring gb_apc_warrior_LWheel_2
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Spring gb_apc_warrior_LWheel_3
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring gb_apc_warrior_LWheel_4
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring gb_apc_warrior_LWheel_5
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create Spring gb_apc_warrior_LWheel_6
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring gb_apc_warrior_LWheel_7
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create RotationalBundle gb_apc_warrior_RDriveWheel
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create RotationalBundle gb_apc_warrior_Rwheel_1
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create Spring gb_apc_warrior_RWheel_2
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring gb_apc_warrior_RWheel_3
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring gb_apc_warrior_RWheel_4
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring gb_apc_warrior_RWheel_5
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring gb_apc_warrior_RWheel_6
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring gb_apc_warrior_RWheel_7
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+include gb_apc_warrior.tweak

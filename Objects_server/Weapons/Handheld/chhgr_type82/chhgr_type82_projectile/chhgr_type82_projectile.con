@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh chhgr_type82_projectile
+
+ObjectTemplate.create GenericFireArm chhgr_type82_projectile
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.geometry chhgr_type82_projectile
+
+include chhgr_type82_projectile.tweak

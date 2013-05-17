@@ -1,0 +1,18 @@
+GeometryTemplate.create StaticMesh gasstn
+CollisionManager.createTemplate gasstn
+
+ObjectTemplate.create SimpleObject gasstn
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh gasstn
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 1 concrete 0
+ObjectTemplate.mapMaterial 2 Wood_thin 0
+ObjectTemplate.mapMaterial 3 Penetrable_Glass_common 0
+ObjectTemplate.mapMaterial 4 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 5 Metal_plate_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry gasstn
+
+include gasstn.tweak

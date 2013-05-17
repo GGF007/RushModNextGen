@@ -1,0 +1,14 @@
+GeometryTemplate.create BundledMesh javelin_wireguided
+CollisionManager.createTemplate javelin_wireguided
+
+ObjectTemplate.create GenericProjectile javelin_wireguided
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator SatNav
+ObjectTemplate.collisionMesh javelin_missile
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry javelin_missile
+
+include javelin_wireguided.tweak
+ 

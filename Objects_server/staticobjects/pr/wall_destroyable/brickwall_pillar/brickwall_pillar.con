@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh brickwall_pillar
+CollisionManager.createTemplate brickwall_pillar
+
+ObjectTemplate.create SimpleObject brickwall_pillar
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB:mbortolino
+ObjectTemplate.collisionMesh brickwall_pillar
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry brickwall_pillar
+
+include brickwall_pillar.tweak

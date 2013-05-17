@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh cflmg_c9elcan
+
+ObjectTemplate.create GenericFireArm cflmg_c9elcan
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry cflmg_c9elcan
+
+include cflmg_c9elcan.tweak

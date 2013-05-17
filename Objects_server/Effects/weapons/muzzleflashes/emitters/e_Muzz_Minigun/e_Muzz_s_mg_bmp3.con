@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_Muzz_s_mg_bmp3
+ObjectTemplate.createdInEditor 1
+
+include e_Muzz_s_mg_bmp3.tweak

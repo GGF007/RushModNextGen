@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh cfrif_c8a3scope
+
+ObjectTemplate.create GenericFirearm cfrif_c8a3scope
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry cfrif_c8a3scope
+
+include cfrif_c8a3scope.tweak

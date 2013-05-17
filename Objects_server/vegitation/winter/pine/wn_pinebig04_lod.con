@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh wn_pinebig04_lod
+
+ObjectTemplate.create SimpleObject wn_pinebig04_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.geometry wn_pinebig04_lod
+
+include wn_pinebig04_lod.tweak

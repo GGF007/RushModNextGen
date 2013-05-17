@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject hmg_qjc88_dummy
+ObjectTemplate.createdInEditor 1
+
+include hmg_qjc88_dummy.tweak

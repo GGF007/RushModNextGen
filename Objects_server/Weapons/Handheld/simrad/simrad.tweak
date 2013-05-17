@@ -1,0 +1,230 @@
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm simrad
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 10
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\Selection\simrad.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\simrad.tga
+ObjectTemplate.weaponHud.hudName "Simpad"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altguiIndex 111
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.hasFireRate 0
+rem ObjectTemplate.weaponHud.showInfo 0
+ObjectTemplate.weaponHud.hasRangeFinder 1
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 111
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+rem ---ObjectTemplate.createComponent PostProcess---
+rem ---EndComp ---
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 120
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.projectileStartPosition 0/300/0
+ObjectTemplate.fire.busyUntilButtonRelease 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 3
+ObjectTemplate.ammo.reloadTime 10
+ObjectTemplate.ammo.autoReload 0
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.minDev 0.8
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.zoomDelay 0.6
+ObjectTemplate.zoom.changeFovDelay 0.6
+ObjectTemplate.zoom.zoomLod 1
+ObjectTemplate.zoom.addZoomFactor 0.6
+rem ---EndComp ---
+rem ---BeginComp:LPTargetComp ---
+ObjectTemplate.createComponent LPTargetComp
+ObjectTemplate.target.maxDistance 9999
+ObjectTemplate.target.setTargetAtMaxDistance 1
+ObjectTemplate.target.targetSystem TSWireGuided
+ObjectTemplate.target.targetObjectTemplate UniqueTarget
+ObjectTemplate.target.disableGuidanceOnReload 1
+rem ---EndComp ---
+ObjectTemplate.geometry simrad
+ObjectTemplate.setCollisionMesh simrad
+ObjectTemplate.mapMaterial 0 Rubber 0
+ObjectTemplate.mapMaterial 1 lambert1 0
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_simrad_Fire1P
+ObjectTemplate.addTemplate S_simrad_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_simrad_Fire3P
+ObjectTemplate.addTemplate S_simrad_BoltClick
+ObjectTemplate.addTemplate S_simrad_TriggerClick
+ObjectTemplate.addTemplate S_simrad_SwitchFireRate
+ObjectTemplate.addTemplate S_simrad_Reload1P
+ObjectTemplate.addTemplate S_simrad_Reload3P
+ObjectTemplate.addTemplate S_simrad_Deploy1P
+ObjectTemplate.addTemplate S_simrad_Deploy3P
+ObjectTemplate.addTemplate S_simrad_Zoom
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/simrad/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/simrad/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate simrad_Projectile
+ObjectTemplate.velocity 1
+ObjectTemplate.itemIndex 8
+ObjectTemplate.delayToUse 1.5
+
+ObjectTemplate.create GenericProjectile simrad_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.hasCollisionEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 70
+ObjectTemplate.detonation.explosionRadius 5
+ObjectTemplate.detonation.explosionInnerConeRadius 15
+ObjectTemplate.detonation.explosionForce 10
+ObjectTemplate.detonation.explosionDamage 125
+ObjectTemplate.detonation.endEffectTemplate e_exp_tank
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:SeekClosestTargetComp ---
+ObjectTemplate.createComponent SeekClosestTargetComp
+ObjectTemplate.seek.targetType TTUnique
+ObjectTemplate.seek.trackingDelay 0.2
+ObjectTemplate.seek.maxAngleLock 360
+ObjectTemplate.seek.maxDistLock 3000
+ObjectTemplate.seek.reLockTime 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultFollowComp ---
+ObjectTemplate.createComponent DefaultFollowComp
+ObjectTemplate.follow.maxYaw 10
+ObjectTemplate.follow.maxPitch 10
+ObjectTemplate.follow.changePitch 1
+ObjectTemplate.follow.changeYaw 1
+ObjectTemplate.follow.minDist 10
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.geometry agm114_hellfire
+ObjectTemplate.setCollisionMesh agm114_hellfire
+ObjectTemplate.drag 7
+ObjectTemplate.mass 10
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 52
+rem -------------------------------------
+ObjectTemplate.addTemplate S_simrad_Projectile_Looping
+ObjectTemplate.addTemplate e_missile_trail
+ObjectTemplate.setPosition 0/0/-0.99
+ObjectTemplate.addTemplate e_dumbrocket_trail
+ObjectTemplate.setPosition 0/0/-0.99
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/15/0/0
+ObjectTemplate.material 52
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 500
+ObjectTemplate.acceleration 50
+ObjectTemplate.maxSpeed 70
+ObjectTemplate.startDelay 1.5
+
+ObjectTemplate.activeSafe Sound S_simrad_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_detonator/sounds/detonator_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.78
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_simrad_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_simrad_Fire3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_simrad_BoltClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_simrad_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_simrad_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_simrad_Reload1P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_simrad_Reload3P
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_simrad_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/medikit/sounds/medikit_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_simrad_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/medikit/sounds/medikit_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.71
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_simrad_Zoom
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_simrad_Projectile_Looping
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/agm114_hellfire_engine.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 30

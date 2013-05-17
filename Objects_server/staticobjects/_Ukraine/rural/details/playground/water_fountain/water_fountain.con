@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh water_fountain
+CollisionManager.createTemplate water_fountain
+
+ObjectTemplate.create SimpleObject water_fountain
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ILLICITFILMS-PC:IllicitFilms
+ObjectTemplate.collisionMesh water_fountain
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry water_fountain
+
+include water_fountain.tweak

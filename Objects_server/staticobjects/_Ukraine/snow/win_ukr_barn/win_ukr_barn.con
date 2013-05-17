@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh win_ukr_barn
+CollisionManager.createTemplate win_ukr_barn
+
+ObjectTemplate.create SimpleObject win_ukr_barn
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh win_ukr_barn
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry win_ukr_barn
+
+include win_ukr_barn.tweak

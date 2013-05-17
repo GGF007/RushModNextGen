@@ -1,0 +1,52 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+GeometryTemplate.setSubGeometryLodDistance 0 0 30
+GeometryTemplate.setSubGeometryLodDistance 0 1 100
+GeometryTemplate.setSubGeometryLodDistance 1 0 30
+GeometryTemplate.setSubGeometryLodDistance 1 1 100
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe DestroyableObject front_1floor_v1
+ObjectTemplate.creator MB:mbortolino
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.isDestructable 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 900
+ObjectTemplate.armor.hitPoints 900
+ObjectTemplate.armor.defaultMaterial 115
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.explosionForce 5
+ObjectTemplate.armor.explosionForceMod 8
+ObjectTemplate.armor.explosionForceMax 50
+ObjectTemplate.armor.explosionDamage 100
+ObjectTemplate.armor.explosionRadius 10
+ObjectTemplate.armor.explosionMaterial 101
+ObjectTemplate.armor.wreckHitPoints 0
+ObjectTemplate.armor.timeToStayAsWreck -1
+ObjectTemplate.armor.timeToStayAfterDestroyed -1
+ObjectTemplate.armor.wreckDelay 0.05
+ObjectTemplate.armor.canBeDestroyed 0
+ObjectTemplate.armor.addArmorEffect 1 e_destruction_corner_2floor 2.16741/1.49507/-3.79446 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_destruction_prbuilding2 2.16741/0/-4.17094 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_destruction_wreskfire -0.0543559/0.298616/-0.246009 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_destruction_wreskfire 1.84285/0.219782/-5.46942 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_destruction_wreskfire 4.02723/3.18659/-0.36622 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_destruction_wall_v1 2.74493/0.5987/-3.31414 0/0/0
+ObjectTemplate.armor.addArmorEffect 1 e_dstate_static_heavysmoke 1.5899/0.219782/-1.57763 0/0/0
+rem ---EndComp ---
+ObjectTemplate.geometry front_1floor_v1
+ObjectTemplate.setCollisionMesh front_1floor_v1
+ObjectTemplate.mapMaterial 0 concrete 78
+ObjectTemplate.mapMaterial 1 Pentrable_Metal_thin 1000
+ObjectTemplate.mapMaterial 2 Wood_solid 15
+ObjectTemplate.mapMaterial 3 Stairs_concrete 34
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

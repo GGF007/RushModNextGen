@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh mecsni_ssgp1
+CollisionManager.createTemplate mecsni_ssgp1
+
+ObjectTemplate.create GenericFireArm mecsni_ssgp1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.collisionMesh mecsni_ssgp1
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry mecsni_ssgp1
+
+include mecsni_ssgp1.tweak

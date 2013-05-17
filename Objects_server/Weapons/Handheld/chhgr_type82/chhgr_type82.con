@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh chhgr_type82
+
+ObjectTemplate.create GenericFireArm chhgr_type82
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry chhgr_type82
+
+include chhgr_type82.tweak

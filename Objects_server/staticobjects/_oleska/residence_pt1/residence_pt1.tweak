@@ -1,0 +1,26 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject residence_pt1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry residence_pt1
+ObjectTemplate.setCollisionMesh residence_pt1
+ObjectTemplate.mapMaterial 0 wood 15
+ObjectTemplate.mapMaterial 1 stairs_concrete 34
+ObjectTemplate.mapMaterial 2 rock 12
+ObjectTemplate.mapMaterial 3 concrete 78
+ObjectTemplate.mapMaterial 4 concrete 78
+ObjectTemplate.mapMaterial 5 concrete 78
+ObjectTemplate.mapMaterial 6 concrete 78
+ObjectTemplate.mapMaterial 7 concrete 78
+ObjectTemplate.mapMaterial 8 rock 12
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

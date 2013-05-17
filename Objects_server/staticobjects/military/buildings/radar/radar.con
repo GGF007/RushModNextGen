@@ -1,0 +1,24 @@
+GeometryTemplate.create BundledMesh radar
+CollisionManager.createTemplate radar
+
+ObjectTemplate.create playercontrolobject radar
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator WIZARDS:Guedoe
+ObjectTemplate.collisionMesh radar
+ObjectTemplate.mapMaterial 0 Metal_solid 0
+ObjectTemplate.mapMaterial 1 metal_thin 0
+ObjectTemplate.mapMaterial 2 Rubber 0
+ObjectTemplate.mapMaterial 3 wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry radar
+ObjectTemplate.addTemplate usradar_turret
+ObjectTemplate.setPosition -0.0124/1.3246/-0.4812
+
+ObjectTemplate.create rotationalbundle usradar_turret
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometryPart 1
+
+include radar.tweak

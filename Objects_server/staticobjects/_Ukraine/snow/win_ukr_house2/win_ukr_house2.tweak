@@ -1,0 +1,27 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+GeometryTemplate.setSubGeometryLodDistance 0 0 45
+GeometryTemplate.setSubGeometryLodDistance 0 1 90
+GeometryTemplate.setSubGeometryLodDistance 0 2 150
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject win_ukr_house2
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 3
+ObjectTemplate.geometry win_ukr_house2
+ObjectTemplate.setCollisionMesh win_ukr_house2
+ObjectTemplate.mapMaterial 0 Wood_thin 14
+ObjectTemplate.mapMaterial 1 rock 12
+ObjectTemplate.mapMaterial 2 Wood_solid 15
+ObjectTemplate.mapMaterial 3 rock 12
+ObjectTemplate.mapMaterial 4 Ceramic_tiles 82
+ObjectTemplate.mapMaterial 5 Glass_common 17
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

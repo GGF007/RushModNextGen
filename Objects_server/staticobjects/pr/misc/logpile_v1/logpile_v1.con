@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh logpile_v1
+CollisionManager.createTemplate logpile_v1
+
+ObjectTemplate.create SimpleObject logpile_v1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB:mbortolino
+ObjectTemplate.collisionMesh logpile_v1
+ObjectTemplate.mapMaterial 0 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry logpile_v1
+
+include logpile_v1.tweak

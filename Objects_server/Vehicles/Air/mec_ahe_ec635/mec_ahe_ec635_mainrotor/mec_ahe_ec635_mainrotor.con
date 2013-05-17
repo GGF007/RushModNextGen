@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh mec_ahe_ec635_mainrotor
+CollisionManager.createTemplate mec_ahe_ec635_mainrotor
+
+ObjectTemplate.create Rotor mec_ahe_ec635_mainrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator KHE-2:khe
+ObjectTemplate.collisionMesh mec_ahe_ec635_mainrotor
+ObjectTemplate.mapMaterial 0 rotorcollision 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry mec_ahe_ec635_mainrotor
+
+include mec_ahe_ec635_mainrotor.tweak

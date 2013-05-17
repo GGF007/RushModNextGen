@@ -1,0 +1,29 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+GeometryTemplate.setSubGeometryLodDistance 0 0 30
+GeometryTemplate.setSubGeometryLodDistance 0 1 60
+GeometryTemplate.setSubGeometryLodDistance 0 2 90
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe Bundle win_windmill
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 1
+ObjectTemplate.geometry win_windmill
+ObjectTemplate.setCollisionMesh win_windmill
+ObjectTemplate.mapMaterial 0 Wood_solid 15
+ObjectTemplate.mapMaterial 1 Wood_thin 14
+ObjectTemplate.mapMaterial 2 Stairs_wood 35
+ObjectTemplate.mapMaterial 3 Wood_solid 15
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate windmill_blades
+ObjectTemplate.setPosition 0.0610/11.1112/7.0874
+rem -------------------------------------
+

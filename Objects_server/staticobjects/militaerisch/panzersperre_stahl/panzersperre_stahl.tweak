@@ -1,0 +1,21 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject panzersperre_stahl
+ObjectTemplate.creator MAVERRICK:Administrator
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry panzersperre_stahl
+ObjectTemplate.setCollisionMesh panzersperre_stahl
+ObjectTemplate.mapMaterial 0 Armor_5_tank_front 30
+ObjectTemplate.mapMaterial 1 Armor_5_tank_front 30
+ObjectTemplate.mapMaterial 2 Armor_5_tank_front 30
+ObjectTemplate.mapMaterial 3 Armor_5_tank_front 30
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

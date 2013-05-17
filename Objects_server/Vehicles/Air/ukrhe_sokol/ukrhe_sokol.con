@@ -1,0 +1,68 @@
+GeometryTemplate.create BundledMesh ukrhe_sokol
+CollisionManager.createTemplate ukrhe_sokol
+
+ObjectTemplate.create PlayerControlObject ukrhe_sokol
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.collisionMesh ukrhe_sokol
+ObjectTemplate.mapMaterial 0 heliarmour 0
+ObjectTemplate.mapMaterial 1 glass 0
+ObjectTemplate.mapMaterial 2 active_wreck 0
+ObjectTemplate.mapMaterial 3 Rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry ukrhe_sokol
+ObjectTemplate.addTemplate ukrhe_sokol_Cannon
+ObjectTemplate.setPosition 0/-0.9991/0.9714
+ObjectTemplate.addTemplate ukrhe_sokol_FWheel
+ObjectTemplate.setPosition 0/-1.7296/2.5693
+ObjectTemplate.addTemplate ukrhe_sokol_LWheel
+ObjectTemplate.setPosition -1.5989/-1.5867/-1.2034
+ObjectTemplate.addTemplate ukrhe_sokol_RWheel
+ObjectTemplate.setPosition 1.5991/-1.5867/-1.2032
+
+ObjectTemplate.create Bundle ukrhe_sokol_Cannon
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate ukrhe_sokol_Btm_Barrel
+ObjectTemplate.setPosition 0.9295/-0.0701/0.8177
+ObjectTemplate.addTemplate ukrhe_sokol_Top_Barrel
+ObjectTemplate.setPosition 0.9552/0.0043/0.8178
+
+ObjectTemplate.create Bundle ukrhe_sokol_Btm_Barrel
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create Bundle ukrhe_sokol_Top_Barrel
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create Spring ukrhe_sokol_FWheel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Spring ukrhe_sokol_LWheel
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create Spring ukrhe_sokol_RWheel
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+include ukrhe_sokol.tweak

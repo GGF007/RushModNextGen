@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh wreck_ukr_hind
+CollisionManager.createTemplate wreck_ukr_hind
+
+ObjectTemplate.create SimpleObject wreck_ukr_hind
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator NONE-CRGH5JPLN7:Trystan
+ObjectTemplate.collisionMesh wreck_ukr_hind
+ObjectTemplate.mapMaterial 0 Metal_solid 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry wreck_ukr_hind
+
+include wreck_ukr_hind.tweak

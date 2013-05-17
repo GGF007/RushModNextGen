@@ -1,0 +1,15 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject camo_net_2
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry camo_net_2
+ObjectTemplate.setCollisionMesh camo_net_2
+ObjectTemplate.mapMaterial 0 Wood_thin 14
+ObjectTemplate.mapMaterial 1 Cloth_carpet 10
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh drumstack_v1
+CollisionManager.createTemplate drumstack_v1
+
+ObjectTemplate.create DestroyableObject drumstack_v1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB:mbortolino
+ObjectTemplate.collisionMesh drumstack_v1
+ObjectTemplate.mapMaterial 0 metal_thin 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry drumstack_v1
+
+include drumstack_v1.tweak

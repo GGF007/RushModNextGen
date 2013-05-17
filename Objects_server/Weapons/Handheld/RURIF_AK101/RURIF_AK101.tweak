@@ -1,0 +1,296 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/5 15:44]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+ObjectTemplate.activeSafe GenericFireArm rurif_ak101
+ObjectTemplate.creator FUL-1:ful
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 10
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\Select\rurif_ak101.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Select\rurif_ak101.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_ak101"
+ObjectTemplate.weaponHud.guiIndex 4
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 28
+ObjectTemplate.weaponHud.minVisualDeviation 7
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 4
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+rem ---ObjectTemplate.createComponent PostProcess---
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 600
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags 5
+ObjectTemplate.ammo.magSize 30
+ObjectTemplate.ammo.reloadTime 4
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+ObjectTemplate.createComponent SoldierBasedRecoilComp
+ObjectTemplate.recoil.hasRecoilForce 1
+ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/1/1/0
+ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.9/0.9/1
+ObjectTemplate.recoil.zoomModifier 0.35
+ObjectTemplate.recoil.goBackOnRecoil 1
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.setFireDev 2 0.2 0.05
+ObjectTemplate.deviation.minDev 0.45
+ObjectTemplate.deviation.setTurnDev 0 0 0 0
+ObjectTemplate.deviation.setSpeedDev 1 0.25 0.25 0.1
+ObjectTemplate.deviation.setMiscDev 3 1.5 0.05
+ObjectTemplate.deviation.devModStand 1.4
+ObjectTemplate.deviation.devModCrouch 1.2
+ObjectTemplate.deviation.devModZoom 0.75
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.useShiftAnimation 1
+ObjectTemplate.animation.shiftDelay .05
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.zoomDelay 0.3
+ObjectTemplate.zoom.zoomLod 0
+ObjectTemplate.zoom.addZoomFactor 0
+ObjectTemplate.zoom.addZoomFactor 0.6
+ObjectTemplate.zoom.mouseSpeedMod 0.6
+rem ---EndComp ---
+ObjectTemplate.geometry RURIF_AK101
+ObjectTemplate.setCollisionMesh rurif_ak101
+ObjectTemplate.mapMaterial 0 Collision_Material 68
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.aiTemplate RuRif_AK101
+rem -------------------------------------
+ObjectTemplate.addTemplate S_rurif_ak101_Fire1P
+ObjectTemplate.setPosition -6.08906e-008/0.0309075/0.502897
+ObjectTemplate.addTemplate S_rurif_ak101_Fire1P_Outdoor
+ObjectTemplate.setPosition -1.06299e-006/0.0311893/0.501176
+ObjectTemplate.addTemplate S_rurif_ak101_Fire3P
+ObjectTemplate.setPosition -0.000854292/0.0300443/0.500455
+ObjectTemplate.addTemplate S_rurif_ak101_BoltClick
+ObjectTemplate.setPosition -2.65122e-006/0.0272741/-0.145583
+ObjectTemplate.addTemplate S_rurif_ak101_TriggerClick
+ObjectTemplate.setPosition -8.82839e-007/0.0220029/-0.133919
+ObjectTemplate.addTemplate S_rurif_ak101_SwitchFireRate
+ObjectTemplate.setPosition 2.2246e-006/0.0108609/-0.0922574
+ObjectTemplate.addTemplate S_rurif_ak101_Reload1P
+ObjectTemplate.setPosition 5.87128e-008/-0.0181284/-0.0593529
+ObjectTemplate.addTemplate S_rurif_ak101_Reload3P
+ObjectTemplate.setPosition -4.34826e-007/-0.0285408/-0.0519588
+ObjectTemplate.addTemplate S_rurif_ak101_Deploy1P
+ObjectTemplate.setPosition -4.68215e-007/0.0101569/-0.183199
+ObjectTemplate.addTemplate S_rurif_ak101_Deploy3P
+ObjectTemplate.setPosition 1.13096e-006/0.0237543/-0.136947
+ObjectTemplate.addTemplate S_rurif_ak101_Zoom
+ObjectTemplate.setPosition 4.32048e-007/0.0521951/-0.203738
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0.0153456/0.0351335/-0.0348405
+ObjectTemplate.setRotation -10/0/11
+ObjectTemplate.addTemplate e_muzz_ak101
+ObjectTemplate.setPosition -0.000787318/0.0319822/0.498775
+ObjectTemplate.addTemplate e_dist_ak101
+ObjectTemplate.setPosition -0.000787318/0.0319822/0.498775
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/RURIF_AK101/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/RURIF_AK101/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate RURIF_AK101_Projectile
+ObjectTemplate.velocity 450
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 1.1
+
+ObjectTemplate.create GenericProjectile RURIF_AK101_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 1
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+rem ---EndComp ---
+ObjectTemplate.drag 8
+ObjectTemplate.mass 1000
+ObjectTemplate.gravityModifier 0.4
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 38
+rem -------------------------------------
+ObjectTemplate.addTemplate S_RURIF_AK101_Projectile_Looping
+ObjectTemplate.addTemplate e_bullet_trail
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.material 38
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 20
+ObjectTemplate.maxTracerScaler 30
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 0.3
+ObjectTemplate.tracerTemplate p_tracer2_eu
+ObjectTemplate.tracerInterval 1
+ObjectTemplate.tracerConvergeDistance -1
+ObjectTemplate.damageMandownSoldiers 1
+ObjectTemplate.minDamage 10
+ObjectTemplate.damage 40
+ObjectTemplate.distToStartLoseDamage 150
+ObjectTemplate.distToMinDamage 1000
+
+ObjectTemplate.activeSafe Sound S_rurif_ak101_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/RURIF_AK101/sounds/ak101_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.982/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_rurif_ak101_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/RURIF_AK101/sounds/ak101_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0.000722243/0.0135507/0.496039
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 10
+
+ObjectTemplate.activeSafe Sound S_rurif_ak101_BoltClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_ak74m/sounds/ak74_bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position -2.65122/0.0272741/-0.145583
+
+ObjectTemplate.activeSafe Sound S_rurif_ak101_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_ak74m/sounds/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rurif_ak101_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/chrif_type95/sounds/type95_firerate.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rurif_ak101_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/RURIF_AK101/sounds/ak101_reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rurif_ak101_Reload3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/RURIF_AK101/sounds/ak101_reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0279925/0.043941
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_rurif_ak101_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/RURIF_AK101/sounds/ak101_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rurif_ak101_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_ak47/sounds/ak47_deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_rurif_ak101_Zoom
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "sound/weapons/Zoom.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_RURIF_AK101_Projectile_Looping
+ObjectTemplate.modifiedByUser "999"

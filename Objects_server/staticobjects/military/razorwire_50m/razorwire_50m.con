@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh razorwire_50m
+CollisionManager.createTemplate razorwire_50m
+
+ObjectTemplate.create SimpleObject razorwire_50m
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.collisionMesh razorwire_50m
+ObjectTemplate.mapMaterial 0 Stairs_metal 0
+ObjectTemplate.mapMaterial 1 Death_material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry razorwire_50m
+
+include razorwire_50m.tweak

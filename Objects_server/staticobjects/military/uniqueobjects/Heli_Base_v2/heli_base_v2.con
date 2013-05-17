@@ -1,0 +1,18 @@
+GeometryTemplate.create StaticMesh heli_base_v2
+CollisionManager.createTemplate heli_base_v2
+
+ObjectTemplate.create Bundle heli_base_v2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh heli_base_v2
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 metal_solid 0
+ObjectTemplate.mapMaterial 2 Chicken_Wire_Thin 0
+ObjectTemplate.mapMaterial 3 Common_Glass 0
+ObjectTemplate.mapMaterial 4 Stairs_metal 0
+ObjectTemplate.mapMaterial 5 Stairs_concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry heli_base_v2
+
+include heli_base_v2.tweak

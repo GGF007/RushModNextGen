@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh fld_tnt
+CollisionManager.createTemplate fld_tnt
+
+ObjectTemplate.create SimpleObject fld_tnt
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh fld_tnt
+ObjectTemplate.mapMaterial 0 Cloth_carpet 0
+ObjectTemplate.mapMaterial 1 Metal_plate_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry fld_tnt
+
+include fld_tnt.tweak

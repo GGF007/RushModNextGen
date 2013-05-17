@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh bigtree5_lod
+
+ObjectTemplate.create SimpleObject bigtree5_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PETERCLARKE-PC:Peter_Clarke
+ObjectTemplate.geometry bigtree5_lod
+
+include bigtree5_lod.tweak

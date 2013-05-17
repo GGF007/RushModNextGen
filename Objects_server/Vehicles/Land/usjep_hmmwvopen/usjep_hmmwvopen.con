@@ -1,0 +1,93 @@
+GeometryTemplate.create BundledMesh usjep_hmmwvopen
+CollisionManager.createTemplate usjep_hmmwvopen
+
+ObjectTemplate.create PlayerControlObject usjep_hmmwvopen
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator RSL:Ryan
+ObjectTemplate.collisionMesh usjep_hmmwvopen
+ObjectTemplate.mapMaterial 0 Armor_1_metal_plating1 0
+ObjectTemplate.mapMaterial 1 Glass_bulletproof 0 
+ObjectTemplate.mapMaterial 2 PenetrableCloth_carpet 0
+ObjectTemplate.mapMaterial 3 rubber 0
+ObjectTemplate.mapMaterial 4 wreck 0
+ObjectTemplate.mapMaterial 5 wreck 0
+ObjectTemplate.mapMaterial 6 rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry usjep_hmmwvopen
+ObjectTemplate.addTemplate usjep_hmmwvopen_SteeringWheel
+ObjectTemplate.setPosition -0.7129/0.4724/1.1823
+ObjectTemplate.setRotation 0/26.6112/0
+ObjectTemplate.addTemplate usjep_hmmwvopen_zMotor
+ObjectTemplate.setPosition 0/-0.3169/0
+
+ObjectTemplate.create RotationalBundle usjep_hmmwvopen_SteeringWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create Engine usjep_hmmwvopen_zMotor
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate usjep_hmmwvopen_whl_Nav_BL
+ObjectTemplate.setPosition -0.9713/0.0739/-1.2981
+ObjectTemplate.addTemplate usjep_hmmwvopen_whl_Nav_BR
+ObjectTemplate.setPosition 0.9713/0.0739/-1.2981
+ObjectTemplate.addTemplate usjep_hmmwvopen_whl_Nav_FL
+ObjectTemplate.setPosition -0.9713/0.0739/2.1716
+ObjectTemplate.addTemplate usjep_hmmwvopen_whl_Nav_FR
+ObjectTemplate.setPosition 0.9713/0.0739/2.1716
+
+ObjectTemplate.create Bundle usjep_hmmwvopen_whl_Nav_BL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate usjep_hmmwvopen_whl_BL
+ObjectTemplate.setPosition 0.0493/-.05/0
+
+ObjectTemplate.create Spring usjep_hmmwvopen_whl_BL
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Bundle usjep_hmmwvopen_whl_Nav_BR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate usjep_hmmwvopen_whl_BR
+ObjectTemplate.setPosition -0.0633/-.05/0
+
+ObjectTemplate.create Spring usjep_hmmwvopen_whl_BR
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create RotationalBundle usjep_hmmwvopen_whl_Nav_FL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+ObjectTemplate.addTemplate usjep_hmmwvopen_whl_FL
+ObjectTemplate.setPosition 0.0493/-.05/0
+
+ObjectTemplate.create Spring usjep_hmmwvopen_whl_FL
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create RotationalBundle usjep_hmmwvopen_whl_Nav_FR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+ObjectTemplate.addTemplate usjep_hmmwvopen_whl_FR
+ObjectTemplate.setPosition -0.0633/-.05/0
+
+ObjectTemplate.create Spring usjep_hmmwvopen_whl_FR
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+include usjep_hmmwvopen.tweak

@@ -1,0 +1,22 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/10/6 3:34]
+ObjectTemplate.activeSafe Bundle supply_air
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate supply_air_SupplyObject
+ObjectTemplate.setPosition 0/20/0
+rem -------------------------------------
+
+ObjectTemplate.create SupplyObject supply_air_SupplyObject
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.radius 25
+ObjectTemplate.workOnSoldiers 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.refillAmmoSpeed 33
+ObjectTemplate.teamFromClosestCP 1
+ObjectTemplate.addVehicleType 2

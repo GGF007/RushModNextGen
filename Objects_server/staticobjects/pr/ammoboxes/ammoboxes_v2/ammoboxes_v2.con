@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh ammoboxes_v2
+CollisionManager.createTemplate ammoboxes_v2
+
+ObjectTemplate.create DestroyableObject ammoboxes_v2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh ammoboxes_v2
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.mapMaterial 1 Metal_solid 0
+ObjectTemplate.mapMaterial 2 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ammoboxes_v2
+
+include ammoboxes_v2.tweak

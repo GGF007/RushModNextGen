@@ -1,0 +1,17 @@
+GeometryTemplate.create StaticMesh hse2
+CollisionManager.createTemplate hse2
+
+ObjectTemplate.create SimpleObject hse2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main-Josh
+ObjectTemplate.collisionMesh hse2
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Ceramic_tiles 0
+ObjectTemplate.mapMaterial 2 Penetrable_Wood 0
+ObjectTemplate.mapMaterial 3 concrete 0
+ObjectTemplate.mapMaterial 4 Penetrable_Glass_common 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry hse2
+
+include hse2.tweak

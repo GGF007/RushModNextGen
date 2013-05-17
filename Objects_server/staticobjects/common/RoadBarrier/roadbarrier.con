@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh roadbarrier
+CollisionManager.createTemplate roadbarrier
+
+ObjectTemplate.create SimpleObject roadbarrier
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ABE-57KGZHA9EJF:Abe_Froman
+ObjectTemplate.collisionMesh roadbarrier
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry roadbarrier
+
+include roadbarrier.tweak

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh ussni_m24
+
+ObjectTemplate.create GenericFireArm ussni_m24
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry ussni_m24
+
+include ussni_m24.tweak

@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh ukr_wall_stairs
+CollisionManager.createTemplate ukr_wall_stairs
+
+ObjectTemplate.create SimpleObject ukr_wall_stairs
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ILLICITFILMS-PC:IllicitFilms
+ObjectTemplate.collisionMesh ukr_wall_stairs
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukr_wall_stairs
+
+include ukr_wall_stairs.tweak

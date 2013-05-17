@@ -1,0 +1,11 @@
+GeometryTemplate.create BundledMesh at6_missile_tv
+
+ObjectTemplate.create GenericProjectile at6_missile_tv
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DFASTMACHINE:Dan
+ObjectTemplate.mapMaterial 0 Metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry at6_missile
+
+include at6_missile_tv.tweak

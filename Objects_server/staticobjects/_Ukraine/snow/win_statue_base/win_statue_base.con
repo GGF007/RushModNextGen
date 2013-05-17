@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh win_statue_base
+CollisionManager.createTemplate win_statue_base
+
+ObjectTemplate.create SimpleObject win_statue_base
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh win_statue_base
+ObjectTemplate.mapMaterial 0 concrete 0
+ObjectTemplate.mapMaterial 1 Glass_common 0
+ObjectTemplate.mapMaterial 2 Metal_plate_thin 0
+ObjectTemplate.mapMaterial 3 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry win_statue_base
+
+include win_statue_base.tweak

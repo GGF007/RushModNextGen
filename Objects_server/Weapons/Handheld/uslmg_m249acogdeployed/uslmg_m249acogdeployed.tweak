@@ -1,0 +1,282 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/18 17:41]
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.3
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm uslmg_m249acogdeployed
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.modifiedByUser "Boserup"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 10
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\Select\uslmg_m249acog.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Select\uslmg_m249acog.tga
+ObjectTemplate.weaponHud.hudName "M249-SAW"
+ObjectTemplate.weaponHud.guiIndex 4
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.deviationFactor 3
+ObjectTemplate.weaponHud.maxVisualDeviation 65
+ObjectTemplate.weaponHud.minVisualDeviation 10
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.overheatSound S_Weapon_Handheld_Overheat
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 4
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+rem ---ObjectTemplate.createComponent PostProcess---
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 900
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags 2
+ObjectTemplate.ammo.magSize 200
+ObjectTemplate.ammo.reloadTime 9.8
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+ObjectTemplate.createComponent SoldierBasedRecoilComp
+ObjectTemplate.recoil.hasRecoilForce 1
+ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/0.5/1.5/0
+ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.6/0.5/0
+ObjectTemplate.recoil.zoomModifier 0.5
+ObjectTemplate.recoil.recoilGraphFrameCount 6
+ObjectTemplate.recoil.recoilGraphExponent 9
+ObjectTemplate.recoil.recoilGraphTotalMovement 5
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_HANDHELD_LMG_GENERAL_watchTempGauge"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_WEAPON_HANDHELD_LMG_GENERAL_watchTempGauge"
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.setFireDev 1 0.1 0.05
+ObjectTemplate.deviation.minDev 0.2
+ObjectTemplate.deviation.setTurnDev 2 1.5 0.2 0.1
+ObjectTemplate.deviation.setSpeedDev 3.5 0.2 0.2 0.1
+ObjectTemplate.deviation.setMiscDev 4.5 3 0.1
+ObjectTemplate.deviation.devModStand 3
+ObjectTemplate.deviation.devModCrouch 2
+ObjectTemplate.deviation.devModLie 0.8
+ObjectTemplate.deviation.devModZoom 0.4
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.zoomDelay 0.4
+ObjectTemplate.zoom.zoomLod 1
+ObjectTemplate.zoom.addZoomFactor 0
+ObjectTemplate.zoom.addZoomFactor 0.7
+ObjectTemplate.zoom.mouseSpeedMod 0.8
+ObjectTemplate.zoom.disableMuzzleWhenZoomed 1
+rem ---EndComp ---
+ObjectTemplate.geometry uslmg_m249acogdeployed
+ObjectTemplate.setCollisionMesh uslmg_m249saw
+ObjectTemplate.mapMaterial 0 Collision_Material 68
+ObjectTemplate.mapMaterial 1 lambert1 68
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate uslmg_m249sawAI
+rem -------------------------------------
+ObjectTemplate.addTemplate S_uslmg_m249acogdeployed_Fire1P
+ObjectTemplate.addTemplate S_uslmg_m249acogdeployed_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_uslmg_m249acogdeployed_Fire3P
+ObjectTemplate.setPosition 0.000106107/0.0722778/0.551821
+ObjectTemplate.addTemplate S_uslmg_m249acogdeployed_BoltClick
+ObjectTemplate.addTemplate S_uslmg_m249acogdeployed_TriggerClick
+ObjectTemplate.addTemplate S_uslmg_m249acogdeployed_SwitchFireRate
+ObjectTemplate.addTemplate S_uslmg_m249acogdeployed_Reload1P
+ObjectTemplate.addTemplate S_uslmg_m249acogdeployed_Reload3P
+ObjectTemplate.setPosition -0.000943646/-0.0342668/-0.0135139
+ObjectTemplate.addTemplate S_uslmg_m249acogdeployed_Deploy1P
+ObjectTemplate.addTemplate S_uslmg_m249acogdeployed_Deploy3P
+ObjectTemplate.setPosition 0.0106914/0.0652283/-0.109307
+ObjectTemplate.addTemplate S_uslmg_m249acogdeployed_Zoom
+ObjectTemplate.addTemplate e_dist_uslmg
+ObjectTemplate.setPosition 0.00227/0.05960/0.42694
+ObjectTemplate.addTemplate e_muzz_m4
+ObjectTemplate.setPosition 0.00227/0.05960/0.42694
+ObjectTemplate.addTemplate e_shellejection_m249
+ObjectTemplate.setPosition 0.03004/0.06599/-0.00208
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/uslmg_m249acogdeployed/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/uslmg_m249acogdeployed/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate uslmg_m249acogdeployed_Projectile
+ObjectTemplate.velocity 450
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 1
+ObjectTemplate.heatAddWhenFire 0.013
+ObjectTemplate.coolDownPerSec 0.2
+ObjectTemplate.overheatPenalty 1.4
+
+ObjectTemplate.create GenericProjectile uslmg_m249acogdeployed_Projectile
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+rem ---EndComp ---
+ObjectTemplate.drag 8
+ObjectTemplate.mass 1000
+ObjectTemplate.gravityModifier 0.4
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 380
+rem -------------------------------------
+ObjectTemplate.addTemplate S_uslmg_m249acogdeployed_Looping
+ObjectTemplate.addTemplate e_bullet_trail
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/3/0/0
+ObjectTemplate.material 380
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 20
+ObjectTemplate.maxTracerScaler 40
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 0.4
+ObjectTemplate.tracerTemplate p_tracer2_eu
+ObjectTemplate.tracerInterval 2
+ObjectTemplate.tracerConvergeDistance -1
+ObjectTemplate.damageMandownSoldiers 1
+ObjectTemplate.minDamage 10
+ObjectTemplate.damage 25
+ObjectTemplate.DistToStartLoseDamage 150
+ObjectTemplate.DistToMinDamage 900
+
+ObjectTemplate.activeSafe Sound S_uslmg_m249acogdeployed_Fire1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/uslmg_m249acogdeployed/sounds/m249_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.982/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_uslmg_m249acogdeployed_Fire3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/uslmg_m249acogdeployed/sounds/m249_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0.000106107/0.0722778/0.551821
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 12
+
+ObjectTemplate.activeSafe Sound S_uslmg_m249acogdeployed_BoltClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m16a4/sounds/m16_boltclick.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_uslmg_m249acogdeployed_TriggerClick
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_uslmg_m249acogdeployed_SwitchFireRate
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.activeSafe Sound S_uslmg_m249acogdeployed_Reload1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/uslmg_m249acogdeployed/sounds/m249_reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_uslmg_m249acogdeployed_Reload3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/uslmg_m249saw/sounds/m249_reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position -0.000943646/-0.0342668/-0.0135139
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_uslmg_m249acogdeployed_Deploy1P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/uslmg_m249acogdeployed/sounds/m249_bipodforward_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_uslmg_m249acogdeployed_Deploy3P
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "objects/weapons/handheld/uslmg_m249saw/sounds/m249_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0.0106914/0.0652283/-0.109307
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_uslmg_m249acogdeployed_Zoom
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.soundFilename "sound/weapons/Zoom.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

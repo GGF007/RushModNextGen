@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh wn_birch_cluster02
+CollisionManager.createTemplate wn_birch_cluster02
+
+ObjectTemplate.create SimpleObject wn_birch_cluster02
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.collisionMesh wn_birch_cluster02
+ObjectTemplate.mapMaterial 0 leafCol 0
+ObjectTemplate.mapMaterial 1 wood_col 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry wn_birch_cluster02
+ObjectTemplate.anchor 0/-6.8129/0
+
+include wn_birch_cluster02.tweak

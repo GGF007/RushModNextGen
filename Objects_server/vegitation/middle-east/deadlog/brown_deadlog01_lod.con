@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh brown_deadlog01_lod
+
+ObjectTemplate.create SimpleObject brown_deadlog01_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.geometry brown_deadlog01_lod
+
+include brown_deadlog01_lod.tweak

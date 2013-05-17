@@ -1,0 +1,33 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/20 19:27]
+GeometryTemplate.maxSkip3pLods 0
+GeometryTemplate.setSubGeometryLodDistance 0 0 26
+GeometryTemplate.setSubGeometryLodDistance 0 1 40
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe DestroyableObject woodencrate_group1
+ObjectTemplate.creator MKP-2:mkp
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 75
+ObjectTemplate.armor.hitPoints 75
+ObjectTemplate.armor.defaultMaterial 72
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.wreckDelay 0.05
+ObjectTemplate.armor.wreckHitPoints 0
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_woodencrate_small 0/0.5/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_destruction_woodencrate_small 0/-0.2/0 45/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_fence_sound 0/1/0 0/0/0
+rem ---EndComp ---
+ObjectTemplate.geometry woodencrate_group1
+ObjectTemplate.setCollisionMesh woodencrate_group1
+ObjectTemplate.mapMaterial 0 Wood_thin 14
+ObjectTemplate.mapMaterial 1 Pentrable_Metal_thin 1000
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh

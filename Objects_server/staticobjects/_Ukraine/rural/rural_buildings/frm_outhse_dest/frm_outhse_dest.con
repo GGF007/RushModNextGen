@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh frm_outhse_dest
+CollisionManager.createTemplate frm_outhse_dest
+
+ObjectTemplate.create DestroyableObject frm_outhse_dest
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.collisionMesh frm_outhse_dest
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry frm_outhse_dest
+
+include frm_outhse_dest.tweak

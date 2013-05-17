@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh ukr_church_out
+CollisionManager.createTemplate ukr_church_out
+
+ObjectTemplate.create SimpleObject ukr_church_out
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh ukr_church_out
+ObjectTemplate.mapMaterial 0 Penetrable_Wood 0
+ObjectTemplate.mapMaterial 1 concrete 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukr_church_out
+
+include ukr_church_out.tweak

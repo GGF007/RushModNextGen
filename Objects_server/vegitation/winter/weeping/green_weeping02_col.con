@@ -1,0 +1,13 @@
+CollisionManager.createTemplate green_weeping02
+
+ObjectTemplate.create SimpleObject green_weeping02_col
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.collisionMesh green_weeping02
+ObjectTemplate.mapMaterial 0 leafCol 0
+ObjectTemplate.mapMaterial 1 wood_col 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.anchor -1.1250/-5.9103/-0.9207
+
+include green_weeping02_col.tweak

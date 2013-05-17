@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh hmg_qjc88
+
+ObjectTemplate.create GenericFireArm hmg_qjc88
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.geometry hmg_qjc88
+
+include hmg_qjc88.tweak

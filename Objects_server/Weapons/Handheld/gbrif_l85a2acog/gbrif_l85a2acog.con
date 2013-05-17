@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh gbrif_l85a2acog
+
+ObjectTemplate.create GenericFireArm gbrif_l85a2acog
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry gbrif_l85a2acog
+
+include gbrif_l85a2acog.tweak

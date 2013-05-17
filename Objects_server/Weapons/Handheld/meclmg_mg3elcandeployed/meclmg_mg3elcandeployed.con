@@ -1,0 +1,9 @@
+GeometryTemplate.create BundledMesh meclmg_mg3elcandeployed
+
+ObjectTemplate.create GenericFireArm meclmg_mg3elcandeployed
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator GAMEMACHINE:Owner
+ObjectTemplate.geometry meclmg_mg3elcandeployed
+
+include meclmg_mg3elcandeployed.tweak
+ 

@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh jersey_barrier_2
+CollisionManager.createTemplate jersey_barrier_2
+ 
+ObjectTemplate.create destroyableObject jersey_barrier_2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MB03:mb
+ObjectTemplate.collisionMesh jersey_barrier_2
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.mapMaterial 1 rock 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry jersey_barrier_2
+
+include jersey_barrier_2.tweak

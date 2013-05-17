@@ -1,0 +1,10 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 9:59]
+ObjectTemplate.activeSafe SimpleObject 50cal_ammo_box_mounted
+ObjectTemplate.creator BF-K-ZENTRALE:Zefan
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry 50cal_ammo_box_mounted
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.physicsType Mesh
+

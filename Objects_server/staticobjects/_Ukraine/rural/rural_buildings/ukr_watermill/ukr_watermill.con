@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh ukr_watermill
+CollisionManager.createTemplate ukr_watermill
+
+ObjectTemplate.create SimpleObject ukr_watermill
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh ukr_watermill
+ObjectTemplate.mapMaterial 0 rock 0
+ObjectTemplate.mapMaterial 1 wood_solid 0
+ObjectTemplate.mapMaterial 2 Glass_common 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukr_watermill
+
+include ukr_watermill.tweak

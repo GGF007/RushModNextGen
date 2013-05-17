@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh pr_hamas_soldier3
+
+ObjectTemplate.create Soldier pr_hamas_soldier3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry pr_hamas_soldier3
+
+include pr_hamas_soldier3.tweak

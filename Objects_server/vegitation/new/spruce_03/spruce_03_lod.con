@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh spruce_03_lod
+
+ObjectTemplate.create SimpleObject spruce_03_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator SHITBOX3000:mb
+ObjectTemplate.geometry spruce_03_lod
+
+include spruce_03_lod.tweak

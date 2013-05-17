@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh rusni_sv98
+
+ObjectTemplate.create GenericFireArm rusni_sv98
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Alastair
+ObjectTemplate.geometry rusni_sv98
+
+include rusni_sv98.tweak 

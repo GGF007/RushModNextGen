@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh gbrif_l85a2iron
+CollisionManager.createTemplate gbrif_l85a2iron
+
+ObjectTemplate.create GenericFireArm gbrif_l85a2iron
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator INTEL:Alastair
+ObjectTemplate.collisionMesh gbrif_l85a2iron
+ObjectTemplate.mapMaterial 0 02_-_Default 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry gbrif_l85a2iron
+
+include gbrif_l85a2iron.tweak

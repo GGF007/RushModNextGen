@@ -1,0 +1,82 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/8/2 10:59]
+ObjectTemplate.activeSafe EffectBundle e_vexp_z10
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_vexp_z10_Start
+ObjectTemplate.addTemplate em_vexp_z10_engine
+ObjectTemplate.setPosition -0.770888/1.06397/-0.903927
+ObjectTemplate.addTemplate em_vexp_z10_rotorBlade
+ObjectTemplate.setPosition 2.95771e-006/2.06291/3.79235e-006
+ObjectTemplate.addTemplate em_vexp_z10_rotor
+ObjectTemplate.setPosition 9.25592e-006/1.9858/1.18967e-005
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/15/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_vexp_z10_Start
+ObjectTemplate.modifiedByUser "999"
+
+ObjectTemplate.create Emitter em_vexp_z10_engine
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_z10_engine
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/3/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-8/-10/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/1/-1/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/3/1/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/5/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_z10_rotorBlade
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_uh60_rotorblade
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/44/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-1/4/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/8/20/0
+ObjectTemplate.positionalSpeedInRight CRD_NORMAL/-20/20/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/4/-8/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/10/-20/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-4/4/0
+ObjectTemplate.startRotation CRD_UNIFORM/-120/120/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_z10_rotor
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_z10_rotor
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/4/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/8/12/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/3/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/4/8/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/30/-30/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-2/2/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+

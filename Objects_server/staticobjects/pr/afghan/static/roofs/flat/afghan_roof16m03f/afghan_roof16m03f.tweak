@@ -1,0 +1,27 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 12:52]
+GeometryTemplate.setSubGeometryLodDistance 0 0 20
+GeometryTemplate.setSubGeometryLodDistance 0 1 55
+GeometryTemplate.setSubGeometryLodDistance 0 2 140
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+GeometryTemplate.glowing 0
+GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe Bundle afghan_roof16m03f
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.modifiedByUser "999"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry afghan_roof16m03f
+ObjectTemplate.setCollisionMesh afghan_roof16m03f
+ObjectTemplate.mapMaterial 0 Ceramic_tiles 82
+ObjectTemplate.mapMaterial 1 Wood_solid 15
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate ladder_3m_afghan
+ObjectTemplate.setPosition 0/-1.3/5.8654
+rem -------------------------------------
+
+

@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh pillar_256
+CollisionManager.createTemplate pillar_256
+
+ObjectTemplate.create SimpleObject pillar_256
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator destructo
+ObjectTemplate.collisionMesh pillar_256
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.mapMaterial 1 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry pillar_256
+
+include pillar_256.tweak

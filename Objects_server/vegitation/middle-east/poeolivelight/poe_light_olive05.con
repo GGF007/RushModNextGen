@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh poe_light_olive05
+CollisionManager.createTemplate poe_light_olive05
+
+ObjectTemplate.create SimpleObject poe_light_olive05
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.collisionMesh poe_light_olive05
+ObjectTemplate.mapMaterial 0 wood_col 0
+ObjectTemplate.mapMaterial 1 leafCol 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry poe_light_olive05
+ObjectTemplate.anchor 1.0834/-4.5762/-0.7025
+
+include poe_light_olive05.tweak

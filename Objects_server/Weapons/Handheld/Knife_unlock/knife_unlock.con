@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh knife_unlock
+
+ObjectTemplate.create GenericFireArm knife_unlock
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator SJU-1:sju
+ObjectTemplate.geometry knife_unlock
+
+include knife_unlock.tweak

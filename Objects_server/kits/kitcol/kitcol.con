@@ -1,0 +1,12 @@
+GeometryTemplate.create BundledMesh kitcol
+CollisionManager.createTemplate kitcol
+
+ObjectTemplate.create PlayerControlObject kitcol
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator egg
+ObjectTemplate.collisionMesh kitcol
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.physicsType 3
+
+include kitcol.tweak

@@ -1,0 +1,16 @@
+GeometryTemplate.create StaticMesh cabin
+CollisionManager.createTemplate cabin
+
+ObjectTemplate.create SimpleObject cabin
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh cabin
+ObjectTemplate.mapMaterial 0 wood_solid 0
+ObjectTemplate.mapMaterial 1 concrete 0
+ObjectTemplate.mapMaterial 2 Penetrable_Wood 0
+ObjectTemplate.mapMaterial 3 wood_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry cabin
+
+include cabin.tweak

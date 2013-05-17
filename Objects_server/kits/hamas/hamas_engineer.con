@@ -1,0 +1,75 @@
+ObjectTemplate.create Kit hamas_engineer
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.kitType Engineer
+ObjectTemplate.aiTemplate Engineer
+ObjectTemplate.geometry hamas_kits
+ObjectTemplate.geometry.kit 17
+ObjectTemplate.geometry.dropGeom 13
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setCollisionMesh kitcol
+ObjectTemplate.abilityRestoreRate 0.05
+ObjectTemplate.abilityInVehicleRadius 7
+ObjectTemplate.abilityInVehicleStrength 0.1
+ObjectTemplate.abilityInVehicleMaterial 84
+ObjectTemplate.unlockIndex 2
+ObjectTemplate.cullRadiusScale 2.4
+
+rem -------------------------------------
+ObjectTemplate.addTemplate knife_unlock
+ObjectTemplate.addTemplate RUPIS_Baghira
+ObjectTemplate.addTemplate chsht_norinco982
+ObjectTemplate.addTemplate at_mine_usm19
+ObjectTemplate.addTemplate hgr_smoke
+ObjectTemplate.addTemplate unl_repair
+ObjectTemplate.addTemplate bf2aus_timed_c4
+
+ObjectTemplate.addTemplate ParachuteLauncher
+
+ObjectTemplate.addTemplate UnlockHamasEngineer
+ObjectTemplate.addTemplate UnlockHamasEngineer2
+rem -------------------------------------
+
+ObjectTemplate.createComponent Ability
+ObjectTemplate.ability.hasRepairingAbility 1
+
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_ENGINEER"
+ObjectTemplate.vehicleHud.guiIndex 0
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Engineer_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Engineer.tga"
+ObjectTemplate.vehicleHud.spottedIcon 		"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.sprintStaminaDissipationFactor 	0.2
+ObjectTemplate.vehicleHud.vehicleType		7
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_KIT_ENGINEER_inVehicle"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_KIT_ENGINEER_inVehicle"
+rem ---EndComp ---
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockHamasEngineer	
+ObjectTemplate.addTemplate RUSHT_Saiga12
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockHamasEngineer2
+ObjectTemplate.addTemplate idfrif_tar21c
+ObjectTemplate.replaceItem chsht_norinco982
+ObjectTemplate.replaceItem RUSHT_Saiga12
+ObjectTemplate.unlockLevel 2

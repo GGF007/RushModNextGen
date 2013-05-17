@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh ukr_fence_6
+CollisionManager.createTemplate ukr_fence_6
+
+ObjectTemplate.create DestroyableObject ukr_fence_6
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EON:Seigman
+ObjectTemplate.collisionMesh ukr_fence_6
+ObjectTemplate.mapMaterial 0 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukr_fence_6
+
+include ukr_fence_6.tweak

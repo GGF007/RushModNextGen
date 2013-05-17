@@ -1,0 +1,9 @@
+GeometryTemplate.create BundledMesh 50cal_m2hb
+
+ObjectTemplate.create GenericFireArm 50cal_m2hb
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MBA-1:mba
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry 50cal_m2hb
+
+include 50cal_m2hb.tweak

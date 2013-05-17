@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh GBRIF_L85A2AG36
+CollisionManager.createTemplate GBRIF_L85A2AG36
+
+ObjectTemplate.create GenericFireArm GBRIF_L85A2AG36
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JULIO:julioce
+ObjectTemplate.collisionMesh GBRIF_L85A2AG36
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry GBRIF_L85A2AG36
+
+include GBRIF_L85A2AG36.tweak

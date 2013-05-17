@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh ukraav_shilka_missiles
+CollisionManager.createTemplate ukraav_shilka_missiles
+
+ObjectTemplate.create rotationalbundle ukraav_shilka_missiles
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator WIZARDS:Guedoe
+ObjectTemplate.collisionMesh cf_apc_lav3_towmisslerack
+ObjectTemplate.mapMaterial 0 metal_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ukraav_shilka_missiles
+
+include ukraav_shilka_missiles.tweak

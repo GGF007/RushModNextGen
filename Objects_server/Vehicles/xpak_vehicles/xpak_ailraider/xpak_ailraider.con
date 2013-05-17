@@ -1,0 +1,95 @@
+GeometryTemplate.create BundledMesh xpak_ailraider
+CollisionManager.createTemplate xpak_ailraider
+
+ObjectTemplate.create PlayerControlObject xpak_ailraider
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEFFE_XP:jeffev
+ObjectTemplate.collisionMesh xpak_ailraider
+ObjectTemplate.mapMaterial 0 penetrable_metal 0
+ObjectTemplate.mapMaterial 1 glass 0
+ObjectTemplate.mapMaterial 2 rubber 0
+ObjectTemplate.mapMaterial 3 col_cloth 0
+ObjectTemplate.mapMaterial 4 wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry xpak_ailraider
+ObjectTemplate.addTemplate AILRaider_Steering
+ObjectTemplate.setPosition 0/0.7046/1.1816
+ObjectTemplate.setRotation 0/40.0000/0
+ObjectTemplate.addTemplate AILRaider_Engine
+ObjectTemplate.setPosition 0/-0.145/0
+
+ObjectTemplate.create RotationalBundle AILRaider_Steering
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create Engine AILRaider_Engine
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate AILRaider_Nav_FL
+ObjectTemplate.setPosition -0.9/-0.035/1.51
+ObjectTemplate.addTemplate AILRaider_Nav_FR
+ObjectTemplate.setPosition 0.9/-0.035/1.51
+ObjectTemplate.addTemplate AILRaider_Wheel_ML
+ObjectTemplate.setPosition -1/-0.03/-0.5
+ObjectTemplate.addTemplate AILRaider_Wheel_MR
+ObjectTemplate.setPosition 1/-0.03/-0.5
+ObjectTemplate.addTemplate AILRaider_Wheel_RR
+ObjectTemplate.setPosition 1/-0.03/-1.5
+ObjectTemplate.addTemplate AILRaider_Wheel_RL
+ObjectTemplate.setPosition -1/-0.03/-1.5
+
+ObjectTemplate.create RotationalBundle AILRaider_Nav_FL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate AILRaider_Wheel_FL
+
+ObjectTemplate.create Spring AILRaider_Wheel_FL
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create RotationalBundle AILRaider_Nav_FR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate AILRaider_Wheel_FR
+
+ObjectTemplate.create Spring AILRaider_Wheel_FR
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create Spring AILRaider_Wheel_ML
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Spring AILRaider_Wheel_MR
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Spring AILRaider_Wheel_RR
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring AILRaider_Wheel_RL
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+include xpak_ailraider.tweak

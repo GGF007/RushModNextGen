@@ -1,0 +1,8 @@
+GeometryTemplate.create StaticMesh bush_new_02_lod
+
+ObjectTemplate.create SimpleObject bush_new_02_lod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator destructo
+ObjectTemplate.geometry bush_new_02_lod
+
+include bush_new_02_lod.tweak

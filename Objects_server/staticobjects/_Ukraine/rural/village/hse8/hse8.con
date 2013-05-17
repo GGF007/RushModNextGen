@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh hse8
+CollisionManager.createTemplate hse8
+
+ObjectTemplate.create SimpleObject hse8
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JOSH:Main
+ObjectTemplate.collisionMesh hse8
+ObjectTemplate.mapMaterial 0 Wood_solid 0
+ObjectTemplate.mapMaterial 1 concrete 0
+ObjectTemplate.mapMaterial 2 Stairs_wood 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry hse8
+
+include hse8.tweak

@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh metaldoor_128x256_r
+CollisionManager.createTemplate metaldoor_128x256_r
+
+ObjectTemplate.create DestroyableObject metaldoor_128x256_r
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EDMUND:Edmund_Fovargue
+ObjectTemplate.collisionMesh metaldoor_128x256_r
+ObjectTemplate.mapMaterial 0 Pentrable_Metal_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry metaldoor_128x256_r
+
+include metaldoor_128x256_r.tweak
